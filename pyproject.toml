@@ -5,12 +5,13 @@ description = "will add later"
 authors = ["Andreas Schauer"]
 license = "will add later"
 readme = "README.md"
+include = ["ffx_search_tool/data/**"]
 
 [tool.poetry.scripts]
-ffx = "ffx_search_tool.main:app"
+ffx = "ffx_search_tool.src.main:app"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.13"
 typer = {extras = ["all"], version = "^0.12.5"}
 
 [tool.poetry.urls]
