@@ -10,9 +10,9 @@
             "steal_normal": ["phoenix down", 1],
             "steal_rare": ["smoke bomb", 1],
             "drop_normal": ["speed sphere", 1],
-            "drop_rare": ["speed sphere", 1]
+            "drop_rare": ["speed sphere", 1],
+            "bribe": ["smoke bomb", 3]
         },
-        "bribe": ["smoke bomb", 3],
         "equipment": {
             "drop_rate": 0.03,
             "wpn_abilities": [
@@ -79,9 +79,9 @@
             "steal_normal": ["potion", 1],
             "steal_rare": ["sleeping powder", 1],
             "drop_normal": ["power sphere", 1],
-            "drop_rare": ["power sphere", 1]
+            "drop_rare": ["power sphere", 1],
+            "bribe": ["sleeping powder", 4]
         },
-        "bribe": ["sleeping powder", 4],
         "equipment": {
             "drop_rate": 0.03,
             "wpn_abilities": [
@@ -152,9 +152,9 @@
             "steal_normal": ["farplane wind", 1],
             "steal_rare": ["shining gem", 1],
             "drop_normal": ["mana sphere", 1],
-            "drop_rare": ["lv. 2 key sphere", 1]
+            "drop_rare": ["lv. 2 key sphere", 1],
+            "bribe": ["megalixir", 20]
         },
-        "bribe": ["megalixir", 20],
         "equipment": {
             "drop_rate": 0.5,
             "wpn_abilities": [
@@ -221,9 +221,9 @@
             "steal_normal": ["fish scale", 1],
             "steal_rare": ["dragon scale", 1],
             "drop_normal": ["mana sphere", 1],
-            "drop_rare": ["mana sphere", 1]
+            "drop_rare": ["mana sphere", 1],
+            "bribe": ["water gem", 2]
         },
-        "bribe": ["water gem", 2],
         "equipment": {
             "drop_rate": 0.03,
             "wpn_abilities": [
