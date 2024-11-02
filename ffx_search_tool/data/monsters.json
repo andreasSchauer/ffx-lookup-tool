@@ -16,6 +16,8 @@
         },
         "equipment": {
             "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "sensor"},
@@ -24,9 +26,7 @@
             "armour_abilities": [
                 {"ability": "dark ward"},
                 {"ability": "magic def +3%"}
-            ],
-            "slots_amount": "1-2",
-            "attached_abilities": "1-2"
+            ]
         },
         "stats": {
             "hp": [95, 143],
@@ -86,6 +86,8 @@
         },
         "equipment": {
             "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "firestrike"},
@@ -98,9 +100,7 @@
                 {"ability": "silence ward"},
                 {"ability": "sleep ward"},
                 {"ability": "magic def +3%"}
-            ],
-            "slots_amount": "1-2",
-            "attached_abilities": "1-2"
+            ]
         },
         "stats": {
             "hp": [125, 188],
@@ -160,6 +160,8 @@
         },
         "equipment": {
             "drop_rate": 0.5,
+            "slots_amount": "3-4",
+            "attached_abilities": "0-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "magic +10%"},
@@ -168,9 +170,7 @@
             "armour_abilities": [
                 {"ability": "sos shell"},
                 {"ability": "magic def +10%"}
-            ],
-            "slots_amount": "3-4",
-            "attached_abilities": "0-2"
+            ]
         },
         "stats": {
             "hp": [56000, 11036],
@@ -230,6 +230,8 @@
         },
         "equipment": {
             "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "waterstrike"},
@@ -238,9 +240,7 @@
             "armour_abilities": [
                 {"ability": "water ward"},
                 {"ability": "waterproof"}
-            ],
-            "slots_amount": "1-2",
-            "attached_abilities": "1-2"
+            ]
         },
         "stats": {
             "hp": [315, 473],
