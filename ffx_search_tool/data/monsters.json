@@ -2,6 +2,7 @@
     "condor": {
         "location": ["besaid"],
         "is_missable": false,
+        "is_catchable": true,
         "is_boss": false,
         "ap": [2, 4],
         "gil": 12,
@@ -20,12 +21,12 @@
                 {"ability": "sensor"},
                 {"ability": "distil speed"}
             ],
-            "armor_abilities": [
+            "armour_abilities": [
                 {"ability": "dark ward"},
                 {"ability": "magic def +3%"}
             ],
             "slots_amount": "1-2",
-            "attached_abilites": "1-2"
+            "attached_abilities": "1-2"
         },
         "stats": {
             "hp": [95, 143],
@@ -71,6 +72,7 @@
     "dingo": {
         "location": ["besaid"],
         "is_missable": false,
+        "is_catchable": true,
         "is_boss": false,
         "ap": [2, 4],
         "gil": 15,
@@ -92,13 +94,13 @@
                 {"ability": "waterstrike"},
                 {"ability": "distil power"}
             ],
-            "armor_abilities": [
+            "armour_abilities": [
                 {"ability": "silence ward"},
                 {"ability": "sleep ward"},
                 {"ability": "magic def +3%"}
             ],
             "slots_amount": "1-2",
-            "attached_abilites": "1-2"
+            "attached_abilities": "1-2"
         },
         "stats": {
             "hp": [125, 188],
@@ -144,6 +146,7 @@
     "varuna": {
         "location": ["sin", "omega ruins"],
         "is_missable": false,
+        "is_catchable": true,
         "is_boss": false,
         "ap": [19500, 29250],
         "gil": 1780,
@@ -162,12 +165,12 @@
                 {"ability": "magic +10%"},
                 {"ability": "double overdrive"}
             ],
-            "armor_abilities": [
+            "armour_abilities": [
                 {"ability": "sos shell"},
                 {"ability": "magic def +10%"}
             ],
             "slots_amount": "3-4",
-            "attached_abilites": "0-2"
+            "attached_abilities": "0-2"
         },
         "stats": {
             "hp": [56000, 11036],
@@ -213,6 +216,7 @@
     "water flan": {
         "location": ["besaid"],
         "is_missable": false,
+        "is_catchable": true,
         "is_boss": false,
         "ap": [2, 4],
         "gil": 18,
@@ -231,12 +235,12 @@
                 {"ability": "waterstrike"},
                 {"ability": "distil mana"}
             ],
-            "armor_abilities": [
+            "armour_abilities": [
                 {"ability": "water ward"},
                 {"ability": "waterproof"}
             ],
             "slots_amount": "1-2",
-            "attached_abilites": "1-2"
+            "attached_abilities": "1-2"
         },
         "stats": {
             "hp": [315, 473],
