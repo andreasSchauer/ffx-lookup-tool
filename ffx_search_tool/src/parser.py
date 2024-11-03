@@ -4,24 +4,19 @@ from rich.console import Console
 from rich.table import Table
 from rich import box
 from ffx_search_tool.src.table_data import get_table_data
+from ffx_search_tool.src.constants import *
 
 with importlib.resources.open_text("ffx_search_tool.data", "monsters.json") as file:
     monster_data = json.load(file)
 
 
 console = Console()
-table_width = 96
-
-stat_names = ["HP (Overkill)", "MP", "Strength", "Defence", "Magic", "Magic Defence", "Agility", "Luck", "Evasion", "Accuracy"]
-action_names = ["Steal (Normal)", "Steal (Rare)", "Drop (Normal)", "Drop (Rare)", "Bribe"]
-status_names = ["Silence", "Sleep", "Dark", "Poison (HP Loss)", "Petrify", "Slow", "Zombie", "Power Break", "Magic Break", "Armour Break", "Mental Break", "Threaten", "Death", "Provoke", "Doom (Countdown)", "Delay", "Eject", "Zanmato"]
-equipment_names = ["Drop Rate", "Slots Amount", "Number of Abilities", "Weapon Abilities", "Armour Abilities"]
 
 
 
 def monster_search(monster_name):
     monster = monster_data[monster_name]
-    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=table_width, padding=1)
+    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
     
     table.add_column(monster_name.title())
     table.add_row(get_stat_table(monster))
@@ -38,7 +33,7 @@ def monster_search(monster_name):
 
 def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):
     table = Table(title=tab_title, show_lines=True, expand=True, box=box.SQUARE, title_style="bold", show_header=tab_header)
-    col_width = int(table_width / num_columns)
+    col_width = int(TABLE_WIDTH / num_columns)
 
     if len(column_names) == 0:
         for i in range(num_columns):
@@ -55,12 +50,13 @@ def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):
 def get_stat_table(monster):
     stats = monster["stats"]
     stat_keys = list(stats.keys())
-    
+    stat_cell_names = CELL_NAMES["stats"]
+
     stat_table = initialize_table("Stats", 4, tab_header=False)
 
     for i in range(0, len(stats), 2):
-        left_stat = stat_names[i]
-        right_stat = stat_names[i+1]
+        left_stat = stat_cell_names[i]
+        right_stat = stat_cell_names[i+1]
         left_val = get_table_data(stat_keys[i], monster)
         right_val = get_table_data(stat_keys[i+1], monster)
         
@@ -73,13 +69,14 @@ def get_stat_table(monster):
 def get_element_table(monster):
     elements = monster["elem_resists"]
     element_keys = list(elements.keys())
+    element_cell_names = CELL_NAMES["elements"]
 
     col_names = ["Element", "Resistance"]
     element_table = initialize_table("Elemental Resistances", 4, column_names=col_names)
 
     for i in range(0, len(elements), 2):
-        left_element = element_keys[i].title()
-        right_element = element_keys[i+1].title()
+        left_element = element_cell_names[i]
+        right_element = element_cell_names[i+1]
         left_resist = get_table_data(element_keys[i], monster)
         right_resist = get_table_data(element_keys[i+1], monster)
 
@@ -92,13 +89,14 @@ def get_element_table(monster):
 def get_status_resist_table(monster):
     statusses = monster["stat_resists"]
     status_keys = list(statusses.keys())
+    status_cell_names = CELL_NAMES["statusses"]
 
     col_names = ["Status", "Resistance"]
     status_table = initialize_table("Status Resistances", 4, column_names=col_names)
 
     for i in range(0, len(statusses), 2):
-        left_status = status_names[i]
-        right_status = status_names[i+1]
+        left_status = status_cell_names[i]
+        right_status = status_cell_names[i+1]
         left_resist = get_table_data(status_keys[i], monster)
         right_resist = get_table_data(status_keys[i+1], monster)
         
@@ -125,11 +123,12 @@ def get_loot_table(monster):
 def get_item_table(monster):
     items = monster["items"]
     item_keys = list(items.keys())
+    item_cell_names = CELL_NAMES["items"]
 
     item_table = initialize_table("Items", 2, tab_header=False)
 
     for i in range(len(items)):
-        action = action_names[i]
+        action = item_cell_names[i]
         item = get_table_data(item_keys[i], monster)
         
         item_table.add_row(action, item)
@@ -158,11 +157,12 @@ def get_bribe_table(monster):
 def get_equipment_table(monster):
     equipment = monster["equipment"]
     equipment_keys = list(equipment.keys())
+    equipment_cell_names = CELL_NAMES["equipment"]
 
     equipment_table = initialize_table("Equipment", 2, tab_header=False)
 
     for i in range(len(equipment)):
-        name = equipment_names[i]
+        name = equipment_cell_names[i]
         data = get_table_data(equipment_keys[i], monster)
         equipment_table.add_row(name, data)
 
