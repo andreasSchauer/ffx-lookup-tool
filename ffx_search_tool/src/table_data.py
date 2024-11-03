@@ -13,7 +13,54 @@ def get_table_data(key, monster):
     
     if key in monster["equipment"]:
         return get_equipment_table_data(key, monster["equipment"])
+    
+    if key == "ap":
+        return get_ap_data(monster)
+    
+    if key == "steals":
+        return get_steals_data(monster)
+    
+    if key == "drops":
+        return get_drops_data(monster)
+    
+    if key == "bribe_max":
+        return get_bribe_max_data(monster)
+    
+    return str(monster[key])
 
+
+
+def get_steals_data(monster):
+    steal_normal = get_table_data("steal_normal", monster)
+    steal_rare = get_table_data("steal_rare", monster)
+    steal = f"{steal_normal} ({steal_rare})"
+
+    if steal == "- (-)":
+        return "-"
+
+    return steal
+
+
+def get_drops_data(monster):
+    drop_normal = get_table_data("drop_normal", monster)
+    drop_rare = get_table_data("drop_rare", monster)
+    drop = f"{drop_normal} ({drop_rare})"
+
+    if drop == "- (-)":
+        return "-"
+
+    return drop
+
+
+def get_bribe_max_data(monster):
+    item = get_table_data("bribe", monster)
+
+    if item == "-":
+        return item
+    
+    amount = f"{monster["stats"]["hp"][0] * 25} Gil"
+
+    return f"{item} ({amount})"
 
 
 def get_stat_table_data(key, stats):
@@ -57,6 +104,9 @@ def get_status_resist_table_data(key, monster):
 
 
 def get_item_table_data(key, items):
+    if items[key] is None:
+        return "-"
+    
     return f"{items[key][0].title()} x{items[key][1]}"
 
 
@@ -113,5 +163,11 @@ def get_stat_resist(resistance):
             return "-"
         case _:
             return str(resistance)
-    
+
+
    
+def get_ap_data(monster):
+    ap = monster["ap"][0]
+    ap_overkill = monster["ap"][1]
+
+    return f"{ap} ({ap_overkill})"

@@ -4,7 +4,7 @@ from rich.console import Console
 from rich.table import Table
 from rich import box
 from ffx_search_tool.src.table_data import get_table_data
-from ffx_search_tool.src.constants import *
+from ffx_search_tool.src.constants import TABLE_WIDTH, CELL_NAMES
 
 with importlib.resources.open_text("ffx_search_tool.data", "monsters.json") as file:
     monster_data = json.load(file)
@@ -12,6 +12,14 @@ with importlib.resources.open_text("ffx_search_tool.data", "monsters.json") as f
 
 console = Console()
 
+"""
+monster search:
+    - need to add allies
+
+
+location search:
+    - need to sort: monsters, one-time monsters, bosses + their allies together
+"""
 
 
 def monster_search(monster_name):
@@ -24,10 +32,48 @@ def monster_search(monster_name):
     table.add_row(get_status_resist_table(monster))
     table.add_row(get_loot_table(monster))
     table.add_row(get_item_table(monster))
-    table.add_row(get_bribe_table(monster))
+
+    if monster["items"]["bribe"] is not None:
+        table.add_row(get_bribe_table(monster))
+
     table.add_row(get_equipment_table(monster))
 
     console.print(table)
+
+
+def location_search(location_name):
+    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
+    
+    table.add_column(location_name.title())
+
+    for monster_name in monster_data:
+        monster = monster_data[monster_name]
+        if location_name in monster["location"]:
+            table.add_row(get_short_mon_table(monster, monster_name))
+
+    console.print(table)
+
+
+
+def get_short_mon_table(monster, monster_name): 
+    # will refine into own function (get str-list of attributes based on booleans)
+    if monster["is_catchable"]:
+        monster_name += " (Catchable)"
+    elif monster["is_boss"]:
+        monster_name += " (Boss)"
+    else:
+        monster_name += " (Not Catchable)"
+
+    monster_table = initialize_table(monster_name.title(), 2, tab_header=False)
+
+    monster_table.add_row("HP (Overkill)", get_table_data("hp", monster))
+    monster_table.add_row("AP (Overkill)", get_table_data("ap", monster))
+    monster_table.add_row("Gil", get_table_data("gil", monster))
+    monster_table.add_row("Steal (Rare Steal)", get_table_data("steals", monster))
+    monster_table.add_row("Drop (Rare Drop)", get_table_data("drops", monster))
+    monster_table.add_row("Bribe (Max Amount)", get_table_data("bribe_max", monster))
+
+    return monster_table
 
 
 
@@ -107,13 +153,12 @@ def get_status_resist_table(monster):
 
 
 def get_loot_table(monster):
-    ap = monster["ap"][0]
-    ap_overkill = monster["ap"][1]
-    gil = str(monster["gil"])
+    ap = get_table_data("ap", monster)
+    gil = get_table_data("gil", monster)
 
     loot_table = initialize_table("Loot", 2, tab_header=False)
 
-    loot_table.add_row("AP (Overkill)", f"{ap} ({ap_overkill})")
+    loot_table.add_row("AP (Overkill)", ap)
     loot_table.add_row("Gil", gil)
 
     return loot_table
@@ -169,5 +214,5 @@ def get_equipment_table(monster):
     return equipment_table
 
 
-
-monster_search("dingo")
+# monster_search("kimahri")
+location_search("besaid")

@@ -143,6 +143,7 @@
             "zanmato": "Lv. 1"
         }
     },
+
     "varuna": {
         "location": ["sin", "omega ruins"],
         "is_missable": false,
@@ -211,6 +212,74 @@
             "delay": 100,
             "eject": 0,
             "zanmato": "Lv. 1"
+        }
+    },
+    "kimahri": {
+        "location": ["besaid"],
+        "is_missable": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "ap": [3, 4],
+        "gil": 100,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": null,
+            "steal_rare": null,
+            "drop_normal": ["ability sphere", 2],
+            "drop_rare": ["ability sphere", 2],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "sensor"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [750, 300],
+            "mp": 10,
+            "strength": 10,
+            "defence": 15,
+            "magic": 8,
+            "mag_defence": 5,
+            "agility": 15,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 10
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 100,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 3],
+            "delay": 0,
+            "eject": 100,
+            "zanmato": "Lv. 4"
         }
     },
     "water flan": {

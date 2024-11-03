@@ -24,3 +24,5 @@ CELL_NAMES = {
                         "Weapon Abilities", "Armour Abilities"
                     ]
 }
+
+LOCATIONS = ["dream zanarkand", "baaj", "besaid", "kilika", "luca", "mi'ihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "sin", "omega ruins", "monster arena"]
