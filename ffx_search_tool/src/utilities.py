@@ -1,3 +1,30 @@
+from rich.console import Console
+from rich.table import Table
+from rich import box
+from ffx_search_tool.src.constants import TABLE_WIDTH
+
+
+
+
+console = Console()
+
+
+def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):
+    table = Table(title=tab_title, show_lines=True, expand=True, box=box.SQUARE, title_style="bold", show_header=tab_header)
+    col_width = int(TABLE_WIDTH / num_columns)
+
+    if len(column_names) == 0:
+        for i in range(num_columns):
+            table.add_column("", width=col_width)
+    else:
+        for i in range(int(num_columns / len(column_names))):
+            for name in column_names:
+                table.add_column(name, width=col_width)
+
+    return table
+
+
+
 def get_table_data(key, monster):
     if key in monster["stats"]:
         return get_stat_table_data(key, monster["stats"])
@@ -30,39 +57,6 @@ def get_table_data(key, monster):
 
 
 
-def get_steals_data(monster):
-    steal_normal = get_table_data("steal_normal", monster)
-    steal_rare = get_table_data("steal_rare", monster)
-    steal = f"{steal_normal} ({steal_rare})"
-
-    if steal == "- (-)":
-        return "-"
-
-    return steal
-
-
-def get_drops_data(monster):
-    drop_normal = get_table_data("drop_normal", monster)
-    drop_rare = get_table_data("drop_rare", monster)
-    drop = f"{drop_normal} ({drop_rare})"
-
-    if drop == "- (-)":
-        return "-"
-
-    return drop
-
-
-def get_bribe_max_data(monster):
-    item = get_table_data("bribe", monster)
-
-    if item == "-":
-        return item
-    
-    amount = f"{monster["stats"]["hp"][0] * 25} Gil"
-
-    return f"{item} ({amount})"
-
-
 def get_stat_table_data(key, stats):
     if key == "hp":
         return f"{stats[key][0]} ({stats[key][1]})"
@@ -74,6 +68,19 @@ def get_stat_table_data(key, stats):
 def get_element_table_data(key, elements):
     return get_elem_resist(elements[key])
 
+
+def get_elem_resist(factor):
+    match (factor):
+        case 1.5:
+            return "Weak"
+        case 0.5:
+            return "Halved"
+        case 0:
+            return "Immune"
+        case -1:
+            return "Absorbed"
+        case 1:
+            return "-"
 
 
 def get_status_resist_table_data(key, monster):
@@ -100,6 +107,16 @@ def get_status_resist_table_data(key, monster):
             return f"{poison_res} ({poison_hp})"
         
     return get_stat_resist(statusses[key])
+
+
+def get_stat_resist(resistance):
+    match (resistance):
+        case 100:
+            return "Immune"
+        case 0:
+            return "-"
+        case _:
+            return str(resistance)
 
 
 
@@ -139,35 +156,45 @@ def get_ability_list(key, equipment):
     return ", ".join(ability_list)
 
 
-
-def get_elem_resist(factor):
-    match (factor):
-        case 1.5:
-            return "Weak"
-        case 0.5:
-            return "Halved"
-        case 0:
-            return "Immune"
-        case -1:
-            return "Absorbed"
-        case 1:
-            return "-"
-
-
-
-def get_stat_resist(resistance):
-    match (resistance):
-        case 100:
-            return "Immune"
-        case 0:
-            return "-"
-        case _:
-            return str(resistance)
-
-
    
 def get_ap_data(monster):
     ap = monster["ap"][0]
     ap_overkill = monster["ap"][1]
 
     return f"{ap} ({ap_overkill})"
+
+
+
+def get_steals_data(monster):
+    steal_normal = get_table_data("steal_normal", monster)
+    steal_rare = get_table_data("steal_rare", monster)
+    steal = f"{steal_normal} ({steal_rare})"
+
+    if steal == "- (-)":
+        return "-"
+
+    return steal
+
+
+
+def get_drops_data(monster):
+    drop_normal = get_table_data("drop_normal", monster)
+    drop_rare = get_table_data("drop_rare", monster)
+    drop = f"{drop_normal} ({drop_rare})"
+
+    if drop == "- (-)":
+        return "-"
+
+    return drop
+
+
+
+def get_bribe_max_data(monster):
+    item = get_table_data("bribe", monster)
+
+    if item == "-":
+        return item
+    
+    amount = f"{monster["stats"]["hp"][0] * 25} Gil"
+
+    return f"{item} ({amount})"

@@ -1,3 +1,9 @@
+import json
+import importlib.resources
+
+with importlib.resources.open_text("ffx_search_tool.data", "monsters.json") as file:
+    MONSTER_DATA = json.load(file)
+
 TABLE_WIDTH = 96
 
 CELL_NAMES = {
@@ -25,4 +31,10 @@ CELL_NAMES = {
                     ]
 }
 
-LOCATIONS = ["dream zanarkand", "baaj", "besaid", "kilika", "luca", "mi'ihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "sin", "omega ruins", "monster arena"]
+LOCATIONS = ["dream zanarkand", "baaj", "besaid", "kilika", "luca", "miihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "sin", "omega ruins", "monster arena"]
+
+DUPLICATES = {
+    "garuda": ["garuda (besaid)", "garuda (luca)", "garuda (mushroom rock road)"],
+    "sinspawn gui": ["sinspawn gui (first fight)", "sinspawn gui (second fight)"]
+}
+
