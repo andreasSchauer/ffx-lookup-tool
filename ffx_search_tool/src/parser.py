@@ -1,6 +1,6 @@
 from ffx_search_tool.src.constants import DUPLICATES, LOCATIONS, MONSTER_DATA
-from ffx_search_tool.src.search_algos.monster_search import select_duplicate, get_monster_table
-from ffx_search_tool.src.search_algos.location_search import select_location, get_local_monsters, get_location_table
+from ffx_search_tool.src.search.monster_search import select_duplicate, get_monster_table
+from ffx_search_tool.src.search.location_search import select_location, get_local_monsters, get_location_table
 
 
 def monster_search(monster_name):
