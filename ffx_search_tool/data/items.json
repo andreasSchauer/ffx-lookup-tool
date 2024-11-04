@@ -1,0 +1,20 @@
+{
+    "al bhed potion": "Cures Poison, Silence, Petrification of party and restores 1000 HP.",
+    "antidote": "Cures Poison.",
+    "echo screen": "Cures Silence.",
+    "elixir": "Restores all of one character's HP and MP (maximum of 9999 HP and 999 MP).",
+    "ether": "Restores 100 MP of one character.",
+    "eye drops": "Cures Darkness.",
+    "healing water": "Fully restores HP of party (maximum of 9999 HP).",
+    "hi-potion": "Restores 1000 HP of one character.",
+    "holy water": "Cures Zombie and Curse.",
+    "mega phoenix": "Revives party and fully restores HP of revived characters (maximum of 9999 HP).",
+    "megalixir": "Fully restores HP and MP of party (maximum of 9999 HP and 999 MP).",
+    "phoenix down": "Revives one character from KO with half of their max HP (maximum of 9999 HP).",
+    "potion": "Restores 200 HP of one character.",
+    "remedy": "Cures all status abnormalities, except KO, Curse and Power/Armour/Magic/Mental Break.",
+    "soft": "Cures Petrification.",
+    "tetra elemental": "Fully restores HP of party (maximum of 9999 HP) and casts NulBlaze, NulTide, NulFrost and NulShock.",
+    "turbo ether": "Restores 500 MP of one character.",
+    "x-potion": "Fully restores HP of one character (maximum of 9999 HP)."
+}
