@@ -1,4 +1,5 @@
-from ffx_search_tool.src.constants import DUPLICATES, LOCATIONS, MONSTER_DATA
+from ffx_search_tool.src.constants import DUPLICATES, LOCATIONS
+from ffx_search_tool.data.monster_data import monster_data
 from ffx_search_tool.src.search.monster_search import select_duplicate, get_monster_table
 from ffx_search_tool.src.search.location_search import select_location, get_local_monsters, get_location_table
 
@@ -7,10 +8,10 @@ def monster_search(monster_name):
     if monster_name in DUPLICATES:
         monster_name = select_duplicate(monster_name)
 
-    if monster_name not in MONSTER_DATA:
+    if monster_name not in monster_data:
         raise Exception("Monster not found.")
     
-    monster = MONSTER_DATA[monster_name]
+    monster = monster_data[monster_name]
 
     if monster["has_allies"]:
         for ally in monster["allies"]:
@@ -38,4 +39,4 @@ def location_search(location_name):
 
 
 
-location_search("mushroom rock road")
+location_search("mushroom rosck road")

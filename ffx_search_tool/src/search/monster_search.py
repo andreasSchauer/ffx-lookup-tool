@@ -1,12 +1,13 @@
 from rich.table import Table
 from rich import box
-from ffx_search_tool.src.constants import DUPLICATES, CELL_NAMES, TABLE_WIDTH, MONSTER_DATA
+from ffx_search_tool.data.monster_data import monster_data
+from ffx_search_tool.src.constants import DUPLICATES, CELL_NAMES, TABLE_WIDTH
 from ffx_search_tool.src.utilities import get_table_data, initialize_table, console
 
 
 
 def get_monster_table(monster_name):
-    monster = MONSTER_DATA[monster_name]
+    monster = monster_data[monster_name]
     title = monster_name.title()
 
     if monster["is_catchable"]:

@@ -1,9 +1,3 @@
-import json
-import importlib.resources
-
-with importlib.resources.open_text("ffx_search_tool.data", "monsters.json") as file:
-    MONSTER_DATA = json.load(file)
-
 TABLE_WIDTH = 96
 
 CELL_NAMES = {

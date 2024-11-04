@@ -1,6 +1,7 @@
 from rich.table import Table
 from rich import box
-from ffx_search_tool.src.constants import LOCATIONS, TABLE_WIDTH, MONSTER_DATA
+from ffx_search_tool.data.monster_data import monster_data
+from ffx_search_tool.src.constants import LOCATIONS, TABLE_WIDTH
 from ffx_search_tool.src.utilities import get_table_data, initialize_table, console
 
 
@@ -14,7 +15,7 @@ def select_location():
 
 
 def get_local_monsters(location_name):
-    local_monsters = list(filter(lambda mon: location_name in MONSTER_DATA[mon]["location"], MONSTER_DATA))
+    local_monsters = list(filter(lambda mon: location_name in monster_data[mon]["location"], monster_data))
     reoccuring_monsters = get_reoccuring_monsters(local_monsters)
     one_time_monsters = get_one_time_monsters(local_monsters)
     boss_monsters = get_boss_monsters(local_monsters)
@@ -23,18 +24,18 @@ def get_local_monsters(location_name):
     
 
 def get_reoccuring_monsters(local_monsters):
-    return list(filter(lambda mon: MONSTER_DATA[mon]["is_reoccuring"], local_monsters))
+    return list(filter(lambda mon: monster_data[mon]["is_reoccuring"], local_monsters))
 
 def get_one_time_monsters(local_monsters):
-    return list(filter(lambda mon: not MONSTER_DATA[mon]["is_reoccuring"] and not MONSTER_DATA[mon]["is_boss"], local_monsters))
+    return list(filter(lambda mon: not monster_data[mon]["is_reoccuring"] and not monster_data[mon]["is_boss"], local_monsters))
 
 def get_boss_monsters(local_monsters):
-    boss_monsters = list(filter(lambda mon: MONSTER_DATA[mon]["is_boss"], local_monsters))
+    boss_monsters = list(filter(lambda mon: monster_data[mon]["is_boss"], local_monsters))
     boss_monsters_sorted = []
 
     for boss in boss_monsters:
-        if MONSTER_DATA[boss]["has_allies"]:
-            for ally in MONSTER_DATA[boss]["allies"]:
+        if monster_data[boss]["has_allies"]:
+            for ally in monster_data[boss]["allies"]:
                 if ally not in boss_monsters_sorted:
                     boss_monsters_sorted.append(ally)
         else:
@@ -50,7 +51,7 @@ def get_location_table(location_name, monster_list, type):
     table.add_column(title)
 
     for monster_name in monster_list:
-        monster = MONSTER_DATA[monster_name]
+        monster = monster_data[monster_name]
         table.add_row(get_short_mon_table(monster, monster_name))
 
     console.print(table)
