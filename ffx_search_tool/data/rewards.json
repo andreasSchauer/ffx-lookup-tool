@@ -5,94 +5,210 @@
             "reward": ["stamina tonic", 99]
         }
     },
-    "remiem temple": {
-        "valefor": {
-            "initial": ["lightning gem", 4],
-            "repeated": ["power sphere", 4]
+    "remiem temple": [
+        {
+            "condition": "Defeat Valefor at Remiem Temple (first time).",
+            "reward": ["lightning gem", 4],
         },
-        "ifrit": {
-            "initial": ["x-potion", 30],
-            "repeated": ["mana sphere", 6]
+        {
+            "condition": "Defeat Valefor at Remiem Temple (repeated attempt).",
+            "reward": ["power sphere", 4],
         },
-        "ixion": {
-            "initial": ["chocobo feather", 10],
-            "repeated": ["power sphere", 8]
+        {
+            "condition": "Defeat Ifrit at Remiem Temple (first time).",
+            "reward": ["x-potion", 30],
         },
-        "shiva": {
-            "initial": ["mega-potion", 60],
-            "repeated": ["star curtain", 6]
+        {
+            "condition": "Defeat Ifrit at Remiem Temple (repeated attempt).",
+            "reward": ["mana sphere", 6],
         },
-        "bahamut": {
-            "initial": ["flower sceptre", 1],
-            "repeated": ["mana sphere", 8]
+        {
+            "condition": "Defeat Ixion at Remiem Temple (first time).",
+            "reward": ["chocobo feather", 10],
         },
-        "yojimbo": {
-            "initial": ["shadow gem", 8],
-            "repeated": ["power sphere", 10]
+        {
+            "condition": "Defeat Ixion at Remiem Temple (repeated attempt).",
+            "reward": ["power sphere", 8],
         },
-        "anima": {
-            "initial": ["stamina spring", 60],
-            "repeated": ["mana sphere", 10]
+        {
+            "condition": "Defeat Shiva at Remiem Temple (first time).",
+            "reward": ["mega-potion", 60],
         },
-        "magus sisters": {
-            "initial": ["shining gem", 40],
-            "repeated": ["power sphere", 12]
+        {
+            "condition": "Defeat Shiva at Remiem Temple (repeated attempt).",
+            "reward": ["star curtain", 6],
         },
-    },
-    "chocobo races": [
-        {"chests": 0, "reward": ["cloudy mirror", 1]},
-        {"chests": 1, "reward": ["elixir", 1]},
-        {"chests": 2, "reward": ["megalixir", 1]},
-        {"chests": 3, "reward": ["wings to discovery", 30]},
-        {"chests": 4, "reward": ["pendulum", 30]},
-        {"chests": 5, "reward": ["three stars", 60]}
-    ],
-    "chocobo training": {
-        "wobbly chocobo": {
-            "initial": ["elixir", 1],
-            "improving": ["x-potion", 1]
+        {
+            "condition": "Defeat Bahamut at Remiem Temple (first time).",
+            "reward": ["flower sceptre", 1],
         },
-        "dodger chocobo": {
-            "initial": ["lv. 1 key sphere", 1],
-            "improving": ["mega-potion", 1]
+        {
+            "condition": "Defeat Bahamut at Remiem Temple (repeated attempt).",
+            "reward": ["mana sphere", 8],
         },
-        "hyper dodger chocobo": {
-            "initial": ["lv. 2 key sphere", 1],
-            "improving": ["ether", 1]
+        {
+            "condition": "Defeat Yojimbo at Remiem Temple (first time).",
+            "reward": ["shadow gem", 8],
         },
-        "catcher chocobo": {
-            "initial": ["lv. 3 key sphere", 1],
-            "improving": ["turbo ether", 1]
+        {
+            "condition": "Defeat Yojimbo at Remiem Temple (repeated attempt).",
+            "reward": ["power sphere", 10],
+        },
+        {
+            "condition": "Defeat Anima at Remiem Temple (first time).",
+            "reward": ["stamina spring", 60],
+        },
+        {
+            "condition": "Defeat Anima at Remiem Temple (repeated attempt).",
+            "reward": ["mana sphere", 10],
+        },
+        {
+            "condition": "Defeat the Magus Sisters at Remiem Temple (first time).",
+            "reward": ["shining gem", 40],
+        },
+        {
+            "condition": "Defeat the Magus Sisters at Remiem Temple (repeated attempt).",
+            "reward": ["power sphere", 12],
         }
-    },
+    ],
+    "chocobo races": [
+        {
+            "condition": "Win the Chocobo Race at Remiem Temple without opening any chest.",
+            "reward": ["cloudy mirror", 1]
+        },
+        {
+            "condition":"Win the Chocobo Race at Remiem Temple with 1 chest opened.",
+            "reward": ["elixir", 1]
+        },
+        {
+            "condition": "Win the Chocobo Race at Remiem Temple with 2 chests opened.",
+            "reward": ["megalixir", 1]
+        },
+        {
+            "condition": "Win the Chocobo Race at Remiem Temple with 3 chests opened.",
+            "reward": ["wings to discovery", 30]},
+        {
+            "condition": "Win the Chocobo Race at Remiem Temple with 4 chests opened.",
+            "reward": ["pendulum", 30]
+        },
+        {
+            "condition": "Win the Chocobo Race at Remiem Temple with 5 chests opened.",
+            "reward": ["three stars", 60]
+        }
+    ],
+    "chocobo training": [
+        {
+            "condition": "Beat the target time at Wobbly Chocobo.",
+            "reward": ["elixir", 1]
+        },
+        {
+            "condition": "Improve your record at Wobbly Chocobo.",
+            "reward": ["x-potion", 1]
+        },
+        {
+            "condition": "Beat the target time at Dodger Chocobo.",
+            "reward": ["lv. 1 key sphere", 1]
+        },
+        {
+            "condition": "Improve your record at Dodger Chocobo.",
+            "reward": ["mega-potion", 1]
+        },
+        {
+            "condition": "Beat the target time at Hyper Dodger Chocobo.",
+            "reward": ["lv. 2 key sphere", 1]
+        },
+        {
+            "condition": "Improve your record at Hyper Dodger Chocobo.",
+            "reward": ["ether", 1]
+        },
+        {
+            "condition": "Win for the first time at Catcher Chocobo.",
+            "reward": ["lv. 3 key sphere", 1]
+        },
+        {
+            "condition": "Improve your record at Catcher Chocobo.",
+            "reward": ["turbo ether", 1]
+        },
+    ],
     "lightning dodging": [
-        {"amount": 5, "reward": ["x-potion", 2]},
-        {"amount": 10, "reward": ["mega-potion", 2]},
-        {"amount": 20, "reward": ["MP sphere", 2]},
-        {"amount": 50, "reward": ["strength sphere", 3]},
-        {"amount": 100, "reward": ["HP sphere", 3]},
-        {"amount": 150, "reward": ["megalixir", 4]},
-        {"amount": 200, "reward": ["venus sigil", 1]}
+        {
+            "condition": "Dodge 5 lightning strikes in a row.",
+            "reward": ["x-potion", 2]
+        },
+        {
+            "condition": "Dodge 10 lightning strikes in a row.",
+            "reward": ["mega-potion", 2]
+        },
+        {
+            "condition": "Dodge 20 lightning strikes in a row.",
+            "reward": ["MP sphere", 2]
+        },
+        {
+            "condition": "Dodge 50 lightning strikes in a row.",
+            "reward": ["strength sphere", 3]
+        },
+        {
+            "condition": "Dodge 100 lightning strikes in a row.",
+            "reward": ["HP sphere", 3]
+        },
+        {
+            "condition": "Dodge 150 lightning strikes in a row.",
+            "reward": ["megalixir", 4]
+        },
+        {
+            "condition": "Dodge 200 lightning strikes in a row.",
+            "reward": ["venus sigil", 1]
+        }
     ],
     "valley of the cactuars": [
-        {"amount": 1, "reward": ["potion", 1]},
-        {"amount": 3, "reward": ["elixir", 1]},
-        {"amount": 6, "reward": ["megalixir", 1]},
-        {"amount": 8, "reward": ["friend sphere", 1]},
+        {
+            "condition": "Complete 'Valley of the Cactuars' with 1 or more Guardian Spheres.",
+            "reward": ["potion", 1]
+        },
+        {
+            "condition": "Complete 'Valley of the Cactuars' with 3 or more Guardian Spheres.",
+            "reward": ["elixir", 1]
+        },
+        {
+            "condition": "Complete 'Valley of the Cactuars' with 6 or more Guardian Spheres.",
+            "reward": ["megalixir", 1]
+        },
+        {
+            "condition": "Complete 'Valley of the Cactuars' with 8 or more Guardian Spheres.",
+            "reward": ["friend sphere", 1]
+        },
     ],
-    "butterfly hunt": {
-        "before spherimorph": {
-            "central": ["MP sphere", 1],
-            "north": ["ether", 1]
+    "butterfly hunt": [
+        {
+            "condition": "Win the Butterfly Hunt in Macalania Woods - Central before defeating Spherimorph.",
+            "reward": ["MP sphere", 1],
         },
-        "after spherimorph": {
-            "central": ["megalixir", 2],
-            "north": ["elixir", 2]
+        {
+            "condition": "Win the Butterfly Hunt in Macalania Woods - North before defeating Spherimorph.",
+            "reward": ["ether", 1]
         },
-        "post-game": {
-            "central": ["teleport sphere", 1],
-            "north": ["saturn sigil", 1]
+        {
+            "condition": "Win the Butterfly Hunt in Macalania Woods - Central after defeating Spherimorph.",
+            "reward": ["megalixir", 2],
+        },
+        {
+            "condition": "Win the Butterfly Hunt in Macalania Woods - North after defeating Spherimorph.",
+            "reward": ["elixir", 2]
+        },
+        {
+            "condition": "Win one of the two Butterfly Hunts in Macalania Woods after acquiring the Airship.",
+            "reward": ["teleport sphere", 1]
         }
-    },
-    "al bhed primers": ["underdogs secret", 99]
+        {
+            "condition": "Win both of the two Butterfly Hunts in Macalania Woods after acquiring the Airship.",
+            "reward": ["saturn sigil", 1]
+        }
+    ],
+    "others": 
+    [
+        {
+            "condition": "Collect all 26 Al Bhed Primers and talk to Rin on the Airship.",
+            "reward": ["underdogs secret", 99]
+        }
+    ]
 }
