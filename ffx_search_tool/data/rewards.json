@@ -1,0 +1,98 @@
+{
+    "monster arena": {
+        "stratoavis": {
+            "condition": "Catch every monster in Besaid once.",
+            "reward": ["stamina tonic", 99]
+        }
+    },
+    "remiem temple": {
+        "valefor": {
+            "initial": ["lightning gem", 4],
+            "repeated": ["power sphere", 4]
+        },
+        "ifrit": {
+            "initial": ["x-potion", 30],
+            "repeated": ["mana sphere", 6]
+        },
+        "ixion": {
+            "initial": ["chocobo feather", 10],
+            "repeated": ["power sphere", 8]
+        },
+        "shiva": {
+            "initial": ["mega-potion", 60],
+            "repeated": ["star curtain", 6]
+        },
+        "bahamut": {
+            "initial": ["flower sceptre", 1],
+            "repeated": ["mana sphere", 8]
+        },
+        "yojimbo": {
+            "initial": ["shadow gem", 8],
+            "repeated": ["power sphere", 10]
+        },
+        "anima": {
+            "initial": ["stamina spring", 60],
+            "repeated": ["mana sphere", 10]
+        },
+        "magus sisters": {
+            "initial": ["shining gem", 40],
+            "repeated": ["power sphere", 12]
+        },
+    },
+    "chocobo races": [
+        {"chests": 0, "reward": ["cloudy mirror", 1]},
+        {"chests": 1, "reward": ["elixir", 1]},
+        {"chests": 2, "reward": ["megalixir", 1]},
+        {"chests": 3, "reward": ["wings to discovery", 30]},
+        {"chests": 4, "reward": ["pendulum", 30]},
+        {"chests": 5, "reward": ["three stars", 60]}
+    ],
+    "chocobo training": {
+        "wobbly chocobo": {
+            "initial": ["elixir", 1],
+            "improving": ["x-potion", 1]
+        },
+        "dodger chocobo": {
+            "initial": ["lv. 1 key sphere", 1],
+            "improving": ["mega-potion", 1]
+        },
+        "hyper dodger chocobo": {
+            "initial": ["lv. 2 key sphere", 1],
+            "improving": ["ether", 1]
+        },
+        "catcher chocobo": {
+            "initial": ["lv. 3 key sphere", 1],
+            "improving": ["turbo ether", 1]
+        }
+    },
+    "lightning dodging": [
+        {"amount": 5, "reward": ["x-potion", 2]},
+        {"amount": 10, "reward": ["mega-potion", 2]},
+        {"amount": 20, "reward": ["MP sphere", 2]},
+        {"amount": 50, "reward": ["strength sphere", 3]},
+        {"amount": 100, "reward": ["HP sphere", 3]},
+        {"amount": 150, "reward": ["megalixir", 4]},
+        {"amount": 200, "reward": ["venus sigil", 1]}
+    ],
+    "valley of the cactuars": [
+        {"amount": 1, "reward": ["potion", 1]},
+        {"amount": 3, "reward": ["elixir", 1]},
+        {"amount": 6, "reward": ["megalixir", 1]},
+        {"amount": 8, "reward": ["friend sphere", 1]},
+    ],
+    "butterfly hunt": {
+        "before spherimorph": {
+            "central": ["MP sphere", 1],
+            "north": ["ether", 1]
+        },
+        "after spherimorph": {
+            "central": ["megalixir", 2],
+            "north": ["elixir", 2]
+        },
+        "post-game": {
+            "central": ["teleport sphere", 1],
+            "north": ["saturn sigil", 1]
+        }
+    },
+    "al bhed primers": ["underdogs secret", 99]
+}
