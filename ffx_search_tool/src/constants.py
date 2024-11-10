@@ -25,7 +25,7 @@ CELL_NAMES = {
                     ]
 }
 
-LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "kilika", "luca", "miihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "sin", "omega ruins", "remium temple", "monster arena"]
+LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "kilika", "luca", "mi'ihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "home", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "sin", "omega ruins", "remiem temple", "monster arena"]
 
 DUPLICATES = {
     "garuda": ["garuda (besaid)", "garuda (luca)", "garuda (mushroom rock road)"],

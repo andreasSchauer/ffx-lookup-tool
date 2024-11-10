@@ -1,10 +1,4 @@
 {
-    "monster arena": {
-        "stratoavis": {
-            "condition": "Catch every monster in Besaid once.",
-            "reward": ["stamina tonic", 99]
-        }
-    },
     "remiem temple": [
         {
             "condition": "Defeat Valefor at Remiem Temple (first time).",
@@ -204,8 +198,7 @@
             "reward": ["saturn sigil", 1]
         }
     ],
-    "others": 
-    [
+    "others": [
         {
             "condition": "Collect all 26 Al Bhed Primers and talk to Rin on the Airship.",
             "reward": ["underdogs secret", 99]

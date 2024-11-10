@@ -4,7 +4,7 @@
         "items": ["healing water", 4]
     },
     "break damage limit": {
-        "effect": "Raises damage limit from 9999 to 99999.",
+        "effect": "Raises damage limit from 9.999 to 99.999.",
         "items": ["dark matter", 60]
     },
     "capture": {
@@ -97,7 +97,7 @@
     },
     "magic +10%": {
         "effect": "Increases damage of magical attacks by 10%.",
-        "items": ["black magic sphere", 1]
+        "items": ["blk magic sphere", 1]
     },
     "magic +20%": {
         "effect": "Increases damage of magical attacks by 20%.",

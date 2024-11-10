@@ -40,11 +40,11 @@
         "items": ["hypello potion", 32]
     },
     "break hp limit": {
-        "effect": "Raises Max HP limit from 9999 to 99999.",
+        "effect": "Raises Max HP limit from 9.999 to 99.999.",
         "items": ["wings to discovery", 30]
     },
     "break mp limit": {
-        "effect": "Raises Max MP limit from 999 to 9999.",
+        "effect": "Raises Max MP limit from 999 to 9.999.",
         "items": ["three stars", 30]
     },
     "confuse ward": {
@@ -157,7 +157,7 @@
     },
     "magic def +10%": {
         "effect": "Reduces damage from magical attacks by 10%.",
-        "items": ["white magic sphere", 1]
+        "items": ["wht magic sphere", 1]
     },
     "magic def +20%": {
         "effect": "Reduces damage from magical attacks by 20%.",
