@@ -39,4 +39,4 @@ def location_search(location_name):
 
 
 
-monster_search("bandersnatch")
+monster_search("biran ronso")

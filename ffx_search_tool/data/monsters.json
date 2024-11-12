@@ -1167,7 +1167,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "zombietouch"}
+                {"ability": "zombietouch"},
                 {"ability": "sos overdrive"}
             ],
             "armour_abilities": [
@@ -1217,45 +1217,45 @@
             "zanmato": "Lv. 2"
         }
     },
-    "": {
-        "location": [""],
-        "is_reoccuring": true,
-        "is_catchable": true,
-        "is_boss": false,
-        "has_allies": false,
-        "ap": [0, 0],
-        "gil": 0,
-        "ronso_rage": null,
+    "biran ronso": {
+        "location": ["mount gagazet"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["biran ronso", "yenke ronso"],
+        "ap": [4500, 6750],
+        "gil": 1500,
+        "ronso_rage": ["thrust kick", "self-destruct", "doom", "mighty guard"],
         "items": {
-            "steal_normal": ["", 1],
-            "steal_rare": ["", 1],
-            "drop_normal": ["", 1],
-            "drop_rare": ["", 1],
-            "bribe": ["", 0]
+            "steal_normal": ["lv. 3 key sphere", 1],
+            "steal_rare": ["lv. 3 key sphere", 2],
+            "drop_normal": ["return sphere", 1],
+            "drop_rare": ["friend sphere", 1],
+            "bribe": null
         },
         "equipment": {
-            "drop_rate": 0.03,
-            "slots_amount": "1-2",
-            "attached_abilities": "1-2",
+            "drop_rate": 0.99,
+            "slots_amount": "2-3",
+            "attached_abilities": "1",
             "wpn_abilities": [
-                {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": ""}
+                {"ability": "piercing"}
             ],
             "armour_abilities": [
-                {"ability": ""}
+                {"ability": "mp +20%"}
             ]
         },
         "stats": {
-            "hp": [0, 0],
-            "mp": 0,
-            "strength": 0,
-            "defence": 1,
-            "magic": 1,
-            "mag_defence": 1,
-            "agility": 0,
-            "luck": 0,
+            "hp": ["Varies", 2500],
+            "mp": 200,
+            "strength": "Varies",
+            "defence": 30,
+            "magic": "Varies",
+            "mag_defence": 50,
+            "agility": "Varies",
+            "luck": 15,
             "evasion": 0,
-            "accuracy": 0
+            "accuracy": 100
         },
         "elem_resists": {
             "fire": 1,
@@ -1266,24 +1266,24 @@
             "gravity": 1
         },
         "stat_resists": {
-            "silence": 0,
-            "sleep": 0,
-            "dark": 0,
-            "poison": [0, 0.25],
-            "petrify": 0,
-            "slow": 0,
-            "zombie": 0,
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
             "power_break": 0,
             "magic_break": 0,
             "armour_break": 0,
             "mental_break": 0,
-            "threaten": 0,
-            "death": 0,
-            "provoke": 0,
-            "doom": [0, 1],
-            "delay": 0,
-            "eject": 0,
-            "zanmato": "Lv. 1"
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 20],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
         }
     },
     "": {
@@ -2775,6 +2775,75 @@
             "delay": 0,
             "eject": 0,
             "zanmato": "Lv. 1"
+        }
+    },
+    "yenke ronso": {
+        "location": ["mount gagazet"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["biran ronso", "yenke ronso"],
+        "ap": [4500, 6750],
+        "gil": 1500,
+        "ronso_rage": ["fire breath", "aqua breath", "stone breath", "white wind"],
+        "items": {
+            "steal_normal": ["lv. 3 key sphere", 1],
+            "steal_rare": ["lv. 3 key sphere", 2],
+            "drop_normal": ["return sphere", 1],
+            "drop_rare": ["friend sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-3",
+            "attached_abilities": "1",
+            "wpn_abilities": [
+                {"ability": "piercing"}
+            ],
+            "armour_abilities": [
+                {"ability": "mp +20%"}
+            ]
+        },
+        "stats": {
+            "hp": ["Varies", 2500],
+            "mp": 200,
+            "strength": "Varies",
+            "defence": 30,
+            "magic": "Varies",
+            "mag_defence": 50,
+            "agility": "Varies",
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 100
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 20],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
         }
     }
 }

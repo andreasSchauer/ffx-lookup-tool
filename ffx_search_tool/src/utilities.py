@@ -96,14 +96,15 @@ def get_status_resist_table_data(key, monster):
             return f"{doom_res} ({doom_countdown})"
         
     if key == "poison":
-        poison_factor = statusses["poison"][1]
-        monster_hp = monster["stats"]["hp"][0]
-        poison_hp = round(monster_hp * poison_factor)
         poison_res = get_stat_resist(statusses["poison"][0])
 
         if poison_res == "Immune":
             return poison_res
+        
         else:
+            poison_factor = statusses["poison"][1]
+            monster_hp = monster["stats"]["hp"][0]
+            poison_hp = round(monster_hp * poison_factor)  
             return f"{poison_res} ({poison_hp})"
         
     if key == "zombie" and isinstance(statusses["zombie"], list):
