@@ -11,7 +11,7 @@ CELL_NAMES = {
                     ],
     "statusses":    [
                         "Silence", "Sleep", "Dark", "Poison (HP Loss)",
-                        "Petrify", "Slow", "Zombie", "Power Break", "Magic Break",
+                        "Petrify", "Slow", "Zombie (Life)", "Power Break", "Magic Break",
                         "Armour Break", "Mental Break", "Threaten", "Death",
                         "Provoke", "Doom (Countdown)", "Delay", "Eject", "Zanmato"
                     ],
@@ -28,6 +28,7 @@ CELL_NAMES = {
 LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "ss liki", "kilika", "luca", "mi'ihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "home", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "zanarkand dome", "sin", "omega ruins", "remiem temple", "monster arena"]
 
 DUPLICATES = {
+    "anima": ["anima (belgemine)", "anima (seymour)"],
     "garuda": ["garuda (besaid)", "garuda (luca)", "garuda (mushroom rock road)"],
     "sinspawn gui": ["sinspawn gui (first fight)", "sinspawn gui (second fight)"]
 }

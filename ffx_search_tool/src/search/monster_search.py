@@ -154,6 +154,9 @@ def get_bribe_table(monster):
 
 
 def get_equipment_table(monster):
+    if monster["equipment"]["drop_rate"] == 0:
+        return
+    
     equipment = monster["equipment"]
     equipment_keys = list(equipment.keys())
     equipment_cell_names = CELL_NAMES["equipment"]

@@ -106,6 +106,9 @@ def get_status_resist_table_data(key, monster):
         else:
             return f"{poison_res} ({poison_hp})"
         
+    if key == "zombie" and isinstance(statusses["zombie"], list):
+        return f"{get_stat_resist(statusses["zombie"][0])} ({get_stat_resist(statusses["zombie"][1])})"
+        
     return get_stat_resist(statusses[key])
 
 
@@ -123,6 +126,14 @@ def get_stat_resist(resistance):
 def get_item_table_data(key, items):
     if items[key] is None:
         return "-"
+    
+    if isinstance(items[key][0], list):
+        data = ""
+
+        for item in items[key]:
+            data += f"{item[0].title()} x{item[1]}, "
+
+        return data[:-2]
     
     return f"{items[key][0].title()} x{items[key][1]}"
 

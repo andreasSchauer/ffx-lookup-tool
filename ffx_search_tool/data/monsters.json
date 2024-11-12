@@ -1,4 +1,1843 @@
 {
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "achelous": {
+        "location": ["mount gagazet"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [730, 1095],
+        "gil": 420,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["water gem", 2],
+            "steal_rare": ["healing spring", 1],
+            "drop_normal": ["power sphere", 1],
+            "drop_rare": ["power sphere", 1],
+            "bribe": ["healing spring", 16]
+        },
+        "equipment": {
+            "drop_rate": 0.23,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "strength +5%"},
+                {"ability": "magic +5%"},
+                {"ability": "magic +10%"}
+            ],
+            "armour_abilities": [
+                {"ability": "mp +10%"},
+                {"ability": "auto-med"}
+            ]
+        },
+        "stats": {
+            "hp": [5100, 7500],
+            "mp": 85,
+            "strength": 33,
+            "defence": 10,
+            "magic": 52,
+            "mag_defence": 20,
+            "agility": 20,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 0.5,
+            "lightning": 1.5,
+            "water": 0,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 20,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 100,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 100,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "adamantoise": {
+        "location": ["sin", "omega ruins"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [12500, 18750],
+        "gil": 2200,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["healing water", 1],
+            "steal_rare": ["stamina tablet", 1],
+            "drop_normal": ["power sphere", 2],
+            "drop_rare": ["power sphere", 4],
+            "bribe": ["special sphere", 6]
+        },
+        "equipment": {
+            "drop_rate": 0.5,
+            "slots_amount": "3-4",
+            "attached_abilities": "0-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "half mp cost"}
+            ],
+            "armour_abilities": [
+                {"ability": "sos shell"},
+                {"ability": "sos protect"},
+                {"ability": "hp +20%"}
+            ]
+        },
+        "stats": {
+            "hp": [54400, 11036],
+            "mp": 40,
+            "strength": 38,
+            "defence": 90,
+            "magic": 31,
+            "mag_defence": 90,
+            "agility": 15,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 20,
+            "sleep": 20,
+            "dark": 20,
+            "poison": [75, 0.05],
+            "petrify": 80,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 0,
+            "doom": [0, 5],
+            "delay": 100,
+            "eject": 0,
+            "zanmato": "Lv. 3"
+        }
+    },
+    "aerouge": {
+        "location": ["thunder plains"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [92, 184],
+        "gil": 144,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["electro marble", 1],
+            "steal_rare": ["lightning marble", 1],
+            "drop_normal": ["mana sphere", 1],
+            "drop_rare": ["mana sphere", 1],
+            "bribe": ["lightning marble", 4]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "lightningstrike"},
+                {"ability": "distil mana"}
+            ],
+            "armour_abilities": [
+                {"ability": "lightning ward"},
+                {"ability": "lightningproof"},
+                {"ability": "magic def +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [200, 300],
+            "mp": 220,
+            "strength": 1,
+            "defence": 1,
+            "magic": 16,
+            "mag_defence": 120,
+            "agility": 11,
+            "luck": 15,
+            "evasion": 13,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1.5,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 20,
+            "sleep": 20,
+            "dark": 20,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "ahriman": {
+        "location": ["mount gagazet", "zanarkand", "sin"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [2200, 4400],
+        "gil": 650,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["musk", 2],
+            "steal_rare": ["musk", 3],
+            "drop_normal": ["speed sphere", 1],
+            "drop_rare": ["speed sphere", 1],
+            "bribe": ["farplane wind", 6]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +3%", "characters":"Yuna and Lulu"},
+                {"ability": "firestrike"},
+                {"ability": "lightningstrike"},
+                {"ability": "waterstrike"},
+                {"ability": "icestrike"},
+                {"ability": "distil speed"}
+            ],
+            "armour_abilities": [
+                {"ability": "confuse ward"}
+            ]
+        },
+        "stats": {
+            "hp": [2800, 4200],
+            "mp": 400,
+            "strength": 1,
+            "defence": 1,
+            "magic": 38,
+            "mag_defence": 180,
+            "agility": 24,
+            "luck": 15,
+            "evasion": 18,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 20,
+            "sleep": 20,
+            "dark": 100,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "alcyone": {
+        "location": ["bikanel"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [310, 620],
+        "gil": 240,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["smoke bomb", 1],
+            "steal_rare": ["smoke bomb", 2],
+            "drop_normal": [["speed sphere", 1], ["al bhed potion", 1]],
+            "drop_rare": [["speed sphere", 1], ["al bhed potion", 1]],
+            "bribe": ["mega phoenix", 2]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "sensor"},
+                {"ability": "distil speed"}
+            ],
+            "armour_abilities": [
+                {"ability": "dark ward"},
+                {"ability": "magic def +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [430, 645],
+            "mp": 42,
+            "strength": 16,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 26,
+            "luck": 15,
+            "evasion": 15,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1.5,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 20,
+            "sleep": 20,
+            "dark": 20,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "anacondaur": {
+        "location": ["calm lands"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [1380, 2070],
+        "gil": 750,
+        "ronso_rage": "stone breath",
+        "items": {
+            "steal_normal": ["petrify grenade", 1],
+            "steal_rare": ["petrify grenade", 2],
+            "drop_normal": ["power sphere", 1],
+            "drop_rare": ["power sphere", 1],
+            "bribe": ["healing water", 16]
+        },
+        "equipment": {
+            "drop_rate": 0.23,
+            "slots_amount": "1-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters":"Yuna and Lulu"}
+            ],
+            "armour_abilities": [
+                {"ability": "stone ward"}
+            ]
+        },
+        "stats": {
+            "hp": [5800, 4060],
+            "mp": 70,
+            "strength": 27,
+            "defence": 1,
+            "magic": 48,
+            "mag_defence": 1,
+            "agility": 16,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": -1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 95,
+            "dark": 0,
+            "poison": [25, 0.25],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 25,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 2],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "anima (belgemine)": {
+        "location": ["remiem temple"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": null,
+            "steal_rare": null,
+            "drop_normal": null,
+            "drop_rare": null,
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0,
+            "slots_amount": "0",
+            "attached_abilities": "0",
+            "wpn_abilities": null,
+            "armour_abilities": null
+        },
+        "stats": {
+            "hp": [54000, 54000],
+            "mp": 3000,
+            "strength": 38,
+            "defence": 1,
+            "magic": 60,
+            "mag_defence": 1,
+            "agility": 15,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 1
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "anima (seymour)": {
+        "location": ["macalania"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["seymour", "guado guardian (seymour)", "anima (seymour)"],
+        "ap": [2500, 3750],
+        "gil": 3000,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["silence grenade", 3],
+            "steal_rare": ["farplane shadow", 1],
+            "drop_normal": ["ability sphere", 1],
+            "drop_rare": ["ability sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "darktouch"},
+                {"ability": "silencetouch"},
+                {"ability": "sleeptouch"}
+            ],
+            "armour_abilities": [
+                {"ability": "dark ward"},
+                {"ability": "silence ward"},
+                {"ability": "sleep ward"}
+            ]
+        },
+        "stats": {
+            "hp": [18000, 1400],
+            "mp": 50,
+            "strength": 25,
+            "defence": 1,
+            "magic": 20,
+            "mag_defence": 1,
+            "agility": 25,
+            "luck": 20,
+            "evasion": 0,
+            "accuracy": 30
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 3"
+        }
+    },
+    "aqua flan": {
+        "location": ["via purifico"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [240, 480],
+        "gil": 340,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["fish scale", 2],
+            "steal_rare": ["dragon scale", 2],
+            "drop_normal": ["mana sphere", 1],
+            "drop_rare": ["mana sphere", 1],
+            "bribe": ["water gem", 15]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-3",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "waterstrike"},
+                {"ability": "distil mana"}
+            ],
+            "armour_abilities": [
+                {"ability": "water ward"}
+            ]
+        },
+        "stats": {
+            "hp": [2025, 3038],
+            "mp": 1,
+            "strength": 1,
+            "defence": 100,
+            "magic": 22,
+            "mag_defence": 1,
+            "agility": 9,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1.5,
+            "water": -1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 20,
+            "sleep": 20,
+            "dark": 20,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "bandersnatch": {
+        "location": ["mount gagazet"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [820, 1640],
+        "gil": 880,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["dream powder", 2],
+            "steal_rare": ["dream powder", 3],
+            "drop_normal": ["power sphere", 1],
+            "drop_rare": ["power sphere", 1],
+            "bribe": ["dream powder", 20]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "firestrike"},
+                {"ability": "lightningstrike"},
+                {"ability": "waterstrike"},
+                {"ability": "icestrike"},
+                {"ability": "distil power"},
+                {"ability": "strength +3%"},
+                {"ability": "magic +3%"}
+            ],
+            "armour_abilities": [
+                {"ability": "silence ward"},
+                {"ability": "sleep ward"}
+            ]
+        },
+        "stats": {
+            "hp": [1800, 2700],
+            "mp": 75,
+            "strength": 32,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 180,
+            "agility": 32,
+            "luck": 15,
+            "evasion": 11,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1.5,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 20,
+            "sleep": 20,
+            "dark": 20,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "barbatos": {
+        "location": ["sin"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [17500, 26250],
+        "gil": 1550,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["star curtain", 1],
+            "steal_rare": ["blessed gem", 1],
+            "drop_normal": ["power sphere", 1],
+            "drop_rare": ["return sphere", 1],
+            "bribe": ["teleport sphere", 20]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "2-4",
+            "attached_abilities": "1",
+            "wpn_abilities": [
+                {"ability": "piercing"}
+            ],
+            "armour_abilities": [
+                {"ability": "hp +20%"}
+            ]
+        },
+        "stats": {
+            "hp": [95000, 13560],
+            "mp": 480,
+            "strength": 42,
+            "defence": 90,
+            "magic": 38,
+            "mag_defence": 15,
+            "agility": 28,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": [90, 100],
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 50,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 5],
+            "delay": 100,
+            "eject": 0,
+            "zanmato": "Lv. 2"
+        }
+    },
+    "bashura": {
+        "location": ["mount gagazet", "zanarkand"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [1860, 2790],
+        "gil": 730,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["soul spring", 1],
+            "steal_rare": ["soul spring", 2],
+            "drop_normal": ["power sphere", 1],
+            "drop_rare": ["power sphere", 2],
+            "bribe": ["stamina spring", 80]
+        },
+        "equipment": {
+            "drop_rate": 0.5,
+            "slots_amount": "1-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
+                {"ability": "counter-attack"}
+            ],
+            "armour_abilities": [
+                {"ability": "sos haste"},
+                {"ability": "hp +10%"}
+            ]
+        },
+        "stats": {
+            "hp": [17000, 6972],
+            "mp": 5,
+            "strength": 34,
+            "defence": 45,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 16,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1.5,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 80,
+            "dark": 95,
+            "poison": [25, 0.25],
+            "petrify": 50,
+            "slow": 0,
+            "zombie": 25,
+            "power_break": 100,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 20,
+            "death": 100,
+            "provoke": 0,
+            "doom": [0, 3],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "basilisk": {
+        "location": ["djose highroad"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [140, 210],
+        "gil": 125,
+        "ronso_rage": "stone breath",
+        "items": {
+            "steal_normal": ["petrify grenade", 1],
+            "steal_rare": ["petrify grenade", 1],
+            "drop_normal": ["ability sphere", 1],
+            "drop_rare": ["ability sphere", 1],
+            "bribe": ["petrify grenade", 24]
+        },
+        "equipment": {
+            "drop_rate": 0.23,
+            "slots_amount": "1-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "magic +3%", "characters": "Yuna and Lulu"},
+                {"ability": "stonetouch"}
+            ],
+            "armour_abilities": [
+                {"ability": "stone ward"},
+                {"ability": "mp +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [2025, 924],
+            "mp": 20,
+            "strength": 14,
+            "defence": 1,
+            "magic": 35,
+            "mag_defence": 1,
+            "agility": 9,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 0.5,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 20,
+            "sleep": 20,
+            "dark": 20,
+            "poison": [0, 0.25],
+            "petrify": 100,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 2],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "bat eye": {
+        "location": ["via purifico"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [240, 480],
+        "gil": 320,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["hi-potion", 1],
+            "steal_rare": ["silence grenade", 2],
+            "drop_normal": ["speed sphere", 1],
+            "drop_rare": ["speed sphere", 1],
+            "bribe": ["silence grenade", 12]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-3",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "magic +3%", "characters":"Yuna and Lulu"},
+                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "firestrike"},
+                {"ability": "lightningstrike"},
+                {"ability": "waterstrike"},
+                {"ability": "icestrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "confuse ward"},
+                {"ability": "mp +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [380, 570],
+            "mp": 280,
+            "strength": 1,
+            "defence": 1,
+            "magic": 29,
+            "mag_defence": 120,
+            "agility": 16,
+            "luck": 15,
+            "evasion": 13,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1.5,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 20,
+            "sleep": 20,
+            "dark": 20,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "behemoth": {
+        "location": ["mount gagazet", "zanarkand"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [6540, 9810],
+        "gil": 1350,
+        "ronso_rage": "mighty guard",
+        "items": {
+            "steal_normal": ["ether", 1],
+            "steal_rare": ["mana tablet", 1],
+            "drop_normal": ["power sphere", 1],
+            "drop_rare": ["power sphere", 1],
+            "bribe": ["lv. 2 key sphere", 30]
+        },
+        "equipment": {
+            "drop_rate": 0.5,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "zombietouch"},
+                {"ability": "sos overdrive"}
+            ],
+            "armour_abilities": [
+                {"ability": "sos shell"},
+                {"ability": "sos protect"},
+                {"ability": "sos reflect"}
+            ]
+        },
+        "stats": {
+            "hp": [23000, 6972],
+            "mp": 480,
+            "strength": 43,
+            "defence": 1,
+            "magic": 37,
+            "mag_defence": 1,
+            "agility": 23,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 80,
+            "dark": 100,
+            "poison": [50, 0.25],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 25,
+            "power_break": 80,
+            "magic_break": 0,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 0,
+            "doom": [0, 5],
+            "delay": 100,
+            "eject": 0,
+            "zanmato": "Lv. 2"
+        }
+    },
+    "behemoth king": {
+        "location": ["sin"],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [16800, 25200],
+        "gil": 1850,
+        "ronso_rage": "mighty guard",
+        "items": {
+            "steal_normal": ["healing spring", 1],
+            "steal_rare": ["twin stars", 2],
+            "drop_normal": ["power sphere", 1],
+            "drop_rare": ["lv. 3 key sphere", 1],
+            "bribe": ["three stars", 14]
+        },
+        "equipment": {
+            "drop_rate": 0.5,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "zombietouch"}
+                {"ability": "sos overdrive"}
+            ],
+            "armour_abilities": [
+                {"ability": "sos shell"},
+                {"ability": "sos protect"},
+                {"ability": "sos reflect"}
+            ]
+        },
+        "stats": {
+            "hp": [67500, 13560],
+            "mp": 700,
+            "strength": 46,
+            "defence": 25,
+            "magic": 44,
+            "mag_defence": 25,
+            "agility": 27,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 80,
+            "magic_break": 80,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 0,
+            "doom": [0, 5],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 2"
+        }
+    },
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "": {
+        "location": [""],
+        "is_reoccuring": true,
+        "is_catchable": true,
+        "is_boss": false,
+        "has_allies": false,
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["", 1],
+            "steal_rare": ["", 1],
+            "drop_normal": ["", 1],
+            "drop_rare": ["", 1],
+            "bribe": ["", 0]
+        },
+        "equipment": {
+            "drop_rate": 0.03,
+            "slots_amount": "1-2",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": ""}
+            ],
+            "armour_abilities": [
+                {"ability": ""}
+            ]
+        },
+        "stats": {
+            "hp": [0, 0],
+            "mp": 0,
+            "strength": 0,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 0,
+            "luck": 0,
+            "evasion": 0,
+            "accuracy": 0
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 0,
+            "sleep": 0,
+            "dark": 0,
+            "poison": [0, 0.25],
+            "petrify": 0,
+            "slow": 0,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 0,
+            "provoke": 0,
+            "doom": [0, 1],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
+    },
     "condor": {
         "location": ["besaid"],
         "is_reoccuring": true,
