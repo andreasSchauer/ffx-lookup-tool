@@ -29,6 +29,8 @@ LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "ss liki", "kilika", "l
 
 DUPLICATES = {
     "anima": ["anima (belgemine)", "anima (seymour)"],
+    "bomb": ["bomb (mi'ihen highroad)", "bomb (home)"],
+    "braskas final aeon": ["braskas final aeon (first fight)", "braskas fianl aeon (second fight)"],
     "garuda": ["garuda (besaid)", "garuda (luca)", "garuda (mushroom rock road)"],
     "sinspawn gui": ["sinspawn gui (first fight)", "sinspawn gui (second fight)"]
 }
