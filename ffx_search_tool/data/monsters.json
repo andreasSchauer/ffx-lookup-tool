@@ -1659,7 +1659,7 @@
         "is_catchable": false,
         "is_boss": true,
         "has_allies": true,
-        "allies": ["braskas final aeon (first fight)", "braskas final aeon (second fight)", "yu pagoda"],
+        "allies": ["braskas final aeon (first phase)", "braskas final aeon (second phase)", "yu pagoda"],
         "ap": [0, 0],
         "gil": 0,
         "ronso_rage": null,
@@ -1724,7 +1724,7 @@
         "is_catchable": false,
         "is_boss": true,
         "has_allies": true,
-        "allies": ["braskas final aeon (first fight)", "braskas final aeon (second fight)", "yu pagoda"],
+        "allies": ["braskas final aeon (first phase)", "braskas final aeon (second phase)", "yu pagoda"],
         "ap": [0, 0],
         "gil": 0,
         "ronso_rage": null,
@@ -4046,7 +4046,10 @@
         "is_catchable": false,
         "is_boss": true,
         "has_allies": true,
-        "allies": ["braskas final aeon (first phase)", "braskas final aeon (second phase)", "yu yevon", "yu pagoda"],
+        "allies": [
+            ["braskas final aeon", "yu pagoda"],
+            ["yu yevon", "yu pagoda"]
+        ],
         "ap": [0, 0],
         "gil": 0,
         "ronso_rage": null,
@@ -4104,6 +4107,70 @@
             "eject": 100,
             "zanmato": "Lv. 5"
         }
+    },
+    "yu yevon": {
+        "location": ["sin"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["yu yevon", "yu pagoda"],
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": null,
+            "steal_rare": null,
+            "drop_normal": null,
+            "drop_rare": null,
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0,
+            "slots_amount": "0",
+            "attached_abilities": "0",
+            "wpn_abilities": null,
+            "armour_abilities": null
+        },
+        "stats": {
+            "hp": [99999, 99999],
+            "mp": 1,
+            "strength": 1,
+            "defence": 1,
+            "magic": 200,
+            "mag_defence": 1,
+            "agility": 44,
+            "luck": 1,
+            "evasion": 0,
+            "accuracy": 1
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [0, 0.1],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 0,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 0,
+            "doom": [0, 3],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 1"
+        }
     }
-
 }

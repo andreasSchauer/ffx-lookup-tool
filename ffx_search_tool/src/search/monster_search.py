@@ -1,8 +1,27 @@
 from rich.table import Table
 from rich import box
 from ffx_search_tool.data.monster_data import monster_data
-from ffx_search_tool.src.constants import DUPLICATES, CELL_NAMES, TABLE_WIDTH
+from ffx_search_tool.src.constants import DUPLICATES, PHASES, CELL_NAMES, TABLE_WIDTH
 from ffx_search_tool.src.utilities import get_table_data, initialize_table, console
+
+
+
+def monster_search(monster_name):
+    if monster_name in PHASES:
+        monster_name = PHASES[monster_name][0]
+    
+    if monster_name in DUPLICATES:
+        monster_name = select_duplicate(monster_name)
+
+    if monster_name not in monster_data:
+        raise Exception("Monster not found.")
+    
+    monster = monster_data[monster_name]
+    
+    if monster["has_allies"]:
+        get_ally_tables(monster)
+    else:
+        get_monster_table(monster_name)
 
 
 
@@ -19,7 +38,7 @@ def get_monster_table(monster_name):
     table.add_row(get_stat_table(monster))
     table.add_row(get_element_table(monster))
     table.add_row(get_status_resist_table(monster))
-    table.add_row(get_loot_table(monster))
+    # table.add_row(get_loot_table(monster))
     table.add_row(get_item_table(monster))
 
     if monster["items"]["bribe"] is not None:
@@ -28,6 +47,25 @@ def get_monster_table(monster_name):
     table.add_row(get_equipment_table(monster))
 
     console.print(table)
+
+
+
+def get_ally_tables(monster):
+    allies = monster["allies"]
+
+    if isinstance(allies[0], list):
+        for i, option in enumerate(allies):
+            print(f"{i + 1}: {option[0].title()}")
+
+        print("Monster appears in multiple boss fights.")
+        choice = int(input("Specify the fight by number: ")) - 1
+
+        if 0 <= choice < len(allies):
+            monster_search(allies[choice][0])
+            return
+
+    for ally in allies:
+        get_monster_table(ally)
 
 
 
@@ -124,13 +162,23 @@ def get_item_table(monster):
     item_keys = list(items.keys())
     item_cell_names = CELL_NAMES["items"]
 
-    item_table = initialize_table("Items", 2, tab_header=False)
+    item_table = initialize_table("Items and Loot", 2, tab_header=False)
+
+    ap = get_table_data("ap", monster)
+    gil = get_table_data("gil", monster)
+    rage = get_table_data("ronso_rage", monster)
+
+    item_table.add_row("AP (Overkill)", ap)
+    item_table.add_row("Gil", gil)
+    item_table.add_row("Ronso Rage", rage)
 
     for i in range(len(items)):
         action = item_cell_names[i]
         item = get_table_data(item_keys[i], monster)
         
         item_table.add_row(action, item)
+
+    
 
     return item_table
 

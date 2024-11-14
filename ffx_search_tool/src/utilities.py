@@ -44,6 +44,9 @@ def get_table_data(key, monster):
     if key == "ap":
         return get_ap_data(monster)
     
+    if key == "ronso_rage":
+        return get_rage_data(monster)
+    
     if key == "steals":
         return get_steals_data(monster)
     
@@ -81,6 +84,8 @@ def get_elem_resist(factor):
             return "Absorbed"
         case 1:
             return "-"
+        case "varies":
+            return "Varies"
 
 
 def get_status_resist_table_data(key, monster):
@@ -175,6 +180,18 @@ def get_ap_data(monster):
 
     return f"{ap} ({ap_overkill})"
 
+
+
+def get_rage_data(monster):
+    rage = monster["ronso_rage"]
+
+    if rage is None:
+        return "-"
+    
+    if isinstance(rage, list):
+        rage = ", ".join(rage)
+
+    return rage.title()
 
 
 def get_steals_data(monster):

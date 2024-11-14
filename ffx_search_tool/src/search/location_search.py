@@ -5,6 +5,24 @@ from ffx_search_tool.src.constants import LOCATIONS, TABLE_WIDTH
 from ffx_search_tool.src.utilities import get_table_data, initialize_table, console
 
 
+
+def location_search(location_name):
+    if location_name not in LOCATIONS:
+        location_name = select_location()
+
+    reoccuring_monsters, one_time_monsters, boss_monsters = get_local_monsters(location_name)
+
+    if reoccuring_monsters:
+        get_location_table(location_name, reoccuring_monsters,"Reoccuring")
+
+    if one_time_monsters:
+        get_location_table(location_name, one_time_monsters, "Not Reoccuring")
+
+    if boss_monsters:
+        get_location_table(location_name, boss_monsters, "Bosses")
+
+
+
 def select_location():
     for i, location in enumerate(LOCATIONS):
         print(f"{i + 1}: {location.title()}")
@@ -26,8 +44,10 @@ def get_local_monsters(location_name):
 def get_reoccuring_monsters(local_monsters):
     return list(filter(lambda mon: monster_data[mon]["is_reoccuring"], local_monsters))
 
+
 def get_one_time_monsters(local_monsters):
     return list(filter(lambda mon: not monster_data[mon]["is_reoccuring"] and not monster_data[mon]["is_boss"], local_monsters))
+
 
 def get_boss_monsters(local_monsters):
     boss_monsters = list(filter(lambda mon: monster_data[mon]["is_boss"], local_monsters))
@@ -36,7 +56,7 @@ def get_boss_monsters(local_monsters):
     for boss in boss_monsters:
         if monster_data[boss]["has_allies"]:
             for ally in monster_data[boss]["allies"]:
-                if ally not in boss_monsters_sorted:
+                if ally not in boss_monsters_sorted and not isinstance(ally, list):
                     boss_monsters_sorted.append(ally)
         else:
             boss_monsters_sorted.append(boss)
