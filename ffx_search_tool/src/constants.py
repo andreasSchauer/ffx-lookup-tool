@@ -37,6 +37,8 @@ DUPLICATES = {
     "gemini": ["gemini 1", "gemini 2"],
     "guado guardian": ["guado guardian (seymour)", "guado guardian (macalania)", "guado guardian (home)"],
     "ifrit": ["ifrit (belgemine, mi'ihen highroad)", "ifrit (belgemine, remiem temple)", "grothia"],
+    "mech scouter": ["mech scouter (normal)", "mech scouter (burning)"],
+    "mimic": ["mimic (red)", "mimic (blue)", "mimic (yellow)", "mimic (green)"],
     "sinspawn gui": ["sinspawn gui (first fight)", "sinspawn gui (second fight)"]
 }
 
