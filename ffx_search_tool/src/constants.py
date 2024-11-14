@@ -31,10 +31,18 @@ DUPLICATES = {
     "anima": ["anima (belgemine)", "anima (seymour)"],
     "bomb": ["bomb (mi'ihen highroad)", "bomb (home)"],
     "chimera": ["chimera (macalania)", "chimera (home)"],
+    "dual horn": ["dual horn (mi'ihen highroad)", "dual horn (home)"],
+    "evil eye": ["evil eye (macalania)", "evil eye (home)"],
     "garuda": ["garuda (besaid)", "garuda (luca)", "garuda (mushroom rock road)"],
+    "gemini": ["gemini 1", "gemini 2"],
+    "guado guardian": ["guado guardian (seymour)", "guado guardian (macalania)", "guado guardian (home)"],
+    "ifrit": ["ifrit (belgemine, mi'ihen highroad)", "ifrit (belgemine, remiem temple)", "grothia"],
     "sinspawn gui": ["sinspawn gui (first fight)", "sinspawn gui (second fight)"]
 }
 
 PHASES = {
-    "braskas final aeon": ["braskas final aeon (first phase)", "braskas final aeon (second phase)"]
+    "braskas final aeon": ["braskas final aeon (first phase)", "braskas final aeon (second phase)"],
+    "isaaru": ["grothia", "pterya", "spathi"],
+    "seymour": ["seymour (first phase)", "seymour (second phase)"],
+    "sinspawn geneaux": ["sinspawn geneaux (first phase)", "sinspawn geneaux (second phase)"]
 }

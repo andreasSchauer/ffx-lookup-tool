@@ -13,7 +13,7 @@ def location_search(location_name):
     reoccuring_monsters, one_time_monsters, boss_monsters = get_local_monsters(location_name)
 
     if reoccuring_monsters:
-        get_location_table(location_name, reoccuring_monsters,"Reoccuring")
+        get_location_table(location_name, reoccuring_monsters, "Reoccuring")
 
     if one_time_monsters:
         get_location_table(location_name, one_time_monsters, "Not Reoccuring")
@@ -81,6 +81,8 @@ def get_location_table(location_name, monster_list, type):
 def get_short_mon_table(monster, monster_name): 
     if monster["is_catchable"]:
         monster_name += " - Catchable"
+    elif not monster["is_boss"]:
+        monster_name += " - Not Catchable"
 
     monster_table = initialize_table(monster_name.title(), 2, tab_header=False)
 

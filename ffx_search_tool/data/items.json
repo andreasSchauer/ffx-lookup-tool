@@ -64,7 +64,7 @@
     "mana tonic": "Doubles maximum MP of party.",
     "map": "Displays the world map.",
     "master sphere": "Activates any node on the Sphere Grid, regardless of location and activation.",
-    "mega phoenix": "Revives party and fully restores HP of revived characters (maximum of 9.999 HP).",
+    "mega-phoenix": "Revives party and fully restores HP of revived characters (maximum of 9.999 HP).",
     "mega-potion": "Restores 2.000 HP of party.",
     "megalixir": "Fully restores HP and MP of party (maximum of 9.999 HP and 999 MP).",
     "MP sphere": "Converts an empty node on the Sphere Grid into 'MP +40'.",

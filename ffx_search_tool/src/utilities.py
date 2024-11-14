@@ -122,6 +122,8 @@ def get_stat_resist(resistance):
             return "Immune"
         case 0:
             return "-"
+        case "auto":
+            return "Auto"
         case _:
             return str(resistance)
 
