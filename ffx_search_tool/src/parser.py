@@ -3,7 +3,5 @@ from ffx_search_tool.src.search.location_search import location_search
 
 
 
-
-
-monster_search("biran ronso")
-# location_search("besaijd")
+monster_search("yenke ronso")
+# location_search("mount gagazet")

@@ -3,6 +3,7 @@ from rich import box
 from ffx_search_tool.data.monster_data import monster_data
 from ffx_search_tool.src.constants import DUPLICATES, PHASES, CELL_NAMES, TABLE_WIDTH
 from ffx_search_tool.src.utilities import get_table_data, initialize_table, console
+from ffx_search_tool.src.ronso_calc import *
 
 
 
@@ -19,53 +20,9 @@ def monster_search(monster_name):
     monster = monster_data[monster_name]
     
     if monster["has_allies"]:
-        get_ally_tables(monster)
+        get_ally_tables(monster_name)
     else:
         get_monster_table(monster_name)
-
-
-
-def get_monster_table(monster_name):
-    monster = monster_data[monster_name]
-    title = monster_name.title()
-
-    if monster["is_catchable"]:
-        title += " - Catchable"
-
-    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    
-    table.add_column(title)
-    table.add_row(get_stat_table(monster))
-    table.add_row(get_element_table(monster))
-    table.add_row(get_status_resist_table(monster))
-    # table.add_row(get_loot_table(monster))
-    table.add_row(get_item_table(monster))
-
-    if monster["items"]["bribe"] is not None:
-        table.add_row(get_bribe_table(monster))
-
-    table.add_row(get_equipment_table(monster))
-
-    console.print(table)
-
-
-
-def get_ally_tables(monster):
-    allies = monster["allies"]
-
-    if isinstance(allies[0], list):
-        for i, option in enumerate(allies):
-            print(f"{i + 1}: {option[0].title()}")
-
-        print("Monster appears in multiple boss fights.")
-        choice = int(input("Specify the fight by number: ")) - 1
-
-        if 0 <= choice < len(allies):
-            monster_search(allies[choice][0])
-            return
-
-    for ally in allies:
-        get_monster_table(ally)
 
 
 
@@ -85,12 +42,75 @@ def select_duplicate(monster_name):
 
 
 
-def get_stat_table(monster):
-    stats = monster["stats"]
+
+def get_monster_table(monster_name, kimahri_hp=0, kimahri_str=0, kimahri_mag=0, kimahri_agl=0):
+    monster = monster_data[monster_name]
+    title = monster_name.title()
+
+    if monster["is_catchable"]:
+        title += " - Catchable"
+
+    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
+    table.add_column(title)
+
+    table.add_row(get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl))
+    table.add_row(get_element_table(monster))
+    table.add_row(get_status_resist_table(monster))
+    table.add_row(get_item_table(monster))
+
+    if monster["items"]["bribe"] is not None:
+        table.add_row(get_bribe_table(monster))
+
+    table.add_row(get_equipment_table(monster))
+
+    console.print(table)
+
+
+
+def get_ally_tables(monster_name):
+    monster = monster_data[monster_name]
+    allies = monster["allies"]
+    monster_in_multiple_fights = isinstance(allies[0], list)
+
+    if monster_in_multiple_fights:
+        select_boss_fight(allies)
+        return
+        
+    if monster_name == "biran ronso" or monster_name == "yenke ronso":
+        kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl = get_kimahri_stats()
+
+    for ally in allies:
+        if monster_name == "biran ronso" or monster_name == "yenke ronso":
+            get_monster_table(ally, kimahri_hp=kimahri_hp, kimahri_str=kimahri_str, kimahri_mag=kimahri_mag, kimahri_agl=kimahri_agl)
+        else:
+            get_monster_table(ally)
+
+
+def select_boss_fight(allies):
+    for i, option in enumerate(allies):
+        print(f"{i + 1}: {option[0].title()}")
+
+    print("Monster appears in multiple boss fights.")
+    choice = int(input("Specify the fight by number: ")) - 1
+
+    if 0 <= choice < len(allies):
+        monster_search(allies[choice][0])
+
+
+
+def get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl):
+    monster = monster_data[monster_name]
+    stats = monster.copy()["stats"]
     stat_keys = list(stats.keys())
     stat_cell_names = CELL_NAMES["stats"]
 
     stat_table = initialize_table("Stats", 4, tab_header=False)
+
+    if monster_name == "biran ronso" or monster_name == "yenke ronso":
+        stats["hp"] = get_ronso_hp(monster_name, kimahri_str, kimahri_mag)
+        stats["strength"] = get_ronso_strength(monster_name, kimahri_hp)
+        stats["magic"] = get_ronso_magic(monster_name, kimahri_hp)
+        stats["agility"] = get_ronso_agility(monster_name, kimahri_agl)
 
     for i in range(0, len(stats), 2):
         left_stat = stat_cell_names[i]

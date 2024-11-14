@@ -4,8 +4,6 @@ from rich import box
 from ffx_search_tool.src.constants import TABLE_WIDTH
 
 
-
-
 console = Console()
 
 
