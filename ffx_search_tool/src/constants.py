@@ -42,7 +42,9 @@ DUPLICATES = {
     "piranha": ["piranha x1", "piranha x2", "piranha x3"],
     "sahagin": ["sahagin (baaj temple)", "sahagin (via purifico, underwater)", "sahagin (via purifico, land)"],
     "sinscale": ["sinscale (zanarkand)", "sinscale (s.s. liki, boat)", "sinscale (s.s. liki, underwater)"],
-    "sinspawn gui": ["sinspawn gui (first fight)", "sinspawn gui (second fight)"]
+    "sinspawn gui": ["sinspawn gui (first fight)", "sinspawn gui (second fight)"],
+    "splasher": ["splasher x1", "splasher x2", "splasher x3"],
+    "vouivre": ["vouivre (luca)", "vouivre (mi'ihen highroad)"]
 }
 
 PHASES = {
