@@ -1,6 +1,6 @@
 from rich.table import Table
 from rich import box
-from ffx_search_tool.data.monster_data import monster_data
+from ffx_search_tool.src.data import monster_data
 from ffx_search_tool.src.constants import LOCATIONS, TABLE_WIDTH
 from ffx_search_tool.src.utilities import get_table_data, initialize_table, console
 
@@ -95,4 +95,3 @@ def get_short_mon_table(monster, monster_name):
     monster_table.add_row("Bribe (Max Amount)", get_table_data("bribe_max", monster))
 
     return monster_table
-

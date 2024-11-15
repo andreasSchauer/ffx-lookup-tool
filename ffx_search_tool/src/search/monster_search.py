@@ -1,6 +1,6 @@
 from rich.table import Table
 from rich import box
-from ffx_search_tool.data.monster_data import monster_data
+from ffx_search_tool.src.data import monster_data
 from ffx_search_tool.src.constants import DUPLICATES, PHASES, CELL_NAMES, TABLE_WIDTH
 from ffx_search_tool.src.utilities import get_table_data, initialize_table, console
 from ffx_search_tool.src.ronso_calc import *
@@ -161,19 +161,6 @@ def get_status_resist_table(monster):
         status_table.add_row(left_status, left_resist, right_status, right_resist)
 
     return status_table
-
-
-
-def get_loot_table(monster):
-    ap = get_table_data("ap", monster)
-    gil = get_table_data("gil", monster)
-
-    loot_table = initialize_table("Loot", 2, tab_header=False)
-
-    loot_table.add_row("AP (Overkill)", ap)
-    loot_table.add_row("Gil", gil)
-
-    return loot_table
 
 
 

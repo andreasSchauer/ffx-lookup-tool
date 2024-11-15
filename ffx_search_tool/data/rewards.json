@@ -2,67 +2,67 @@
     "remiem temple": [
         {
             "condition": "Defeat Valefor at Remiem Temple (first time).",
-            "reward": ["lightning gem", 4],
+            "reward": ["lightning gem", 4]
         },
         {
             "condition": "Defeat Valefor at Remiem Temple (repeated attempt).",
-            "reward": ["power sphere", 4],
+            "reward": ["power sphere", 4]
         },
         {
             "condition": "Defeat Ifrit at Remiem Temple (first time).",
-            "reward": ["x-potion", 30],
+            "reward": ["x-potion", 30]
         },
         {
             "condition": "Defeat Ifrit at Remiem Temple (repeated attempt).",
-            "reward": ["mana sphere", 6],
+            "reward": ["mana sphere", 6]
         },
         {
             "condition": "Defeat Ixion at Remiem Temple (first time).",
-            "reward": ["chocobo feather", 10],
+            "reward": ["chocobo feather", 10]
         },
         {
             "condition": "Defeat Ixion at Remiem Temple (repeated attempt).",
-            "reward": ["power sphere", 8],
+            "reward": ["power sphere", 8]
         },
         {
             "condition": "Defeat Shiva at Remiem Temple (first time).",
-            "reward": ["mega-potion", 60],
+            "reward": ["mega-potion", 60]
         },
         {
             "condition": "Defeat Shiva at Remiem Temple (repeated attempt).",
-            "reward": ["star curtain", 6],
+            "reward": ["star curtain", 6]
         },
         {
             "condition": "Defeat Bahamut at Remiem Temple (first time).",
-            "reward": ["flower sceptre", 1],
+            "reward": ["flower sceptre", 1]
         },
         {
             "condition": "Defeat Bahamut at Remiem Temple (repeated attempt).",
-            "reward": ["mana sphere", 8],
+            "reward": ["mana sphere", 8]
         },
         {
             "condition": "Defeat Yojimbo at Remiem Temple (first time).",
-            "reward": ["shadow gem", 8],
+            "reward": ["shadow gem", 8]
         },
         {
             "condition": "Defeat Yojimbo at Remiem Temple (repeated attempt).",
-            "reward": ["power sphere", 10],
+            "reward": ["power sphere", 10]
         },
         {
             "condition": "Defeat Anima at Remiem Temple (first time).",
-            "reward": ["stamina spring", 60],
+            "reward": ["stamina spring", 60]
         },
         {
             "condition": "Defeat Anima at Remiem Temple (repeated attempt).",
-            "reward": ["mana sphere", 10],
+            "reward": ["mana sphere", 10]
         },
         {
             "condition": "Defeat the Magus Sisters at Remiem Temple (first time).",
-            "reward": ["shining gem", 40],
+            "reward": ["shining gem", 40]
         },
         {
             "condition": "Defeat the Magus Sisters at Remiem Temple (repeated attempt).",
-            "reward": ["power sphere", 12],
+            "reward": ["power sphere", 12]
         }
     ],
     "chocobo races": [
@@ -80,7 +80,8 @@
         },
         {
             "condition": "Win the Chocobo Race at Remiem Temple with 3 chests opened.",
-            "reward": ["wings to discovery", 30]},
+            "reward": ["wings to discovery", 30]
+        },
         {
             "condition": "Win the Chocobo Race at Remiem Temple with 4 chests opened.",
             "reward": ["pendulum", 30]
@@ -122,7 +123,7 @@
         {
             "condition": "Improve your record at Catcher Chocobo.",
             "reward": ["turbo ether", 1]
-        },
+        }
     ],
     "lightning dodging": [
         {
@@ -170,12 +171,12 @@
         {
             "condition": "Complete 'Valley of the Cactuars' with 8 or more Guardian Spheres.",
             "reward": ["friend sphere", 1]
-        },
+        }
     ],
     "butterfly hunt": [
         {
             "condition": "Win the Butterfly Hunt in Macalania Woods - Central before defeating Spherimorph.",
-            "reward": ["MP sphere", 1],
+            "reward": ["MP sphere", 1]
         },
         {
             "condition": "Win the Butterfly Hunt in Macalania Woods - North before defeating Spherimorph.",
@@ -183,7 +184,7 @@
         },
         {
             "condition": "Win the Butterfly Hunt in Macalania Woods - Central after defeating Spherimorph.",
-            "reward": ["megalixir", 2],
+            "reward": ["megalixir", 2]
         },
         {
             "condition": "Win the Butterfly Hunt in Macalania Woods - North after defeating Spherimorph.",
@@ -192,7 +193,7 @@
         {
             "condition": "Win one of the two Butterfly Hunts in Macalania Woods after acquiring the Airship.",
             "reward": ["teleport sphere", 1]
-        }
+        },
         {
             "condition": "Win both of the two Butterfly Hunts in Macalania Woods after acquiring the Airship.",
             "reward": ["saturn sigil", 1]
