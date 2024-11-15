@@ -90,8 +90,8 @@ def get_status_resist_table_data(key, monster):
     statusses = monster["stat_resists"]
 
     if key == "doom":
-        doom_countdown = statusses["doom"][1]
         doom_res = get_stat_resist(statusses["doom"][0])
+        doom_countdown = statusses["doom"][1]
 
         if doom_res == "Immune":
             return doom_res
@@ -100,24 +100,28 @@ def get_status_resist_table_data(key, monster):
         
     if key == "poison":
         poison_res = get_stat_resist(statusses["poison"][0])
+        poison_factor = statusses["poison"][1]
 
         if poison_res == "Immune":
             return poison_res
-        
-        else:
-            poison_factor = statusses["poison"][1]
-            monster_hp = monster["stats"]["hp"][0]
-            poison_hp = round(monster_hp * poison_factor)  
-            return f"{poison_res} ({poison_hp})"
+
+        monster_hp = monster["stats"]["hp"][0]
+        poison_hp = round(monster_hp * poison_factor) 
+
+        return f"{poison_res} ({poison_hp})"
         
     if key == "zombie" and isinstance(statusses["zombie"], list):
-        return f"{get_stat_resist(statusses["zombie"][0])} ({get_stat_resist(statusses["zombie"][1])})"
+        zombie_res = get_stat_resist(statusses["zombie"][0])
+        life_res = get_stat_resist(statusses["zombie"][1])
+        return f"{zombie_res} ({life_res})"
         
     return get_stat_resist(statusses[key])
 
 
 def get_stat_resist(resistance):
     match (resistance):
+        case [100]:
+            return str(resistance[0])
         case 100:
             return "Immune"
         case 0:

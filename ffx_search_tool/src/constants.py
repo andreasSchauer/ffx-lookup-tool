@@ -25,7 +25,7 @@ CELL_NAMES = {
                     ]
 }
 
-LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "ss liki", "kilika", "luca", "mi'ihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "home", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "zanarkand dome", "sin", "omega ruins", "remiem temple", "monster arena"]
+LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "s.s. liki", "kilika", "luca", "mi'ihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "home", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "zanarkand dome", "sin", "omega ruins", "remiem temple", "monster arena"]
 
 DUPLICATES = {
     "anima": ["anima (belgemine)", "anima (seymour)"],
@@ -39,6 +39,9 @@ DUPLICATES = {
     "ifrit": ["ifrit (belgemine, mi'ihen highroad)", "ifrit (belgemine, remiem temple)", "grothia"],
     "mech scouter": ["mech scouter (normal)", "mech scouter (burning)"],
     "mimic": ["mimic (red)", "mimic (blue)", "mimic (yellow)", "mimic (green)"],
+    "piranha": ["piranha x1", "piranha x2", "piranha x3"],
+    "sahagin": ["sahagin (baaj temple)", "sahagin (via purifico, underwater)", "sahagin (via purifico, land)"],
+    "sinscale": ["sinscale (zanarkand)", "sinscale (s.s. liki, boat)", "sinscale (s.s. liki, underwater)"],
     "sinspawn gui": ["sinspawn gui (first fight)", "sinspawn gui (second fight)"]
 }
 

@@ -3,5 +3,5 @@ from ffx_search_tool.src.search.location_search import location_search
 
 
 
-# monster_search("mimic")
-location_search("mount gagazetj")
+monster_search("sinscale")
+#location_search("mount gagazetj")
