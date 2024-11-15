@@ -45,7 +45,8 @@ def select_duplicate(monster_name):
 
 def get_monster_table(monster_name, kimahri_hp=0, kimahri_str=0, kimahri_mag=0, kimahri_agl=0):
     monster = monster_data[monster_name]
-    title = monster_name.title()
+    locations = ", ".join(monster["location"]).title()
+    title = f"{monster_name.title()} - {locations}"
 
     if monster["is_catchable"]:
         title += " - Catchable"

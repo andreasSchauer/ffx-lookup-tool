@@ -213,7 +213,11 @@ def get_steals_data(monster):
 def get_drops_data(monster):
     drop_normal = get_table_data("drop_normal", monster)
     drop_rare = get_table_data("drop_rare", monster)
-    drop = f"{drop_normal} ({drop_rare})"
+
+    if monster["items"]["drop_normal"] is not None and isinstance(monster["items"]["drop_normal"][0], list):
+        drop = f"{drop_normal}\n({drop_rare})"
+    else:
+        drop = f"{drop_normal} ({drop_rare})"
 
     if drop == "- (-)":
         return "-"

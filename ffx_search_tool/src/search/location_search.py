@@ -86,12 +86,15 @@ def get_short_mon_table(monster, monster_name):
 
     monster_table = initialize_table(monster_name.title(), 2, tab_header=False)
 
+    # if "remiem temple" in monster["location"] blabla hp + first reward + recurring reward
+    # else:
+
     monster_table.add_row("HP (Overkill)", get_table_data("hp", monster))
     monster_table.add_row("AP (Overkill)", get_table_data("ap", monster))
-    monster_table.add_row("Ronso Rage", get_table_data("ronso_rage", monster))
     monster_table.add_row("Gil", get_table_data("gil", monster))
     monster_table.add_row("Steal (Rare Steal)", get_table_data("steals", monster))
     monster_table.add_row("Drop (Rare Drop)", get_table_data("drops", monster))
     monster_table.add_row("Bribe (Max Amount)", get_table_data("bribe_max", monster))
+    monster_table.add_row("Ronso Rage", get_table_data("ronso_rage", monster))
 
     return monster_table

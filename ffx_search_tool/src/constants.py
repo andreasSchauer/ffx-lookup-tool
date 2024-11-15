@@ -28,7 +28,8 @@ CELL_NAMES = {
 LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "s.s. liki", "kilika", "luca", "mi'ihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "home", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "zanarkand dome", "sin", "omega ruins", "remiem temple", "monster arena"]
 
 DUPLICATES = {
-    "anima": ["anima (belgemine)", "anima (seymour)"],
+    "anima": ["anima (remiem temple)", "anima (seymour)"],
+    "bahamut": ["bahamut (remiem temple)", "spathi"],
     "bomb": ["bomb (mi'ihen highroad)", "bomb (home)"],
     "chimera": ["chimera (macalania)", "chimera (home)"],
     "dual horn": ["dual horn (mi'ihen highroad)", "dual horn (home)"],
@@ -36,15 +37,20 @@ DUPLICATES = {
     "garuda": ["garuda (besaid)", "garuda (luca)", "garuda (mushroom rock road)"],
     "gemini": ["gemini 1", "gemini 2"],
     "guado guardian": ["guado guardian (seymour)", "guado guardian (macalania)", "guado guardian (home)"],
-    "ifrit": ["ifrit (belgemine, mi'ihen highroad)", "ifrit (belgemine, remiem temple)", "grothia"],
+    "ifrit": ["ifrit (mi'ihen highroad)", "ifrit (remiem temple)", "grothia"],
+    "ixion": ["ixion (moonflow)", "ixion (remiem temple)"],
     "mech scouter": ["mech scouter (normal)", "mech scouter (burning)"],
     "mimic": ["mimic (red)", "mimic (blue)", "mimic (yellow)", "mimic (green)"],
     "piranha": ["piranha x1", "piranha x2", "piranha x3"],
     "sahagin": ["sahagin (baaj temple)", "sahagin (via purifico, underwater)", "sahagin (via purifico, land)"],
+    "shiva": ["shiva (calm lands)", "shiva (remiem temple)"],
     "sinscale": ["sinscale (zanarkand)", "sinscale (s.s. liki, boat)", "sinscale (s.s. liki, underwater)"],
     "sinspawn gui": ["sinspawn gui (first fight)", "sinspawn gui (second fight)"],
     "splasher": ["splasher x1", "splasher x2", "splasher x3"],
-    "vouivre": ["vouivre (luca)", "vouivre (mi'ihen highroad)"]
+    "valefor": ["valefor (remiem temple)", "pterya"],
+    "vouivre": ["vouivre (luca)", "vouivre (mi'ihen highroad)"],
+    "yojimbo": ["yojimbo (cavern of the stolen fayth)", "yojimbo (remiem temple)"],
+    "zu": ["zu (first encounter)", "zu (regular encounter)"]
 }
 
 PHASES = {
