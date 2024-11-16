@@ -1,176 +1,174 @@
 {
-    "area conquest": {
-        "stratoavis": {
-            "condition": "Capture every monster within Besaid once.",
-            "reward": ["stamina tonic", 99],
-            "monsters": ["condor", "dingo", "water flan"]
-        },
-        "malboro menace": {
-            "condition": "Capture every monster within Kilika once.",
-            "reward": ["poison fang", 99],
-            "monsters": ["dinonix", "killer bee", "ragora", "yellow element"]
-        },
-        "kottos": {
-            "condition": "Capture every monster within the Mi'ihen Highroad once.",
-            "reward": ["soul spring", 99],
-            "monsters": ["bomb (mi'ihen highroad)", "dual horn (mi'ihen highroad)", "floating eye", "ipiria", "mi'ihen fang", "raldo", "vouivre (mi'ihen highroad)", "white element"]
-        },
-        "coeurlregina": {
-            "condition": "Capture every monster within the Mushroom Rock Road once.",
-            "reward": ["candle of life", 99],
-            "monsters": ["funguar", "gandarewa", "garuda (mushroom rock road)", "lamashtu", "raptor", "red element", "thunder flan"]
-        },
-        "jormungand": {
-            "condition": "Capture every monster within the Djose Highroad once.",
-            "reward": ["petrify grenade", 99],
-            "monsters": ["basilisk", "bite bug", "bunyip", "garm", "ochu", "simurgh", "snow flan"]
-        },
-        "cactuar king": {
-            "condition": "Capture every monster within the Thunder Plains once.",
-            "reward": ["chocobo wing", 99],
-            "monsters": ["aerouge", "buer", "gold element", "iron giant", "kusariqqu", "larva", "melusine", "qactuar"]
-        },
-        "espada": {
-            "condition": "Capture every monster within Macalania once.",
-            "reward": ["shining gem", 60],
-            "monsters": ["blue element", "chimera (macalania)", "evil eye (macalania)", "ice flan", "iguion", "mafdet", "murussu", "snow wolf", "wasp", "xiphos"]
-        },
-        "abyss worm": {
-            "condition": "Capture every monster within Bikanel once.",
-            "reward": ["shadow gem", 99],
-            "monsters": ["alcyone", "cactuar", "mushussu", "sand wolf", "sand worm", "zu (bikanel)"]
-        },
-        "chimerageist": {
-            "condition": "Capture every monster within the Calm Lands once.",
-            "reward": ["farplane wind", 60],
-            "monsters": ["anacondaur", "chimera brain", "coeurl", "flame flan", "malboro", "nebiros", "ogre", "shred", "skoll"]
-        },
-        "don tonberry": {
-            "condition": "Capture every monster within the Cavern of the Stolen Fayth once.",
-            "reward": ["silver hourglass", 40],
-            "monsters": ["dark element", "epaaj", "ghost", "imp", "nidhogg", "thorn", "tonberry", "valaha", "yowie"]
-        },
-        "catoblepas": {
-            "condition": "Capture every monster within Mount Gagazet once.",
-            "reward": ["blossom crown", 1],
-            "monsters": ["achelous", "ahriman", "bandersnatch", "bashura", "behemoth", "dark flan", "grat", "grenade", "grendel", "maelspike", "mandragora", "splasher"]
-        },
-        "abaddon": {
-            "condition": "Capture every monster occuring Inside Sin once.",
-            "reward": ["lunar curtain", 99],
-            "monsters": ["adamantoise", "barbatos", "behemoth king", "demonolith", "exoray", "gemini 1", "gemini 2", "great malboro", "wraith"]
-        },
-        "vorban": {
-            "condition": "Capture every monster within the Omega Ruins once.",
-            "reward": ["designer wallet", 60],
-            "monsters": ["black element", "floating death", "halma", "machea", "master coeurl", "master tonberry", "puroboros", "spirit", "varuna", "zaurus"]
-        }
+    "stratoavis": {
+        "condition": "Capture every monster within Besaid once.",
+        "reward": ["stamina tonic", 99],
+        "monsters": ["condor", "dingo", "water flan"]
     },
-    "species conquest": {
-        "fenrir": {
-            "condition": "Capture 3 of every wolf.",
-            "reward": ["chocobo feather", 99],
-            "monsters": ["dingo", "mi'ihen fang", "garm", "snow wolf", "sand wolf", "skoll", "bandersnatch"]
-        },
-        "ornitholestes": {
-            "condition": "Capture 3 of every lizard.",
-            "reward": ["stamina spring", 99],
-            "monsters": ["dinonix", "ipiria", "raptor", "melusine", "yowie", "zaurus"]
-        },
-        "pteryx": {
-            "condition": "Capture 4 of every bird.",
-            "reward": ["mega phoenix", 99],
-            "monsters": ["condor", "simurgh", "alcyone"]
-        },
-        "hornet": {
-            "condition": "Capture 4 of every wasp.",
-            "reward": ["mana tonic", 60],
-            "monsters": ["killer bee", "bite bug", "wasp", "nebiros"]
-        },
-        "vidatu": {
-            "condition": "Capture 4 of every imp.",
-            "reward": ["mana spring", 99],
-            "monsters": ["gandarewa", "aerouge", "imp"]
-        },
-        "one eye": {
-            "condition": "Capture 4 of every floating eye.",
-            "reward": ["mega phoenix", 99],
-            "monsters": ["floating eye", "buer", "evil eye (macalania)", "ahriman", "floating death"]
-        },
-        "jumbo flan": {
-            "condition": "Capture 3 of every flan.",
-            "reward": ["twin stars", 60],
-            "monsters": ["water flan", "thunder flan", "snow flan", "ice flan", "flame flan", "dark flan"]
-        },
-        "nega elemental": {
-            "condition": "Capture 3 of every element.",
-            "reward": ["star curtain", 60],
-            "monsters": ["yellow element", "white element", "red element", "gold element", "blue element", "dark element", "black element"]
-        },
-        "tanket": {
-            "condition": "Capture 3 of every tank.",
-            "reward": ["golden hourglass", 99],
-            "monsters": ["raldo", "bunyip", "murussu", "mafdet", "shred", "halma"]
-        },
-        "fafnir": {
-            "condition": "Capture 4 of every dragon.",
-            "reward": ["purifying salt", 99],
-            "monsters": ["vouivre (mi'ihen highroad)", "lamashtu", "kusariqqu", "mushussu", "nidhogg"]
-        },
-        "sleep sprout": {
-            "condition": "Capture 5 of every fungus.",
-            "reward": ["healing spring", 99],
-            "monsters": ["funguar", "thorn", "exoray"]
-        },
-        "bomb king": {
-            "condition": "Capture 5 of every bomb.",
-            "reward": ["turbo ether", 60],
-            "monsters": ["bomb (mi'ihen highroad)", "grenade", "puroboros"]
-        },
-        "juggernaut": {
-            "condition": "Capture 5 of every dual horn.",
-            "reward": ["light curtain", 99],
-            "monsters": ["dual horn (mi'ihen highroad)", "valaha", "grendel"]
-        },
-        "ironclad": {
-            "condition": "Capture 10 of every iron giant.",
-            "reward": ["mana tablet", 60],
-            "monsters": ["iron giant", "gemini 1", "gemini 2"]
-        }
+    "malboro menace": {
+        "condition": "Capture every monster within Kilika once.",
+        "reward": ["poison fang", 99],
+        "monsters": ["dinonix", "killer bee", "ragora", "yellow element"]
     },
-    "original": {
-        "earth eater": {
-            "condition": "Bread 2 fiends in Area Conquest.",
-            "reward": ["three stars", 60]
-        },
-        "greater sphere": {
-            "condition": "Bread 2 fiends in Species Conquest.",
-            "reward": ["supreme gem", 60]
-        },
-        "catastrophe": {
-            "condition": "Bread 6 fiends in Area Conquest.",
-            "reward": ["door to tomorrow", 99]
-        },
-        "th'uban": {
-            "condition": "Bread 6 fiends in Species Conquest.",
-            "reward": ["gamblers spirit", 99]
-        },
-        "neslug": {
-            "condition": "Capture every monster once.",
-            "reward": ["winning formula", 99]
-        },
-        "ultima buster": {
-            "condition": "Capture every monster five times.",
-            "reward": ["dark matter", 99]
-        },
-        "shinryu": {
-            "condition": "Capture 2 of every underwater fiend within Mount Gagazet.",
-            "reward": ["megalixir", 30],
-            "monsters": ["achelous", "maelspike", "splasher"]
-        },
-        "nemesis": {
-            "condition": "Capture every monster ten times and defeat all other Area Conquest, Species Conquest and Original monsters.",
-            "reward": ["master sphere", 10]
-        }
+    "kottos": {
+        "condition": "Capture every monster within the Mi'ihen Highroad once.",
+        "reward": ["soul spring", 99],
+        "monsters": ["bomb (mi'ihen highroad)", "dual horn (mi'ihen highroad)", "floating eye", "ipiria", "mi'ihen fang", "raldo", "vouivre (mi'ihen highroad)", "white element"]
+    },
+    "coeurlregina": {
+        "condition": "Capture every monster within the Mushroom Rock Road once.",
+        "reward": ["candle of life", 99],
+        "monsters": ["funguar", "gandarewa", "garuda (mushroom rock road)", "lamashtu", "raptor", "red element", "thunder flan"]
+    },
+    "jormungand": {
+        "condition": "Capture every monster within the Djose Highroad once.",
+        "reward": ["petrify grenade", 99],
+        "monsters": ["basilisk", "bite bug", "bunyip", "garm", "ochu", "simurgh", "snow flan"]
+    },
+    "cactuar king": {
+        "condition": "Capture every monster within the Thunder Plains once.",
+        "reward": ["chocobo wing", 99],
+        "monsters": ["aerouge", "buer", "gold element", "iron giant", "kusariqqu", "larva", "melusine", "qactuar"]
+    },
+    "espada": {
+        "condition": "Capture every monster within Macalania once.",
+        "reward": ["shining gem", 60],
+        "monsters": ["blue element", "chimera (macalania)", "evil eye (macalania)", "ice flan", "iguion", "mafdet", "murussu", "snow wolf", "wasp", "xiphos"]
+    },
+    "abyss worm": {
+        "condition": "Capture every monster within Bikanel once.",
+        "reward": ["shadow gem", 99],
+        "monsters": ["alcyone", "cactuar", "mushussu", "sand wolf", "sand worm", "zu (bikanel)"]
+    },
+    "chimerageist": {
+        "condition": "Capture every monster within the Calm Lands once.",
+        "reward": ["farplane wind", 60],
+        "monsters": ["anacondaur", "chimera brain", "coeurl", "flame flan", "malboro", "nebiros", "ogre", "shred", "skoll"]
+    },
+    "don tonberry": {
+        "condition": "Capture every monster within the Cavern of the Stolen Fayth once.",
+        "reward": ["silver hourglass", 40],
+        "monsters": ["dark element", "epaaj", "ghost", "imp", "nidhogg", "thorn", "tonberry", "valaha", "yowie"]
+    },
+    "catoblepas": {
+        "condition": "Capture every monster within Mount Gagazet once.",
+        "reward": ["blossom crown", 1],
+        "monsters": ["achelous", "ahriman", "bandersnatch", "bashura", "behemoth", "dark flan", "grat", "grenade", "grendel", "maelspike", "mandragora", "splasher"]
+    },
+    "abaddon": {
+        "condition": "Capture every monster occuring Inside Sin once.",
+        "reward": ["lunar curtain", 99],
+        "monsters": ["adamantoise", "barbatos", "behemoth king", "demonolith", "exoray", "gemini 1", "gemini 2", "great malboro", "wraith"]
+    },
+    "vorban": {
+        "condition": "Capture every monster within the Omega Ruins once.",
+        "reward": ["designer wallet", 60],
+        "monsters": ["black element", "floating death", "halma", "machea", "master coeurl", "master tonberry", "puroboros", "spirit", "varuna", "zaurus"]
+    },
+
+
+    "fenrir": {
+        "condition": "Capture 3 of every wolf.",
+        "reward": ["chocobo feather", 99],
+        "monsters": ["dingo", "mi'ihen fang", "garm", "snow wolf", "sand wolf", "skoll", "bandersnatch"]
+    },
+    "ornitholestes": {
+        "condition": "Capture 3 of every lizard.",
+        "reward": ["stamina spring", 99],
+        "monsters": ["dinonix", "ipiria", "raptor", "melusine", "yowie", "zaurus"]
+    },
+    "pteryx": {
+        "condition": "Capture 4 of every bird.",
+        "reward": ["mega phoenix", 99],
+        "monsters": ["condor", "simurgh", "alcyone"]
+    },
+    "hornet": {
+        "condition": "Capture 4 of every wasp.",
+        "reward": ["mana tonic", 60],
+        "monsters": ["killer bee", "bite bug", "wasp", "nebiros"]
+    },
+    "vidatu": {
+        "condition": "Capture 4 of every imp.",
+        "reward": ["mana spring", 99],
+        "monsters": ["gandarewa", "aerouge", "imp"]
+    },
+    "one eye": {
+        "condition": "Capture 4 of every floating eye.",
+        "reward": ["mega phoenix", 99],
+        "monsters": ["floating eye", "buer", "evil eye (macalania)", "ahriman", "floating death"]
+    },
+    "jumbo flan": {
+        "condition": "Capture 3 of every flan.",
+        "reward": ["twin stars", 60],
+        "monsters": ["water flan", "thunder flan", "snow flan", "ice flan", "flame flan", "dark flan"]
+    },
+    "nega elemental": {
+        "condition": "Capture 3 of every element.",
+        "reward": ["star curtain", 60],
+        "monsters": ["yellow element", "white element", "red element", "gold element", "blue element", "dark element", "black element"]
+    },
+    "tanket": {
+        "condition": "Capture 3 of every tank.",
+        "reward": ["golden hourglass", 99],
+        "monsters": ["raldo", "bunyip", "murussu", "mafdet", "shred", "halma"]
+    },
+    "fafnir": {
+        "condition": "Capture 4 of every dragon.",
+        "reward": ["purifying salt", 99],
+        "monsters": ["vouivre (mi'ihen highroad)", "lamashtu", "kusariqqu", "mushussu", "nidhogg"]
+    },
+    "sleep sprout": {
+        "condition": "Capture 5 of every fungus.",
+        "reward": ["healing spring", 99],
+        "monsters": ["funguar", "thorn", "exoray"]
+    },
+    "bomb king": {
+        "condition": "Capture 5 of every bomb.",
+        "reward": ["turbo ether", 60],
+        "monsters": ["bomb (mi'ihen highroad)", "grenade", "puroboros"]
+    },
+    "juggernaut": {
+        "condition": "Capture 5 of every dual horn.",
+        "reward": ["light curtain", 99],
+        "monsters": ["dual horn (mi'ihen highroad)", "valaha", "grendel"]
+    },
+    "ironclad": {
+        "condition": "Capture 10 of every iron giant.",
+        "reward": ["mana tablet", 60],
+        "monsters": ["iron giant", "gemini 1", "gemini 2"]
+    },
+
+
+    "earth eater": {
+        "condition": "Bread 2 fiends in Area Conquest.",
+        "reward": ["three stars", 60]
+    },
+    "greater sphere": {
+        "condition": "Bread 2 fiends in Species Conquest.",
+        "reward": ["supreme gem", 60]
+    },
+    "catastrophe": {
+        "condition": "Bread 6 fiends in Area Conquest.",
+        "reward": ["door to tomorrow", 99]
+    },
+    "th'uban": {
+        "condition": "Bread 6 fiends in Species Conquest.",
+        "reward": ["gamblers spirit", 99]
+    },
+    "neslug": {
+        "condition": "Capture every monster once.",
+        "reward": ["winning formula", 99]
+    },
+    "ultima buster": {
+        "condition": "Capture every monster five times.",
+        "reward": ["dark matter", 99]
+    },
+    "shinryu": {
+        "condition": "Capture 2 of every underwater fiend within Mount Gagazet.",
+        "reward": ["megalixir", 30],
+        "monsters": ["achelous", "maelspike", "splasher"]
+    },
+    "nemesis": {
+        "condition": "Capture every monster ten times and defeat all other Area Conquest, Species Conquest and Original monsters.",
+        "reward": ["master sphere", 10]
     }
 }

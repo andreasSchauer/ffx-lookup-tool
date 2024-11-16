@@ -2,6 +2,7 @@ from rich.console import Console
 from rich.table import Table
 from rich import box
 from ffx_search_tool.src.constants import TABLE_WIDTH
+from ffx_search_tool.src.data import monster_data, monster_arena_data
 
 
 console = Console()
@@ -23,7 +24,9 @@ def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):
 
 
 
-def get_table_data(key, monster):
+def get_table_data(key, monster_name):
+    monster = monster_data[monster_name]
+
     if key in monster["stats"]:
         return get_stat_table_data(key, monster["stats"])
     
@@ -46,15 +49,19 @@ def get_table_data(key, monster):
         return get_rage_data(monster)
     
     if key == "steals":
-        return get_steals_data(monster)
+        return get_steals_data(monster_name)
     
     if key == "drops":
-        return get_drops_data(monster)
+        return get_drops_data(monster_name)
     
     if key == "bribe_max":
-        return get_bribe_max_data(monster)
+        return get_bribe_max_data(monster_name)
+    
+    if key == "location":
+        return get_location_data(monster)
     
     return str(monster[key])
+
 
 
 
@@ -63,6 +70,8 @@ def get_stat_table_data(key, stats):
         return f"{stats[key][0]} ({stats[key][1]})"
     
     return str(stats[key])
+
+
 
 
 
@@ -84,6 +93,8 @@ def get_elem_resist(factor):
             return "-"
         case "varies":
             return "Varies"
+
+
 
 
 def get_status_resist_table_data(key, monster):
@@ -133,6 +144,7 @@ def get_stat_resist(resistance):
 
 
 
+
 def get_item_table_data(key, items):
     if items[key] is None:
         return "-"
@@ -149,6 +161,7 @@ def get_item_table_data(key, items):
 
 
 
+
 def get_equipment_table_data(key, equipment):
     match (key):
         case "drop_rate":
@@ -159,7 +172,6 @@ def get_equipment_table_data(key, equipment):
         
         case "wpn_abilities" | "armour_abilities":
             return get_ability_list(key, equipment)
-
 
 
 def get_ability_list(key, equipment):
@@ -175,6 +187,7 @@ def get_ability_list(key, equipment):
         ability_list.append(to_add)
 
     return ", ".join(ability_list)
+
 
 
    
@@ -198,9 +211,9 @@ def get_rage_data(monster):
     return rage.title()
 
 
-def get_steals_data(monster):
-    steal_normal = get_table_data("steal_normal", monster)
-    steal_rare = get_table_data("steal_rare", monster)
+def get_steals_data(monster_name):
+    steal_normal = get_table_data("steal_normal", monster_name)
+    steal_rare = get_table_data("steal_rare", monster_name)
     steal = f"{steal_normal} ({steal_rare})"
 
     if steal == "- (-)":
@@ -210,9 +223,11 @@ def get_steals_data(monster):
 
 
 
-def get_drops_data(monster):
-    drop_normal = get_table_data("drop_normal", monster)
-    drop_rare = get_table_data("drop_rare", monster)
+def get_drops_data(monster_name):
+    drop_normal = get_table_data("drop_normal", monster_name)
+    drop_rare = get_table_data("drop_rare", monster_name)
+
+    monster = monster_data[monster_name]
 
     if monster["items"]["drop_normal"] is not None and isinstance(monster["items"]["drop_normal"][0], list):
         drop = f"{drop_normal}\n({drop_rare})"
@@ -226,8 +241,9 @@ def get_drops_data(monster):
 
 
 
-def get_bribe_max_data(monster):
-    item = get_table_data("bribe", monster)
+def get_bribe_max_data(monster_name):
+    item = get_table_data("bribe", monster_name)
+    monster = monster_data[monster_name]
 
     if item == "-":
         return item
@@ -235,3 +251,7 @@ def get_bribe_max_data(monster):
     amount = f"{monster["stats"]["hp"][0] * 25} Gil"
 
     return f"{item} ({amount})"
+
+
+def get_location_data(monster):
+    return ", ".join(monster["location"]).title()

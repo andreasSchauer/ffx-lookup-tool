@@ -45,27 +45,32 @@ def select_duplicate(monster_name):
 
 def get_monster_table(monster_name, kimahri_hp=0, kimahri_str=0, kimahri_mag=0, kimahri_agl=0):
     monster = monster_data[monster_name]
+    title = get_monster_table_title(monster_name)
+
+    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
+    table.add_column(title)
+    table.add_row(get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl))
+    table.add_row(get_element_table(monster_name))
+    table.add_row(get_status_resist_table(monster_name))
+    table.add_row(get_item_table(monster_name))
+
+    if monster["items"]["bribe"] is not None:
+        table.add_row(get_bribe_table(monster_name))
+
+    table.add_row(get_equipment_table(monster_name))
+
+    console.print(table)
+
+
+def get_monster_table_title(monster_name):
+    monster = monster_data[monster_name]
     locations = ", ".join(monster["location"]).title()
     title = f"{monster_name.title()} - {locations}"
 
     if monster["is_catchable"]:
         title += " - Catchable"
 
-    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    table.add_column(title)
-
-    table.add_row(get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl))
-    table.add_row(get_element_table(monster))
-    table.add_row(get_status_resist_table(monster))
-    table.add_row(get_item_table(monster))
-
-    if monster["items"]["bribe"] is not None:
-        table.add_row(get_bribe_table(monster))
-
-    table.add_row(get_equipment_table(monster))
-
-    console.print(table)
-
+    return title
 
 
 def get_ally_tables(monster_name):
@@ -116,8 +121,8 @@ def get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_a
     for i in range(0, len(stats), 2):
         left_stat = stat_cell_names[i]
         right_stat = stat_cell_names[i+1]
-        left_val = get_table_data(stat_keys[i], monster)
-        right_val = get_table_data(stat_keys[i+1], monster)
+        left_val = get_table_data(stat_keys[i], monster_name)
+        right_val = get_table_data(stat_keys[i+1], monster_name)
         
         stat_table.add_row(left_stat, left_val, right_stat, right_val)
 
@@ -125,7 +130,8 @@ def get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_a
 
 
 
-def get_element_table(monster):
+def get_element_table(monster_name):
+    monster = monster_data[monster_name]
     elements = monster["elem_resists"]
     element_keys = list(elements.keys())
     element_cell_names = CELL_NAMES["elements"]
@@ -136,8 +142,8 @@ def get_element_table(monster):
     for i in range(0, len(elements), 2):
         left_element = element_cell_names[i]
         right_element = element_cell_names[i+1]
-        left_resist = get_table_data(element_keys[i], monster)
-        right_resist = get_table_data(element_keys[i+1], monster)
+        left_resist = get_table_data(element_keys[i], monster_name)
+        right_resist = get_table_data(element_keys[i+1], monster_name)
 
         element_table.add_row(left_element, left_resist, right_element, right_resist)
 
@@ -145,7 +151,8 @@ def get_element_table(monster):
      
 
 
-def get_status_resist_table(monster):
+def get_status_resist_table(monster_name):
+    monster = monster_data[monster_name]
     statusses = monster["stat_resists"]
     status_keys = list(statusses.keys())
     status_cell_names = CELL_NAMES["statusses"]
@@ -156,8 +163,8 @@ def get_status_resist_table(monster):
     for i in range(0, len(statusses), 2):
         left_status = status_cell_names[i]
         right_status = status_cell_names[i+1]
-        left_resist = get_table_data(status_keys[i], monster)
-        right_resist = get_table_data(status_keys[i+1], monster)
+        left_resist = get_table_data(status_keys[i], monster_name)
+        right_resist = get_table_data(status_keys[i+1], monster_name)
         
         status_table.add_row(left_status, left_resist, right_status, right_resist)
 
@@ -165,34 +172,30 @@ def get_status_resist_table(monster):
 
 
 
-def get_item_table(monster):
+def get_item_table(monster_name):
+    monster = monster_data[monster_name]
     items = monster["items"]
     item_keys = list(items.keys())
     item_cell_names = CELL_NAMES["items"]
 
     item_table = initialize_table("Items and Loot", 2, tab_header=False)
-
-    ap = get_table_data("ap", monster)
-    gil = get_table_data("gil", monster)
-    rage = get_table_data("ronso_rage", monster)
-
-    item_table.add_row("AP (Overkill)", ap)
-    item_table.add_row("Gil", gil)
-    item_table.add_row("Ronso Rage", rage)
+    item_table.add_row("AP (Overkill)", get_table_data("ap", monster_name))
+    item_table.add_row("Gil", get_table_data("gil", monster_name))
+    item_table.add_row("Ronso Rage", get_table_data("ronso_rage", monster_name))
 
     for i in range(len(items)):
         action = item_cell_names[i]
-        item = get_table_data(item_keys[i], monster)
+        item = get_table_data(item_keys[i], monster_name)
         
         item_table.add_row(action, item)
-
-    
 
     return item_table
 
 
 
-def get_bribe_table(monster):
+def get_bribe_table(monster_name):
+    monster = monster_data[monster_name]
+    
     hp = monster["stats"]["hp"][0]
     hp_factor = 10
     probability = 25
@@ -209,7 +212,9 @@ def get_bribe_table(monster):
 
 
 
-def get_equipment_table(monster):
+def get_equipment_table(monster_name):
+    monster = monster_data[monster_name]
+    
     if monster["equipment"]["drop_rate"] == 0:
         return
     
@@ -221,7 +226,7 @@ def get_equipment_table(monster):
 
     for i in range(len(equipment)):
         name = equipment_cell_names[i]
-        data = get_table_data(equipment_keys[i], monster)
+        data = get_table_data(equipment_keys[i], monster_name)
         equipment_table.add_row(name, data)
 
     return equipment_table

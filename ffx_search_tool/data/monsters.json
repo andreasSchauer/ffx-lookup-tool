@@ -5,7 +5,7 @@
         "is_catchable": true,
         "is_boss": false,
         "has_allies": false,
-        "ap": [730, 1095],
+        "ap": [730, 1460],
         "gil": 420,
         "ronso_rage": null,
         "items": {
@@ -124,7 +124,7 @@
         "stat_resists": {
             "silence": 20,
             "sleep": 20,
-            "dark": 20,
+            "dark": 0,
             "poison": [75, 0.05],
             "petrify": 80,
             "slow": 100,
@@ -236,8 +236,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
-                {"ability": "magic +3%", "characters":"Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -383,7 +383,8 @@
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"}
+                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "stonetouch"}
             ],
             "armour_abilities": [
                 {"ability": "stone ward"}
@@ -526,9 +527,7 @@
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
                 {"ability": "icestrike"},
-                {"ability": "distill power"},
-                {"ability": "strength +3%"},
-                {"ability": "magic +3%"}
+                {"ability": "distill power"}
             ],
             "armour_abilities": [
                 {"ability": "silence ward"},
