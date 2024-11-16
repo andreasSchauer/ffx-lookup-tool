@@ -32,6 +32,7 @@ DUPLICATES = {
     "bahamut": ["bahamut (remiem temple)", "spathi"],
     "bomb": ["bomb (mi'ihen highroad)", "bomb (home)"],
     "chimera": ["chimera (macalania)", "chimera (home)"],
+    "dark ixion": ["dark ixion (first fight)", "dark ixion (second fight)"],
     "dual horn": ["dual horn (mi'ihen highroad)", "dual horn (home)"],
     "evil eye": ["evil eye (macalania)", "evil eye (home)"],
     "garuda": ["garuda (besaid)", "garuda (luca)", "garuda (mushroom rock road)"],

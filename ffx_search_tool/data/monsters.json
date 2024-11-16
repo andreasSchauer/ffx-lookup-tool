@@ -15948,5 +15948,3624 @@
             "eject": 100,
             "zanmato": "Lv. 1"
         }
+    },
+    "stratoavis": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["smoke bomb", 3],
+            "steal_rare": ["stamina spring", 2],
+            "drop_normal": ["amulet", 2],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "magic +20%"},
+                {"ability": "magic +10%"},
+                {"ability": "magic +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "hp +30%"},
+                {"ability": "hp +20%"},
+                {"ability": "hp +10%"}
+            ]
+        },
+        "stats": {
+            "hp": [320000, 10000],
+            "mp": 115,
+            "strength": 73,
+            "defence": 41,
+            "magic": 32,
+            "mag_defence": 82,
+            "agility": 32,
+            "luck": 18,
+            "evasion": 5,
+            "accuracy": 100
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 1
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 90,
+            "zombie": 100,
+            "power_break": 90,
+            "magic_break": 90,
+            "armour_break": 90,
+            "mental_break": 90,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 0,
+            "eject": 0,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "malboro menace": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["remedy", 4],
+            "steal_rare": ["mana spring", 2],
+            "drop_normal": ["mana tonic", 2],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-4",
+            "wpn_abilities": [
+                {"ability": "darkstrike"},
+                {"ability": "silencestrike"},
+                {"ability": "sleepstrike"},
+                {"ability": "poisonstrike"},
+                {"ability": "stonestrike"},
+                {"ability": "zombiestrike"},
+                {"ability": "slowstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "darkproof"},
+                {"ability": "silenceproof"},
+                {"ability": "sleepproof"},
+                {"ability": "poisonproof"},
+                {"ability": "stoneproof"},
+                {"ability": "zombieproof"},
+                {"ability": "slowproof"}
+            ]
+        },
+        "stats": {
+            "hp": [640000, 12000],
+            "mp": 200,
+            "strength": 60,
+            "defence": 24,
+            "magic": 53,
+            "mag_defence": 63,
+            "agility": 34,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 120
+        },
+        "elem_resists": {
+            "fire": 1.5,
+            "lightning": 1,
+            "water": -1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "kottos": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["stamina spring", 4],
+            "steal_rare": ["soul spring", 2],
+            "drop_normal": ["healing spring", 20],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "counter-attack"},
+                {"ability": "evade and counter"},
+                {"ability": "magic counter"}
+            ],
+            "armour_abilities": [
+                {"ability": "hp +30%"},
+                {"ability": "hp +20%"},
+                {"ability": "hp +10%"}
+            ]
+        },
+        "stats": {
+            "hp": [440000, 15000],
+            "mp": 20,
+            "strength": 88,
+            "defence": 60,
+            "magic": 12,
+            "mag_defence": 1,
+            "agility": 36,
+            "luck": 25,
+            "evasion": 0,
+            "accuracy": 150
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "coeurlregina": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["farplane wind", 2],
+            "steal_rare": ["blessed gem", 1],
+            "drop_normal": ["shining gem", 3],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "double ap"},
+                {"ability": "deathstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "darkproof"},
+                {"ability": "silenceproof"},
+                {"ability": "sleepproof"},
+                {"ability": "poisonproof"},
+                {"ability": "stoneproof"},
+                {"ability": "zombieproof"},
+                {"ability": "slowproof"}
+            ]
+        },
+        "stats": {
+            "hp": [380000, 10000],
+            "mp": 80,
+            "strength": 1,
+            "defence": 40,
+            "magic": 70,
+            "mag_defence": 40,
+            "agility": 75,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 100
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "jormungand": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["petrify grenade", 4],
+            "steal_rare": ["three stars", 1],
+            "drop_normal": ["supreme gem", 2],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-4",
+            "wpn_abilities": [
+                {"ability": "darkstrike"},
+                {"ability": "silencestrike"},
+                {"ability": "sleepstrike"},
+                {"ability": "poisonstrike"},
+                {"ability": "stonestrike"},
+                {"ability": "zombiestrike"},
+                {"ability": "slowstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "darkproof"},
+                {"ability": "silenceproof"},
+                {"ability": "sleepproof"},
+                {"ability": "poisonproof"},
+                {"ability": "stoneproof"},
+                {"ability": "zombieproof"},
+                {"ability": "slowproof"}
+            ]
+        },
+        "stats": {
+            "hp": [520000, 10000],
+            "mp": 63,
+            "strength": 77,
+            "defence": 33,
+            "magic": 80,
+            "mag_defence": 186,
+            "agility": 53,
+            "luck": 15,
+            "evasion": 6,
+            "accuracy": 130
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 0,
+            "zombie": 100,
+            "power_break": 90,
+            "magic_break": 90,
+            "armour_break": 90,
+            "mental_break": 90,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "cactuar king": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["chocobo wing", 2],
+            "steal_rare": ["designer wallet", 1],
+            "drop_normal": ["blessed gem", 3],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [100000, 10000],
+            "mp": 0,
+            "strength": 255,
+            "defence": 100,
+            "magic": 255,
+            "mag_defence": 255,
+            "agility": 80,
+            "luck": 15,
+            "evasion": 240,
+            "accuracy": 180
+        },
+        "elem_resists": {
+            "fire": 0,
+            "lightning": 0,
+            "water": 0,
+            "ice": 0,
+            "holy": 0,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "espada": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["farplane shadow", 4],
+            "steal_rare": ["farplane wind", 1],
+            "drop_normal": ["rename card", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [280000, 15000],
+            "mp": 120,
+            "strength": 44,
+            "defence": 100,
+            "magic": 31,
+            "mag_defence": 160,
+            "agility": 51,
+            "luck": 15,
+            "evasion": 12,
+            "accuracy": 100
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 50,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 0,
+            "armour_break": 0,
+            "mental_break": 0,
+            "threaten": 0,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "abyss worm": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["shadow gem", 4],
+            "steal_rare": ["stamina tablet", 1],
+            "drop_normal": ["stamina tonic", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [480000, 12000],
+            "mp": 200,
+            "strength": 60,
+            "defence": 24,
+            "magic": 93,
+            "mag_defence": 63,
+            "agility": 22,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 120
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "chimerageist": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["mana spring", 2],
+            "steal_rare": ["stamina spring", 2],
+            "drop_normal": ["return sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "firestrike"},
+                {"ability": "waterstrike"},
+                {"ability": "icestrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "fire eater"},
+                {"ability": "water eater"},
+                {"ability": "ice eater"}
+            ]
+        },
+        "stats": {
+            "hp": [120000, 10000],
+            "mp": 30,
+            "strength": 66,
+            "defence": 10,
+            "magic": 68,
+            "mag_defence": 10,
+            "agility": 29,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 180
+        },
+        "elem_resists": {
+            "fire": 0,
+            "lightning": 0,
+            "water": 0,
+            "ice": 0,
+            "holy": 0,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 50,
+            "magic_break": 50,
+            "armour_break": 50,
+            "mental_break": 50,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "don tonberry": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["candle of life", 2],
+            "steal_rare": ["designer wallet", 1],
+            "drop_normal": ["farplane wind", 3],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "2-4",
+            "wpn_abilities": [
+                {"ability": "darkstrike"},
+                {"ability": "silencestrike"},
+                {"ability": "sleepstrike"},
+                {"ability": "poisonstrike"},
+                {"ability": "stonestrike"},
+                {"ability": "zombiestrike"},
+                {"ability": "slowstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "darkproof"},
+                {"ability": "silenceproof"},
+                {"ability": "sleepproof"},
+                {"ability": "poisonproof"},
+                {"ability": "stoneproof"},
+                {"ability": "zombieproof"},
+                {"ability": "slowproof"}
+            ]
+        },
+        "stats": {
+            "hp": [480000, 10000],
+            "mp": 120,
+            "strength": 95,
+            "defence": 100,
+            "magic": 75,
+            "mag_defence": 100,
+            "agility": 37,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 80
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "catoblepas": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["healing spring", 3],
+            "steal_rare": ["stamina tonic", 1],
+            "drop_normal": ["three stars", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "2-4",
+            "wpn_abilities": [
+                {"ability": "darkstrike"},
+                {"ability": "silencestrike"},
+                {"ability": "sleepstrike"},
+                {"ability": "poisonstrike"},
+                {"ability": "stonestrike"},
+                {"ability": "zombiestrike"},
+                {"ability": "slowstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "darkproof"},
+                {"ability": "silenceproof"},
+                {"ability": "sleepproof"},
+                {"ability": "poisonproof"},
+                {"ability": "stoneproof"},
+                {"ability": "zombieproof"},
+                {"ability": "slowproof"}
+            ]
+        },
+        "stats": {
+            "hp": [550000, 10000],
+            "mp": 160,
+            "strength": 76,
+            "defence": 33,
+            "magic": 58,
+            "mag_defence": 27,
+            "agility": 47,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 180
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 50,
+            "magic_break": 50,
+            "armour_break": 50,
+            "mental_break": 50,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "abaddon": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["purifying salt", 3],
+            "steal_rare": ["shining gem", 1],
+            "drop_normal": ["mana tablet", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "magic +20%"},
+                {"ability": "magic +10%"},
+                {"ability": "magic +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "magic def +20%"},
+                {"ability": "magic def +10%"},
+                {"ability": "magic def +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [380000, 10000],
+            "mp": 780,
+            "strength": 40,
+            "defence": 180,
+            "magic": 95,
+            "mag_defence": 160,
+            "agility": 120,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 130
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "vorban": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 8000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["healing spring", 2],
+            "steal_rare": ["stamina tablet", 1],
+            "drop_normal": ["friend sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [630000, 10000],
+            "mp": 120,
+            "strength": 95,
+            "defence": 100,
+            "magic": 75,
+            "mag_defence": 100,
+            "agility": 33,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 80
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "fenrir": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["chocobo feather", 2],
+            "steal_rare": ["chocobo wing", 1],
+            "drop_normal": ["agility sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "2-4",
+            "wpn_abilities": [
+                {"ability": "darkstrike"},
+                {"ability": "silencestrike"},
+                {"ability": "sleepstrike"},
+                {"ability": "poisonstrike"},
+                {"ability": "stonestrike"},
+                {"ability": "zombiestrike"},
+                {"ability": "slowstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "darkproof"},
+                {"ability": "silenceproof"},
+                {"ability": "sleepproof"},
+                {"ability": "poisonproof"},
+                {"ability": "stoneproof"},
+                {"ability": "zombieproof"},
+                {"ability": "slowproof"}
+            ]
+        },
+        "stats": {
+            "hp": [850000, 99999],
+            "mp": 300,
+            "strength": 73,
+            "defence": 40,
+            "magic": 12,
+            "mag_defence": 165,
+            "agility": 200,
+            "luck": 30,
+            "evasion": 60,
+            "accuracy": 200
+        },
+        "elem_resists": {
+            "fire": 0.5,
+            "lightning": 0.5,
+            "water": 0.5,
+            "ice": 0.5,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 99,
+            "mental_break": 99,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "ornitholestes": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["rename card", 1],
+            "steal_rare": ["chocobo wing", 1],
+            "drop_normal": ["gamblers spirit", 2],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "double overdrive"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [800000, 99999],
+            "mp": 300,
+            "strength": 83,
+            "defence": 55,
+            "magic": 30,
+            "mag_defence": 170,
+            "agility": 130,
+            "luck": 20,
+            "evasion": 80,
+            "accuracy": 200
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": 1,
+            "water": 0,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "pteryx": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["smoke bomb", 4],
+            "steal_rare": ["candle of life", 1],
+            "drop_normal": ["evasion sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [100000, 99999],
+            "mp": 0,
+            "strength": 90,
+            "defence": 100,
+            "magic": 5,
+            "mag_defence": 100,
+            "agility": 60,
+            "luck": 15,
+            "evasion": 60,
+            "accuracy": 200
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "hornet": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["poison fang", 4],
+            "steal_rare": ["purifying salt", 2],
+            "drop_normal": ["accuracy sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [620000, 50000],
+            "mp": 180,
+            "strength": 63,
+            "defence": 70,
+            "magic": 88,
+            "mag_defence": 95,
+            "agility": 102,
+            "luck": 33,
+            "evasion": 17,
+            "accuracy": 160
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 0,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 95,
+            "magic_break": 95,
+            "armour_break": 95,
+            "mental_break": 95,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "vidatu": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["lightning gem", 4],
+            "steal_rare": ["mana tonic", 1],
+            "drop_normal": ["mp sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "double ap"}
+            ],
+            "armour_abilities": [
+                {"ability": "mp +30%"},
+                {"ability": "mp +20%"},
+                {"ability": "mp +10%"}
+            ]
+        },
+        "stats": {
+            "hp": [95000, 10000],
+            "mp": 840,
+            "strength": 12,
+            "defence": 230,
+            "magic": 77,
+            "mag_defence": 230,
+            "agility": 33,
+            "luck": 15,
+            "evasion": 80,
+            "accuracy": 110
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 80,
+            "armour_break": 99,
+            "mental_break": 80,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "one-eye": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["lunar curtain", 3],
+            "steal_rare": ["blessed gem", 1],
+            "drop_normal": ["magic def sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "triple ap"}
+            ],
+            "armour_abilities": [
+                {"ability": "mp +30%"},
+                {"ability": "mp +20%"},
+                {"ability": "mp +10%"}
+            ]
+        },
+        "stats": {
+            "hp": [150000, 15000],
+            "mp": 270,
+            "strength": 55,
+            "defence": 58,
+            "magic": 77,
+            "mag_defence": 183,
+            "agility": 38,
+            "luck": 15,
+            "evasion": 10,
+            "accuracy": 85
+        },
+        "elem_resists": {
+            "fire": 0,
+            "lightning": 0,
+            "water": 0,
+            "ice": 0,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 0,
+            "magic_break": 0,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "jumbo flan": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["lunar curtain", 4],
+            "steal_rare": ["mana tablet", 1],
+            "drop_normal": ["magic sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "magic booster"}
+            ],
+            "armour_abilities": [
+                {"ability": "fire eater"},
+                {"ability": "water eater"},
+                {"ability": "ice eater"}
+            ]
+        },
+        "stats": {
+            "hp": [1300000, 99999],
+            "mp": 999,
+            "strength": 3,
+            "defence": 255,
+            "magic": 98,
+            "mag_defence": 80,
+            "agility": 60,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 1
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": -1,
+            "water": -1,
+            "ice": -1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 20,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 0,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "nega elemental": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["lunar curtain", 4],
+            "steal_rare": ["twin stars", 1],
+            "drop_normal": ["twin stars", 2],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "2-4",
+            "wpn_abilities": [
+                {"ability": "firestrike"},
+                {"ability": "lightningstrike"},
+                {"ability": "waterstrike"},
+                {"ability": "icestrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "fire eater"},
+                {"ability": "lightning eater"},
+                {"ability": "water eater"},
+                {"ability": "ice eater"}
+            ]
+        },
+        "stats": {
+            "hp": [1300000, 15000],
+            "mp": 20,
+            "strength": 0,
+            "defence": 140,
+            "magic": 80,
+            "mag_defence": 62,
+            "agility": 44,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 150
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": -1,
+            "water": -1,
+            "ice": -1,
+            "holy": -1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "tanket": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["light curtain", 4],
+            "steal_rare": ["lunar curtain", 4],
+            "drop_normal": ["defence sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [900000, 10000],
+            "mp": 0,
+            "strength": 103,
+            "defence": 100,
+            "magic": 3,
+            "mag_defence": 250,
+            "agility": 41,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 100
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 90,
+            "armour_break": 100,
+            "mental_break": 99,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "fafnir": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["gold hourglass", 2],
+            "steal_rare": ["stamina spring", 2],
+            "drop_normal": ["light curtain", 20],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-4",
+            "wpn_abilities": [
+                {"ability": "firestrike"},
+                {"ability": "lightningstrike"},
+                {"ability": "waterstrike"},
+                {"ability": "icestrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "fire eater"},
+                {"ability": "water eater"},
+                {"ability": "ice eater"}
+            ]
+        },
+        "stats": {
+            "hp": [1100000, 13000],
+            "mp": 30,
+            "strength": 76,
+            "defence": 30,
+            "magic": 109,
+            "mag_defence": 130,
+            "agility": 38,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 160
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": -1,
+            "water": 1,
+            "ice": -1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 95,
+            "magic_break": 95,
+            "armour_break": 95,
+            "mental_break": 95,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "sleep sprout": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["poison fang", 4],
+            "steal_rare": ["farplane wind", 1],
+            "drop_normal": ["teleport sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-4",
+            "wpn_abilities": [
+                {"ability": "darkstrike"},
+                {"ability": "silencestrike"},
+                {"ability": "sleepstrike"},
+                {"ability": "poisonstrike"},
+                {"ability": "stonestrike"},
+                {"ability": "zombiestrike"},
+                {"ability": "slowstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "darkproof"},
+                {"ability": "silenceproof"},
+                {"ability": "sleepproof"},
+                {"ability": "poisonproof"},
+                {"ability": "stoneproof"},
+                {"ability": "zombieproof"},
+                {"ability": "slowproof"}
+            ]
+        },
+        "stats": {
+            "hp": [98000, 10000],
+            "mp": 820,
+            "strength": 3,
+            "defence": 167,
+            "magic": 112,
+            "mag_defence": 203,
+            "agility": 26,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 1
+        },
+        "elem_resists": {
+            "fire": 1.5,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 0,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "bomb king": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["fire gem", 4],
+            "steal_rare": ["shining gem", 1],
+            "drop_normal": ["door to tomorrow", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [480000, 10000],
+            "mp": 780,
+            "strength": 73,
+            "defence": 200,
+            "magic": 71,
+            "mag_defence": 200,
+            "agility": 46,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 150
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "juggernaut": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["lunar curtain", 4],
+            "steal_rare": ["shining gem", 1],
+            "drop_normal": ["strength sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "defence +20%"},
+                {"ability": "defence +10%"},
+                {"ability": "defence +5%"}
+            ]
+        },
+        "stats": {
+            "hp": [1200000, 15000],
+            "mp": 20,
+            "strength": 98,
+            "defence": 140,
+            "magic": 70,
+            "mag_defence": 62,
+            "agility": 42,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 150
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 95,
+            "magic_break": 95,
+            "armour_break": 95,
+            "mental_break": 95,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "ironclad": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["light curtain", 4],
+            "steal_rare": ["stamina tablet", 1],
+            "drop_normal": ["hp sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "strength +20%"},
+                {"ability": "strength +10%"},
+                {"ability": "strength +5%"}
+            ],
+            "armour_abilities": [
+                {"ability": "hp +30%"},
+                {"ability": "hp +20%"},
+                {"ability": "hp +10%"}
+            ]
+        },
+        "stats": {
+            "hp": [2000000, 99999],
+            "mp": 0,
+            "strength": 100,
+            "defence": 220,
+            "magic": 0,
+            "mag_defence": 180,
+            "agility": 65,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 180
+        },
+        "elem_resists": {
+            "fire": 0,
+            "lightning": 0,
+            "water": 0,
+            "ice": 0,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 95,
+            "armour_break": 95,
+            "mental_break": 95,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "earth eater": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [50000, 50000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["gamblers spirit", 1],
+            "steal_rare": ["lv. 1 key sphere", 1],
+            "drop_normal": ["fortune sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1",
+            "wpn_abilities": [
+                {"ability": "triple overdrive"}
+            ],
+            "armour_abilities": [
+                {"ability": "auto-potion"}
+            ]
+        },
+        "stats": {
+            "hp": [1300000, 99999],
+            "mp": 30,
+            "strength": 117,
+            "defence": 200,
+            "magic": 186,
+            "mag_defence": 210,
+            "agility": 47,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 120
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 255],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "greater sphere": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [50000, 50000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["gamblers spirit", 1],
+            "steal_rare": ["return sphere", 1],
+            "drop_normal": ["luck sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1",
+            "wpn_abilities": [
+                {"ability": "one mp cost"}
+            ],
+            "armour_abilities": [
+                {"ability": "auto-phoenix"}
+            ]
+        },
+        "stats": {
+            "hp": [1500000, 99999],
+            "mp": 999,
+            "strength": 87,
+            "defence": 130,
+            "magic": 102,
+            "mag_defence": 120,
+            "agility": 55,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 200
+        },
+        "elem_resists": {
+            "fire": "varies",
+            "lightning": "varies",
+            "water": "varies",
+            "ice": "varies",
+            "holy": -1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 255],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "catastrophe": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [50000, 50000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["gamblers spirit", 1],
+            "steal_rare": ["lv. 2 key sphere", 1],
+            "drop_normal": ["designer wallet", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-4",
+            "wpn_abilities": [
+                {"ability": "darkstrike"},
+                {"ability": "silencestrike"},
+                {"ability": "sleepstrike"},
+                {"ability": "poisonstrike"},
+                {"ability": "stonestrike"},
+                {"ability": "zombiestrike"},
+                {"ability": "slowstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "darkproof"},
+                {"ability": "silenceproof"},
+                {"ability": "sleepproof"},
+                {"ability": "poisonproof"},
+                {"ability": "stoneproof"},
+                {"ability": "zombieproof"},
+                {"ability": "slowproof"}
+            ]
+        },
+        "stats": {
+            "hp": [2200000, 99999],
+            "mp": 380,
+            "strength": 120,
+            "defence": 80,
+            "magic": 77,
+            "mag_defence": 80,
+            "agility": 34,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 150
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 255],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "th'uban": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [50000, 50000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["gamblers spirit", 1],
+            "steal_rare": ["teleport sphere", 1],
+            "drop_normal": ["underdogs secret", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "triple overdrive"},
+                {"ability": "triple ap"}
+            ],
+            "armour_abilities": [
+                {"ability": "hp +30%"},
+                {"ability": "hp +20%"},
+                {"ability": "hp +10%"}
+            ]
+        },
+        "stats": {
+            "hp": [3000000, 99999],
+            "mp": 85,
+            "strength": 102,
+            "defence": 80,
+            "magic": 212,
+            "mag_defence": 80,
+            "agility": 53,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 180
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 255],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "neslug": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [50000, 50000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["gamblers spirit", 1],
+            "steal_rare": ["friend sphere", 1],
+            "drop_normal": ["pendulum", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-3",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "piercing", "characters": "Kimahri and Auron"},
+                {"ability": "triple ap"}
+            ],
+            "armour_abilities": [
+                {"ability": "hp +30%"},
+                {"ability": "hp +20%"},
+                {"ability": "hp +10%"}
+            ]
+        },
+        "stats": {
+            "hp": [4000000, 12000],
+            "mp": 999,
+            "strength": 130,
+            "defence": 80,
+            "magic": 130,
+            "mag_defence": 80,
+            "agility": 43,
+            "luck": 20,
+            "evasion": 0,
+            "accuracy": 1
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 0,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "ultima buster": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["ultima buster", "ultima buster (head)", "ultima buster (arms)"],
+        "ap": [50000, 50000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["gamblers spirit", 1],
+            "steal_rare": ["lv. 3 key sphere", 1],
+            "drop_normal": ["winning formula", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-3",
+            "wpn_abilities": [
+                {"ability": "triple overdrive"},
+                {"ability": "triple ap"},
+                {"ability": "overdrive -> ap"}
+            ],
+            "armour_abilities": [
+                {"ability": "break mp limit"}
+            ]
+        },
+        "stats": {
+            "hp": [5000000, 99999],
+            "mp": 140,
+            "strength": 168,
+            "defence": 60,
+            "magic": 178,
+            "mag_defence": 71,
+            "agility": 72,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 130
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 255],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "ultima buster (head)": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["ultima buster", "ultima buster (head)", "ultima buster (arms)"],
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": null,
+            "steal_rare": null,
+            "drop_normal": null,
+            "drop_rare": null,
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0,
+            "slots_amount": "0",
+            "attached_abilities": "0",
+            "wpn_abilities": null,
+            "armour_abilities": null
+        },
+        "stats": {
+            "hp": [80000, 1],
+            "mp": 1,
+            "strength": 1,
+            "defence": 1,
+            "magic": 178,
+            "mag_defence": 1,
+            "agility": 80,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 1
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 3],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "ultima buster (arms)": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["ultima buster", "ultima buster (head)", "ultima buster (arms)"],
+        "ap": [0, 0],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": null,
+            "steal_rare": null,
+            "drop_normal": null,
+            "drop_rare": null,
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0,
+            "slots_amount": "0",
+            "attached_abilities": "0",
+            "wpn_abilities": null,
+            "armour_abilities": null
+        },
+        "stats": {
+            "hp": [80000, 1],
+            "mp": 1,
+            "strength": 1,
+            "defence": 1,
+            "magic": 1,
+            "mag_defence": 1,
+            "agility": 1,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 1
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 3],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 1"
+        }
+    },
+    "shinryu": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [50000, 50000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["gamblers spirit", 1],
+            "steal_rare": ["three stars", 1],
+            "drop_normal": ["wings to discovery", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "2-4",
+            "attached_abilities": "1",
+            "wpn_abilities": [
+                {"ability": "double ap"}
+            ],
+            "armour_abilities": [
+                {"ability": "auto-med"}
+            ]
+        },
+        "stats": {
+            "hp": [2000000, 99999],
+            "mp": 72,
+            "strength": 92,
+            "defence": 60,
+            "magic": 86,
+            "mag_defence": 98,
+            "agility": 70,
+            "luck": 15,
+            "evasion": 0,
+            "accuracy": 200
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 255],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 4"
+        }
+    },
+    "nemesis": {
+        "location": ["monster arena"],
+        "is_reoccuring": true,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [55000, 55000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["lv. 4 key sphere", 1],
+            "steal_rare": ["warp sphere", 1],
+            "drop_normal": ["warp sphere", 1],
+            "drop_rare": ["dark matter", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1",
+            "wpn_abilities": [
+                {"ability": "break damage limit"}
+            ],
+            "armour_abilities": [
+                {"ability": "break hp limit"}
+            ]
+        },
+        "stats": {
+            "hp": [10000000, 99999],
+            "mp": 9999,
+            "strength": 255,
+            "defence": 150,
+            "magic": 255,
+            "mag_defence": 150,
+            "agility": 200,
+            "luck": 1,
+            "evasion": 0,
+            "accuracy": 150
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": -1,
+            "water": -1,
+            "ice": -1,
+            "holy": -1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 255],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "dark valefor": {
+        "location": ["besaid"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [10000, 15000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["x-potion", 2],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "first strike"},
+                {"ability": "firestrike"},
+                {"ability": "lightningstrike"},
+                {"ability": "waterstrike"},
+                {"ability": "icestrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "auto-regen"}
+            ]
+        },
+        "stats": {
+            "hp": [800000, 99999],
+            "mp": 999,
+            "strength": 148,
+            "defence": 120,
+            "magic": 186,
+            "mag_defence": 220,
+            "agility": 105,
+            "luck": 48,
+            "evasion": 10,
+            "accuracy": 250
+        },
+        "elem_resists": {
+            "fire": 0.5,
+            "lightning": 0.5,
+            "water": 0.5,
+            "ice": 0.5,
+            "holy": 0.5,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "dark ifrit": {
+        "location": ["bikanel"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [20000, 30000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["mega-phoenix", 2],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "firestrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "fire eater"}
+            ]
+        },
+        "stats": {
+            "hp": [1400000, 99999],
+            "mp": 999,
+            "strength": 220,
+            "defence": 173,
+            "magic": 177,
+            "mag_defence": 163,
+            "agility": 124,
+            "luck": 27,
+            "evasion": 8,
+            "accuracy": 230
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": 0,
+            "water": 0,
+            "ice": 0.5,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "dark ixion (first fight)": {
+        "location": ["thunder plains"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [20000, 30000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["stamina tablet", 2],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "lightningstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "lightning eater"}
+            ]
+        },
+        "stats": {
+            "hp": [1200000, 99999],
+            "mp": 999,
+            "strength": 176,
+            "defence": 220,
+            "magic": 133,
+            "mag_defence": 188,
+            "agility": 180,
+            "luck": 36,
+            "evasion": 0,
+            "accuracy": 254
+        },
+        "elem_resists": {
+            "fire": 0,
+            "lightning": -1,
+            "water": 0.5,
+            "ice": 0,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 6"
+        }
+    },
+    "dark ixion (second fight)": {
+        "location": ["thunder plains"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [20000, 30000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["stamina tablet", 2],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "lightningstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "lightning eater"}
+            ]
+        },
+        "stats": {
+            "hp": [1200000, 99999],
+            "mp": 999,
+            "strength": 182,
+            "defence": 222,
+            "magic": 146,
+            "mag_defence": 198,
+            "agility": 180,
+            "luck": 36,
+            "evasion": 0,
+            "accuracy": 254
+        },
+        "elem_resists": {
+            "fire": 0,
+            "lightning": -1,
+            "water": 0.5,
+            "ice": 0,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 6"
+        }
+    },
+    "dark shiva": {
+        "location": ["macalania"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [20000, 30000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["mana tablet", 2],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "icestrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "ice eater"}
+            ]
+        },
+        "stats": {
+            "hp": [1100000, 99999],
+            "mp": 999,
+            "strength": 173,
+            "defence": 163,
+            "magic": 244,
+            "mag_defence": 255,
+            "agility": 255,
+            "luck": 73,
+            "evasion": 0,
+            "accuracy": 250
+        },
+        "elem_resists": {
+            "fire": 0.5,
+            "lightning": 0,
+            "water": 0,
+            "ice": -1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "dark bahamut": {
+        "location": ["zanarkand dome"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [30000, 40000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["twin stars", 2],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "one mp cost"},
+                {"ability": "double overdrive"},
+                {"ability": "double ap"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "auto-protect"}
+            ]
+        },
+        "stats": {
+            "hp": [4000000, 99999],
+            "mp": 999,
+            "strength": 245,
+            "defence": 234,
+            "magic": 222,
+            "mag_defence": 233,
+            "agility": 255,
+            "luck": 102,
+            "evasion": 0,
+            "accuracy": 250
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "dark yojimbo": {
+        "location": ["cavern of the stolen fayth"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [8000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["stamina tonic", 2],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "overdrive -> ap"},
+                {"ability": "counter-attack"},
+                {"ability": "magic counter"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "curseproof"}
+            ]
+        },
+        "stats": {
+            "hp": [1600000, 99999],
+            "mp": 999,
+            "strength": 244,
+            "defence": 210,
+            "magic": 131,
+            "mag_defence": 144,
+            "agility": 243,
+            "luck": 114,
+            "evasion": 0,
+            "accuracy": 255
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "dark anima": {
+        "location": ["mount gagazet"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": false,
+        "ap": [30000, 40000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["three stars", 2],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "triple ap"},
+                {"ability": "one mp cost"},
+                {"ability": "deathstrike"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "deathproof"}
+            ]
+        },
+        "stats": {
+            "hp": [8000000, 99999],
+            "mp": 999,
+            "strength": 155,
+            "defence": 230,
+            "magic": 255,
+            "mag_defence": 255,
+            "agility": 183,
+            "luck": 85,
+            "evasion": 0,
+            "accuracy": 255
+        },
+        "elem_resists": {
+            "fire": -1,
+            "lightning": -1,
+            "water": -1,
+            "ice": -1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "dark cindy": {
+        "location": ["mushroom rock road"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["dark cindy", "dark sandy", "dark mindy"],
+        "ap": [10000, 12000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["return sphere", 1],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "triple overdrive"},
+                {"ability": "gillionaire"},
+                {"ability": "alchemy"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "auto-phoenix"}
+            ]
+        },
+        "stats": {
+            "hp": [3000000, 99999],
+            "mp": 999,
+            "strength": 175,
+            "defence": 223,
+            "magic": 171,
+            "mag_defence": 105,
+            "agility": 185,
+            "luck": 40,
+            "evasion": 0,
+            "accuracy": 255
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "dark sandy": {
+        "location": ["mushroom rock road"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["dark cindy", "dark sandy", "dark mindy"],
+        "ap": [10000, 12000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["friend sphere", 1],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "triple overdrive"},
+                {"ability": "evade and counter"},
+                {"ability": "magic counter"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "auto-shell"}
+            ]
+        },
+        "stats": {
+            "hp": [2500000, 99999],
+            "mp": 999,
+            "strength": 186,
+            "defence": 201,
+            "magic": 207,
+            "mag_defence": 168,
+            "agility": 201,
+            "luck": 80,
+            "evasion": 100,
+            "accuracy": 255
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "dark mindy": {
+        "location": ["mushroom rock road"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["dark cindy", "dark sandy", "dark mindy"],
+        "ap": [10000, 12000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["teleport sphere", 1],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "3-4",
+            "attached_abilities": "1-2",
+            "wpn_abilities": [
+                {"ability": "break damage limit"},
+                {"ability": "triple overdrive"},
+                {"ability": "one mp cost"},
+                {"ability": "magic booster"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"},
+                {"ability": "break hp limit"},
+                {"ability": "auto-haste"}
+            ]
+        },
+        "stats": {
+            "hp": [2000000, 99999],
+            "mp": 999,
+            "strength": 148,
+            "defence": 187,
+            "magic": 248,
+            "mag_defence": 132,
+            "agility": 233,
+            "luck": 130,
+            "evasion": 240,
+            "accuracy": 255
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 5"
+        }
+    },
+    "penance": {
+        "location": ["airship"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["penance", "penance (arms)"],
+        "ap": [60000, 65000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["elixir", 1],
+            "steal_rare": ["megalixir", 2],
+            "drop_normal": ["master sphere", 3],
+            "drop_rare": ["master sphere", 3],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0.99,
+            "slots_amount": "4",
+            "attached_abilities": "1",
+            "wpn_abilities": [
+                {"ability": "break damage limit"}
+            ],
+            "armour_abilities": [
+                {"ability": "ribbon"}
+            ]
+        },
+        "stats": {
+            "hp": [12000000, 99999],
+            "mp": 999,
+            "strength": 255,
+            "defence": 240,
+            "magic": 255,
+            "mag_defence": 200,
+            "agility": 255,
+            "luck": 10,
+            "evasion": 0,
+            "accuracy": 255
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [100, 0],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 6"
+        }
+    },
+    "penance (arms)": {
+        "location": ["airship"],
+        "is_reoccuring": false,
+        "is_catchable": false,
+        "is_boss": true,
+        "has_allies": true,
+        "allies": ["penance", "penance (arms)"],
+        "ap": [10000, 10000],
+        "gil": 0,
+        "ronso_rage": null,
+        "items": {
+            "steal_normal": ["elixir", 1],
+            "steal_rare": ["elixir", 1],
+            "drop_normal": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1],
+            "bribe": null
+        },
+        "equipment": {
+            "drop_rate": 0,
+            "slots_amount": "0",
+            "attached_abilities": "0",
+            "wpn_abilities": null,
+            "armour_abilities": null
+        },
+        "stats": {
+            "hp": [500000, 99999],
+            "mp": 999,
+            "strength": 255,
+            "defence": 200,
+            "magic": 150,
+            "mag_defence": 200,
+            "agility": 255,
+            "luck": 10,
+            "evasion": 120,
+            "accuracy": 255
+        },
+        "elem_resists": {
+            "fire": 1,
+            "lightning": 1,
+            "water": 1,
+            "ice": 1,
+            "holy": 1,
+            "gravity": 0
+        },
+        "stat_resists": {
+            "silence": 100,
+            "sleep": 100,
+            "dark": 100,
+            "poison": [100, 0],
+            "petrify": 100,
+            "slow": 100,
+            "zombie": 100,
+            "power_break": 100,
+            "magic_break": 100,
+            "armour_break": 100,
+            "mental_break": 100,
+            "threaten": 100,
+            "death": 100,
+            "provoke": 100,
+            "doom": [0, 200],
+            "delay": 100,
+            "eject": 100,
+            "zanmato": "Lv. 6"
+        }
     }
 }
