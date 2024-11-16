@@ -79,16 +79,29 @@ def get_location_table(location_name, monster_list, type):
 
 
 def get_short_mon_table(monster, monster_name): 
+    is_not_catchable = (
+        not monster["is_boss"]
+        and "monster arena" not in monster["location"]
+        and "remiem temple" not in monster["location"]
+    )
+    
     if monster["is_catchable"]:
         monster_name += " - Catchable"
-    elif not monster["is_boss"]:
+    elif is_not_catchable:
         monster_name += " - Not Catchable"
 
     monster_table = initialize_table(monster_name.title(), 2, tab_header=False)
-
-    # if "remiem temple" in monster["location"] blabla hp + first reward + recurring reward
+    
+    # initialize this with an if else statement: monster arena, remiem, else = regular
+    # if monster arena in monster["location"]: hp, ap, steals, drops, condition, reward
+    # if remiem temple in monster["location"]: hp, first reward, recurring reward
     # else:
+    table_keys = [("HP (Overkill)", "hp"), ("AP (Overkill)", "ap"), ("Gil", "gil"), ("Steal (Rare Steal)", "steals"), ("Drop (Rare Drop)", "drops"), ("Bribe (Max Amount)", "bribe_max"), ("Ronso Rage", "ronso_rage")]
 
+    for key in table_keys:
+        monster_table.add_row(key[0], get_table_data(key[1], monster))
+
+    """
     monster_table.add_row("HP (Overkill)", get_table_data("hp", monster))
     monster_table.add_row("AP (Overkill)", get_table_data("ap", monster))
     monster_table.add_row("Gil", get_table_data("gil", monster))
@@ -96,5 +109,7 @@ def get_short_mon_table(monster, monster_name):
     monster_table.add_row("Drop (Rare Drop)", get_table_data("drops", monster))
     monster_table.add_row("Bribe (Max Amount)", get_table_data("bribe_max", monster))
     monster_table.add_row("Ronso Rage", get_table_data("ronso_rage", monster))
+    """
+    
 
     return monster_table
