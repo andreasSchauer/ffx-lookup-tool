@@ -62,6 +62,7 @@ DUPLICATES = {
 
 PHASES = {
     "braskas final aeon": ["braskas final aeon (first phase)", "braskas final aeon (second phase)"],
+    "dark magus sisters": ["dark cindy", "dark sandy", "dark mindy"],
     "isaaru": ["grothia", "pterya", "spathi"],
     "magus sisters": ["cindy", "sandy", "mindy"],
     "seymour": ["seymour (first phase)", "seymour (second phase)"],

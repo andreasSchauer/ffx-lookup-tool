@@ -24,6 +24,9 @@ def get_table_data(key, monster_name):
     if key == "ap":
         return get_ap_data(monster_name)
     
+    if key == "gil":
+        return format_num(monster["gil"])
+    
     if key == "ronso_rage":
         return get_rage_data(monster_name)
     
@@ -53,7 +56,12 @@ def get_table_data(key, monster_name):
 def get_stat_table_data(key, monster_name):
     stats = monsters[monster_name]["stats"]
     if key == "hp":
-        return f"{stats[key][0]} ({stats[key][1]})"
+        hp = format_num(stats["hp"][0])
+        hp_overkill = format_num(stats["hp"][1])
+        return f"{hp} ({hp_overkill})"
+    
+    if key == "mp":
+        return format_num(stats["mp"])
     
     return str(stats[key])
 
@@ -105,7 +113,7 @@ def get_status_resist_table_data(key, monster_name):
             return poison_res
 
         monster_hp = monster["stats"]["hp"][0]
-        poison_hp = round(monster_hp * poison_factor) 
+        poison_hp = format_num(round(monster_hp * poison_factor))
 
         return f"{poison_res} ({poison_hp})"
         
@@ -142,11 +150,11 @@ def get_item_table_data(key, monster_name):
         data = ""
 
         for item in items[key]:
-            data += f"{item[0].title()} x{item[1]}, "
+            data += f"{format_item(item)}, "
 
         return data[:-2]
     
-    return f"{items[key][0].title()} x{items[key][1]}"
+    return format_item(items[key])
 
 
 
@@ -182,8 +190,8 @@ def get_ability_list(key, equipment):
 
    
 def get_ap_data(monster_name):
-    ap = monsters[monster_name]["ap"][0]
-    ap_overkill = monsters[monster_name]["ap"][1]
+    ap = format_num(monsters[monster_name]["ap"][0])
+    ap_overkill = format_num(monsters[monster_name]["ap"][1])
 
     return f"{ap} ({ap_overkill})"
 
@@ -238,7 +246,7 @@ def get_bribe_max_data(monster_name):
     if item == "-":
         return "-"
     
-    gil_amount = f"{monster["stats"]["hp"][0] * 25} Gil"
+    gil_amount = f"{format_num(monster["stats"]["hp"][0] * 25)} Gil"
 
     return f"{item} ({gil_amount})"
 
@@ -254,17 +262,32 @@ def get_arena_data(key, monster_name):
         case "condition":
             return monster["condition"]
         case "reward":
-            item = monster["reward"][0].title()
-            amount = monster["reward"][1]
-            return f"{item} x{amount}"
+            return format_item(monster["reward"])
         case "monsters":
             return ", ".join(monster["monsters"]).title()
     
 
 def get_remiem_data(key, monster_name):
     monster = remiem_temple[monster_name]
-    item = monster[key][0].title()
-    amount = monster[key][1]
-    return f"{item} x{amount}"
+    return format_item(monster[key])
     
 
+
+def format_item(item_data):
+    item = item_data[0].title()
+    amount = item_data[1]
+    return f"{item} x{amount}"
+
+
+def format_num(num):
+    split_num = list(reversed(str(num)))
+    new_num = ""
+
+    for i in range(len(split_num)):
+        if i % 3 == 0:
+            new_num += "."
+
+        new_num += split_num[i]
+
+    new_num = "".join(list(reversed(new_num.lstrip("."))))
+    return new_num

@@ -1,14 +1,16 @@
 from rich.table import Table
 from rich import box
+from itertools import chain
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
 from ffx_search_tool.src.utilities.constants import DUPLICATES, PHASES, CELL_NAMES, TABLE_WIDTH
-from ffx_search_tool.src.utilities.table_data import get_table_data
+from ffx_search_tool.src.utilities.table_data import get_table_data, format_num
 from ffx_search_tool.src.utilities.tables import initialize_table, console
 from ffx_search_tool.src.utilities.ronso_calc import *
+from ffx_search_tool.src.search.location_search import select_location, get_local_monsters
 
 
 
-def monster_search(monster_name):
+def monster_search(monster_name, single=False):
     if monster_name in PHASES:
         monster_name = PHASES[monster_name][0]
     
@@ -16,14 +18,27 @@ def monster_search(monster_name):
         monster_name = select_duplicate(monster_name)
 
     if monster_name not in monsters:
-        raise Exception("Monster not found.")
+        monster_name = select_monster_name()
     
     monster = monsters[monster_name]
     
-    if monster["has_allies"]:
+    if monster["has_allies"] and not single:
         get_ally_tables(monster_name)
     else:
         get_monster_table(monster_name)
+
+
+
+def select_monster_name():
+    location = select_location("Monster not found.\nChoose a location by number to display options: ")
+    monsters = list(chain(*get_local_monsters(location)))
+
+    for i, monster in enumerate(monsters):
+        print(f"{i + 1}: {monster.title()}")
+        
+    choice = int(input(f"Now choose a monster by number: ")) - 1
+    return monsters[choice]
+
 
 
 
@@ -216,7 +231,8 @@ def get_bribe_table(monster_name):
     bribe_table = initialize_table("Bribe Success Rate", 2, column_names=col_names)
 
     while probability <= 100:
-        bribe_table.add_row(f"{hp * hp_factor}", f"{probability}%")
+        bribe_amount = format_num(hp * hp_factor)
+        bribe_table.add_row(f"{bribe_amount}", f"{probability}%")
         hp_factor += 5
         probability += 25
 

@@ -1,9 +1,9 @@
 from rich.table import Table
 from rich import box
-from ffx_search_tool.src.data import primers, celestials, monsters, monster_arena
+from ffx_search_tool.src.data import primers, celestials, monsters, monster_arena, rewards
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, RONSO_RAGES
 from ffx_search_tool.src.utilities.tables import initialize_table, get_short_mon_table, console
-from ffx_search_tool.src.utilities.table_data import get_table_data
+from ffx_search_tool.src.utilities.table_data import format_item
 
 
 def get_primer_table():
@@ -40,7 +40,7 @@ def get_celestial_table():
 
 
 
-def get_ronso_rage_table(ronso_rage):
+def ronso_rage_search(ronso_rage):
     if ronso_rage not in RONSO_RAGES:
         ronso_rage = select_rage()
     
@@ -81,12 +81,9 @@ def get_monster_arena_table(creation_name):
     monster_table.add_column(creation_name.title())
     monster_table.add_row(get_short_mon_table(creation_name))
 
-
     if "monsters" in creation:
         for monster_name in creation["monsters"]:
             monster_table.add_row(get_short_mon_table(monster_name))
-
-    
 
     console.print(monster_table)
 
@@ -99,5 +96,33 @@ def select_creation():
     choice = int(input("Creation not found. Choose by number: ")) - 1
     chosen_key = list(keys)[choice]
     return chosen_key
+
+
+
+def get_reward_table(**conditions):
+    if not any(conditions.values()):
+        conditions = {key: True for key in conditions}
+
+    reward_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
+    reward_table.add_column("Rewards")
+
+    for key in conditions.keys():
+        if conditions[key]:
+            reward_table.add_row(get_rewards(key))
+
+    console.print(reward_table)
+
+
+def get_rewards(key):
+    reward_list = rewards[key]["data"]
+    title = rewards[key]["title"]
+    first_col_title = rewards[key]["first_col_title"]
+
+    table = initialize_table(title, 2, column_names=[first_col_title, "Reward"])
+
+    for reward in reward_list:
+        table.add_row(reward["condition"], format_item(reward["reward"]))
+
+    return table
 
 
