@@ -1,6 +1,6 @@
 from rich.table import Table
 from rich import box
-from ffx_search_tool.src.data import monster_data
+from ffx_search_tool.src.data import monster_data, monster_arena_data, remiem_temple_data
 from ffx_search_tool.src.constants import DUPLICATES, PHASES, CELL_NAMES, TABLE_WIDTH
 from ffx_search_tool.src.utilities import get_table_data, initialize_table, console
 from ffx_search_tool.src.ronso_calc import *
@@ -57,7 +57,14 @@ def get_monster_table(monster_name, kimahri_hp=0, kimahri_str=0, kimahri_mag=0, 
     if monster["items"]["bribe"] is not None:
         table.add_row(get_bribe_table(monster_name))
 
-    table.add_row(get_equipment_table(monster_name))
+    if monster["equipment"]["drop_rate"] != 0:
+        table.add_row(get_equipment_table(monster_name))
+
+    if monster_name in monster_arena_data:
+        table.add_row(get_arena_table(monster_name))
+
+    if monster_name in remiem_temple_data:
+        table.add_row(get_remiem_table(monster_name))
 
     console.print(table)
 
@@ -173,20 +180,24 @@ def get_status_resist_table(monster_name):
 
 
 def get_item_table(monster_name):
-    monster = monster_data[monster_name]
-    items = monster["items"]
-    item_keys = list(items.keys())
-    item_cell_names = CELL_NAMES["items"]
-
     item_table = initialize_table("Items and Loot", 2, tab_header=False)
     item_table.add_row("AP (Overkill)", get_table_data("ap", monster_name))
     item_table.add_row("Gil", get_table_data("gil", monster_name))
     item_table.add_row("Ronso Rage", get_table_data("ronso_rage", monster_name))
 
+    monster = monster_data[monster_name]
+    items = monster["items"]
+    item_keys = list(items.keys())
+    item_cell_names = CELL_NAMES["items"]
+
     for i in range(len(items)):
         action = item_cell_names[i]
-        item = get_table_data(item_keys[i], monster_name)
-        
+        key = item_keys[i]
+
+        if items[key] is None:
+            continue
+
+        item = get_table_data(key, monster_name)
         item_table.add_row(action, item)
 
     return item_table
@@ -213,11 +224,7 @@ def get_bribe_table(monster_name):
 
 
 def get_equipment_table(monster_name):
-    monster = monster_data[monster_name]
-    
-    if monster["equipment"]["drop_rate"] == 0:
-        return
-    
+    monster = monster_data[monster_name]    
     equipment = monster["equipment"]
     equipment_keys = list(equipment.keys())
     equipment_cell_names = CELL_NAMES["equipment"]
@@ -230,3 +237,27 @@ def get_equipment_table(monster_name):
         equipment_table.add_row(name, data)
 
     return equipment_table
+
+
+
+def get_arena_table(monster_name):
+    monster = monster_arena_data[monster_name]
+    arena_table = initialize_table("Monster Arena Reward", 2, tab_header=False)
+
+    arena_table.add_row("Unlock Condition", get_table_data("condition", monster_name))
+
+    if "monsters" in monster:
+        arena_table.add_row("Monsters To Catch", get_table_data("monsters", monster_name))
+
+    arena_table.add_row("Reward", get_table_data("reward", monster_name))
+
+    return arena_table
+
+
+
+def get_remiem_table(monster_name):
+    remiem_table = initialize_table("Battle Rewards", 2, tab_header=False)
+    remiem_table.add_row("First Victory Reward", get_table_data("first reward", monster_name))
+    remiem_table.add_row("Recurring Victory Reward", get_table_data("recurring reward", monster_name))
+
+    return remiem_table

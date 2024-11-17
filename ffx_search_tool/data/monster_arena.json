@@ -37,7 +37,7 @@
     "abyss worm": {
         "condition": "Capture every monster within Bikanel once.",
         "reward": ["shadow gem", 99],
-        "monsters": ["alcyone", "cactuar", "mushussu", "sand wolf", "sand worm", "zu (bikanel)"]
+        "monsters": ["alcyone", "cactuar", "mushussu", "sand wolf", "sand worm", "zu (regular encounter)"]
     },
     "chimerageist": {
         "condition": "Capture every monster within the Calm Lands once.",
@@ -91,7 +91,7 @@
         "reward": ["mana spring", 99],
         "monsters": ["gandarewa", "aerouge", "imp"]
     },
-    "one eye": {
+    "one-eye": {
         "condition": "Capture 4 of every floating eye.",
         "reward": ["mega phoenix", 99],
         "monsters": ["floating eye", "buer", "evil eye (macalania)", "ahriman", "floating death"]

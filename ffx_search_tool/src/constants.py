@@ -25,7 +25,9 @@ CELL_NAMES = {
                     ]
 }
 
+
 LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "s.s. liki", "kilika", "luca", "mi'ihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "home", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "zanarkand dome", "sin", "omega ruins", "remiem temple", "monster arena"]
+
 
 DUPLICATES = {
     "anima": ["anima (remiem temple)", "anima (seymour)"],
@@ -53,6 +55,7 @@ DUPLICATES = {
     "yojimbo": ["yojimbo (cavern of the stolen fayth)", "yojimbo (remiem temple)"],
     "zu": ["zu (first encounter)", "zu (regular encounter)"]
 }
+
 
 PHASES = {
     "braskas final aeon": ["braskas final aeon (first phase)", "braskas final aeon (second phase)"],

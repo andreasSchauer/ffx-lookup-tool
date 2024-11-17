@@ -1,0 +1,35 @@
+{
+    "valefor (remiem temple)": {
+        "first reward": ["lightning gem", 4],
+        "recurring reward": ["power sphere", 4]
+    },
+    "ifrit (remiem temple)": {
+        "first reward": ["x-potion", 30],
+        "recurring reward": ["mana sphere", 6]
+
+    },
+    "ixion (remiem temple)": {
+        "first reward": ["chocobo feather", 10],
+        "recurring reward": ["power sphere", 8]
+    },
+   "shiva (remiem temple)": {
+        "first reward": ["mega-potion", 60],
+        "recurring reward": ["star curtain", 6]
+    },
+    "bahamut (remiem temple)": {
+        "first reward": ["flower sceptre", 1],
+        "recurring reward": ["mana sphere", 8]
+    },
+    "yojimbo (remiem temple)": {
+        "first reward": ["shadow gem", 8],
+        "recurring reward": ["power sphere", 10]
+    },
+    "anima (remiem temple)": {
+        "first reward": ["stamina spring", 60],
+        "recurring reward": ["mana sphere", 10]
+    },
+    "mindy": {
+        "first reward": ["shining gem", 40],
+        "recurring reward": ["power sphere", 12]
+    }
+}
