@@ -1,4 +1,148 @@
-{
+{   
+    "monster arena": [
+        {
+            "condition": "Capture every monster within Besaid once.",
+            "reward": ["stamina tonic", 99]
+        },
+        {
+            "condition": "Capture every monster within Kilika once.",
+            "reward": ["poison fang", 99]
+        },
+        {
+            "condition": "Capture every monster within the Mi'ihen Highroad once.",
+            "reward": ["soul spring", 99]
+        },
+        {
+            "condition": "Capture every monster within the Mushroom Rock Road once.",
+            "reward": ["candle of life", 99]
+        },
+        {
+            "condition": "Capture every monster within the Djose Highroad once.",
+            "reward": ["petrify grenade", 99]
+        },
+        {
+            "condition": "Capture every monster within the Thunder Plains once.",
+            "reward": ["chocobo wing", 99]
+        },
+        {
+            "condition": "Capture every monster within Macalania once.",
+            "reward": ["shining gem", 60]
+        },
+        {
+            "condition": "Capture every monster within Bikanel once.",
+            "reward": ["shadow gem", 99]
+        },
+        {
+            "condition": "Capture every monster within the Calm Lands once.",
+            "reward": ["farplane wind", 60]
+        },
+        {
+            "condition": "Capture every monster within the Cavern of the Stolen Fayth once.",
+            "reward": ["silver hourglass", 40]
+        },
+        {
+            "condition": "Capture every monster within Mount Gagazet once.",
+            "reward": ["blossom crown", 1]
+        },
+        {
+            "condition": "Capture every monster occuring Inside Sin once.",
+            "reward": ["lunar curtain", 99]
+        },
+        {
+            "condition": "Capture every monster within the Omega Ruins once.",
+            "reward": ["designer wallet", 60]
+        },
+        {
+            "condition": "Capture 3 of every wolf.",
+            "reward": ["chocobo feather", 99]
+        },
+        {
+            "condition": "Capture 3 of every reptile.",
+            "reward": ["stamina spring", 99]
+        },
+        {
+            "condition": "Capture 4 of every bird.",
+            "reward": ["mega phoenix", 99]
+        },
+        {
+            "condition": "Capture 4 of every wasp.",
+            "reward": ["mana tonic", 60]
+        },
+        {
+            "condition": "Capture 4 of every imp.",
+            "reward": ["mana spring", 99]
+        },
+        {
+            "condition": "Capture 4 of every evil eye.",
+            "reward": ["mega phoenix", 99]
+        },
+        {
+            "condition": "Capture 3 of every flan.",
+            "reward": ["twin stars", 60]
+        },
+        {
+            "condition": "Capture 3 of every elemental.",
+            "reward": ["star curtain", 60]
+        },
+        {
+            "condition": "Capture 3 of every helm.",
+            "reward": ["golden hourglass", 99]
+        },
+        {
+            "condition": "Capture 4 of every drake.",
+            "reward": ["purifying salt", 99]
+        },
+        {
+            "condition": "Capture 5 of every fungus.",
+            "reward": ["healing spring", 99]
+        },
+        {
+            "condition": "Capture 5 of every bomb.",
+            "reward": ["turbo ether", 60]
+        },
+        {
+            "condition": "Capture 5 of every ruminant.",
+            "reward": ["light curtain", 99]
+        },
+        {
+            "condition": "Capture 10 of every iron giant.",
+            "reward": ["mana tablet", 60]
+        },
+        {
+            "condition": "Bread 2 fiends in Area Conquest.",
+            "reward": ["three stars", 60]
+        },
+        {
+            "condition": "Bread 2 fiends in Species Conquest.",
+            "reward": ["supreme gem", 60]
+        },
+        {
+            "condition": "Bread 6 fiends in Area Conquest.",
+            "reward": ["door to tomorrow", 99]
+        },
+        {
+            "condition": "Bread 6 fiends in Species Conquest.",
+            "reward": ["gamblers spirit", 99]
+        },
+        {
+            "condition": "Capture every monster once.",
+            "reward": ["winning formula", 99]
+        },
+        {
+            "condition": "Capture every monster five times.",
+            "reward": ["dark matter", 99]
+        },
+        {
+            "condition": "Capture 2 of every underwater fiend within Mount Gagazet (Splashers count as one).",
+            "reward": ["megalixir", 30]
+        },
+        {
+            "condition": "Capture every monster ten times and defeat all other Area Conquest, Species Conquest and Original monsters.",
+            "reward": ["master sphere", 10]
+        }
+    ],
+
+
     "remiem temple": [
         {
             "condition": "Defeat Valefor at Remiem Temple (first time).",
@@ -65,6 +209,8 @@
             "reward": ["power sphere", 12]
         }
     ],
+
+
     "chocobo races": [
         {
             "condition": "Win the Chocobo Race at Remiem Temple without opening any chest.",
@@ -91,6 +237,8 @@
             "reward": ["three stars", 60]
         }
     ],
+
+
     "chocobo training": [
         {
             "condition": "Beat the target time at Wobbly Chocobo.",
@@ -125,6 +273,8 @@
             "reward": ["turbo ether", 1]
         }
     ],
+
+
     "lightning dodging": [
         {
             "condition": "Dodge 5 lightning strikes in a row.",
@@ -155,6 +305,8 @@
             "reward": ["venus sigil", 1]
         }
     ],
+
+
     "valley of the cactuars": [
         {
             "condition": "Complete 'Valley of the Cactuars' with 1 or more Guardian Spheres.",
@@ -173,6 +325,8 @@
             "reward": ["friend sphere", 1]
         }
     ],
+
+
     "butterfly hunt": [
         {
             "condition": "Win the Butterfly Hunt in Macalania Woods - Central before defeating Spherimorph.",
@@ -199,6 +353,8 @@
             "reward": ["saturn sigil", 1]
         }
     ],
+
+    
     "others": [
         {
             "condition": "Collect all 26 Al Bhed Primers and talk to Rin on the Airship.",

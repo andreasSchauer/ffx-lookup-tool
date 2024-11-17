@@ -18573,7 +18573,7 @@
         "has_allies": false,
         "ap": [55000, 55000],
         "gil": 0,
-        "ronso_rage": null,
+        "ronso_rage": "nova",
         "items": {
             "steal_normal": ["lv. 4 key sphere", 1],
             "steal_rare": ["warp sphere", 1],

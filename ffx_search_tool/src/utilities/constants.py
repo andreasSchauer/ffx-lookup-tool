@@ -29,6 +29,9 @@ CELL_NAMES = {
 LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "s.s. liki", "kilika", "luca", "mi'ihen highroad", "mushroom rock road", "djose highroad", "moonflow", "thunder plains", "macalania", "bikanel", "home", "airship", "bevelle", "via purifico", "calm lands", "cavern of the stolen fayth", "mount gagazet", "zanarkand", "zanarkand dome", "sin", "omega ruins", "remiem temple", "monster arena"]
 
 
+RONSO_RAGES = ["seed cannon", "self-destruct", "fire breath", "stone breath", "aqua breath", "thrust kick", "bad breath", "doom", "white wind", "mighty guard", "nova"]
+
+
 DUPLICATES = {
     "anima": ["anima (remiem temple)", "anima (seymour)"],
     "bahamut": ["bahamut (remiem temple)", "spathi"],
@@ -60,6 +63,7 @@ DUPLICATES = {
 PHASES = {
     "braskas final aeon": ["braskas final aeon (first phase)", "braskas final aeon (second phase)"],
     "isaaru": ["grothia", "pterya", "spathi"],
+    "magus sisters": ["cindy", "sandy", "mindy"],
     "seymour": ["seymour (first phase)", "seymour (second phase)"],
     "sinspawn geneaux": ["sinspawn geneaux (first phase)", "sinspawn geneaux (second phase)"]
 }

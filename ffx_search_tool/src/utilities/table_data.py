@@ -1,31 +1,10 @@
-from rich.console import Console
-from rich.table import Table
-from rich import box
-from ffx_search_tool.src.constants import TABLE_WIDTH
-from ffx_search_tool.src.data import monster_data, monster_arena_data, remiem_temple_data
+from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
 
-
-console = Console()
-
-
-def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):
-    table = Table(title=tab_title, show_lines=True, expand=True, box=box.SQUARE, title_style="bold", show_header=tab_header)
-    col_width = int(TABLE_WIDTH / num_columns)
-
-    if len(column_names) == 0:
-        for i in range(num_columns):
-            table.add_column("", width=col_width)
-    else:
-        for i in range(int(num_columns / len(column_names))):
-            for name in column_names:
-                table.add_column(name, width=col_width)
-
-    return table
 
 
 
 def get_table_data(key, monster_name):
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
 
     if key in monster["stats"]:
         return get_stat_table_data(key, monster_name)
@@ -60,10 +39,10 @@ def get_table_data(key, monster_name):
     if key == "location":
         return get_location_data(monster_name)
     
-    if monster_name in monster_arena_data and key in monster_arena_data[monster_name]:
+    if monster_name in monster_arena and key in monster_arena[monster_name]:
         return get_arena_data(key, monster_name)
     
-    if monster_name in remiem_temple_data and key in remiem_temple_data[monster_name]:
+    if monster_name in remiem_temple and key in remiem_temple[monster_name]:
         return get_remiem_data(key, monster_name)
     
     return str(monster[key])
@@ -72,7 +51,7 @@ def get_table_data(key, monster_name):
 
 
 def get_stat_table_data(key, monster_name):
-    stats = monster_data[monster_name]["stats"]
+    stats = monsters[monster_name]["stats"]
     if key == "hp":
         return f"{stats[key][0]} ({stats[key][1]})"
     
@@ -83,7 +62,7 @@ def get_stat_table_data(key, monster_name):
 
 
 def get_element_table_data(key, monster_name):
-    elem_resists = monster_data[monster_name]["elem_resists"]
+    elem_resists = monsters[monster_name]["elem_resists"]
     return get_elem_resist(elem_resists[key])
 
 
@@ -106,7 +85,7 @@ def get_elem_resist(factor):
 
 
 def get_status_resist_table_data(key, monster_name):
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     statusses = monster["stat_resists"]
 
     if key == "doom":
@@ -155,7 +134,7 @@ def get_stat_resist(resistance):
 
 
 def get_item_table_data(key, monster_name):
-    items = monster_data[monster_name]["items"]
+    items = monsters[monster_name]["items"]
     if items[key] is None:
         return "-"
     
@@ -173,7 +152,7 @@ def get_item_table_data(key, monster_name):
 
 
 def get_equipment_table_data(key, monster_name):
-    equipment = monster_data[monster_name]["equipment"]
+    equipment = monsters[monster_name]["equipment"]
     match (key):
         case "drop_rate":
             return f"{round(equipment["drop_rate"] * 100)}%"
@@ -203,15 +182,15 @@ def get_ability_list(key, equipment):
 
    
 def get_ap_data(monster_name):
-    ap = monster_data[monster_name]["ap"][0]
-    ap_overkill = monster_data[monster_name]["ap"][1]
+    ap = monsters[monster_name]["ap"][0]
+    ap_overkill = monsters[monster_name]["ap"][1]
 
     return f"{ap} ({ap_overkill})"
 
 
 
 def get_rage_data(monster_name):
-    rage = monster_data[monster_name]["ronso_rage"]
+    rage = monsters[monster_name]["ronso_rage"]
 
     if rage is None:
         return "-"
@@ -238,7 +217,7 @@ def get_drops_data(monster_name):
     drop_normal = get_table_data("drop_normal", monster_name)
     drop_rare = get_table_data("drop_rare", monster_name)
 
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
 
     if monster["items"]["drop_normal"] is not None and isinstance(monster["items"]["drop_normal"][0], list):
         drop = f"{drop_normal}\n({drop_rare})"
@@ -254,7 +233,7 @@ def get_drops_data(monster_name):
 
 def get_bribe_max_data(monster_name):
     item = get_table_data("bribe", monster_name)
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
 
     if item == "-":
         return "-"
@@ -265,12 +244,12 @@ def get_bribe_max_data(monster_name):
 
 
 def get_location_data(monster_name):
-    locations = monster_data[monster_name]["location"]
+    locations = monsters[monster_name]["location"]
     return ", ".join(locations).title()
 
 
 def get_arena_data(key, monster_name):
-    monster = monster_arena_data[monster_name]
+    monster = monster_arena[monster_name]
     match (key):
         case "condition":
             return monster["condition"]
@@ -283,7 +262,7 @@ def get_arena_data(key, monster_name):
     
 
 def get_remiem_data(key, monster_name):
-    monster = remiem_temple_data[monster_name]
+    monster = remiem_temple[monster_name]
     item = monster[key][0].title()
     amount = monster[key][1]
     return f"{item} x{amount}"

@@ -1,9 +1,10 @@
 from rich.table import Table
 from rich import box
-from ffx_search_tool.src.data import monster_data, monster_arena_data, remiem_temple_data
-from ffx_search_tool.src.constants import DUPLICATES, PHASES, CELL_NAMES, TABLE_WIDTH
-from ffx_search_tool.src.utilities import get_table_data, initialize_table, console
-from ffx_search_tool.src.ronso_calc import *
+from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
+from ffx_search_tool.src.utilities.constants import DUPLICATES, PHASES, CELL_NAMES, TABLE_WIDTH
+from ffx_search_tool.src.utilities.table_data import get_table_data
+from ffx_search_tool.src.utilities.tables import initialize_table, console
+from ffx_search_tool.src.utilities.ronso_calc import *
 
 
 
@@ -14,10 +15,10 @@ def monster_search(monster_name):
     if monster_name in DUPLICATES:
         monster_name = select_duplicate(monster_name)
 
-    if monster_name not in monster_data:
+    if monster_name not in monsters:
         raise Exception("Monster not found.")
     
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     
     if monster["has_allies"]:
         get_ally_tables(monster_name)
@@ -44,7 +45,7 @@ def select_duplicate(monster_name):
 
 
 def get_monster_table(monster_name, kimahri_hp=0, kimahri_str=0, kimahri_mag=0, kimahri_agl=0):
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     title = get_monster_table_title(monster_name)
 
     table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
@@ -60,28 +61,28 @@ def get_monster_table(monster_name, kimahri_hp=0, kimahri_str=0, kimahri_mag=0, 
     if monster["equipment"]["drop_rate"] != 0:
         table.add_row(get_equipment_table(monster_name))
 
-    if monster_name in monster_arena_data:
+    if monster_name in monster_arena:
         table.add_row(get_arena_table(monster_name))
 
-    if monster_name in remiem_temple_data:
+    if monster_name in remiem_temple:
         table.add_row(get_remiem_table(monster_name))
 
     console.print(table)
 
 
 def get_monster_table_title(monster_name):
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     locations = ", ".join(monster["location"]).title()
     title = f"{monster_name.title()} - {locations}"
 
     if monster["is_catchable"]:
-        title += " - Catchable"
+        title += " - Can be captured"
 
     return title
 
 
 def get_ally_tables(monster_name):
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     allies = monster["allies"]
     monster_in_multiple_fights = isinstance(allies[0], list)
 
@@ -112,7 +113,7 @@ def select_boss_fight(allies):
 
 
 def get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl):
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     stats = monster.copy()["stats"]
     stat_keys = list(stats.keys())
     stat_cell_names = CELL_NAMES["stats"]
@@ -138,7 +139,7 @@ def get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_a
 
 
 def get_element_table(monster_name):
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     elements = monster["elem_resists"]
     element_keys = list(elements.keys())
     element_cell_names = CELL_NAMES["elements"]
@@ -159,7 +160,7 @@ def get_element_table(monster_name):
 
 
 def get_status_resist_table(monster_name):
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     statusses = monster["stat_resists"]
     status_keys = list(statusses.keys())
     status_cell_names = CELL_NAMES["statusses"]
@@ -185,7 +186,7 @@ def get_item_table(monster_name):
     item_table.add_row("Gil", get_table_data("gil", monster_name))
     item_table.add_row("Ronso Rage", get_table_data("ronso_rage", monster_name))
 
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     items = monster["items"]
     item_keys = list(items.keys())
     item_cell_names = CELL_NAMES["items"]
@@ -205,7 +206,7 @@ def get_item_table(monster_name):
 
 
 def get_bribe_table(monster_name):
-    monster = monster_data[monster_name]
+    monster = monsters[monster_name]
     
     hp = monster["stats"]["hp"][0]
     hp_factor = 10
@@ -224,7 +225,7 @@ def get_bribe_table(monster_name):
 
 
 def get_equipment_table(monster_name):
-    monster = monster_data[monster_name]    
+    monster = monsters[monster_name]    
     equipment = monster["equipment"]
     equipment_keys = list(equipment.keys())
     equipment_cell_names = CELL_NAMES["equipment"]
@@ -241,7 +242,7 @@ def get_equipment_table(monster_name):
 
 
 def get_arena_table(monster_name):
-    monster = monster_arena_data[monster_name]
+    monster = monster_arena[monster_name]
     arena_table = initialize_table("Monster Arena Reward", 2, tab_header=False)
 
     arena_table.add_row("Unlock Condition", get_table_data("condition", monster_name))
