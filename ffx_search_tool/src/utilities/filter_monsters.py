@@ -4,11 +4,11 @@ from ffx_search_tool.src.data import monsters
 
 def filter_monsters(search_term, key):
     filtered_mons = list(filter(create_filter(search_term, key), monsters))
-    search_location = key == "location"
+    key_is_location = key == "location"
 
     reoccuring_monsters = get_reoccurring_monsters(filtered_mons)
     one_time_monsters = get_one_time_monsters(filtered_mons)
-    boss_monsters = get_boss_monsters(filtered_mons, include_allies=search_location)
+    boss_monsters = get_boss_monsters(filtered_mons, include_allies=key_is_location)
 
     return reoccuring_monsters, one_time_monsters, boss_monsters
 
