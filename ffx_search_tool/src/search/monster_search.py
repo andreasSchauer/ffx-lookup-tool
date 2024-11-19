@@ -3,10 +3,11 @@ from rich import box
 from itertools import chain
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
 from ffx_search_tool.src.utilities.constants import DUPLICATES, PHASES, CELL_NAMES, TABLE_WIDTH
-from ffx_search_tool.src.utilities.table_data import get_table_data, format_num
+from ffx_search_tool.src.utilities.format_monster_data import format_monster_data, format_num
 from ffx_search_tool.src.utilities.tables import initialize_table, console
 from ffx_search_tool.src.utilities.ronso_calc import *
-from ffx_search_tool.src.search.location_search import select_location, get_local_monsters
+from ffx_search_tool.src.utilities.filter_monsters import filter_monsters
+from ffx_search_tool.src.search.location_search import select_location
 
 
 
@@ -31,7 +32,7 @@ def monster_search(monster_name, single=False):
 
 def select_monster_name():
     location = select_location("Monster not found.\nChoose a location by number to display options: ")
-    monsters = list(chain(*get_local_monsters(location)))
+    monsters = list(chain(*filter_monsters(location, "location")))
 
     for i, monster in enumerate(monsters):
         print(f"{i + 1}: {monster.title()}")
@@ -144,8 +145,8 @@ def get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_a
     for i in range(0, len(stats), 2):
         left_stat = stat_cell_names[i]
         right_stat = stat_cell_names[i+1]
-        left_val = get_table_data(stat_keys[i], monster_name)
-        right_val = get_table_data(stat_keys[i+1], monster_name)
+        left_val = format_monster_data(stat_keys[i], monster_name)
+        right_val = format_monster_data(stat_keys[i+1], monster_name)
         
         stat_table.add_row(left_stat, left_val, right_stat, right_val)
 
@@ -165,8 +166,8 @@ def get_element_table(monster_name):
     for i in range(0, len(elements), 2):
         left_element = element_cell_names[i]
         right_element = element_cell_names[i+1]
-        left_resist = get_table_data(element_keys[i], monster_name)
-        right_resist = get_table_data(element_keys[i+1], monster_name)
+        left_resist = format_monster_data(element_keys[i], monster_name)
+        right_resist = format_monster_data(element_keys[i+1], monster_name)
 
         element_table.add_row(left_element, left_resist, right_element, right_resist)
 
@@ -186,8 +187,8 @@ def get_status_resist_table(monster_name):
     for i in range(0, len(statusses), 2):
         left_status = status_cell_names[i]
         right_status = status_cell_names[i+1]
-        left_resist = get_table_data(status_keys[i], monster_name)
-        right_resist = get_table_data(status_keys[i+1], monster_name)
+        left_resist = format_monster_data(status_keys[i], monster_name)
+        right_resist = format_monster_data(status_keys[i+1], monster_name)
         
         status_table.add_row(left_status, left_resist, right_status, right_resist)
 
@@ -197,9 +198,9 @@ def get_status_resist_table(monster_name):
 
 def get_item_table(monster_name):
     item_table = initialize_table("Items and Loot", 2, tab_header=False)
-    item_table.add_row("AP (Overkill)", get_table_data("ap", monster_name))
-    item_table.add_row("Gil", get_table_data("gil", monster_name))
-    item_table.add_row("Ronso Rage", get_table_data("ronso_rage", monster_name))
+    item_table.add_row("AP (Overkill)", format_monster_data("ap", monster_name))
+    item_table.add_row("Gil", format_monster_data("gil", monster_name))
+    item_table.add_row("Ronso Rage", format_monster_data("ronso_rage", monster_name))
 
     monster = monsters[monster_name]
     items = monster["items"]
@@ -213,7 +214,7 @@ def get_item_table(monster_name):
         if items[key] is None:
             continue
 
-        item = get_table_data(key, monster_name)
+        item = format_monster_data(key, monster_name)
         item_table.add_row(action, item)
 
     return item_table
@@ -250,7 +251,7 @@ def get_equipment_table(monster_name):
 
     for i in range(len(equipment)):
         name = equipment_cell_names[i]
-        data = get_table_data(equipment_keys[i], monster_name)
+        data = format_monster_data(equipment_keys[i], monster_name)
         equipment_table.add_row(name, data)
 
     return equipment_table
@@ -261,12 +262,12 @@ def get_arena_table(monster_name):
     monster = monster_arena[monster_name]
     arena_table = initialize_table("Monster Arena Reward", 2, tab_header=False)
 
-    arena_table.add_row("Unlock Condition", get_table_data("condition", monster_name))
+    arena_table.add_row("Unlock Condition", format_monster_data("condition", monster_name))
 
     if "monsters" in monster:
-        arena_table.add_row("Monsters To Catch", get_table_data("monsters", monster_name))
+        arena_table.add_row("Monsters To Catch", format_monster_data("monsters", monster_name))
 
-    arena_table.add_row("Reward", get_table_data("reward", monster_name))
+    arena_table.add_row("Reward", format_monster_data("reward", monster_name))
 
     return arena_table
 
@@ -274,7 +275,7 @@ def get_arena_table(monster_name):
 
 def get_remiem_table(monster_name):
     remiem_table = initialize_table("Battle Rewards", 2, tab_header=False)
-    remiem_table.add_row("First Victory Reward", get_table_data("first reward", monster_name))
-    remiem_table.add_row("Recurring Victory Reward", get_table_data("recurring reward", monster_name))
+    remiem_table.add_row("First Victory Reward", format_monster_data("first reward", monster_name))
+    remiem_table.add_row("Recurring Victory Reward", format_monster_data("recurring reward", monster_name))
 
     return remiem_table

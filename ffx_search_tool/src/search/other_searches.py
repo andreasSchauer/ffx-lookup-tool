@@ -3,7 +3,7 @@ from rich import box
 from ffx_search_tool.src.data import primers, celestials, monsters, monster_arena, rewards
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, RONSO_RAGES
 from ffx_search_tool.src.utilities.tables import initialize_table, get_short_mon_table, console
-from ffx_search_tool.src.utilities.table_data import format_item
+from ffx_search_tool.src.utilities.format_monster_data import format_item
 
 
 def get_primer_table():

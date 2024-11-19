@@ -2,7 +2,7 @@ from rich.table import Table
 from rich import box
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH
 from ffx_search_tool.src.data import monsters, monster_arena
-from ffx_search_tool.src.utilities.table_data import get_table_data
+from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
 from rich.console import Console
 
 console = Console()
@@ -61,7 +61,7 @@ def get_short_mon_table(monster_name):
             ("Ronso Rage", "ronso_rage")]
 
     for key in table_keys:
-        monster_table.add_row(key[0], get_table_data(key[1], monster_name))
+        monster_table.add_row(key[0], format_monster_data(key[1], monster_name))
 
     return monster_table
 
@@ -85,10 +85,10 @@ def get_catch_info(monster_name):
 def get_magus_table():
     magus_table = initialize_table("Magus Sisters", 2, tab_header=False)
     
-    magus_table.add_row("Cindy HP (Overkill)", get_table_data("hp", "cindy"))
-    magus_table.add_row("Sandy HP (Overkill)", get_table_data("hp", "sandy"))
-    magus_table.add_row("Mindy HP (Overkill)", get_table_data("hp", "mindy"))
-    magus_table.add_row("First Victory Reward", get_table_data("first reward", "mindy"))
-    magus_table.add_row("Recurring Victory Reward", get_table_data("recurring reward", "mindy"))
+    magus_table.add_row("Cindy HP (Overkill)", format_monster_data("hp", "cindy"))
+    magus_table.add_row("Sandy HP (Overkill)", format_monster_data("hp", "sandy"))
+    magus_table.add_row("Mindy HP (Overkill)", format_monster_data("hp", "mindy"))
+    magus_table.add_row("First Victory Reward", format_monster_data("first reward", "mindy"))
+    magus_table.add_row("Recurring Victory Reward", format_monster_data("recurring reward", "mindy"))
 
     return magus_table
