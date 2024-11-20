@@ -208,9 +208,9 @@ def format_rage(monster_name):
 
 
 def format_steals(monster_name):
-    steal_normal = format_monster_data("steal_normal", monster_name)
+    steal_common = format_monster_data("steal_common", monster_name)
     steal_rare = format_monster_data("steal_rare", monster_name)
-    steal = f"{steal_normal} ({steal_rare})"
+    steal = f"{steal_common} ({steal_rare})"
 
     if steal == "- (-)":
         return "-"
@@ -220,15 +220,15 @@ def format_steals(monster_name):
 
 
 def format_drops(monster_name):
-    drop_normal = format_monster_data("drop_normal", monster_name)
+    drop_common = format_monster_data("drop_common", monster_name)
     drop_rare = format_monster_data("drop_rare", monster_name)
 
     monster = monsters[monster_name]
 
-    if monster["items"]["drop_normal"] is not None and isinstance(monster["items"]["drop_normal"][0], list):
-        drop = f"{drop_normal}\n({drop_rare})"
+    if monster["items"]["drop_common"] is not None and isinstance(monster["items"]["drop_common"][0], list):
+        drop = f"{drop_common}\n({drop_rare})"
     else:
-        drop = f"{drop_normal} ({drop_rare})"
+        drop = f"{drop_common} ({drop_rare})"
 
     if drop == "- (-)":
         return "-"

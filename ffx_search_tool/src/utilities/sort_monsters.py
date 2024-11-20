@@ -2,18 +2,21 @@ from functools import cmp_to_key
 from ffx_search_tool.src.data import monsters
 
 
-def sort_monsters(monster_list, item_name, key):
-    return sorted(monster_list, key=cmp_to_key(lambda mon1, mon2: compare_items(mon1, mon2, item_name, key)), reverse=True)
+def sort_monsters_and_rewards(filtered_list, item_name, key):
+    return sorted(filtered_list, key=cmp_to_key(lambda mon1, mon2: compare_items(mon1, mon2, item_name, key)), reverse=True)
 
 
-def compare_items(monster_1, monster_2, item_name, key):
-    mon1 = monsters[monster_1]
-    mon2 = monsters[monster_2]
+def compare_items(x, y, item_name, key):
+    if key == "reward":
+        return compare_rewards(x, y)
+    
+    mon1 = monsters[x]
+    mon2 = monsters[y]
     match (key):
         case "steal":
-            return compare_steal_drop(mon1, mon2, item_name, "steal_normal", "steal_rare")
+            return compare_steal_drop(mon1, mon2, item_name, "steal_common", "steal_rare")
         case "drop":
-            return compare_steal_drop(mon1, mon2, "drop_normal", "drop_rare")
+            return compare_steal_drop(mon1, mon2, "drop_common", "drop_rare")
         case "bribe":
             return compare_bribe_items(mon1, mon2)
         case "equipment":
@@ -89,6 +92,18 @@ def compare_equipment(mon1, mon2):
     if mon1_rate > mon2_rate:
         return 1
     elif mon1_rate == mon2_rate:
+        return 0
+    else:
+        return -1
+    
+
+def compare_rewards(x, y):
+    x_amount = x["reward"][1]
+    y_amount = y["reward"][1]
+
+    if x_amount > y_amount:
+        return 1
+    elif x_amount == y_amount:
         return 0
     else:
         return -1

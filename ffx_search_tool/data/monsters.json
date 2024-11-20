@@ -9,9 +9,9 @@
         "gil": 420,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["water gem", 2],
+            "steal_common": ["water gem", 2],
             "steal_rare": ["healing spring", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["healing spring", 16]
         },
@@ -81,9 +81,9 @@
         "gil": 2200,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["healing water", 1],
+            "steal_common": ["healing water", 1],
             "steal_rare": ["stamina tablet", 1],
-            "drop_normal": ["power sphere", 2],
+            "drop_common": ["power sphere", 2],
             "drop_rare": ["power sphere", 4],
             "bribe": ["special sphere", 6]
         },
@@ -152,9 +152,9 @@
         "gil": 144,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["electro marble", 1],
+            "steal_common": ["electro marble", 1],
             "steal_rare": ["lightning marble", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["lightning marble", 4]
         },
@@ -224,9 +224,9 @@
         "gil": 650,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["musk", 2],
+            "steal_common": ["musk", 2],
             "steal_rare": ["musk", 3],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["farplane wind", 6]
         },
@@ -299,9 +299,9 @@
         "gil": 240,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["smoke bomb", 1],
+            "steal_common": ["smoke bomb", 1],
             "steal_rare": ["smoke bomb", 2],
-            "drop_normal": [["speed sphere", 1], ["al bhed potion", 1]],
+            "drop_common": [["speed sphere", 1], ["al bhed potion", 1]],
             "drop_rare": [["speed sphere", 1], ["al bhed potion", 1]],
             "bribe": ["mega-phoenix", 2]
         },
@@ -370,9 +370,9 @@
         "gil": 750,
         "ronso_rage": "stone breath",
         "items": {
-            "steal_normal": ["petrify grenade", 1],
+            "steal_common": ["petrify grenade", 1],
             "steal_rare": ["petrify grenade", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["healing water", 16]
         },
@@ -441,9 +441,9 @@
         "gil": 340,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["fish scale", 2],
+            "steal_common": ["fish scale", 2],
             "steal_rare": ["dragon scale", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["water gem", 15]
         },
@@ -511,9 +511,9 @@
         "gil": 880,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["dream powder", 2],
+            "steal_common": ["dream powder", 2],
             "steal_rare": ["dream powder", 3],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["dream powder", 20]
         },
@@ -585,9 +585,9 @@
         "gil": 1550,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["star curtain", 1],
+            "steal_common": ["star curtain", 1],
             "steal_rare": ["blessed gem", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["return sphere", 1],
             "bribe": ["teleport sphere", 20]
         },
@@ -653,9 +653,9 @@
         "gil": 730,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["soul spring", 1],
+            "steal_common": ["soul spring", 1],
             "steal_rare": ["soul spring", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 2],
             "bribe": ["stamina spring", 80]
         },
@@ -725,9 +725,9 @@
         "gil": 125,
         "ronso_rage": "stone breath",
         "items": {
-            "steal_normal": ["petrify grenade", 1],
+            "steal_common": ["petrify grenade", 1],
             "steal_rare": ["petrify grenade", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["petrify grenade", 24]
         },
@@ -797,9 +797,9 @@
         "gil": 320,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["silence grenade", 2],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["silence grenade", 12]
         },
@@ -873,9 +873,9 @@
         "gil": 1350,
         "ronso_rage": "mighty guard",
         "items": {
-            "steal_normal": ["ether", 1],
+            "steal_common": ["ether", 1],
             "steal_rare": ["mana tablet", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["lv. 2 key sphere", 30]
         },
@@ -947,9 +947,9 @@
         "gil": 1850,
         "ronso_rage": "mighty guard",
         "items": {
-            "steal_normal": ["healing spring", 1],
+            "steal_common": ["healing spring", 1],
             "steal_rare": ["twin stars", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["lv. 3 key sphere", 1],
             "bribe": ["three stars", 14]
         },
@@ -1020,9 +1020,9 @@
         "gil": 1500,
         "ronso_rage": ["thrust kick", "self-destruct", "doom", "mighty guard"],
         "items": {
-            "steal_normal": ["lv. 3 key sphere", 1],
+            "steal_common": ["lv. 3 key sphere", 1],
             "steal_rare": ["lv. 3 key sphere", 2],
-            "drop_normal": ["return sphere", 1],
+            "drop_common": ["return sphere", 1],
             "drop_rare": ["friend sphere", 1],
             "bribe": null
         },
@@ -1088,9 +1088,9 @@
         "gil": 62,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["antidote", 1],
+            "steal_common": ["antidote", 1],
             "steal_rare": ["poison fang", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["poison fang", 2]
         },
@@ -1164,9 +1164,9 @@
         "gil": 1040,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["shining gem", 4],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["return sphere", 1],
             "bribe": ["blk magic sphere", 2]
         },
@@ -1243,9 +1243,9 @@
         "gil": 180,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["fish scale", 2],
+            "steal_common": ["fish scale", 2],
             "steal_rare": ["fish scale", 3],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["water gem", 9]
         },
@@ -1314,9 +1314,9 @@
         "gil": 70,
         "ronso_rage": "self-destruct",
         "items": {
-            "steal_normal": ["bomb fragment", 2],
+            "steal_common": ["bomb fragment", 2],
             "steal_rare": ["bomb fragment", 3],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["bomb core", 16]
         },
@@ -1384,9 +1384,9 @@
         "gil": 470,
         "ronso_rage": "self-destruct",
         "items": {
-            "steal_normal": ["bomb core", 2],
+            "steal_common": ["bomb core", 2],
             "steal_rare": ["bomb core", 3],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["fire gem", 14]
         },
@@ -1455,9 +1455,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["turbo ether", 1],
+            "steal_common": ["turbo ether", 1],
             "steal_rare": ["elixir", 1],
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -1520,9 +1520,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["turbo ether", 1],
+            "steal_common": ["turbo ether", 1],
             "steal_rare": ["elixir", 1],
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -1584,9 +1584,9 @@
         "gil": 132,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["musk", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["musk", 2]
         },
@@ -1660,9 +1660,9 @@
         "gil": 97,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["hypello potion", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["hypello potion", 16]
         },
@@ -1734,9 +1734,9 @@
         "gil": 1500,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["chocobo feather", 1],
+            "steal_common": ["chocobo feather", 1],
             "steal_rare": ["chocobo wing", 1],
-            "drop_normal": ["speed sphere", 2],
+            "drop_common": ["speed sphere", 2],
             "drop_rare": ["speed sphere", 3],
             "bribe": null
         },
@@ -1805,9 +1805,9 @@
         "gil": 300,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["soft", 1],
+            "steal_common": ["soft", 1],
             "steal_rare": ["petrify grenade", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["petrify grenade", 6]
         },
@@ -1882,9 +1882,9 @@
         "gil": 970,
         "ronso_rage": "aqua breath",
         "items": {
-            "steal_normal": ["arctic wind", 1],
+            "steal_common": ["arctic wind", 1],
             "steal_rare": ["lightning marble", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 2],
             "bribe": ["mana tablet", 10]
         },
@@ -1953,9 +1953,9 @@
         "gil": 980,
         "ronso_rage": "aqua breath",
         "items": {
-            "steal_normal": ["arctic wind", 3],
+            "steal_common": ["arctic wind", 3],
             "steal_rare": ["lightning marble", 3],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 2],
             "bribe": ["underdogs secret", 15]
         },
@@ -2024,9 +2024,9 @@
         "gil": 1000,
         "ronso_rage": "aqua breath",
         "items": {
-            "steal_normal": ["ice gem", 1],
+            "steal_common": ["ice gem", 1],
             "steal_rare": ["lightning gem", 2],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 2],
             "bribe": ["lv. 4 key sphere", 2]
         },
@@ -2095,9 +2095,9 @@
         "gil": 970,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": ["lv. 1 key sphere", 2],
+            "drop_common": ["lv. 1 key sphere", 2],
             "drop_rare": ["lv. 1 key sphere", 2],
             "bribe": null
         },
@@ -2171,9 +2171,9 @@
         "gil": 1100,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["mana spring", 1],
+            "steal_common": ["mana spring", 1],
             "steal_rare": ["mana spring", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 2],
             "bribe": ["friend sphere", 2]
         },
@@ -2245,9 +2245,9 @@
         "gil": 12,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["phoenix down", 1],
+            "steal_common": ["phoenix down", 1],
             "steal_rare": ["smoke bomb", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["smoke bomb", 3]
         },
@@ -2317,9 +2317,9 @@
         "gil": 7000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lunar curtain", 1],
+            "steal_common": ["lunar curtain", 1],
             "steal_rare": ["lunar curtain", 2],
-            "drop_normal": ["elixir", 1],
+            "drop_common": ["elixir", 1],
             "drop_rare": ["elixir", 2],
             "bribe": null
         },
@@ -2393,9 +2393,9 @@
         "gil": 520,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["shining thorn", 1],
+            "steal_common": ["shining thorn", 1],
             "steal_rare": ["shining thorn", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["return sphere", 3]
         },
@@ -2470,9 +2470,9 @@
         "gil": 1080,
         "ronso_rage": "white wind",
         "items": {
-            "steal_normal": ["star curtain", 1],
+            "steal_common": ["star curtain", 1],
             "steal_rare": ["star curtain", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 2],
             "bribe": ["wht magic sphere", 2]
         },
@@ -2542,9 +2542,9 @@
         "gil": 1300,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lunar curtain", 1],
+            "steal_common": ["lunar curtain", 1],
             "steal_rare": ["lunar curtain", 2],
-            "drop_normal": ["power sphere", 2],
+            "drop_common": ["power sphere", 2],
             "drop_rare": ["power sphere", 2],
             "bribe": ["stamina tablet", 20]
         },
@@ -2614,9 +2614,9 @@
         "gil": 3500,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lunar curtain", 4],
+            "steal_common": ["lunar curtain", 4],
             "steal_rare": ["lunar curtain", 4],
-            "drop_normal": ["lv. 2 key sphere", 2],
+            "drop_common": ["lv. 2 key sphere", 2],
             "drop_rare": ["lv. 2 key sphere", 2],
             "bribe": null
         },
@@ -2687,9 +2687,9 @@
         "gil": 2400,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lunar curtain", 2],
+            "steal_common": ["lunar curtain", 2],
             "steal_rare": ["lunar curtain", 2],
-            "drop_normal": ["lv. 2 key sphere", 1],
+            "drop_common": ["lv. 2 key sphere", 1],
             "drop_rare": ["lv. 3 key sphere", 1],
             "bribe": ["designer wallet", 5]
         },
@@ -2759,9 +2759,9 @@
         "gil": 1470,
         "ronso_rage": "stone breath",
         "items": {
-            "steal_normal": ["petrify grenade", 2],
+            "steal_common": ["petrify grenade", 2],
             "steal_rare": ["petrify grenade", 2],
-            "drop_normal": ["mana sphere", 2],
+            "drop_common": ["mana sphere", 2],
             "drop_rare": ["lv. 3 key sphere", 2],
             "bribe": ["lv. 3 key sphere", 40]
         },
@@ -2831,9 +2831,9 @@
         "gil": 15,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["sleeping powder", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["sleeping powder", 4]
         },
@@ -2906,9 +2906,9 @@
         "gil": 27,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["soft", 1],
+            "steal_common": ["soft", 1],
             "steal_rare": ["petrify grenade", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["petrify grenade", 2]
         },
@@ -2980,9 +2980,9 @@
         "gil": 105,
         "ronso_rage": "fire breath",
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["hi-potion", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["hi-potion", 60]
         },
@@ -3051,9 +3051,9 @@
         "gil": 520,
         "ronso_rage": "fire breath",
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["mega-potion", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["mega-potion", 25]
         },
@@ -3123,9 +3123,9 @@
         "gil": 950,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["hi-potion", 2],
-            "drop_normal": ["ability sphere", 2],
+            "drop_common": ["ability sphere", 2],
             "drop_rare": ["ability sphere", 2],
             "bribe": ["farplane wind", 25]
         },
@@ -3194,9 +3194,9 @@
         "gil": 205,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["musk", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["musk", 3]
         },
@@ -3270,9 +3270,9 @@
         "gil": 280,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["musk", 1],
+            "steal_common": ["musk", 1],
             "steal_rare": ["musk", 2],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["musk", 4]
         },
@@ -3346,9 +3346,9 @@
         "gil": 2600,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["water gem", 1],
+            "steal_common": ["water gem", 1],
             "steal_rare": ["water gem", 2],
-            "drop_normal": ["blk magic sphere", 1],
+            "drop_common": ["blk magic sphere", 1],
             "drop_rare": ["blk magic sphere", 1],
             "bribe": null
         },
@@ -3415,9 +3415,9 @@
         "gil": 3000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["water gem", 2],
+            "steal_common": ["water gem", 2],
             "steal_rare": ["healing spring", 1],
-            "drop_normal": ["blk magic sphere", 1],
+            "drop_common": ["blk magic sphere", 1],
             "drop_rare": ["blk magic sphere", 1],
             "bribe": null
         },
@@ -3497,9 +3497,9 @@
         "gil": 840,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["silence grenade", 3],
+            "steal_common": ["silence grenade", 3],
             "steal_rare": ["ether", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["turbo ether", 30]
         },
@@ -3569,9 +3569,9 @@
         "gil": 2400,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": ["mega-phoenix", 1],
+            "drop_common": ["mega-phoenix", 1],
             "drop_rare": ["mega-phoenix", 2],
             "bribe": null
         },
@@ -3644,9 +3644,9 @@
         "gil": 540,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["candle of life", 2],
+            "steal_common": ["candle of life", 2],
             "steal_rare": ["purifying salt", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": null
         },
@@ -3715,9 +3715,9 @@
         "gil": 448,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["fire gem", 1],
+            "steal_common": ["fire gem", 1],
             "steal_rare": ["fire gem", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["fire gem", 10]
         },
@@ -3786,9 +3786,9 @@
         "gil": 1265,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["musk", 4],
+            "steal_common": ["musk", 4],
             "steal_rare": ["musk", 5],
-            "drop_normal": ["mana sphere", 2],
+            "drop_common": ["mana sphere", 2],
             "drop_rare": ["mana sphere", 3],
             "bribe": ["gamblers spirit", 10]
         },
@@ -3863,9 +3863,9 @@
         "gil": 44,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["echo screen", 1],
+            "steal_common": ["echo screen", 1],
             "steal_rare": ["musk", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["musk", 1]
         },
@@ -3939,9 +3939,9 @@
         "gil": 42,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["silence grenade", 1],
+            "steal_common": ["silence grenade", 1],
             "steal_rare": ["ether", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["turbo ether", 2]
         },
@@ -4010,9 +4010,9 @@
         "gil": 62,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["electro marble", 1],
+            "steal_common": ["electro marble", 1],
             "steal_rare": ["electro marble", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["lightning marble", 3]
         },
@@ -4081,9 +4081,9 @@
         "gil": 88,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["sleeping powder", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["sleeping powder", 7]
         },
@@ -4156,9 +4156,9 @@
         "gil": 30,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": null
         },
@@ -4227,9 +4227,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": null
         },
@@ -4299,9 +4299,9 @@
         "gil": 140,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["smoke bomb", 1],
+            "steal_common": ["smoke bomb", 1],
             "steal_rare": ["smoke bomb", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["smoke bomb", 99]
         },
@@ -4370,9 +4370,9 @@
         "gil": 1111,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["light curtain", 1],
+            "steal_common": ["light curtain", 1],
             "steal_rare": ["light curtain", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 2],
             "bribe": ["stamina tonic", 10]
         },
@@ -4441,9 +4441,9 @@
         "gil": 1111,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["light curtain", 1],
+            "steal_common": ["light curtain", 1],
             "steal_rare": ["light curtain", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 2],
             "bribe": ["mana tonic", 10]
         },
@@ -4512,9 +4512,9 @@
         "gil": 1000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["water gem", 1],
+            "steal_common": ["water gem", 1],
             "steal_rare": ["water gem", 2],
-            "drop_normal": ["power sphere", 2],
+            "drop_common": ["power sphere", 2],
             "drop_rare": ["power sphere", 2],
             "bribe": null
         },
@@ -4580,9 +4580,9 @@
         "gil": 810,
         "ronso_rage": "doom",
         "items": {
-            "steal_normal": ["phoenix down", 2],
+            "steal_common": ["phoenix down", 2],
             "steal_rare": ["farplane shadow", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["mega-phoenix", 38]
         },
@@ -4653,9 +4653,9 @@
         "gil": 107,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["electro marble", 1],
+            "steal_common": ["electro marble", 1],
             "steal_rare": ["electro marble", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["lightning marble", 20]
         },
@@ -4724,9 +4724,9 @@
         "gil": 520,
         "ronso_rage": "seed cannon",
         "items": {
-            "steal_normal": ["antidote", 4],
+            "steal_common": ["antidote", 4],
             "steal_rare": ["remedy", 3],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["remedy", 40]
         },
@@ -4797,9 +4797,9 @@
         "gil": 1900,
         "ronso_rage": "bad breath",
         "items": {
-            "steal_normal": ["remedy", 1],
+            "steal_common": ["remedy", 1],
             "steal_rare": ["mana tablet", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["wings to discovery", 7]
         },
@@ -4875,9 +4875,9 @@
         "gil": 540,
         "ronso_rage": "self-destruct",
         "items": {
-            "steal_normal": ["fire gem", 2],
+            "steal_common": ["fire gem", 2],
             "steal_rare": ["fire gem", 3],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["shining gem", 12]
         },
@@ -4946,9 +4946,9 @@
         "gil": 730,
         "ronso_rage": "fire breath",
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["mega-potion", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 2],
             "bribe": ["mega-potion" , 60]
         },
@@ -5018,9 +5018,9 @@
         "gil": 300,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["ether", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["ether", 10]
         },
@@ -5094,9 +5094,9 @@
         "gil": 480,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["x-potion", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": null
         },
@@ -5169,9 +5169,9 @@
         "gil": 380,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["x-potion", 2],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["x-potion", 30]
         },
@@ -5244,9 +5244,9 @@
         "gil": 1030,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hypello potion", 3],
+            "steal_common": ["hypello potion", 3],
             "steal_rare": ["shadow gem", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 2],
             "bribe": ["supreme gem", 20]
         },
@@ -5318,9 +5318,9 @@
         "gil": 188,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["arctic wind", 1],
+            "steal_common": ["arctic wind", 1],
             "steal_rare": ["arctic wind", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["ice gem", 9]
         },
@@ -5389,9 +5389,9 @@
         "gil": 138,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["soft", 1],
+            "steal_common": ["soft", 1],
             "steal_rare": ["petrify grenade", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["petrify grenade", 5]
         },
@@ -5463,9 +5463,9 @@
         "gil": 610,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lightning gem", 1],
+            "steal_common": ["lightning gem", 1],
             "steal_rare": ["lightning gem", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["lv. 1 key sphere", 4]
         },
@@ -5534,9 +5534,9 @@
         "gil": 46,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["soft", 1],
+            "steal_common": ["soft", 1],
             "steal_rare": ["petrify grenade", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["petrify grenade", 3]
         },
@@ -5608,9 +5608,9 @@
         "gil": 600,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["light curtain", 1],
+            "steal_common": ["light curtain", 1],
             "steal_rare": ["light curtain", 1],
-            "drop_normal": ["power sphere", 2],
+            "drop_common": ["power sphere", 2],
             "drop_rare": ["power sphere", 3],
             "bribe": ["stamina tonic", 1]
         },
@@ -5682,9 +5682,9 @@
         "gil": 23,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["antidote", 1],
+            "steal_common": ["antidote", 1],
             "steal_rare": ["poison fang", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["poison fang", 1]
         },
@@ -5756,9 +5756,9 @@
         "gil": 100,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["ability sphere", 2],
+            "drop_common": ["ability sphere", 2],
             "drop_rare": ["ability sphere", 2],
             "bribe": null
         },
@@ -5825,9 +5825,9 @@
         "gil": 50,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 1],
+            "steal_common": ["grenade", 1],
             "steal_rare": ["grenade", 2],
-            "drop_normal": ["ability sphere", 2],
+            "drop_common": ["ability sphere", 2],
             "drop_rare": ["ability sphere", 2],
             "bribe": null
         },
@@ -5889,9 +5889,9 @@
         "gil": 112,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["silver hourglass", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["silver hourglass", 20]
         },
@@ -5963,9 +5963,9 @@
         "gil": 72,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["silver hourglass", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["silver hourglass", 10]
         },
@@ -6037,9 +6037,9 @@
         "gil": 2200,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["stamina spring", 1],
+            "steal_common": ["stamina spring", 1],
             "steal_rare": ["stamina spring", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["lv. 4 key sphere", 1],
             "bribe": ["dark matter", 2]
         },
@@ -6110,9 +6110,9 @@
         "gil": 330,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lunar curtain", 1],
+            "steal_common": ["lunar curtain", 1],
             "steal_rare": ["lunar curtain", 2],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["shining thorn", 10]
         },
@@ -6179,9 +6179,9 @@
         "gil": 420,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": ["mp sphere", 1],
+            "drop_common": ["mp sphere", 1],
             "drop_rare": ["hp sphere", 1],
             "bribe": ["remedy", 80]
         },
@@ -6255,9 +6255,9 @@
         "gil": 1450,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 2],
+            "steal_common": ["hi-potion", 2],
             "steal_rare": ["stamina tonic", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["lv. 3 key sphere", 1],
             "bribe": ["chocobo wing", 60]
         },
@@ -6327,9 +6327,9 @@
         "gil": 330,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["water gem", 2],
+            "steal_common": ["water gem", 2],
             "steal_rare": ["water gem", 3],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["attribute sphere", 1]
         },
@@ -6399,9 +6399,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["hypello potion", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["hypello potion", 28]
         },
@@ -6473,9 +6473,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -6537,9 +6537,9 @@
         "gil": 1500,
         "ronso_rage": "bad breath",
         "items": {
-            "steal_normal": ["remedy", 1],
+            "steal_common": ["remedy", 1],
             "steal_rare": ["remedy", 1],
-            "drop_normal": ["mana sphere", 2],
+            "drop_common": ["mana sphere", 2],
             "drop_rare": ["mana sphere", 2],
             "bribe": ["wings to discovery", 4]
         },
@@ -6615,9 +6615,9 @@
         "gil": 1200,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["remedy", 2],
+            "steal_common": ["remedy", 2],
             "steal_rare": ["remedy", 3],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["return sphere", 24]
         },
@@ -6691,9 +6691,9 @@
         "gil": 2030,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["farplane shadow", 2],
+            "steal_common": ["farplane shadow", 2],
             "steal_rare": ["farplane shadow", 4],
-            "drop_normal": ["lv. 1 key sphere", 1],
+            "drop_common": ["lv. 1 key sphere", 1],
             "drop_rare": ["friend sphere", 1],
             "bribe": ["warp sphere", 1]
         },
@@ -6768,9 +6768,9 @@
         "gil": 2400,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["mana spring", 1],
+            "steal_common": ["mana spring", 1],
             "steal_rare": ["tetra elemental", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["teleport sphere", 1],
             "bribe": ["pendulum", 3]
         },
@@ -6839,9 +6839,9 @@
         "gil": 620,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["fish scale", 2],
+            "steal_common": ["fish scale", 2],
             "steal_rare": ["dragon scale", 2],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["water gem", 14]
         },
@@ -6909,9 +6909,9 @@
         "gil": 880,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["al bhed potion", 2],
+            "steal_common": ["al bhed potion", 2],
             "steal_rare": ["al bhed potion", 3],
-            "drop_normal": ["phoenix down", 1],
+            "drop_common": ["phoenix down", 1],
             "drop_rare": ["mega-phoenix", 1],
             "bribe": ["al bhed potion", 99]
         },
@@ -6987,9 +6987,9 @@
         "gil": 600,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 2],
+            "steal_common": ["grenade", 2],
             "steal_rare": ["grenade", 3],
-            "drop_normal": ["hi-potion", 1],
+            "drop_common": ["hi-potion", 1],
             "drop_rare": ["hi-potion", 1],
             "bribe": ["grenade", 50]
         },
@@ -7062,9 +7062,9 @@
         "gil": 800,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["al bhed potion", 1],
+            "steal_common": ["al bhed potion", 1],
             "steal_rare": ["al bhed potion", 2],
-            "drop_normal": ["hi-potion", 2],
+            "drop_common": ["hi-potion", 2],
             "drop_rare": ["hi-potion", 2],
             "bribe": ["al bhed potion", 40]
         },
@@ -7140,9 +7140,9 @@
         "gil": 673,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["al bhed potion", 1],
+            "steal_common": ["al bhed potion", 1],
             "steal_rare": ["al bhed potion", 2],
-            "drop_normal": ["phoenix down", 1],
+            "drop_common": ["phoenix down", 1],
             "drop_rare": ["mega-phoenix", 1],
             "bribe": ["al bhed potion", 60]
         },
@@ -7218,9 +7218,9 @@
         "gil": 530,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 2],
+            "steal_common": ["grenade", 2],
             "steal_rare": ["frag grenade", 2],
-            "drop_normal": ["hi-potion", 1],
+            "drop_common": ["hi-potion", 1],
             "drop_rare": ["mega-potion", 1],
             "bribe": ["door to tomorrow", 2]
         },
@@ -7293,9 +7293,9 @@
         "gil": 384,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 3],
+            "steal_common": ["grenade", 3],
             "steal_rare": ["grenade", 4],
-            "drop_normal": ["hi-potion", 1],
+            "drop_common": ["hi-potion", 1],
             "drop_rare": ["mega-potion", 1],
             "bribe": ["door to tomorrow", 1]
         },
@@ -7368,9 +7368,9 @@
         "gil": 215,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 3],
+            "steal_common": ["grenade", 3],
             "steal_rare": ["grenade", 3],
-            "drop_normal": ["hi-potion", 1],
+            "drop_common": ["hi-potion", 1],
             "drop_rare": ["mega-potion", 1],
             "bribe": ["door to tomorrow", 1]
         },
@@ -7443,9 +7443,9 @@
         "gil": 108,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["soft", 1],
+            "steal_common": ["soft", 1],
             "steal_rare": ["petrify grenade", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["petrify grenade", 4]
         },
@@ -7517,9 +7517,9 @@
         "gil": 33,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["sleeping powder", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["sleeping powder", 5]
         },
@@ -7592,9 +7592,9 @@
         "gil": 50000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -7656,9 +7656,9 @@
         "gil": 50000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -7720,9 +7720,9 @@
         "gil": 50000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -7784,9 +7784,9 @@
         "gil": 50000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -7848,9 +7848,9 @@
         "gil": 165,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["hypello potion", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["hypello potion", 24]
         },
@@ -7922,9 +7922,9 @@
         "gil": 270,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["silver hourglass", 1],
-            "drop_normal": [["power sphere", 1], ["al bhed potion", 1]],
+            "drop_common": [["power sphere", 1], ["al bhed potion", 1]],
             "drop_rare": [["power sphere", 1], ["al bhed potion", 1]],
             "bribe": ["gold hourglass", 4]
         },
@@ -7996,9 +7996,9 @@
         "gil": 320,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["poison fang", 1],
+            "steal_common": ["poison fang", 1],
             "steal_rare": ["poison fang", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["poison fang", 6]
         },
@@ -8070,9 +8070,9 @@
         "gil": 300,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["hi-potion", 2],
-            "drop_normal": ["potion", 1],
+            "drop_common": ["potion", 1],
             "drop_rare": ["hi-potion", 1],
             "bribe": null
         },
@@ -8142,9 +8142,9 @@
         "gil": 602,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["gold hourglass", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["gold hourglass", 12]
         },
@@ -8215,9 +8215,9 @@
         "gil": 580,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["elixir", 1],
+            "drop_common": ["elixir", 1],
             "drop_rare": ["elixir", 2],
             "bribe": null
         },
@@ -8284,9 +8284,9 @@
         "gil": 520,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["remedy", 1],
+            "steal_common": ["remedy", 1],
             "steal_rare": ["remedy", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["mana sphere", 2],
             "bribe": ["remedy", 70]
         },
@@ -8361,9 +8361,9 @@
         "gil": 220,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["dragon scale", 2],
+            "steal_common": ["dragon scale", 2],
             "steal_rare": ["water gem", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["healing spring", 20]
         },
@@ -8433,9 +8433,9 @@
         "gil": 980,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["stamina spring", 1],
+            "steal_common": ["stamina spring", 1],
             "steal_rare": ["stamina spring", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["stamina spring", 50]
         },
@@ -8505,9 +8505,9 @@
         "gil": 30000,
         "ronso_rage": "nova",
         "items": {
-            "steal_normal": ["gamblers spirit", 30],
+            "steal_common": ["gamblers spirit", 30],
             "steal_rare": ["gamblers spirit", 30],
-            "drop_normal": ["lv. 4 key sphere", 3],
+            "drop_common": ["lv. 4 key sphere", 3],
             "drop_rare": ["lv. 4 key sphere", 3],
             "bribe": null
         },
@@ -8573,9 +8573,9 @@
         "gil": 410,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["dragon scale", 2],
+            "steal_common": ["dragon scale", 2],
             "steal_rare": ["water gem", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["healing spring", 6]
         },
@@ -8644,9 +8644,9 @@
         "gil": 2,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 1],
+            "steal_common": ["grenade", 1],
             "steal_rare": ["grenade", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["water gem", 1]
         },
@@ -8708,9 +8708,9 @@
         "gil": 3,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 1],
+            "steal_common": ["grenade", 1],
             "steal_rare": ["grenade", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["water gem", 1]
         },
@@ -8772,9 +8772,9 @@
         "gil": 5,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 1],
+            "steal_common": ["grenade", 1],
             "steal_rare": ["grenade", 2],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["water gem", 2]
         },
@@ -8836,9 +8836,9 @@
         "gil": 970,
         "ronso_rage": "self-destruct",
         "items": {
-            "steal_normal": ["fire gem", 3],
+            "steal_common": ["fire gem", 3],
             "steal_rare": ["fire gem", 4],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["lv. 1 key sphere", 1],
             "bribe": ["shining gem", 36]
         },
@@ -8907,9 +8907,9 @@
         "gil": 1500,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["chocobo feather", 1],
+            "steal_common": ["chocobo feather", 1],
             "steal_rare": ["chocobo feather", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 2],
             "bribe": null
         },
@@ -8980,9 +8980,9 @@
         "gil": 48,
         "ronso_rage": "seed cannon",
         "items": {
-            "steal_normal": ["antidote", 1],
+            "steal_common": ["antidote", 1],
             "steal_rare": ["remedy", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["remedy", 8]
         },
@@ -9052,9 +9052,9 @@
         "gil": 42,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["hypello potion", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["hypello potion", 10]
         },
@@ -9126,9 +9126,9 @@
         "gil": 48,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["soft", 1],
+            "steal_common": ["soft", 1],
             "steal_rare": ["petrify grenade", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["petrify grenade", 2]
         },
@@ -9200,9 +9200,9 @@
         "gil": 55,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["bomb fragment", 1],
+            "steal_common": ["bomb fragment", 1],
             "steal_rare": ["bomb fragment", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["bomb core", 8]
         },
@@ -9271,9 +9271,9 @@
         "gil": 535,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["dragon scale", 1],
+            "steal_common": ["dragon scale", 1],
             "steal_rare": ["dragon scale", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["water gem", 20]
         },
@@ -9342,9 +9342,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -9406,9 +9406,9 @@
         "gil": 200,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["fish scale", 1],
+            "steal_common": ["fish scale", 1],
             "steal_rare": ["dragon scale", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["water gem", 3]
         },
@@ -9478,9 +9478,9 @@
         "gil": 180,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["fish scale", 2],
+            "steal_common": ["fish scale", 2],
             "steal_rare": ["dragon scale", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["water gem", 1]
         },
@@ -9550,9 +9550,9 @@
         "gil": 20,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": null
         },
@@ -9614,9 +9614,9 @@
         "gil": 6500,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["turbo ether", 1],
+            "steal_common": ["turbo ether", 1],
             "steal_rare": ["turbo ether", 2],
-            "drop_normal": ["return sphere", 1],
+            "drop_common": ["return sphere", 1],
             "drop_rare": ["return sphere", 1],
             "bribe": null
         },
@@ -9683,9 +9683,9 @@
         "gil": 225,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["sleeping powder", 2],
+            "steal_common": ["sleeping powder", 2],
             "steal_rare": ["sleeping powder", 2],
-            "drop_normal": [["power sphere", 1], ["al bhed potion", 1]],
+            "drop_common": [["power sphere", 1], ["al bhed potion", 1]],
             "drop_rare": [["power sphere", 1], ["al bhed potion", 1]],
             "bribe": ["sleeping powder", 12]
         },
@@ -9758,9 +9758,9 @@
         "gil": 1000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["shadow gem", 2],
+            "steal_common": ["shadow gem", 2],
             "steal_rare": ["stamina spring", 2],
-            "drop_normal": ["ability sphere", 2],
+            "drop_common": ["ability sphere", 2],
             "drop_rare": ["lv. 1 key sphere", 1],
             "bribe": ["winning formula", 15]
         },
@@ -9830,9 +9830,9 @@
         "gil": 336,
         "ronso_rage": "seed cannon",
         "items": {
-            "steal_normal": ["remedy", 2],
+            "steal_common": ["remedy", 2],
             "steal_rare": ["musk", 10],
-            "drop_normal": [["mana sphere", 1], ["al bhed potion", 2]],
+            "drop_common": [["mana sphere", 1], ["al bhed potion", 2]],
             "drop_rare": [["mana sphere", 1], ["al bhed potion", 2]],
             "bribe": ["remedy", 99]
         },
@@ -9904,9 +9904,9 @@
         "gil": 5000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["turbo ether", 1],
+            "steal_common": ["turbo ether", 1],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["blk magic sphere", 1],
+            "drop_common": ["blk magic sphere", 1],
             "drop_rare": ["special sphere", 1],
             "bribe": null
         },
@@ -9974,9 +9974,9 @@
         "gil": 5000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["turbo ether", 1],
+            "steal_common": ["turbo ether", 1],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["blk magic sphere", 1],
+            "drop_common": ["blk magic sphere", 1],
             "drop_rare": ["special sphere", 1],
             "bribe": null
         },
@@ -10044,9 +10044,9 @@
         "gil": 3500,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["tetra elemental", 2],
+            "steal_common": ["tetra elemental", 2],
             "steal_rare": ["tetra elemental", 3],
-            "drop_normal": ["lv. 2 key sphere", 2],
+            "drop_common": ["lv. 2 key sphere", 2],
             "drop_rare": ["lv. 2 key sphere", 2],
             "bribe": null
         },
@@ -10117,9 +10117,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -10182,9 +10182,9 @@
         "gil": 6000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["elixir", 1],
+            "steal_common": ["elixir", 1],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["lv. 4 key sphere", 1],
+            "drop_common": ["lv. 4 key sphere", 1],
             "drop_rare": ["lv. 4 key sphere", 1],
             "bribe": null
         },
@@ -10252,9 +10252,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -10317,9 +10317,9 @@
         "gil": 12000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["shining gem", 1],
+            "steal_common": ["shining gem", 1],
             "steal_rare": ["supreme gem", 1],
-            "drop_normal": ["lv. 3 key sphere", 1],
+            "drop_common": ["lv. 3 key sphere", 1],
             "drop_rare": ["lv. 3 key sphere", 2],
             "bribe": null
         },
@@ -10389,9 +10389,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -10453,9 +10453,9 @@
         "gil": 368,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hypello potion", 1],
+            "steal_common": ["hypello potion", 1],
             "steal_rare": ["hypello potion", 2],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["hypello potion", 50]
         },
@@ -10526,9 +10526,9 @@
         "gil": 73,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["smoke bomb", 1],
+            "steal_common": ["smoke bomb", 1],
             "steal_rare": ["smoke bomb", 2],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["smoke bomb", 5]
         },
@@ -10598,9 +10598,9 @@
         "gil": 10000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["stamina spring", 3],
+            "steal_common": ["stamina spring", 3],
             "steal_rare": ["stamina spring", 4],
-            "drop_normal": ["mp sphere", 1],
+            "drop_common": ["mp sphere", 1],
             "drop_rare": ["mp sphere", 1],
             "bribe": null
         },
@@ -10668,9 +10668,9 @@
         "gil": 100,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": null
         },
@@ -10740,9 +10740,9 @@
         "gil": 12000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["ether", 1],
+            "steal_common": ["ether", 1],
             "steal_rare": ["supreme gem", 1],
-            "drop_normal": ["lv. 3 key sphere", 1],
+            "drop_common": ["lv. 3 key sphere", 1],
             "drop_rare": ["lv. 3 key sphere", 1],
             "bribe": null
         },
@@ -10812,9 +10812,9 @@
         "gil": 10000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["mega-potion", 1],
+            "steal_common": ["mega-potion", 1],
             "steal_rare": ["supreme gem", 1],
-            "drop_normal": ["hp sphere", 1],
+            "drop_common": ["hp sphere", 1],
             "drop_rare": ["hp sphere", 1],
             "bribe": null
         },
@@ -10881,9 +10881,9 @@
         "gil": 10000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["x-potion", 1],
+            "steal_common": ["x-potion", 1],
             "steal_rare": ["shining gem", 1],
-            "drop_normal": ["lv. 3 key sphere", 1],
+            "drop_common": ["lv. 3 key sphere", 1],
             "drop_rare": ["lv. 3 key sphere", 1],
             "bribe": null
         },
@@ -10950,9 +10950,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -11015,9 +11015,9 @@
         "gil": 22,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": null
         },
@@ -11080,9 +11080,9 @@
         "gil": 24,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": null
         },
@@ -11144,9 +11144,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -11209,9 +11209,9 @@
         "gil": 115,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["ability sphere", 2],
+            "drop_common": ["ability sphere", 2],
             "drop_rare": ["ability sphere", 2],
             "bribe": null
         },
@@ -11279,9 +11279,9 @@
         "gil": 10000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["star curtain", 1],
+            "steal_common": ["star curtain", 1],
             "steal_rare": ["shining gem", 1],
-            "drop_normal": ["return sphere", 1],
+            "drop_common": ["return sphere", 1],
             "drop_rare": ["return sphere", 1],
             "bribe": null
         },
@@ -11349,9 +11349,9 @@
         "gil": 300,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": ["power sphere", 2],
+            "drop_common": ["power sphere", 2],
             "drop_rare": ["power sphere", 3],
             "bribe": null
         },
@@ -11419,9 +11419,9 @@
         "gil": 300,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": ["power sphere", 2],
+            "drop_common": ["power sphere", 2],
             "drop_rare": ["power sphere", 3],
             "bribe": null
         },
@@ -11489,9 +11489,9 @@
         "gil": 30,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": null
         },
@@ -11554,9 +11554,9 @@
         "gil": 1000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -11624,9 +11624,9 @@
         "gil": 1000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": ["lv. 1 key sphere", 3],
+            "drop_common": ["lv. 1 key sphere", 3],
             "drop_rare": ["lv. 1 key sphere", 3],
             "bribe": null
         },
@@ -11697,9 +11697,9 @@
         "gil": 300,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -11773,9 +11773,9 @@
         "gil": 200,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -11849,9 +11849,9 @@
         "gil": 200,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -11924,9 +11924,9 @@
         "gil": 420,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["dream powder", 1],
+            "steal_common": ["dream powder", 1],
             "steal_rare": ["dream powder", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["dream powder", 12]
         },
@@ -11998,9 +11998,9 @@
         "gil": 93,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["antarctic wind", 2],
+            "steal_common": ["antarctic wind", 2],
             "steal_rare": ["antarctic wind", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["arctic wind", 10]
         },
@@ -12069,9 +12069,9 @@
         "gil": 192,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["sleeping powder", 1],
+            "steal_common": ["sleeping powder", 1],
             "steal_rare": ["sleeping powder", 2],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["sleeping powder", 11]
         },
@@ -12144,9 +12144,9 @@
         "gil": 7000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["ether", 1],
+            "steal_common": ["ether", 1],
             "steal_rare": ["turbo ether", 1],
-            "drop_normal": ["lv. 4 key sphere", 1],
+            "drop_common": ["lv. 4 key sphere", 1],
             "drop_rare": ["lv. 4 key sphere", 1],
             "bribe": null
         },
@@ -12219,9 +12219,9 @@
         "gil": 4000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["ether", 1],
+            "steal_common": ["ether", 1],
             "steal_rare": ["turbo ether", 1],
-            "drop_normal": ["lv. 2 key sphere", 1],
+            "drop_common": ["lv. 2 key sphere", 1],
             "drop_rare": ["lv. 2 key sphere", 1],
             "bribe": null
         },
@@ -12294,9 +12294,9 @@
         "gil": 1300,
         "ronso_rage": "white wind",
         "items": {
-            "steal_normal": ["stamina spring", 1],
+            "steal_common": ["stamina spring", 1],
             "steal_rare": ["stamina spring", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["friend sphere", 1],
             "bribe": ["twin stars", 10]
         },
@@ -12365,9 +12365,9 @@
         "gil": 100,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 1],
+            "steal_common": ["grenade", 1],
             "steal_rare": ["frag grenade", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["dragon scale", 4]
         },
@@ -12437,9 +12437,9 @@
         "gil": 140,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 1],
+            "steal_common": ["grenade", 1],
             "steal_rare": ["frag grenade", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["dragon scale", 8]
         },
@@ -12509,9 +12509,9 @@
         "gil": 200,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 1],
+            "steal_common": ["grenade", 1],
             "steal_rare": ["frag grenade", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["dragon scale", 12]
         },
@@ -12581,9 +12581,9 @@
         "gil": 290,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["hypello potion", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["hypello potion", 28]
         },
@@ -12655,9 +12655,9 @@
         "gil": 530,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["silence grenade", 2],
+            "steal_common": ["silence grenade", 2],
             "steal_rare": ["ether", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["turbo ether", 16]
         },
@@ -12729,9 +12729,9 @@
         "gil": 50,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["electro marble", 1],
+            "steal_common": ["electro marble", 1],
             "steal_rare": ["electro marble", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["lightning marble", 8]
         },
@@ -12800,9 +12800,9 @@
         "gil": 2000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["farplane shadow", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["lv. 2 key sphere", 1],
             "bribe": ["amulet", 2]
         },
@@ -12870,9 +12870,9 @@
         "gil": 100,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["grenade", 1],
+            "steal_common": ["grenade", 1],
             "steal_rare": ["grenade", 3],
-            "drop_normal": ["power sphere", 2],
+            "drop_common": ["power sphere", 2],
             "drop_rare": ["power sphere", 2],
             "bribe": null
         },
@@ -12934,9 +12934,9 @@
         "gil": 20000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["door to tomorrow", 10],
+            "steal_common": ["door to tomorrow", 10],
             "steal_rare": ["door to tomorrow", 20],
-            "drop_normal": ["lv. 3 key sphere", 3],
+            "drop_common": ["lv. 3 key sphere", 3],
             "drop_rare": ["lv. 3 key sphere", 3],
             "bribe": ["pendulum", 99]
         },
@@ -13002,9 +13002,9 @@
         "gil": 720,
         "ronso_rage": "fire breath",
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["hi-potion", 2],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": ["x-potion", 60]
         },
@@ -13073,9 +13073,9 @@
         "gil": 1780,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["farplane wind", 1],
+            "steal_common": ["farplane wind", 1],
             "steal_rare": ["shining gem", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["lv. 2 key sphere", 1],
             "bribe": ["megalixir", 20]
         },
@@ -13144,9 +13144,9 @@
         "gil": 50,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": null
         },
@@ -13214,9 +13214,9 @@
         "gil": 60,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["potion", 1],
+            "steal_common": ["potion", 1],
             "steal_rare": ["silver hourglass", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["silver hourglass", 10]
         },
@@ -13288,9 +13288,9 @@
         "gil": 460,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 2],
+            "steal_common": ["hi-potion", 2],
             "steal_rare": ["purifying salt", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": null
         },
@@ -13359,9 +13359,9 @@
         "gil": 142,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["poison fang", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 1],
             "bribe": ["poison fang", 3]
         },
@@ -13433,9 +13433,9 @@
         "gil": 18,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["fish scale", 1],
+            "steal_common": ["fish scale", 1],
             "steal_rare": ["dragon scale", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["water gem", 2]
         },
@@ -13505,9 +13505,9 @@
         "gil": 3000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["x-potion", 1],
-            "drop_normal": ["power sphere", 1],
+            "drop_common": ["power sphere", 1],
             "drop_rare": ["power sphere", 2],
             "bribe": null
         },
@@ -13575,9 +13575,9 @@
         "gil": 48,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["antarctic wind", 1],
+            "steal_common": ["antarctic wind", 1],
             "steal_rare": ["antarctic wind", 2],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["arctic wind", 7]
         },
@@ -13646,9 +13646,9 @@
         "gil": 85,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": ["hi-potion", 1],
+            "drop_common": ["hi-potion", 1],
             "drop_rare": ["x-potion", 1],
             "bribe": null
         },
@@ -13721,9 +13721,9 @@
         "gil": 1070,
         "ronso_rage": "doom",
         "items": {
-            "steal_normal": ["farplane shadow", 1],
+            "steal_common": ["farplane shadow", 1],
             "steal_rare": ["farplane wind", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 2],
             "bribe": ["farplane wind", 60]
         },
@@ -13793,9 +13793,9 @@
         "gil": 220,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["hi-potion", 1],
+            "steal_common": ["hi-potion", 1],
             "steal_rare": ["mega-potion", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 2],
             "bribe": ["megalixir", 1]
         },
@@ -13864,9 +13864,9 @@
         "gil": 1080,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["holy water", 3],
+            "steal_common": ["holy water", 3],
             "steal_rare": ["ether", 2],
-            "drop_normal": ["phoenix down", 2],
+            "drop_common": ["phoenix down", 2],
             "drop_rare": ["mega-phoenix", 1],
             "bribe": ["ether", 16]
         },
@@ -13937,9 +13937,9 @@
         "gil": 1300,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["remedy", 1],
+            "steal_common": ["remedy", 1],
             "steal_rare": ["ether", 1],
-            "drop_normal": ["phoenix down", 1],
+            "drop_common": ["phoenix down", 1],
             "drop_rare": ["mega-phoenix", 1],
             "bribe": ["ether", 10]
         },
@@ -14012,9 +14012,9 @@
         "gil": 33,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["electro marble", 1],
+            "steal_common": ["electro marble", 1],
             "steal_rare": ["lightning marble", 1],
-            "drop_normal": ["mana sphere", 1],
+            "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
             "bribe": ["lightning marble", 6]
         },
@@ -14083,9 +14083,9 @@
         "gil": 1500,
         "ronso_rage": ["fire breath", "aqua breath", "stone breath", "white wind"],
         "items": {
-            "steal_normal": ["lv. 3 key sphere", 1],
+            "steal_common": ["lv. 3 key sphere", 1],
             "steal_rare": ["lv. 3 key sphere", 2],
-            "drop_normal": ["return sphere", 1],
+            "drop_common": ["return sphere", 1],
             "drop_rare": ["friend sphere", 1],
             "bribe": null
         },
@@ -14151,9 +14151,9 @@
         "gil": 1080,
         "ronso_rage": "thrust kick",
         "items": {
-            "steal_normal": ["holy water", 3],
+            "steal_common": ["holy water", 3],
             "steal_rare": ["ether", 2],
-            "drop_normal": ["hi-potion", 2],
+            "drop_common": ["hi-potion", 2],
             "drop_rare": ["mega-potion", 1],
             "bribe": ["elixir", 12]
         },
@@ -14224,9 +14224,9 @@
         "gil": 1300,
         "ronso_rage": "thrust kick",
         "items": {
-            "steal_normal": ["remedy", 1],
+            "steal_common": ["remedy", 1],
             "steal_rare": ["ether", 1],
-            "drop_normal": ["hi-potion", 1],
+            "drop_common": ["hi-potion", 1],
             "drop_rare": ["mega-potion", 1],
             "bribe": ["elixir", 8]
         },
@@ -14299,9 +14299,9 @@
         "gil": 480,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["soft", 1],
+            "steal_common": ["soft", 1],
             "steal_rare": ["petrify grenade", 1],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["power sphere", 1],
             "bribe": ["petrify grenade", 12]
         },
@@ -14376,9 +14376,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -14441,9 +14441,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -14505,9 +14505,9 @@
         "gil": 9000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["stamina tablet", 1],
+            "steal_common": ["stamina tablet", 1],
             "steal_rare": ["farplane wind", 1],
-            "drop_normal": ["lv. 3 key sphere", 1],
+            "drop_common": ["lv. 3 key sphere", 1],
             "drop_rare": ["lv. 3 key sphere", 1],
             "bribe": null
         },
@@ -14574,9 +14574,9 @@
         "gil": 950,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["petrify grenade", 2],
+            "steal_common": ["petrify grenade", 2],
             "steal_rare": ["petrify grenade", 3],
-            "drop_normal": ["speed sphere", 1],
+            "drop_common": ["speed sphere", 1],
             "drop_rare": ["speed sphere", 2],
             "bribe": ["rename card", 10]
         },
@@ -14648,9 +14648,9 @@
         "gil": 1200,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["smoke bomb", 3],
+            "steal_common": ["smoke bomb", 3],
             "steal_rare": ["smoke bomb", 4],
-            "drop_normal": [["power sphere", 1], ["al bhed potion", 2]],
+            "drop_common": [["power sphere", 1], ["al bhed potion", 2]],
             "drop_rare": [["power sphere", 2], ["al bhed potion", 2]],
             "bribe": null
         },
@@ -14719,9 +14719,9 @@
         "gil": 1200,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["smoke bomb", 3],
+            "steal_common": ["smoke bomb", 3],
             "steal_rare": ["smoke bomb", 4],
-            "drop_normal": [["power sphere", 1], ["al bhed potion", 2]],
+            "drop_common": [["power sphere", 1], ["al bhed potion", 2]],
             "drop_rare": [["power sphere", 2], ["al bhed potion", 3]],
             "bribe": ["skill sphere", 2]
         },
@@ -14790,9 +14790,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -14855,9 +14855,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -14919,9 +14919,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -14983,9 +14983,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15048,9 +15048,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15112,9 +15112,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15176,9 +15176,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15240,9 +15240,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15304,9 +15304,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15368,9 +15368,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15433,9 +15433,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15497,9 +15497,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15561,9 +15561,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15626,9 +15626,9 @@
         "gil": 3000,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["silence grenade", 3],
+            "steal_common": ["silence grenade", 3],
             "steal_rare": ["farplane shadow", 1],
-            "drop_normal": ["ability sphere", 1],
+            "drop_common": ["ability sphere", 1],
             "drop_rare": ["ability sphere", 1],
             "bribe": null
         },
@@ -15699,9 +15699,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15764,9 +15764,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15829,9 +15829,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15894,9 +15894,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -15958,9 +15958,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["smoke bomb", 3],
+            "steal_common": ["smoke bomb", 3],
             "steal_rare": ["stamina spring", 2],
-            "drop_normal": ["amulet", 2],
+            "drop_common": ["amulet", 2],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16030,9 +16030,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["remedy", 4],
+            "steal_common": ["remedy", 4],
             "steal_rare": ["mana spring", 2],
-            "drop_normal": ["mana tonic", 2],
+            "drop_common": ["mana tonic", 2],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16110,9 +16110,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["stamina spring", 4],
+            "steal_common": ["stamina spring", 4],
             "steal_rare": ["soul spring", 2],
-            "drop_normal": ["healing spring", 20],
+            "drop_common": ["healing spring", 20],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16182,9 +16182,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["farplane wind", 2],
+            "steal_common": ["farplane wind", 2],
             "steal_rare": ["blessed gem", 1],
-            "drop_normal": ["shining gem", 3],
+            "drop_common": ["shining gem", 3],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16257,9 +16257,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["petrify grenade", 4],
+            "steal_common": ["petrify grenade", 4],
             "steal_rare": ["three stars", 1],
-            "drop_normal": ["supreme gem", 2],
+            "drop_common": ["supreme gem", 2],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16337,9 +16337,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["chocobo wing", 2],
+            "steal_common": ["chocobo wing", 2],
             "steal_rare": ["designer wallet", 1],
-            "drop_normal": ["blessed gem", 3],
+            "drop_common": ["blessed gem", 3],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16409,9 +16409,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["farplane shadow", 4],
+            "steal_common": ["farplane shadow", 4],
             "steal_rare": ["farplane wind", 1],
-            "drop_normal": ["rename card", 1],
+            "drop_common": ["rename card", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16481,9 +16481,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["shadow gem", 4],
+            "steal_common": ["shadow gem", 4],
             "steal_rare": ["stamina tablet", 1],
-            "drop_normal": ["stamina tonic", 1],
+            "drop_common": ["stamina tonic", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16553,9 +16553,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["mana spring", 2],
+            "steal_common": ["mana spring", 2],
             "steal_rare": ["stamina spring", 2],
-            "drop_normal": ["return sphere", 1],
+            "drop_common": ["return sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16625,9 +16625,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["candle of life", 2],
+            "steal_common": ["candle of life", 2],
             "steal_rare": ["designer wallet", 1],
-            "drop_normal": ["farplane wind", 3],
+            "drop_common": ["farplane wind", 3],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16705,9 +16705,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["healing spring", 3],
+            "steal_common": ["healing spring", 3],
             "steal_rare": ["stamina tonic", 1],
-            "drop_normal": ["three stars", 1],
+            "drop_common": ["three stars", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16785,9 +16785,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["purifying salt", 3],
+            "steal_common": ["purifying salt", 3],
             "steal_rare": ["shining gem", 1],
-            "drop_normal": ["mana tablet", 1],
+            "drop_common": ["mana tablet", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16857,9 +16857,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["healing spring", 2],
+            "steal_common": ["healing spring", 2],
             "steal_rare": ["stamina tablet", 1],
-            "drop_normal": ["friend sphere", 1],
+            "drop_common": ["friend sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -16929,9 +16929,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["chocobo feather", 2],
+            "steal_common": ["chocobo feather", 2],
             "steal_rare": ["chocobo wing", 1],
-            "drop_normal": ["agility sphere", 1],
+            "drop_common": ["agility sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17009,9 +17009,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["rename card", 1],
+            "steal_common": ["rename card", 1],
             "steal_rare": ["chocobo wing", 1],
-            "drop_normal": ["gamblers spirit", 2],
+            "drop_common": ["gamblers spirit", 2],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17079,9 +17079,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["smoke bomb", 4],
+            "steal_common": ["smoke bomb", 4],
             "steal_rare": ["candle of life", 1],
-            "drop_normal": ["evasion sphere", 1],
+            "drop_common": ["evasion sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17151,9 +17151,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["poison fang", 4],
+            "steal_common": ["poison fang", 4],
             "steal_rare": ["purifying salt", 2],
-            "drop_normal": ["accuracy sphere", 1],
+            "drop_common": ["accuracy sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17223,9 +17223,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lightning gem", 4],
+            "steal_common": ["lightning gem", 4],
             "steal_rare": ["mana tonic", 1],
-            "drop_normal": ["mp sphere", 1],
+            "drop_common": ["mp sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17293,9 +17293,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lunar curtain", 3],
+            "steal_common": ["lunar curtain", 3],
             "steal_rare": ["blessed gem", 1],
-            "drop_normal": ["magic def sphere", 1],
+            "drop_common": ["magic def sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17363,9 +17363,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lunar curtain", 4],
+            "steal_common": ["lunar curtain", 4],
             "steal_rare": ["mana tablet", 1],
-            "drop_normal": ["magic sphere", 1],
+            "drop_common": ["magic sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17433,9 +17433,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lunar curtain", 4],
+            "steal_common": ["lunar curtain", 4],
             "steal_rare": ["twin stars", 1],
-            "drop_normal": ["twin stars", 2],
+            "drop_common": ["twin stars", 2],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17507,9 +17507,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["light curtain", 4],
+            "steal_common": ["light curtain", 4],
             "steal_rare": ["lunar curtain", 4],
-            "drop_normal": ["defence sphere", 1],
+            "drop_common": ["defence sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17579,9 +17579,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["gold hourglass", 2],
+            "steal_common": ["gold hourglass", 2],
             "steal_rare": ["stamina spring", 2],
-            "drop_normal": ["light curtain", 20],
+            "drop_common": ["light curtain", 20],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17652,9 +17652,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["poison fang", 4],
+            "steal_common": ["poison fang", 4],
             "steal_rare": ["farplane wind", 1],
-            "drop_normal": ["teleport sphere", 1],
+            "drop_common": ["teleport sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17732,9 +17732,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["fire gem", 4],
+            "steal_common": ["fire gem", 4],
             "steal_rare": ["shining gem", 1],
-            "drop_normal": ["door to tomorrow", 1],
+            "drop_common": ["door to tomorrow", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17804,9 +17804,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["lunar curtain", 4],
+            "steal_common": ["lunar curtain", 4],
             "steal_rare": ["shining gem", 1],
-            "drop_normal": ["strength sphere", 1],
+            "drop_common": ["strength sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17876,9 +17876,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["light curtain", 4],
+            "steal_common": ["light curtain", 4],
             "steal_rare": ["stamina tablet", 1],
-            "drop_normal": ["hp sphere", 1],
+            "drop_common": ["hp sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -17948,9 +17948,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["gamblers spirit", 1],
+            "steal_common": ["gamblers spirit", 1],
             "steal_rare": ["lv. 1 key sphere", 1],
-            "drop_normal": ["fortune sphere", 1],
+            "drop_common": ["fortune sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -18016,9 +18016,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["gamblers spirit", 1],
+            "steal_common": ["gamblers spirit", 1],
             "steal_rare": ["return sphere", 1],
-            "drop_normal": ["luck sphere", 1],
+            "drop_common": ["luck sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -18084,9 +18084,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["gamblers spirit", 1],
+            "steal_common": ["gamblers spirit", 1],
             "steal_rare": ["lv. 2 key sphere", 1],
-            "drop_normal": ["designer wallet", 1],
+            "drop_common": ["designer wallet", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -18164,9 +18164,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["gamblers spirit", 1],
+            "steal_common": ["gamblers spirit", 1],
             "steal_rare": ["teleport sphere", 1],
-            "drop_normal": ["underdogs secret", 1],
+            "drop_common": ["underdogs secret", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -18235,9 +18235,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["gamblers spirit", 1],
+            "steal_common": ["gamblers spirit", 1],
             "steal_rare": ["friend sphere", 1],
-            "drop_normal": ["pendulum", 1],
+            "drop_common": ["pendulum", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -18307,9 +18307,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["gamblers spirit", 1],
+            "steal_common": ["gamblers spirit", 1],
             "steal_rare": ["lv. 3 key sphere", 1],
-            "drop_normal": ["winning formula", 1],
+            "drop_common": ["winning formula", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -18378,9 +18378,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -18443,9 +18443,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": null,
+            "steal_common": null,
             "steal_rare": null,
-            "drop_normal": null,
+            "drop_common": null,
             "drop_rare": null,
             "bribe": null
         },
@@ -18507,9 +18507,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["gamblers spirit", 1],
+            "steal_common": ["gamblers spirit", 1],
             "steal_rare": ["three stars", 1],
-            "drop_normal": ["wings to discovery", 1],
+            "drop_common": ["wings to discovery", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -18575,9 +18575,9 @@
         "gil": 0,
         "ronso_rage": "nova",
         "items": {
-            "steal_normal": ["lv. 4 key sphere", 1],
+            "steal_common": ["lv. 4 key sphere", 1],
             "steal_rare": ["warp sphere", 1],
-            "drop_normal": ["warp sphere", 1],
+            "drop_common": ["warp sphere", 1],
             "drop_rare": ["dark matter", 1],
             "bribe": null
         },
@@ -18643,9 +18643,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["x-potion", 2],
+            "steal_common": ["x-potion", 2],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -18718,9 +18718,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["mega-phoenix", 2],
+            "steal_common": ["mega-phoenix", 2],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -18789,9 +18789,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["stamina tablet", 2],
+            "steal_common": ["stamina tablet", 2],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -18860,9 +18860,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["stamina tablet", 2],
+            "steal_common": ["stamina tablet", 2],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -18931,9 +18931,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["mana tablet", 2],
+            "steal_common": ["mana tablet", 2],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -19002,9 +19002,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["twin stars", 2],
+            "steal_common": ["twin stars", 2],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -19075,9 +19075,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["stamina tonic", 2],
+            "steal_common": ["stamina tonic", 2],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -19148,9 +19148,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["three stars", 2],
+            "steal_common": ["three stars", 2],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -19222,9 +19222,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["return sphere", 1],
+            "steal_common": ["return sphere", 1],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -19296,9 +19296,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["friend sphere", 1],
+            "steal_common": ["friend sphere", 1],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -19370,9 +19370,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["teleport sphere", 1],
+            "steal_common": ["teleport sphere", 1],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },
@@ -19444,9 +19444,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["elixir", 1],
+            "steal_common": ["elixir", 1],
             "steal_rare": ["megalixir", 2],
-            "drop_normal": ["master sphere", 3],
+            "drop_common": ["master sphere", 3],
             "drop_rare": ["master sphere", 3],
             "bribe": null
         },
@@ -19513,9 +19513,9 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_normal": ["elixir", 1],
+            "steal_common": ["elixir", 1],
             "steal_rare": ["elixir", 1],
-            "drop_normal": ["dark matter", 1],
+            "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],
             "bribe": null
         },

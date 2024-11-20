@@ -18,11 +18,11 @@ def create_filter(search_term, key):
         monster = monsters[mon]
         match (key):
             case "steal":
-                item_1 = get_item(monster, "steal_normal")
+                item_1 = get_item(monster, "steal_common")
                 item_2 = get_item(monster, "steal_rare")
                 return search_term == item_1 or search_term == item_2
             case "drop":
-                item_1 = get_item(monster, "drop_normal")
+                item_1 = get_item(monster, "drop_common")
                 item_2 = get_item(monster, "drop_rare")
                 return search_term == item_1 or search_term == item_2
             case "bribe":
