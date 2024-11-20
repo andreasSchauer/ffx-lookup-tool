@@ -32,6 +32,9 @@ LOCATIONS = ["dream zanarkand", "baaj temple", "besaid", "s.s. liki", "kilika", 
 RONSO_RAGES = ["seed cannon", "self-destruct", "fire breath", "stone breath", "aqua breath", "thrust kick", "bad breath", "doom", "white wind", "mighty guard", "nova"]
 
 
+COMMON_SPHERES = ["power sphere", "mana sphere", "speed sphere"]
+
+
 DUPLICATES = {
     "anima": ["anima (remiem temple)", "anima (seymour)"],
     "bahamut": ["bahamut (remiem temple)", "spathi"],

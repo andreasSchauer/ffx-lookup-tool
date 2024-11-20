@@ -16,7 +16,7 @@ def compare_items(x, y, item_name, key):
         case "steal":
             return compare_steal_drop(mon1, mon2, item_name, "steal_common", "steal_rare")
         case "drop":
-            return compare_steal_drop(mon1, mon2, "drop_common", "drop_rare")
+            return compare_steal_drop(mon1, mon2, item_name, "drop_common", "drop_rare")
         case "bribe":
             return compare_bribe_items(mon1, mon2)
         case "equipment":
@@ -54,10 +54,17 @@ def compare_steal_drop(mon1, mon2, item_name, key_1, key_2):
 
 
 def determine_preferable_slot(common, rare, item_name):
-    item_common = common[0]
-    amount_common = common[1]
-    item_rare = rare[0]
-    amount_rare = rare[1]
+    if isinstance(common[0], list):
+        item_common = common[1][0]
+        item_rare = rare[1][0]
+        amount_common = common[1][1]
+        amount_rare = rare[1][1]
+
+    else:
+        item_common = common[0]
+        item_rare = rare[0]
+        amount_common = common[1]
+        amount_rare = rare[1]
 
     if item_common == item_rare and amount_common == amount_rare:
         return common

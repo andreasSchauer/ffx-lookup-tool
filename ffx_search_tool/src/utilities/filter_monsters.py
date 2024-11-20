@@ -37,12 +37,13 @@ def create_filter(search_term, key):
 
 
 def get_item(monster, key):
-    item = None
+    item_data = monster["items"][key]
     
-    if monster["items"][key] is not None:
-        item = monster["items"][key][0]
+    if item_data is not None:
+        if isinstance(item_data[0], list):
+            return item_data[1][0]
 
-    return item
+        return item_data[0]
 
 
 def has_ability(monster, key, search_term):
