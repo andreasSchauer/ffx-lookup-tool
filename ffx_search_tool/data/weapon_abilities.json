@@ -31,19 +31,19 @@
         "effect": "Adds 50% Death to attacks and skills.",
         "items": ["farplane shadow", 30]
     },
-    "distil ability": {
+    "distill ability": {
         "effect": "Adds Distil Ability effect to attacks and skills.",
         "items": ["ability sphere", 2]
     },
-    "distil mana": {
+    "distill mana": {
         "effect": "Adds Distil Mana effect to attacks and skills.",
         "items": ["mana sphere", 2]
     },
-    "distil power": {
+    "distill power": {
         "effect": "Adds Distil Power effect to attacks and skills.",
         "items": ["power sphere", 2]
     },
-    "distil speed": {
+    "distill speed": {
         "effect": "Adds Distil Speed effect to attacks and skills.",
         "items": ["speed sphere", 2]
     },

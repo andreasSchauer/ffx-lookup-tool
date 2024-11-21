@@ -3,19 +3,78 @@ from rich import box
 from ffx_search_tool.src.data import rewards, buyable_items, items, armour_abilities, weapon_abilities, aeon_abilities
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, COMMON_SPHERES, REPLACEMENTS
 from ffx_search_tool.src.utilities.format_monster_data import format_num
-from ffx_search_tool.src.utilities.format_item_data import format_item_data
+from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_data
 from ffx_search_tool.src.utilities.tables import initialize_table, console
 from ffx_search_tool.src.utilities.filter_monsters import filter_monsters
 from ffx_search_tool.src.utilities.sort_monsters import sort_monsters_and_rewards
 
 
 def item_search(item_name):
-    # item-description
-    # craftable weapon_abilities
-    # craftable armour_abilities
-    # learnable aeon_abilities
-    
+    get_item_description_table(item_name)
     get_item_table(item_name)
+
+
+def get_item_description_table(item_name):
+    item_desc_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
+    item_desc_table.add_column(item_name.title())
+    tables = [items[item_name], get_ability_table(item_name)]
+    
+    for table in tables:
+        if table is not None:
+            item_desc_table.add_row(table)
+
+    console.print(item_desc_table)
+
+
+def get_ability_table(item_name):
+    type = ["weapon", "armour", "aeon"]
+    data = [weapon_abilities, armour_abilities, aeon_abilities]
+    col_names = ["Weapon Abilities", "Armour Abilities", "Aeon Abilities"]
+    ability_lists = get_ability_lists(item_name)
+    ability_table = initialize_table("Customizable / Learnable Abilities", 3, column_names=col_names)
+
+    max_length = max(len(ability_lists[0]), len(ability_lists[1]), len(ability_lists[2]))
+
+    if max_length == 0:
+        return
+
+    for i in range(max_length):
+        columns = []
+        j = 0
+        for list in ability_lists:
+            if i >= len(list):
+                value = "-"
+            else:
+                value = format_ability_data(list[i], type[j], data[j])
+            
+            columns.append(value)
+            j += 1
+        
+        ability_table.add_row(*columns)
+    
+    return ability_table
+
+
+def get_ability_lists(item_name):
+    wpn_ability_list = list(filter(filter_ability_list(item_name, "weapon", weapon_abilities), weapon_abilities))
+    armr_ability_list = list(filter(filter_ability_list(item_name, "armour", armour_abilities), armour_abilities))
+    aeon_ability_list = list(filter(filter_ability_list(item_name, "aeon", aeon_abilities), aeon_abilities))
+
+    return [wpn_ability_list, armr_ability_list, aeon_ability_list]
+
+
+def filter_ability_list(item_name, ability_type, ability_data):
+    def inner(abl):
+        if ability_type == "weapon" or ability_type == "armour":
+            item_data = ability_data[abl]["items"]
+            return item_data is not None and item_name == item_data[0]
+        
+        if ability_type == "aeon":
+            return item_name == ability_data[abl][0]
+        
+    return inner
+
+
 
 
 def get_item_table(item_name):
@@ -60,14 +119,12 @@ def convert_mons_to_item_table(item_name, key, col_names):
         title = "Bribing"
     
     table = initialize_table(title, len(col_names), column_names=col_names)
-    reoccurring, not_reoccurring, bosses = filter_and_sort_mons(item_name, key)
+    monster_lists = filter_and_sort_mons(item_name, key)
 
-    max_length = max(len(reoccurring), len(not_reoccurring), len(bosses))
+    max_length = max(len(monster_lists[0]), len(monster_lists[1]), len(monster_lists[2]))
 
     if max_length == 0:
         return
-
-    monster_lists = [reoccurring, not_reoccurring, bosses]
 
     if key == "bribe":
         monster_lists.pop()
@@ -98,7 +155,7 @@ def filter_and_sort_mons(item_name, key):
         sorted_list = sort_monsters_and_rewards(new_list, item_name, key)
         monster_lists_sorted.append(sorted_list)
 
-    return monster_lists_sorted[0], monster_lists_sorted[1], monster_lists_sorted[2]
+    return monster_lists_sorted
 
 
 def replace_list_items(list, item_name, key):

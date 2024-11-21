@@ -17,6 +17,16 @@ def format_item_data(item_name, mon_or_reward, key):
 
 
 
+def format_ability_data(ability_name, ability_type, ability_data):
+    if ability_type == "aeon":
+        amount = ability_data[ability_name][1]
+    else:
+        amount = ability_data[ability_name]["items"][1]
+
+    return f"{ability_name.title()} ({amount})"
+
+
+
 def format_steal_drop_data(item_name, monster_name, common, rare):
     if monster_name in REPLACEMENTS:
         items = REPLACEMENTS[monster_name]["items"]

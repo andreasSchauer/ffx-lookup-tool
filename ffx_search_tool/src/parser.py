@@ -8,5 +8,5 @@ from ffx_search_tool.src.search.other_searches import get_primer_table, get_cele
 #location_search("remiem templek")
 #get_reward_table(monster_arena=False, remiem_temple=True, chocobo_races=False, chocobo_training=False, lightning_dodging=False, cactuar_valley=False, butterfly_hunt=False, other=False)
 
-item_search("clear sphere")
+item_search("al bhed potion")
 
