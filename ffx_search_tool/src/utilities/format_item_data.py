@@ -1,5 +1,6 @@
 from ffx_search_tool.src.data import monsters
 from ffx_search_tool.src.utilities.format_monster_data import format_num
+from ffx_search_tool.src.utilities.constants import REPLACEMENTS
 
 
 
@@ -17,7 +18,10 @@ def format_item_data(item_name, mon_or_reward, key):
 
 
 def format_steal_drop_data(item_name, monster_name, common, rare):
-    items = monsters[monster_name]["items"]
+    if monster_name in REPLACEMENTS:
+        items = REPLACEMENTS[monster_name]["items"]
+    else:
+        items = monsters[monster_name]["items"]
 
     if isinstance(items[common][0], list):
         return format_drop_list(item_name, monster_name, common, rare)

@@ -5,177 +5,177 @@
         "data": [
             {
                 "condition": "Capture every monster in Besaid.",
-                "description": "Monster Arena: Capture every monster in Besaid.",
+                "description": "Monster Arena: Capture every monster in Besaid (Stratoavis).",
                 "reward": ["stamina tonic", 99]
             },
             {
                 "condition": "Capture every monster in Kilika.",
-                "description": "Monster Arena: Capture every monster in Kilika.",
+                "description": "Monster Arena: Capture every monster in Kilika (Malboro Menace).",
                 "reward": ["poison fang", 99]
             },
             {
                 "condition": "Capture every monster on Mi'ihen Highroad.",
-                "description": "Monster Arena: Capture every monster on Mi'ihen Highroad.",
+                "description": "Monster Arena: Capture every monster on Mi'ihen Highroad (Kottos).",
                 "reward": ["soul spring", 99]
             },
             {
                 "condition": "Capture every monster on Mushroom Rock Road.",
-                "description": "Monster Arena: Capture every monster on Mushroom Rock Road.",
+                "description": "Monster Arena: Capture every monster on Mushroom Rock Road (Coeurlregina).",
                 "reward": ["candle of life", 99]
             },
             {
                 "condition": "Capture every monster on Djose Highroad.",
-                "description": "Monster Arena: Capture every monster on Djose Highroad.",
+                "description": "Monster Arena: Capture every monster on Djose Highroad (Jormungand).",
                 "reward": ["petrify grenade", 99]
             },
             {
                 "condition": "Capture every monster in the Thunder Plains.",
-                "description": "Monster Arena: Capture every monster in the Thunder Plains.",
+                "description": "Monster Arena: Capture every monster in the Thunder Plains (Cactuar King).",
                 "reward": ["chocobo wing", 99]
             },
             {
                 "condition": "Capture every monster in Macalania.",
-                "description": "Monster Arena: Capture every monster in Macalania.",
+                "description": "Monster Arena: Capture every monster in Macalania (Espada).",
                 "reward": ["shining gem", 60]
             },
             {
                 "condition": "Capture every monster on Bikanel.",
-                "description": "Monster Arena: Capture every monster on Bikanel.",
+                "description": "Monster Arena: Capture every monster on Bikanel (Abyss Worm).",
                 "reward": ["shadow gem", 99]
             },
             {
                 "condition": "Capture every monster in the Calm Lands.",
-                "description": "Monster Arena: Capture every monster in the Calm Lands.",
+                "description": "Monster Arena: Capture every monster in the Calm Lands (Chimerageist).",
                 "reward": ["farplane wind", 60]
             },
             {
                 "condition": "Capture every monster in the Cavern of the Stolen Fayth.",
-                "description": "Monster Arena: Capture every monster in the Cavern of the Stolen Fayth.",
+                "description": "Monster Arena: Capture every monster in the Cavern of the Stolen Fayth (Don Tonberry).",
                 "reward": ["silver hourglass", 40]
             },
             {
                 "condition": "Capture every monster at Mount Gagazet.",
-                "description": "Monster Arena: Capture every monster at Mount Gagazet.",
+                "description": "Monster Arena: Capture every monster at Mount Gagazet (Catoblepas).",
                 "reward": ["blossom crown", 1]
             },
             {
                 "condition": "Capture every monster inside Sin.",
-                "description": "Monster Arena: Capture every monster inside Sin.",
+                "description": "Monster Arena: Capture every monster inside Sin (Abaddon).",
                 "reward": ["lunar curtain", 99]
             },
             {
                 "condition": "Capture every monster in the Omega Ruins.",
-                "description": "Monster Arena: Capture every monster in the Omega Ruins.",
+                "description": "Monster Arena: Capture every monster in the Omega Ruins (Vorban).",
                 "reward": ["designer wallet", 60]
             },
             {
                 "condition": "Capture 3 of every wolf.",
-                "description": "Monster Arena: Capture 3 of every wolf.",
+                "description": "Monster Arena: Capture 3 of every wolf (Fenrir).",
                 "reward": ["chocobo feather", 99]
             },
             {
                 "condition": "Capture 3 of every reptile.",
-                "description": "Monster Arena: Capture 3 of every reptile.",
+                "description": "Monster Arena: Capture 3 of every reptile (Ornitholestes).",
                 "reward": ["stamina spring", 99]
             },
             {
                 "condition": "Capture 4 of every bird.",
-                "description": "Monster Arena: Capture 4 of every bird.",
+                "description": "Monster Arena: Capture 4 of every bird (Pteryx).",
                 "reward": ["mega phoenix", 99]
             },
             {
                 "condition": "Capture 4 of every wasp.",
-                "description": "Monster Arena: Capture 4 of every wasp.",
+                "description": "Monster Arena: Capture 4 of every wasp (Hornet).",
                 "reward": ["mana tonic", 60]
             },
             {
                 "condition": "Capture 4 of every imp.",
-                "description": "Monster Arena: Capture 4 of every imp.",
+                "description": "Monster Arena: Capture 4 of every imp (Vidatu).",
                 "reward": ["mana spring", 99]
             },
             {
                 "condition": "Capture 4 of every evil eye.",
-                "description": "Monster Arena: Capture 4 of every evil eye.",
+                "description": "Monster Arena: Capture 4 of every evil eye (One-Eye).",
                 "reward": ["mega phoenix", 99]
             },
             {
                 "condition": "Capture 3 of every flan.",
-                "description": "Monster Arena: Capture 3 of every flan.",
+                "description": "Monster Arena: Capture 3 of every flan (Jumbo Flan).",
                 "reward": ["twin stars", 60]
             },
             {
                 "condition": "Capture 3 of every elemental.",
-                "description": "Monster Arena: Capture 3 of every elemental.",
+                "description": "Monster Arena: Capture 3 of every elemental (Nega Elemental).",
                 "reward": ["star curtain", 60]
             },
             {
                 "condition": "Capture 3 of every helm.",
-                "description": "Monster Arena: Capture 3 of every helm.",
+                "description": "Monster Arena: Capture 3 of every helm (Tanket).",
                 "reward": ["golden hourglass", 99]
             },
             {
                 "condition": "Capture 4 of every drake.",
-                "description": "Monster Arena: Capture 4 of every drake.",
+                "description": "Monster Arena: Capture 4 of every drake (Fafnir).",
                 "reward": ["purifying salt", 99]
             },
             {
                 "condition": "Capture 5 of every fungus.",
-                "description": "Monster Arena: Capture 5 of every fungus.",
+                "description": "Monster Arena: Capture 5 of every fungus (Sleep Sprout).",
                 "reward": ["healing spring", 99]
             },
             {
                 "condition": "Capture 5 of every bomb.",
-                "description": "Monster Arena: Capture 5 of every bomb.",
+                "description": "Monster Arena: Capture 5 of every bomb (Bomb King).",
                 "reward": ["turbo ether", 60]
             },
             {
                 "condition": "Capture 5 of every ruminant.",
-                "description": "Monster Arena: Capture 5 of every ruminant.",
+                "description": "Monster Arena: Capture 5 of every ruminant (Juggernaut).",
                 "reward": ["light curtain", 99]
             },
             {
                 "condition": "Capture 10 of every iron giant.",
-                "description": "Monster Arena: Capture 10 of every iron giant.",
+                "description": "Monster Arena: Capture 10 of every iron giant (Ironclad).",
                 "reward": ["mana tablet", 60]
             },
             {
                 "condition": "Bread 2 fiends in Area Conquest.",
-                "description": "Monster Arena: Bread 2 fiends in Area Conquest.",
+                "description": "Monster Arena: Bread 2 fiends in Area Conquest (Earth Eater).",
                 "reward": ["three stars", 60]
             },
             {
                 "condition": "Bread 2 fiends in Species Conquest.",
-                "description": "Monster Arena: Bread 2 fiends in Species Conquest.",
+                "description": "Monster Arena: Bread 2 fiends in Species Conquest (Greater Sphere).",
                 "reward": ["supreme gem", 60]
             },
             {
                 "condition": "Bread 6 fiends in Area Conquest.",
-                "description": "Monster Arena: Bread 6 fiends in Area Conquest.",
+                "description": "Monster Arena: Bread 6 fiends in Area Conquest (Catastrophe).",
                 "reward": ["door to tomorrow", 99]
             },
             {
                 "condition": "Bread 6 fiends in Species Conquest.",
-                "description": "Monster Arena: Bread 6 fiends in Species Conquest.",
+                "description": "Monster Arena: Bread 6 fiends in Species Conquest (Th'uban).",
                 "reward": ["gamblers spirit", 99]
             },
             {
                 "condition": "Capture every monster once.",
-                "description": "Monster Arena: Capture every monster once.",
+                "description": "Monster Arena: Capture every monster once (Neslug).",
                 "reward": ["winning formula", 99]
             },
             {
-                "condition": "Capture every monster five times.",
-                "description": "Monster Arena: Capture every monster five times.",
+                "condition": "Capture every monster 5 times.",
+                "description": "Monster Arena: Capture every monster 5 times (Ultima Buster).",
                 "reward": ["dark matter", 99]
             },
             {
                 "condition": "Capture 2 of every underwater fiend at Mount Gagazet (Splashers count as one).",
-                "description": "Monster Arena: Capture 2 of every underwater fiend at Mount Gagazet.",
+                "description": "Monster Arena: Capture 2 of every underwater fiend at Mount Gagazet (Shinryu).",
                 "reward": ["megalixir", 30]
             },
             {
-                "condition": "Capture every monster ten times and defeat every other Monster Arena Creation.",
-                "description": "Monster Arena: Capture every monster ten times and defeat every other Monster Arena Creation.",
+                "condition": "Capture every monster 10 times and defeat every other Monster Arena Creation.",
+                "description": "Monster Arena: Capture every monster 10 times and defeat every other Monster Arena Creation (Nemesis).",
                 "reward": ["master sphere", 10]
             }
         ]

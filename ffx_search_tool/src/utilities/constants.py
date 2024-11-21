@@ -63,11 +63,42 @@ DUPLICATES = {
 }
 
 
-PHASES = {
+SYNONYMS = {
     "braskas final aeon": ["braskas final aeon (first phase)", "braskas final aeon (second phase)"],
     "dark magus sisters": ["dark cindy", "dark sandy", "dark mindy"],
     "isaaru": ["grothia", "pterya", "spathi"],
     "magus sisters": ["cindy", "sandy", "mindy"],
     "seymour": ["seymour (first phase)", "seymour (second phase)"],
     "sinspawn geneaux": ["sinspawn geneaux (first phase)", "sinspawn geneaux (second phase)"]
+}
+
+
+REPLACEMENTS = {
+    "dark aeons": {
+        "mons": ["dark valefor", "dark ifrit", "dark ixion (first fight)", "dark ixion (second fight)", "dark shiva", "dark bahamut", "dark yojimbo", "dark anima", "dark cindy", "dark sandy", "dark mindy"],
+        "items": {
+            "steal_common": [None, 0],
+            "steal_rare": ["elixir", 1],
+            "drop_common": ["dark matter", 1],
+            "drop_rare": ["master sphere", 1]
+        }
+    },
+    "monster arena creations": {
+        "mons": ["stratoavis", "malboro menace", "kottos", "coeurlregina", "jormungand", "cactuar king", "espada", "abyss worm", "chimerageist", "don tonberry", "catoblepas", "abaddon", "vorban", "fenrir", "ornitholestes", "pteryx", "hornet", "vidatu", "one-eye", "jumbo flan", "nega elemental", "tanket", "fafnir", "sleep sprout", "bomb king", "juggernaut", "ironclad", "earth eater", "greater sphere", "catastrophe", "th'uban", "neslug", "ultima buster", "shinryu", "nemesis"],
+        "items": {
+            "steal_common": [None, 0],
+            "steal_rare": [None, 0],
+            "drop_common": [None, 0],
+            "drop_rare": ["dark matter", 1]
+        }
+    },
+    "monster arena original creations": {
+        "mons": ["earth eater", "greater sphere", "catastrophe", "th'uban", "neslug", "ultima buster", "shinryu"],
+        "items": {
+            "steal_common": ["gamblers spirit", 1],
+            "steal_rare": [None, 0],
+            "drop_common": [None, 0],
+            "drop_rare": [None, 0]
+        }
+    },
 }

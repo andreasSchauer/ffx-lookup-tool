@@ -10,7 +10,7 @@ def filter_monsters(search_term, key):
     one_time_monsters = get_one_time_monsters(filtered_mons)
     boss_monsters = get_boss_monsters(filtered_mons, include_allies=key_is_location)
 
-    return reoccuring_monsters, one_time_monsters, boss_monsters
+    return [reoccuring_monsters, one_time_monsters, boss_monsters]
 
 
 def create_filter(search_term, key):

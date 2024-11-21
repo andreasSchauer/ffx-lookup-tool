@@ -2,7 +2,7 @@ from rich.table import Table
 from rich import box
 from itertools import chain
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
-from ffx_search_tool.src.utilities.constants import DUPLICATES, PHASES, CELL_NAMES, TABLE_WIDTH
+from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, CELL_NAMES, TABLE_WIDTH
 from ffx_search_tool.src.utilities.format_monster_data import format_monster_data, format_num
 from ffx_search_tool.src.utilities.tables import initialize_table, console
 from ffx_search_tool.src.utilities.ronso_calc import *
@@ -12,8 +12,8 @@ from ffx_search_tool.src.search.location_search import select_location
 
 
 def monster_search(monster_name, single=False):
-    if monster_name in PHASES:
-        monster_name = PHASES[monster_name][0]
+    if monster_name in SYNONYMS:
+        monster_name = SYNONYMS[monster_name][0]
     
     if monster_name in DUPLICATES:
         monster_name = select_duplicate(monster_name)

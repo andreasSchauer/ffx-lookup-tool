@@ -1,5 +1,6 @@
 from functools import cmp_to_key
 from ffx_search_tool.src.data import monsters
+from ffx_search_tool.src.utilities.constants import REPLACEMENTS
 
 
 def sort_monsters_and_rewards(filtered_list, item_name, key):
@@ -10,8 +11,16 @@ def compare_items(x, y, item_name, key):
     if key == "reward":
         return compare_rewards(x, y)
     
-    mon1 = monsters[x]
-    mon2 = monsters[y]
+    if x in REPLACEMENTS:
+        mon1 = REPLACEMENTS[x]
+    else:
+        mon1 = monsters[x]
+
+    if y in REPLACEMENTS:
+        mon2 = REPLACEMENTS[y]
+    else:
+        mon2 = monsters[y]
+    
     match (key):
         case "steal":
             return compare_steal_drop(mon1, mon2, item_name, "steal_common", "steal_rare")
