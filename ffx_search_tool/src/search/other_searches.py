@@ -2,8 +2,8 @@ from rich.table import Table
 from rich import box
 from ffx_search_tool.src.data import primers, celestials, monsters, monster_arena, rewards
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, RONSO_RAGES
-from ffx_search_tool.src.utilities.tables import initialize_table, get_short_mon_table, console
-from ffx_search_tool.src.utilities.format_monster_data import format_item
+from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_item
+from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
 
 
 def get_primer_table():
@@ -42,7 +42,8 @@ def get_celestial_table():
 
 def ronso_rage_search(ronso_rage):
     if ronso_rage not in RONSO_RAGES:
-        ronso_rage = select_rage()
+        choice = make_selection(RONSO_RAGES, "Rage not found.")
+        ronso_rage = RONSO_RAGES[choice]
     
     ronso_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
     ronso_table.add_column(ronso_rage.title())
@@ -62,18 +63,12 @@ def ronso_rage_search(ronso_rage):
     console.print(ronso_table)
 
 
-def select_rage():
-    for i, rage in enumerate(RONSO_RAGES):
-        print(f"{i + 1}: {rage.title()}")
-        
-    choice = int(input("Rage not found. Choose by number: ")) - 1
-    return RONSO_RAGES[choice]
-
-
 
 def get_monster_arena_table(creation_name):
     if creation_name not in monster_arena:
-        creation_name = select_creation()
+        options = list(monster_arena.keys())
+        choice = make_selection(options, "Creation not found.")
+        creation_name = options[choice]
 
     creation = monster_arena[creation_name]
     
@@ -86,16 +81,6 @@ def get_monster_arena_table(creation_name):
             monster_table.add_row(get_short_mon_table(monster_name))
 
     console.print(monster_table)
-
-
-def select_creation():
-    keys = monster_arena.keys()
-    for i, creation in enumerate(keys):
-        print(f"{i + 1}: {creation.title()}")
-        
-    choice = int(input("Creation not found. Choose by number: ")) - 1
-    chosen_key = list(keys)[choice]
-    return chosen_key
 
 
 

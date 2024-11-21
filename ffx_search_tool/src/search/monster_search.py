@@ -1,13 +1,12 @@
 from rich.table import Table
 from rich import box
 from itertools import chain
-from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
-from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, CELL_NAMES, TABLE_WIDTH
-from ffx_search_tool.src.utilities.format_monster_data import format_monster_data, format_num
-from ffx_search_tool.src.utilities.tables import initialize_table, console
-from ffx_search_tool.src.utilities.ronso_calc import *
 from ffx_search_tool.src.utilities.filter_monsters import filter_monsters
-from ffx_search_tool.src.search.location_search import select_location
+from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
+from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, LOCATIONS, CELL_NAMES, TABLE_WIDTH
+from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
+from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num
+from ffx_search_tool.src.utilities.ronso_calc import *
 
 
 
@@ -16,10 +15,17 @@ def monster_search(monster_name, single=False):
         monster_name = SYNONYMS[monster_name][0]
     
     if monster_name in DUPLICATES:
-        monster_name = select_duplicate(monster_name)
+        options = DUPLICATES[monster_name]
+        choice = make_selection(options, "Multiple options found.", "Choose a monster by number: ")
+        monster_name = options[choice]
 
     if monster_name not in monsters:
-        monster_name = select_monster_name()
+        location_choice = location = make_selection(LOCATIONS, "Monster not found.", "Choose a location by number to display options: ")
+        location = LOCATIONS[location_choice]
+
+        options = list(chain(*filter_monsters(location, "location")))
+        monster_choice = make_selection(options, None, "Now choose a monster by number: ")
+        monster_name = options[monster_choice]
     
     monster = monsters[monster_name]
     
@@ -27,36 +33,6 @@ def monster_search(monster_name, single=False):
         get_ally_tables(monster_name)
     else:
         get_monster_table(monster_name)
-
-
-
-def select_monster_name():
-    location = select_location("Monster not found.\nChoose a location by number to display options: ")
-    monsters = list(chain(*filter_monsters(location, "location")))
-
-    for i, monster in enumerate(monsters):
-        print(f"{i + 1}: {monster.title()}")
-        
-    choice = int(input(f"Now choose a monster by number: ")) - 1
-    return monsters[choice]
-
-
-
-
-def select_duplicate(monster_name):
-    options = DUPLICATES[monster_name]
-
-    for i, option in enumerate(options):
-        print(f"{i + 1}: {option.title()}")
-
-    print("Multiple options found.")
-    choice = int(input("Choose a monster by number: ")) - 1
-
-    if 0 <= choice < len(options):
-        return options[choice]
-    else:
-        raise Exception("Invalid input")
-
 
 
 
@@ -103,7 +79,8 @@ def get_ally_tables(monster_name):
     monster_in_multiple_fights = isinstance(allies[0], list)
 
     if monster_in_multiple_fights:
-        select_boss_fight(allies)
+        choice = make_selection(allies, "Monster appears in multiple boss fights.", "Specify the fight by number: ")
+        monster_search(allies[choice][0])
         return
         
     if monster_name == "biran ronso" or monster_name == "yenke ronso":
@@ -114,17 +91,6 @@ def get_ally_tables(monster_name):
             get_monster_table(ally, kimahri_hp=kimahri_hp, kimahri_str=kimahri_str, kimahri_mag=kimahri_mag, kimahri_agl=kimahri_agl)
         else:
             get_monster_table(ally)
-
-
-def select_boss_fight(allies):
-    for i, option in enumerate(allies):
-        print(f"{i + 1}: {option[0].title()}")
-
-    print("Monster appears in multiple boss fights.")
-    choice = int(input("Specify the fight by number: ")) - 1
-
-    if 0 <= choice < len(allies):
-        monster_search(allies[choice][0])
 
 
 

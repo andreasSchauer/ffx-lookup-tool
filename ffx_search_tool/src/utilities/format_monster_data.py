@@ -1,4 +1,5 @@
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
+from ffx_search_tool.src.utilities.misc import format_num, format_item
 
 
 def format_monster_data(key, monster_name):
@@ -268,24 +269,3 @@ def format_arena_data(key, monster_name):
 def format_remiem_items(key, monster_name):
     monster = remiem_temple[monster_name]
     return format_item(monster[key])
-    
-
-
-def format_item(item_data):
-    item = item_data[0].title()
-    amount = item_data[1]
-    return f"{item} x{amount}"
-
-
-def format_num(num):
-    split_num = list(reversed(str(num)))
-    new_num = ""
-
-    for i in range(len(split_num)):
-        if i % 3 == 0:
-            new_num += "."
-
-        new_num += split_num[i]
-
-    new_num = "".join(list(reversed(new_num.lstrip("."))))
-    return new_num

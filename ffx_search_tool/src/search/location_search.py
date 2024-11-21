@@ -1,14 +1,15 @@
 from rich.table import Table
 from rich import box
-from ffx_search_tool.src.data import monsters
 from ffx_search_tool.src.utilities.constants import LOCATIONS, TABLE_WIDTH
-from ffx_search_tool.src.utilities.tables import get_short_mon_table, console
+from ffx_search_tool.src.utilities.misc import console, make_selection
 from ffx_search_tool.src.utilities.filter_monsters import filter_monsters
+from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
 
 
 def location_search(location_name):
     if location_name not in LOCATIONS:
-        location_name = select_location("Invalid location. Choose by number: ")
+        choice = make_selection(LOCATIONS, "Invalid location")
+        location_name = LOCATIONS[choice]
 
     reoccurring_monsters, one_time_monsters, boss_monsters = filter_monsters(location_name, "location")
 
@@ -20,15 +21,6 @@ def location_search(location_name):
 
     if boss_monsters:
         get_location_table(location_name, boss_monsters, "Bosses")
-
-
-
-def select_location(error_msg):
-    for i, location in enumerate(LOCATIONS):
-        print(f"{i + 1}: {location.title()}")
-        
-    choice = int(input(f"{error_msg}")) - 1
-    return LOCATIONS[choice]
 
 
 

@@ -2,14 +2,18 @@ from rich.table import Table
 from rich import box
 from ffx_search_tool.src.data import rewards, buyable_items, items, armour_abilities, weapon_abilities, aeon_abilities
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, COMMON_SPHERES, REPLACEMENTS
-from ffx_search_tool.src.utilities.format_monster_data import format_num
 from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_data
-from ffx_search_tool.src.utilities.tables import initialize_table, console
+from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num
 from ffx_search_tool.src.utilities.filter_monsters import filter_monsters
 from ffx_search_tool.src.utilities.sort_monsters import sort_monsters_and_rewards
 
 
 def item_search(item_name):
+    if item_name not in items:
+        options = list(items.keys())
+        choice = make_selection(options, "Item not found.")
+        item_name = options[choice]
+    
     get_item_description_table(item_name)
     get_item_table(item_name)
 
@@ -106,20 +110,12 @@ def get_item_table(item_name):
 
 
 def convert_mons_to_item_table(item_name, key, col_names):
-    if key == "drop" and item_name in COMMON_SPHERES:
-        return f"Most monsters drop {item_name.title()}s. If you run out while stat maxing, use a distiller on Kottos to get 20 or 40 (Overkill) per battle."
-    
-    if key == "steal":
-        title = "Stealing"
-    
-    if key == "drop":
-        title = "Drops (Overkill Doubles Amount)"
-
-    if key == "bribe":
-        title = "Bribing"
+    title = get_item_table_title(item_name, key)
     
     table = initialize_table(title, len(col_names), column_names=col_names)
     monster_lists = filter_and_sort_mons(item_name, key)
+
+    
 
     max_length = max(len(monster_lists[0]), len(monster_lists[1]), len(monster_lists[2]))
 
@@ -143,6 +139,22 @@ def convert_mons_to_item_table(item_name, key, col_names):
         table.add_row(*columns)
     
     return table
+
+
+def get_item_table_title(item_name, key):
+    if key == "drop" and item_name in COMMON_SPHERES:
+        return f"Most monsters drop {item_name.title()}s. If you run out while stat maxing, use a distiller on Kottos to get 20 or 40 (Overkill) per battle."
+    
+    if key == "steal":
+        title = "Stealing"
+    
+    if key == "drop":
+        title = "Drops (Overkill Doubles Amount)"
+
+    if key == "bribe":
+        title = "Bribing"
+
+    return title
 
 
 

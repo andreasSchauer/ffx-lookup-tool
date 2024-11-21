@@ -1,27 +1,6 @@
-from rich.table import Table
-from rich import box
-from ffx_search_tool.src.utilities.constants import TABLE_WIDTH
 from ffx_search_tool.src.data import monsters, monster_arena
 from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
-from rich.console import Console
-
-console = Console()
-
-
-def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):
-    table = Table(title=tab_title, show_lines=True, expand=True, box=box.SQUARE, title_style="bold", show_header=tab_header)
-    col_width = int(TABLE_WIDTH / num_columns)
-
-    if len(column_names) == 0:
-        for i in range(num_columns):
-            table.add_column("", width=col_width)
-    else:
-        for i in range(int(num_columns / len(column_names))):
-            for name in column_names:
-                table.add_column(name, width=col_width)
-
-    return table
-
+from ffx_search_tool.src.utilities.misc import initialize_table
 
 
 def get_short_mon_table(monster_name): 

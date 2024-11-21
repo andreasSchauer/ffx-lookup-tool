@@ -4,9 +4,10 @@ from ffx_search_tool.src.search.item_search import item_search
 from ffx_search_tool.src.search.other_searches import get_primer_table, get_celestial_table, ronso_rage_search, get_monster_arena_table, get_reward_table
 
 
-#monster_search("mimifc")
+#monster_search("garuda")
 #location_search("remiem templek")
 #get_reward_table(monster_arena=False, remiem_temple=True, chocobo_races=False, chocobo_training=False, lightning_dodging=False, cactuar_valley=False, butterfly_hunt=False, other=False)
-
-item_search("al bhed potion")
+#get_monster_arena_table("jio")
+#ronso_rage_search("g")
+item_search("venus sigil")
 

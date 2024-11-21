@@ -75,7 +75,7 @@ SYNONYMS = {
 
 REPLACEMENTS = {
     "dark aeons": {
-        "mons": ["dark valefor", "dark ifrit", "dark ixion (first fight)", "dark ixion (second fight)", "dark shiva", "dark bahamut", "dark yojimbo", "dark anima", "dark cindy", "dark sandy", "dark mindy"],
+        "mons": ["dark valefor", "dark ifrit", "dark ixion (first fight)", "dark ixion (second fight)", "dark shiva", "dark bahamut", "dark anima", "dark cindy", "dark sandy", "dark mindy"],
         "items": {
             "steal_common": [None, 0],
             "steal_rare": ["elixir", 1],
