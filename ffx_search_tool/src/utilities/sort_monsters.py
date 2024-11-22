@@ -3,14 +3,11 @@ from ffx_search_tool.src.data import monsters
 from ffx_search_tool.src.utilities.constants import REPLACEMENTS
 
 
-def sort_monsters_and_rewards(filtered_list, item_name, key):
-    return sorted(filtered_list, key=cmp_to_key(lambda mon1, mon2: compare_items(mon1, mon2, item_name, key)), reverse=True)
+def sort_monsters(filtered_list, item_name, key):
+    return sorted(filtered_list, key=cmp_to_key(lambda mon1, mon2: compare_monsters(mon1, mon2, item_name, key)), reverse=True)
 
 
-def compare_items(x, y, item_name, key):
-    if key == "reward":
-        return compare_rewards(x, y)
-    
+def compare_monsters(x, y, item_name, key):
     if x in REPLACEMENTS:
         mon1 = REPLACEMENTS[x]
     else:
@@ -113,13 +110,3 @@ def compare_equipment(mon1, mon2):
         return -1
     
 
-def compare_rewards(x, y):
-    x_amount = x["reward"][1]
-    y_amount = y["reward"][1]
-
-    if x_amount > y_amount:
-        return 1
-    elif x_amount == y_amount:
-        return 0
-    else:
-        return -1

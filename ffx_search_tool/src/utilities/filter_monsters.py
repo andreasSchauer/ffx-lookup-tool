@@ -12,15 +12,26 @@ def filter_monsters(search_term, key):
     monster_lists = [reoccuring_monsters, one_time_monsters, boss_monsters]
 
     if not is_location_search:
-        is_dark_yojimbo_steal = key == "steal" and search_term in ["stamina tonic", "elixir"]
-        is_dark_yojimbo_drop = key == "drop" and search_term in ["dark matter", "master sphere"]
-
-        if is_dark_yojimbo_steal or is_dark_yojimbo_drop:
+        if accessible_via_dark_yojimbo(search_term, key):
             reoccuring_monsters.append("dark yojimbo")
             dark_yojimbo = boss_monsters.index("dark yojimbo")
             boss_monsters.pop(dark_yojimbo)
 
     return monster_lists
+
+
+def accessible_via_dark_yojimbo(search_term, key):
+    match (key):
+        case "steal":
+            return search_term in ["stamina tonic", "elixir"]
+        case "drop":
+            return search_term in ["dark matter", "master sphere"]
+        case "equipment":
+            weapons = monsters["dark yojimbo"]["equipment"]["wpn_abilities"]
+            armour = monsters["dark yojimbo"]["equipment"]["armour_abilities"]
+            is_dark_yojimbo_weapon = any(item["ability"] == search_term for item in weapons)
+            is_dark_yojimbo_armour = any(item["ability"] == search_term for item in armour)
+            return is_dark_yojimbo_weapon or is_dark_yojimbo_armour
 
 
 def create_filter(search_term, key):

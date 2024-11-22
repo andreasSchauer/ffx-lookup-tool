@@ -83,6 +83,7 @@ REPLACEMENTS = {
             "drop_rare": ["master sphere", 1]
         },
         "equipment": {
+            "drop_rate": 0.99,
             "wpn_abilities": [
                 {"ability": "break damage limit"}
             ],
@@ -101,6 +102,7 @@ REPLACEMENTS = {
             "drop_rare": ["dark matter", 1]
         },
         "equipment": {
+            "drop_rate": 0.99,
             "wpn_abilities": [],
             "armour_abilities": []
         }
@@ -114,6 +116,7 @@ REPLACEMENTS = {
             "drop_rare": [None, 0]
         },
         "equipment": {
+            "drop_rate": 0.99,
             "wpn_abilities": [],
             "armour_abilities": []
         }

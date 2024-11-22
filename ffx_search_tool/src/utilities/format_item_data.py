@@ -21,8 +21,13 @@ def format_item_data(item_name, mon_or_reward, key):
 def format_ability_data(ability_name, ability_type, item_search=False):
     match (ability_type):
         case "weapon":
-            item = weapon_abilities[ability_name]["items"][0]
-            amount = weapon_abilities[ability_name]["items"][1]
+            items = weapon_abilities[ability_name]["items"]
+
+            if items is not None:
+                item = weapon_abilities[ability_name]["items"][0]
+                amount = weapon_abilities[ability_name]["items"][1]
+            else:
+                return
         case "armour":
             item = armour_abilities[ability_name]["items"][0]
             amount = armour_abilities[ability_name]["items"][1]
@@ -34,6 +39,16 @@ def format_ability_data(ability_name, ability_type, item_search=False):
         return f"{ability_name.title()} ({amount})"
 
     return f"{item.title()} x{amount}"
+
+
+def get_drop_rate_data(monster_name):
+    if monster_name in REPLACEMENTS:
+        drop_rate = REPLACEMENTS[monster_name]["equipment"]["drop_rate"]
+    else:
+        drop_rate = monsters[monster_name]["equipment"]["drop_rate"]
+        
+    drop_percentage = int(drop_rate * 100)
+    return f"{monster_name.title()} ({drop_percentage}%)"
 
 
 
