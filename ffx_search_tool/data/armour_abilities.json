@@ -1,298 +1,298 @@
 {
     "auto-haste": {
-        "effect": "Automatically casts Haste on user.",
+        "description": "Automatically casts Haste on user.",
         "items": ["chocobo wing", 80]
     },
     "auto-med": {
-        "effect": "Automatically use items to cure status ailments.",
+        "description": "Automatically use items to cure status ailments.",
         "items": ["remedy", 20]
     },
     "auto-phoenix": {
-        "effect": "Automatically use Phoenix Down on knocked out character.",
+        "description": "Automatically use Phoenix Down on knocked out character.",
         "items": ["mega phoenix", 20]
     },
     "auto-potion": {
-        "effect": "Automatically use Potion, Hi-Potion or X-Potion when HP is below 50%.",
+        "description": "Automatically use Potion, Hi-Potion or X-Potion when HP is below 50%.",
         "items": ["stamina spring", 4]
     },
     "auto-protect": {
-        "effect": "Automatically casts Protect on user.",
+        "description": "Automatically casts Protect on user.",
         "items": ["light curtain", 70]
     },
     "auto-reflect": {
-        "effect": "Automatically casts Reflect on user.",
+        "description": "Automatically casts Reflect on user.",
         "items": ["star curtain", 40]
     },
     "auto-regen": {
-        "effect": "Automatically casts Regen on user.",
+        "description": "Automatically casts Regen on user.",
         "items": ["healing spring", 80]
     },
     "auto-shell": {
-        "effect": "Automatically casts Shell on user.",
+        "description": "Automatically casts Shell on user.",
         "items": ["lunar curtain", 80]
     },
     "berserk ward": {
-        "effect": "Adds 50% resistance to Berserk.",
+        "description": "Adds 50% resistance to Berserk.",
         "items": ["hypello potion", 8]
     },
     "berserkproof": {
-        "effect": "Adds 100% resistance to Berserk.",
+        "description": "Adds 100% resistance to Berserk.",
         "items": ["hypello potion", 32]
     },
     "break hp limit": {
-        "effect": "Raises Max HP limit from 9.999 to 99.999.",
+        "description": "Raises Max HP limit from 9.999 to 99.999.",
         "items": ["wings to discovery", 30]
     },
     "break mp limit": {
-        "effect": "Raises Max MP limit from 999 to 9.999.",
+        "description": "Raises Max MP limit from 999 to 9.999.",
         "items": ["three stars", 30]
     },
     "confuse ward": {
-        "effect": "Adds 50% resistance to Confusion.",
+        "description": "Adds 50% resistance to Confusion.",
         "items": ["musk", 16]
     },
     "confuseproof": {
-        "effect": "Adds 100% resistance to Confusion.",
+        "description": "Adds 100% resistance to Confusion.",
         "items": ["musk", 48]
     },
     "curseproof": {
-        "effect": "Adds 100% resistance to Curse.",
+        "description": "Adds 100% resistance to Curse.",
         "items": ["tetra elemental", 12]
     },
     "dark ward": {
-        "effect": "Adds 50% resistance to Dark.",
+        "description": "Adds 50% resistance to Dark.",
         "items": ["eye drops", 40]
     },
     "darkproof": {
-        "effect": "Adds 100% resistance to Dark.",
+        "description": "Adds 100% resistance to Dark.",
         "items": ["smoke bomb", 10]
     },
     "death ward": {
-        "effect": "Adds 50% resistance to Death.",
+        "description": "Adds 50% resistance to Death.",
         "items": ["farplane shadow", 15]
     },
     "deathproof": {
-        "effect": "Adds 100% resistance to Death.",
+        "description": "Adds 100% resistance to Death.",
         "items": ["farplane wind", 60]
     },
     "defence +3%": {
-        "effect": "Reduces damage from physical attacks by 3%.",
+        "description": "Reduces damage from physical attacks by 3%.",
         "items": ["power sphere", 3]
     },
     "defence +5%": {
-        "effect": "Reduces damage from physical attacks by 5%.",
+        "description": "Reduces damage from physical attacks by 5%.",
         "items": ["stamina spring", 2]
     },
     "defence +10%": {
-        "effect": "Reduces damage from physical attacks by 10%.",
+        "description": "Reduces damage from physical attacks by 10%.",
         "items": ["special sphere", 1]
     },
     "defence +20%": {
-        "effect": "Reduces damage from physical attacks by 20%.",
+        "description": "Reduces damage from physical attacks by 20%.",
         "items": ["blessed gem", 4]
     },
     "fire eater": {
-        "effect": "Absorbs Fire-based damage.",
+        "description": "Absorbs Fire-based damage.",
         "items": ["fire gem", 20]
     },
     "fire ward": {
-        "effect": "Halfs Fire-based damage.",
+        "description": "Halfs Fire-based damage.",
         "items": ["bomb fragment", 4]
     },
     "fireproof": {
-        "effect": "Grants immunity to Fire attacks.",
+        "description": "Grants immunity to Fire attacks.",
         "items": ["bomb core", 8]
     },
     "hp +5%": {
-        "effect": "Raises max HP by 5%.",
+        "description": "Raises max HP by 5%.",
         "items": ["x-potion", 1]
     },
     "hp +10%": {
-        "effect": "Raises max HP by 10%.",
+        "description": "Raises max HP by 10%.",
         "items": ["soul spring", 3]
     },
     "hp +20%": {
-        "effect": "Raises max HP by 20%.",
+        "description": "Raises max HP by 20%.",
         "items": ["elixir", 5]
     },
     "hp +30%": {
-        "effect": "Raises max HP by 30%.",
+        "description": "Raises max HP by 30%.",
         "items": ["stamina tonic", 1]
     },
     "hp stroll": {
-        "effect": "HP gradually recovers while walking.",
+        "description": "HP gradually recovers while walking.",
         "items": ["stamina tablet, 2"]
     },
     "ice eater": {
-        "effect": "Absorbs Ice-based damage.",
+        "description": "Absorbs Ice-based damage.",
         "items": ["ice gem", 20]
     },
     "ice ward": {
-        "effect": "Halfs Ice-based damage.",
+        "description": "Halfs Ice-based damage.",
         "items": ["antarctic wind", 4]
     },
     "iceproof": {
-        "effect": "Grants immunity to Ice attacks.",
+        "description": "Grants immunity to Ice attacks.",
         "items": ["arctic wind", 8]
     },
     "lightning eater": {
-        "effect": "Absorbs Lightning-based damage.",
+        "description": "Absorbs Lightning-based damage.",
         "items": ["lightning gem", 20]
     },
     "lightning ward": {
-        "effect": "Halfs Lightning-based damage.",
+        "description": "Halfs Lightning-based damage.",
         "items": ["electro marble", 4]
     },
     "lightningproof": {
-        "effect": "Grants immunity to Lightning attacks.",
+        "description": "Grants immunity to Lightning attacks.",
         "items": ["lightning marble", 8]
     },
     "magic def +3%": {
-        "effect": "Reduces damage from magical attacks by 3%.",
+        "description": "Reduces damage from magical attacks by 3%.",
         "items": ["magic sphere", 3]
     },
     "magic def +5%": {
-        "effect": "Reduces damage from magical attacks by 5%.",
+        "description": "Reduces damage from magical attacks by 5%.",
         "items": ["mana spring", 2]
     },
     "magic def +10%": {
-        "effect": "Reduces damage from magical attacks by 10%.",
+        "description": "Reduces damage from magical attacks by 10%.",
         "items": ["wht magic sphere", 1]
     },
     "magic def +20%": {
-        "effect": "Reduces damage from magical attacks by 20%.",
+        "description": "Reduces damage from magical attacks by 20%.",
         "items": ["blessed gem", 4]
     },
     "master thief": {
-        "effect": "Character always steals rare items.",
+        "description": "Character always steals rare items.",
         "items": ["pendulum", 30]
     },
     "mp +5%": {
-        "effect": "Raises max MP by 5%.",
+        "description": "Raises max MP by 5%.",
         "items": ["ether", 1]
     },
     "mp +10%": {
-        "effect": "Raises max MP by 10%.",
+        "description": "Raises max MP by 10%.",
         "items": ["soul spring", 3]
     },
     "mp +20%": {
-        "effect": "Raises max MP by 20%.",
+        "description": "Raises max MP by 20%.",
         "items": ["elixir", 5]
     },
     "mp +30%": {
-        "effect": "Raises max MP by 30%.",
+        "description": "Raises max MP by 30%.",
         "items": ["mana tonic", 1]
     },
     "mp stroll": {
-        "effect": "MP gradually recovers while walking.",
+        "description": "MP gradually recovers while walking.",
         "items": ["mana tablet", 2]
     },
     "no encounters": {
-        "effect": "Prevents random enemy encounters.",
+        "description": "Prevents random enemy encounters.",
         "items": ["purifying salt", 30]
     },
     "pickpocket": {
-        "effect": "Improves character's odds of stealing rare items.",
+        "description": "Improves character's odds of stealing rare items.",
         "items": ["amulet", 30]
     },
     "poison ward": {
-        "effect": "Adds 50% resistance to Poison.",
+        "description": "Adds 50% resistance to Poison.",
         "items": ["antidote", 40]
     },
     "poisonproof": {
-        "effect": "Adds 100% resistance to Poison.",
+        "description": "Adds 100% resistance to Poison.",
         "items": ["poison fang", 12]
     },
     "ribbon": {
-        "effect": "Character becomes completely Immune to all status ailments, except Instant Death, Power/Armour/Magic/Mental Break, Curse, Delay and Eject.",
+        "description": "Character becomes completely Immune to all status ailments, except Instant Death, Power/Armour/Magic/Mental Break, Curse, Delay and Eject.",
         "items": ["dark matter", 99]
     },
     "silence ward": {
-        "effect": "Adds 50% resistance to Silence.",
+        "description": "Adds 50% resistance to Silence.",
         "items": ["echo screen", 30]
     },
     "silenceproof": {
-        "effect": "Adds 100% resistance to Silence.",
+        "description": "Adds 100% resistance to Silence.",
         "items": ["silence grenade", 10]
     },
     "sleep ward": {
-        "effect": "Adds 50% resistance to Sleep.",
+        "description": "Adds 50% resistance to Sleep.",
         "items": ["sleeping powder", 6]
     },
     "sleepproof": {
-        "effect": "Adds 100% resistance to Sleep.",
+        "description": "Adds 100% resistance to Sleep.",
         "items": ["dream powder", 8]
     },
     "slow ward": {
-        "effect": "Adds 50% resistance to Slow.",
+        "description": "Adds 50% resistance to Slow.",
         "items": ["silver hourglass", 10]
     },
     "slowproof": {
-        "effect": "Adds 100% resistance to Slow.",
+        "description": "Adds 100% resistance to Slow.",
         "items": ["gold hourglass", 20]
     },
     "sos haste": {
-        "effect": "Casts Haste when HP drops below 50%.",
+        "description": "Casts Haste when HP drops below 50%.",
         "items": ["chocobo feather", 20]
     },
     "sos nulblaze": {
-        "effect": "Casts NulBlaze when HP drops below 50%.",
+        "description": "Casts NulBlaze when HP drops below 50%.",
         "items": ["bomb core", 1]
     },
     "sos nulfrost": {
-        "effect": "Casts NulFrost when HP drops below 50%.",
+        "description": "Casts NulFrost when HP drops below 50%.",
         "items": ["arctic wind", 1]
     },
     "sos nulshock": {
-        "effect": "Casts NulShock when HP drops below 50%.",
+        "description": "Casts NulShock when HP drops below 50%.",
         "items": ["lightning marble", 1]
     },
     "sos nultide": {
-        "effect": "Casts NulTide when HP drops below 50%.",
+        "description": "Casts NulTide when HP drops below 50%.",
         "items": ["dragon scale", 1]
     },
     "sos protect": {
-        "effect": "Casts Protect when HP drops below 50%.",
+        "description": "Casts Protect when HP drops below 50%.",
         "items": ["light curtain", 8]
     },
     "sos reflect": {
-        "effect": "Casts Reflect when HP drops below 50%.",
+        "description": "Casts Reflect when HP drops below 50%.",
         "items": ["star curtain", 8]
     },
     "sos regen": {
-        "effect": "Casts Regen when HP drops below 50%.",
+        "description": "Casts Regen when HP drops below 50%.",
         "items": ["healing spring", 12]
     },
     "sos shell": {
-        "effect": "Casts Shell when HP drops below 50%.",
+        "description": "Casts Shell when HP drops below 50%.",
         "items": ["lunar curtain", 8]
     },
     "stone ward": {
-        "effect": "Adds 50% resistance to Stone.",
+        "description": "Adds 50% resistance to Stone.",
         "items": ["soft", 30]
     },
     "stoneproof": {
-        "effect": "Adds 100% resistance to Stone.",
+        "description": "Adds 100% resistance to Stone.",
         "items": ["petrify grenade", 20]
     },
     "water eater": {
-        "effect": "Absorbs Water-based damage.",
+        "description": "Absorbs Water-based damage.",
         "items": ["water gem", 20]
     },
     "water ward": {
-        "effect": "Halfs Water-based damage.",
+        "description": "Halfs Water-based damage.",
         "items": ["fish scale", 4]
     },
     "waterproof": {
-        "effect": "Grants immunity to Water attacks.",
+        "description": "Grants immunity to Water attacks.",
         "items": ["dragon scale", 8]
     },
     "zombie ward": {
-        "effect": "Adds 50% resistance to Zombie.",
+        "description": "Adds 50% resistance to Zombie.",
         "items": ["holy water", 30]
     },
     "zombieproof": {
-        "effect": "Adds 100% resistance to Zombie.",
+        "description": "Adds 100% resistance to Zombie.",
         "items": ["candle of life", 10]
     }
 }

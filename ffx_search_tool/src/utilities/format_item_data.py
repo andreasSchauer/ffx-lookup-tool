@@ -1,4 +1,4 @@
-from ffx_search_tool.src.data import monsters
+from ffx_search_tool.src.data import monsters, aeon_abilities, armour_abilities, weapon_abilities
 from ffx_search_tool.src.utilities.format_monster_data import format_num
 from ffx_search_tool.src.utilities.constants import REPLACEMENTS
 
@@ -17,13 +17,23 @@ def format_item_data(item_name, mon_or_reward, key):
 
 
 
-def format_ability_data(ability_name, ability_type, ability_data):
-    if ability_type == "aeon":
-        amount = ability_data[ability_name][1]
-    else:
-        amount = ability_data[ability_name]["items"][1]
 
-    return f"{ability_name.title()} ({amount})"
+def format_ability_data(ability_name, ability_type, item_search=False):
+    match (ability_type):
+        case "weapon":
+            item = weapon_abilities[ability_name]["items"][0]
+            amount = weapon_abilities[ability_name]["items"][1]
+        case "armour":
+            item = armour_abilities[ability_name]["items"][0]
+            amount = armour_abilities[ability_name]["items"][1]
+        case "aeon":
+            item = aeon_abilities[ability_name][0]
+            amount = aeon_abilities[ability_name][1]
+
+    if item_search:
+        return f"{ability_name.title()} ({amount})"
+
+    return f"{item.title()} x{amount}"
 
 
 

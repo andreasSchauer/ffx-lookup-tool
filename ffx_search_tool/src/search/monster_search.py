@@ -16,16 +16,13 @@ def monster_search(monster_name, single=False):
     
     if monster_name in DUPLICATES:
         options = DUPLICATES[monster_name]
-        choice = make_selection(options, "Multiple options found.", "Choose a monster by number: ")
-        monster_name = options[choice]
+        monster_name = make_selection(options, "Multiple options found.", "Choose a monster by number: ")
+
 
     if monster_name not in monsters:
-        location_choice = location = make_selection(LOCATIONS, "Monster not found.", "Choose a location by number to display options: ")
-        location = LOCATIONS[location_choice]
-
+        location = make_selection(LOCATIONS, "Monster not found.", "Choose a location by number to display options: ")
         options = list(chain(*filter_monsters(location, "location")))
-        monster_choice = make_selection(options, None, "Now choose a monster by number: ")
-        monster_name = options[monster_choice]
+        monster_name = make_selection(options, None, "Now choose a monster by number: ")
     
     monster = monsters[monster_name]
     
@@ -80,7 +77,8 @@ def get_ally_tables(monster_name):
 
     if monster_in_multiple_fights:
         choice = make_selection(allies, "Monster appears in multiple boss fights.", "Specify the fight by number: ")
-        monster_search(allies[choice][0])
+        ally = choice[0]
+        monster_search(ally)
         return
         
     if monster_name == "biran ronso" or monster_name == "yenke ronso":

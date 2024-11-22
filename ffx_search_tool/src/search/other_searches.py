@@ -42,8 +42,7 @@ def get_celestial_table():
 
 def ronso_rage_search(ronso_rage):
     if ronso_rage not in RONSO_RAGES:
-        choice = make_selection(RONSO_RAGES, "Rage not found.")
-        ronso_rage = RONSO_RAGES[choice]
+        ronso_rage = make_selection(RONSO_RAGES, "Rage not found.")
     
     ronso_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
     ronso_table.add_column(ronso_rage.title())
@@ -67,8 +66,7 @@ def ronso_rage_search(ronso_rage):
 def get_monster_arena_table(creation_name):
     if creation_name not in monster_arena:
         options = list(monster_arena.keys())
-        choice = make_selection(options, "Creation not found.")
-        creation_name = options[choice]
+        creation_name = make_selection(options, "Creation not found.")
 
     creation = monster_arena[creation_name]
     

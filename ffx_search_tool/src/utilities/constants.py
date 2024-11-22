@@ -81,6 +81,15 @@ REPLACEMENTS = {
             "steal_rare": ["elixir", 1],
             "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1]
+        },
+        "equipment": {
+            "wpn_abilities": [
+                {"ability": "break damage limit"}
+            ],
+            "armour_abilities": [
+                {"ability": "break hp limit"},
+                {"ability": "ribbon"}
+            ]
         }
     },
     "monster arena creations": {
@@ -90,6 +99,10 @@ REPLACEMENTS = {
             "steal_rare": [None, 0],
             "drop_common": [None, 0],
             "drop_rare": ["dark matter", 1]
+        },
+        "equipment": {
+            "wpn_abilities": [],
+            "armour_abilities": []
         }
     },
     "monster arena original creations": {
@@ -99,6 +112,10 @@ REPLACEMENTS = {
             "steal_rare": [None, 0],
             "drop_common": [None, 0],
             "drop_rare": [None, 0]
+        },
+        "equipment": {
+            "wpn_abilities": [],
+            "armour_abilities": []
         }
     },
 }

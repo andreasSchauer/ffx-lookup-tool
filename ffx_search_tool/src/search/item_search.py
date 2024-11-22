@@ -11,14 +11,44 @@ from ffx_search_tool.src.utilities.sort_monsters import sort_monsters_and_reward
 def item_search(item_name):
     if item_name not in items:
         options = list(items.keys())
-        choice = make_selection(options, "Item not found.")
-        item_name = options[choice]
+        item_name = make_selection(options, "Item not found.")
     
-    get_item_description_table(item_name)
+    get_item_desc_table(item_name)
     get_item_table(item_name)
 
 
-def get_item_description_table(item_name):
+def aeon_ability_search(ability_name):
+    if ability_name not in aeon_abilities:
+        options = list(aeon_abilities.keys())
+        ability_name = make_selection(options, "Ability not found.")
+
+    item_name = aeon_abilities[ability_name][0]
+
+    get_aeon_ability_desc_table(ability_name)
+    get_item_table(item_name)
+
+
+
+def auto_ability_search(ability_name):
+    if ability_name not in weapon_abilities and ability_name not in armour_abilities:
+        options = list(weapon_abilities.keys()) + list(armour_abilities.keys())
+        ability_name = make_selection(options, "Ability not found.")
+
+        if ability_name in weapon_abilities:
+            ability_data = weapon_abilities
+            ability_type = "weapon"
+        else:
+            ability_data = armour_abilities
+            ability_type = "armour"
+
+    item_name = ability_data[ability_name]["items"][0]
+
+    get_auto_ability_desc_table(ability_name, ability_type)
+    get_item_table(item_name)
+
+
+
+def get_item_desc_table(item_name):
     item_desc_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
     item_desc_table.add_column(item_name.title())
     tables = [items[item_name], get_ability_table(item_name)]
@@ -30,9 +60,46 @@ def get_item_description_table(item_name):
     console.print(item_desc_table)
 
 
+def get_aeon_ability_desc_table(ability_name):
+    ability_desc_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
+    ability_desc_table.add_column(ability_name.title())
+    data = format_ability_data(ability_name, "aeon")
+    ability_desc_table.add_row(f"Needed to learn: {data}")
+
+    console.print(ability_desc_table)
+
+
+def get_auto_ability_desc_table(ability_name, ability_type):
+    ability_desc_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
+    ability_desc_table.add_column(ability_name.title())
+    item_data = format_ability_data(ability_name, ability_type)
+    ability_description = get_auto_ability_description(ability_name, ability_type)
+
+    ability_desc_table.add_row(ability_description)
+    ability_desc_table.add_row(f"Needed to customize: {item_data}")
+    
+    # I can't use this exact function. I need to track everything down step by step
+    ability_desc_table.add_row(convert_mons_to_item_table(ability_name, "equipment", ["Reoccurring", "Not Reoccurring", "Bosses"]))
+
+    console.print(ability_desc_table)
+
+
+def get_auto_ability_description(ability_name, ability_type):
+    if ability_type == "weapon":
+        return weapon_abilities[ability_name]["description"]
+    
+    if ability_type == "armour":
+        return armour_abilities[ability_name]["description"]
+    
+
+def get_ability_drop_table(ability_name, ability_type):
+    pass
+    
+    
+
+
 def get_ability_table(item_name):
     type = ["weapon", "armour", "aeon"]
-    data = [weapon_abilities, armour_abilities, aeon_abilities]
     col_names = ["Weapon Abilities", "Armour Abilities", "Aeon Abilities"]
     ability_lists = get_ability_lists(item_name)
     ability_table = initialize_table("Customizable / Learnable Abilities", 3, column_names=col_names)
@@ -49,7 +116,7 @@ def get_ability_table(item_name):
             if i >= len(list):
                 value = "-"
             else:
-                value = format_ability_data(list[i], type[j], data[j])
+                value = format_ability_data(list[i], type[j], item_search=True)
             
             columns.append(value)
             j += 1
@@ -111,11 +178,8 @@ def get_item_table(item_name):
 
 def convert_mons_to_item_table(item_name, key, col_names):
     title = get_item_table_title(item_name, key)
-    
     table = initialize_table(title, len(col_names), column_names=col_names)
     monster_lists = filter_and_sort_mons(item_name, key)
-
-    
 
     max_length = max(len(monster_lists[0]), len(monster_lists[1]), len(monster_lists[2]))
 
@@ -133,7 +197,6 @@ def convert_mons_to_item_table(item_name, key, col_names):
                 value = "-"
             else:
                 value = format_item_data(item_name, list[i], key)
-            
             columns.append(value)
         
         table.add_row(*columns)
@@ -153,6 +216,10 @@ def get_item_table_title(item_name, key):
 
     if key == "bribe":
         title = "Bribing"
+
+    # need own function
+    if key == "equipment":
+        title = f"Monsters that drop {item_name.title()}"
 
     return title
 
@@ -185,10 +252,17 @@ def replace_list_items(list, item_name, key):
 def check_replacement(monster_name, item_name, key):
     for repl_name in REPLACEMENTS.keys():
         mon_in_replacements = monster_name in REPLACEMENTS[repl_name]["mons"]
-        if mon_in_replacements and item_in_replacements(repl_name, item_name, key):
+        if mon_in_replacements and should_be_replaced(repl_name, item_name, key):
             return repl_name
         
     return monster_name
+
+def should_be_replaced(monster_name, search_term, key):
+    if key == "steal" or key == "drop":
+        return item_in_replacements(monster_name, search_term, key)
+    
+    if key == "equipment":
+        return ability_in_replacements(monster_name, search_term)
 
 
 def item_in_replacements(monster_name, item_name, key):
@@ -202,6 +276,19 @@ def item_in_replacements(monster_name, item_name, key):
     items = REPLACEMENTS[monster_name]["items"]
 
     return item_name == items[key_1][0] or item_name == items[key_2][0]
+
+
+def ability_in_replacements(monster_name, ability_name):
+    equipment = REPLACEMENTS[monster_name]["equipment"]
+    ability_lists = [equipment["wpn_abilities"], equipment["armour_abilities"]]
+
+    for list in ability_lists:
+        for item in list:
+            if ability_name == item["ability"]:
+                return True
+            
+    return False
+    
 
 
 

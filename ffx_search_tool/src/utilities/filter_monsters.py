@@ -3,16 +3,15 @@ from ffx_search_tool.src.data import monsters
 
 def filter_monsters(search_term, key):
     filtered_mons = list(filter(create_filter(search_term, key), monsters))
-    is_location_filter = key == "location"
-    is_item_filter = key == "steal" or key == "drop"
+    is_location_search = key == "location"
 
     reoccuring_monsters = get_reoccurring_monsters(filtered_mons)
     one_time_monsters = get_one_time_monsters(filtered_mons)
-    boss_monsters = get_boss_monsters(filtered_mons, include_allies=is_location_filter)
+    boss_monsters = get_boss_monsters(filtered_mons, include_allies=is_location_search)
 
     monster_lists = [reoccuring_monsters, one_time_monsters, boss_monsters]
 
-    if is_item_filter:
+    if not is_location_search:
         is_dark_yojimbo_steal = key == "steal" and search_term in ["stamina tonic", "elixir"]
         is_dark_yojimbo_drop = key == "drop" and search_term in ["dark matter", "master sphere"]
 

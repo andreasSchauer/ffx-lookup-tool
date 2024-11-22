@@ -13,13 +13,15 @@ def make_selection(options, error_msg, input_msg="Choose by number: "):
         else:
             print(f"{i + 1}: {option.title()}")
 
+    print("")
+
     if error_msg:
         print(error_msg)
 
     choice = int(input(input_msg)) - 1
 
     if 0 <= choice < len(options):
-        return choice
+        return options[choice]
     else:
         raise Exception("Invalid input")
     

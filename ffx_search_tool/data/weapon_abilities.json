@@ -1,214 +1,214 @@
 {
     "alchemy": {
-        "effect": "Doubles the potency of recovery items.",
+        "description": "Doubles the potency of recovery items.",
         "items": ["healing water", 4]
     },
     "break damage limit": {
-        "effect": "Raises damage limit from 9.999 to 99.999.",
+        "description": "Raises damage limit from 9.999 to 99.999.",
         "items": ["dark matter", 60]
     },
     "capture": {
-        "effect": "Captures a monster.",
+        "description": "Captures a monster.",
         "items": null
     },
     "counter-attack": {
-        "effect": "Character strikes back automatically after physical attacks.",
+        "description": "Character strikes back automatically after physical attacks.",
         "items": ["friend sphere", 1]
     },
     "darkstrike": {
-        "effect": "Adds 100% Darkness to attacks and skills.",
+        "description": "Adds 100% Darkness to attacks and skills.",
         "items": ["smoke bomb", 20]
     },
     "darktouch": {
-        "effect": "Adds 50% Darkness to attacks and skills.",
+        "description": "Adds 50% Darkness to attacks and skills.",
         "items": ["eye drops", 60]
     },
     "deathstrike": {
-        "effect": "Adds 100% Death to attacks and skills.",
+        "description": "Adds 100% Death to attacks and skills.",
         "items": ["farplane wind", 60]
     },
     "deathtouch": {
-        "effect": "Adds 50% Death to attacks and skills.",
+        "description": "Adds 50% Death to attacks and skills.",
         "items": ["farplane shadow", 30]
     },
     "distill ability": {
-        "effect": "Adds Distil Ability effect to attacks and skills.",
+        "description": "Adds Distil Ability description to attacks and skills.",
         "items": ["ability sphere", 2]
     },
     "distill mana": {
-        "effect": "Adds Distil Mana effect to attacks and skills.",
+        "description": "Adds Distil Mana description to attacks and skills.",
         "items": ["mana sphere", 2]
     },
     "distill power": {
-        "effect": "Adds Distil Power effect to attacks and skills.",
+        "description": "Adds Distil Power description to attacks and skills.",
         "items": ["power sphere", 2]
     },
     "distill speed": {
-        "effect": "Adds Distil Speed effect to attacks and skills.",
+        "description": "Adds Distil Speed description to attacks and skills.",
         "items": ["speed sphere", 2]
     },
     "double ap": {
-        "effect": "Doubles amount of AP earned.",
+        "description": "Doubles amount of AP earned.",
         "items": ["megalixir", 20]
     },
     "double overdrive": {
-        "effect": "Charges Overdrive gauge at double speed.",
+        "description": "Charges Overdrive gauge at double speed.",
         "items": ["underdogs secret", 30]
     },
     "evade and counter": {
-        "effect": "Evade physical attack and strike back automatically.",
+        "description": "Evade physical attack and strike back automatically.",
         "items": ["teleport sphere", 1]
     },
     "firestrike": {
-        "effect": "Adds Fire element to attacks and skills.",
+        "description": "Adds Fire element to attacks and skills.",
         "items": ["bomb fragment", 4]
     },
     "first strike": {
-        "effect": "Act first at beginning of battle.",
+        "description": "Act first at beginning of battle.",
         "items": ["return sphere", 1]
     },
     "gillionaire": {
-        "effect": "Doubles amount of Gil earned.",
+        "description": "Doubles amount of Gil earned.",
         "items": ["designer wallet", 30]
     },
     "half mp cost": {
-        "effect": "Reduces MP cost of spells and skills by half.",
+        "description": "Reduces MP cost of spells and skills by half.",
         "items": ["twin stars", 20]
     },
     "icestrike": {
-        "effect": "Adds Ice element to attacks and skills.",
+        "description": "Adds Ice element to attacks and skills.",
         "items": ["antarctic wind", 4]
     },
     "initiative": {
-        "effect": "Raises party's chances for a preemptive strike and eliminates ambushes, except enemys with a 100% ambush rate.",
+        "description": "Raises party's chances for a preemptive strike and eliminates ambushes, except enemys with a 100% ambush rate.",
         "items": ["chocobo feather", 6]
     },
     "lightningstrike": {
-        "effect": "Adds Lightning element to attacks and skills.",
+        "description": "Adds Lightning element to attacks and skills.",
         "items": ["electro marble", 4]
     },
     "magic +3%": {
-        "effect": "Increases damage of magical attacks by 3%.",
+        "description": "Increases damage of magical attacks by 3%.",
         "items": ["magic sphere", 3]
     },
     "magic +5%": {
-        "effect": "Increases damage of magical attacks by 5%.",
+        "description": "Increases damage of magical attacks by 5%.",
         "items": ["mana spring", 2]
     },
     "magic +10%": {
-        "effect": "Increases damage of magical attacks by 10%.",
+        "description": "Increases damage of magical attacks by 10%.",
         "items": ["blk magic sphere", 1]
     },
     "magic +20%": {
-        "effect": "Increases damage of magical attacks by 20%.",
+        "description": "Increases damage of magical attacks by 20%.",
         "items": ["supreme gem", 4]
     },
     "magic booster": {
-        "effect": "Increases power of spells by 50%, but doubles their MP cost.",
+        "description": "Increases power of spells by 50%, but doubles their MP cost.",
         "items": ["turbo ether", 30]
     },
     "magic counter": {
-        "effect": "Strike back automatically after being attacked with magic.",
+        "description": "Strike back automatically after being attacked with magic.",
         "items": ["shining gem", 16]
     },
     "no ap": {
-        "effect": "Character will gain no AP at the end of a battle.",
+        "description": "Character will gain no AP at the end of a battle.",
         "items": null
     },
     "one mp cost": {
-        "effect": "Reduces MP cost of spells and skills to 1.",
+        "description": "Reduces MP cost of spells and skills to 1.",
         "items": ["three stars", 20]
     },
     "overdrive -> ap": {
-        "effect": "Converts Overdrive gauge charge into AP.",
+        "description": "Converts Overdrive gauge charge into AP.",
         "items": ["door to tomorrow", 10]
     },
     "piercing": {
-        "effect": "Attacks and skills ignore enemy's Armoured status.",
+        "description": "Attacks and skills ignore enemy's Armoured status.",
         "items": ["lv. 2 key sphere", 1]
     },
     "poisonstrike": {
-        "effect": "Adds 100% Poison to attacks and skills.",
+        "description": "Adds 100% Poison to attacks and skills.",
         "items": ["poison fang", 24]
     },
     "poisontouch": {
-        "effect": "Adds 50% Poison to attacks and skills.",
+        "description": "Adds 50% Poison to attacks and skills.",
         "items": ["antidote", 99]
     },
     "sensor": {
-        "effect": "View enemy data and elemental characteristics during battle.",
+        "description": "View enemy data and elemental characteristics during battle.",
         "items": ["ability sphere", 2]
     },
     "silencestrike": {
-        "effect": "Adds 100% Silence to attacks and skills.",
+        "description": "Adds 100% Silence to attacks and skills.",
         "items": ["silence grenade", 20]
     },
     "silencetouch": {
-        "effect": "Adds 50% Silence to attacks and skills.",
+        "description": "Adds 50% Silence to attacks and skills.",
         "items": ["echo screen", 60]
     },
     "sleepstrike": {
-        "effect": "Adds 100% Sleep to attacks and skills.",
+        "description": "Adds 100% Sleep to attacks and skills.",
         "items": ["dream powder", 16]
     },
     "sleeptouch": {
-        "effect": "Adds 50% Sleep to attacks and skills.",
+        "description": "Adds 50% Sleep to attacks and skills.",
         "items": ["sleeping powder", 10]
     },
     "slowstrike": {
-        "effect": "Adds 100% Slow to attacks and skills.",
+        "description": "Adds 100% Slow to attacks and skills.",
         "items": ["gold hourglass", 30]
     },
     "slowtouch": {
-        "effect": "Adds 50% Slow to attacks and skills.",
+        "description": "Adds 50% Slow to attacks and skills.",
         "items": ["silver hourglass", 16]
     },
     "sos overdrive": {
-        "effect": "Charges Overdrive gauge at double speed when HP drops below 50%.",
+        "description": "Charges Overdrive gauge at double speed when HP drops below 50%.",
         "items": ["gamblers spirit", 20]
     },
     "stonestrike": {
-        "effect": "Adds 100% Petrification to attacks and skills.",
+        "description": "Adds 100% Petrification to attacks and skills.",
         "items": ["petrify grenade", 60]
     },
     "stonetouch": {
-        "effect": "Adds 50% Petrification to attacks and skills.",
+        "description": "Adds 50% Petrification to attacks and skills.",
         "items": ["petrify grenade", 10]
     },
     "strength +3%": {
-        "effect": "Increases damage of physical attacks by 3%.",
+        "description": "Increases damage of physical attacks by 3%.",
         "items": ["power sphere", 3]
     },
     "strength +5%": {
-        "effect": "Increases damage of physical attacks by 5%.",
+        "description": "Increases damage of physical attacks by 5%.",
         "items": ["stamina spring", 2]
     },
     "strength +10%": {
-        "effect": "Increases damage of physical attacks by 10%.",
+        "description": "Increases damage of physical attacks by 10%.",
         "items": ["skill sphere", 1]
     },
     "strength +20%": {
-        "effect": "Increases damage of physical attacks by 20%.",
+        "description": "Increases damage of physical attacks by 20%.",
         "items": ["supreme gem", 4]
     },
     "triple ap": {
-        "effect": "Triples amount of AP earned.",
+        "description": "Triples amount of AP earned.",
         "items": ["wings to discovery", 50]
     },
     "triple overdrive": {
-        "effect": "Charges Overdrive gauge at triple speed.",
+        "description": "Charges Overdrive gauge at triple speed.",
         "items": ["winning formula", 30]
     },
     "waterstrike": {
-        "effect": "Adds Water element to attacks and skills.",
+        "description": "Adds Water element to attacks and skills.",
         "items": ["fish scale", 4]
     },
     "zombiestrike": {
-        "effect": "Adds 100% Zombie to attacks and skills.",
+        "description": "Adds 100% Zombie to attacks and skills.",
         "items": ["candle of life", 30]
     },
     "zombietouch": {
-        "effect": "Adds 50% Zombie to attacks and skills.",
+        "description": "Adds 50% Zombie to attacks and skills.",
         "items": ["holy water", 70]
     }
 }
