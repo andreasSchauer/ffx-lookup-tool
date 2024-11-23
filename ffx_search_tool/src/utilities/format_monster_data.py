@@ -1,4 +1,5 @@
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
+from ffx_search_tool.src.utilities.constants import REPLACEMENTS
 from ffx_search_tool.src.utilities.misc import format_num, format_item
 
 
@@ -269,3 +270,14 @@ def format_arena_data(key, monster_name):
 def format_remiem_items(key, monster_name):
     monster = remiem_temple[monster_name]
     return format_item(monster[key])
+
+
+
+def format_drop_rate(monster_name):
+    if monster_name in REPLACEMENTS:
+        drop_rate = REPLACEMENTS[monster_name]["equipment"]["drop_rate"]
+    else:
+        drop_rate = monsters[monster_name]["equipment"]["drop_rate"]
+
+    drop_percentage = int(drop_rate * 100)
+    return f"{monster_name.title()} ({drop_percentage}%)"

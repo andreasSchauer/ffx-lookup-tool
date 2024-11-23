@@ -1,9 +1,13 @@
 from ffx_search_tool.src.utilities.constants import COMMON_SPHERES, REPLACEMENTS
-from ffx_search_tool.src.utilities.filter_monsters import filter_monsters
-from ffx_search_tool.src.utilities.format_item_data import format_item_data, get_drop_rate_data
+from ffx_search_tool.src.utilities.format_monster_data import format_drop_rate
 from ffx_search_tool.src.utilities.misc import initialize_table
+from ffx_search_tool.src.utilities.filter_monsters import filter_monsters
 from ffx_search_tool.src.utilities.sort_monsters import sort_monsters
+from ffx_search_tool.src.utilities.format_item_data import format_item_data
 
+
+
+# possible keys: steal, drop, bribe, equipment
 
 def get_key_search_table(search_term, key, col_names):
     if key == "drop" and search_term in COMMON_SPHERES:
@@ -133,7 +137,7 @@ def juxtapose_monster_lists(monster_lists, search_term, key, i):
         elif key != "equipment":
             value = format_item_data(search_term, list[i], key)
         else:
-            value = get_drop_rate_data(list[i])
+            value = format_drop_rate(list[i])
 
         row_data.append(value)
 

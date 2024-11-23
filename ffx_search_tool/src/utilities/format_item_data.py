@@ -17,7 +17,6 @@ def format_item_data(item_name, mon_or_reward, key):
 
 
 
-
 def format_ability_data(ability_name, ability_type, item_search=False):
     match (ability_type):
         case "weapon":
@@ -39,16 +38,6 @@ def format_ability_data(ability_name, ability_type, item_search=False):
         return f"{ability_name.title()} ({amount})"
 
     return f"{item.title()} x{amount}"
-
-
-def get_drop_rate_data(monster_name):
-    if monster_name in REPLACEMENTS:
-        drop_rate = REPLACEMENTS[monster_name]["equipment"]["drop_rate"]
-    else:
-        drop_rate = monsters[monster_name]["equipment"]["drop_rate"]
-        
-    drop_percentage = int(drop_rate * 100)
-    return f"{monster_name.title()} ({drop_percentage}%)"
 
 
 
@@ -102,7 +91,6 @@ def format_drop_list(item_name, monster_name, common, rare):
         return f"{monster_name.title()}: {rare_amount}x (Rare)"
     
     return f"{monster_name.title()}: {common_amount}x / {rare_amount}x (Rare)"
-
 
 
 
