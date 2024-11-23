@@ -303,7 +303,7 @@
             "steal_rare": ["smoke bomb", 2],
             "drop_common": [["speed sphere", 1], ["al bhed potion", 1]],
             "drop_rare": [["speed sphere", 1], ["al bhed potion", 1]],
-            "bribe": ["mega-phoenix", 2]
+            "bribe": ["mega phoenix", 2]
         },
         "equipment": {
             "drop_rate": 0.03,
@@ -3571,8 +3571,8 @@
         "items": {
             "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_common": ["mega-phoenix", 1],
-            "drop_rare": ["mega-phoenix", 2],
+            "drop_common": ["mega phoenix", 1],
+            "drop_rare": ["mega phoenix", 2],
             "bribe": null
         },
         "equipment": {
@@ -4584,7 +4584,7 @@
             "steal_rare": ["farplane shadow", 1],
             "drop_common": ["mana sphere", 1],
             "drop_rare": ["mana sphere", 1],
-            "bribe": ["mega-phoenix", 38]
+            "bribe": ["mega phoenix", 38]
         },
         "equipment": {
             "drop_rate": 0.23,
@@ -6912,7 +6912,7 @@
             "steal_common": ["al bhed potion", 2],
             "steal_rare": ["al bhed potion", 3],
             "drop_common": ["phoenix down", 1],
-            "drop_rare": ["mega-phoenix", 1],
+            "drop_rare": ["mega phoenix", 1],
             "bribe": ["al bhed potion", 99]
         },
         "equipment": {
@@ -7143,7 +7143,7 @@
             "steal_common": ["al bhed potion", 1],
             "steal_rare": ["al bhed potion", 2],
             "drop_common": ["phoenix down", 1],
-            "drop_rare": ["mega-phoenix", 1],
+            "drop_rare": ["mega phoenix", 1],
             "bribe": ["al bhed potion", 60]
         },
         "equipment": {
@@ -13867,7 +13867,7 @@
             "steal_common": ["holy water", 3],
             "steal_rare": ["ether", 2],
             "drop_common": ["phoenix down", 2],
-            "drop_rare": ["mega-phoenix", 1],
+            "drop_rare": ["mega phoenix", 1],
             "bribe": ["ether", 16]
         },
         "equipment": {
@@ -13940,7 +13940,7 @@
             "steal_common": ["remedy", 1],
             "steal_rare": ["ether", 1],
             "drop_common": ["phoenix down", 1],
-            "drop_rare": ["mega-phoenix", 1],
+            "drop_rare": ["mega phoenix", 1],
             "bribe": ["ether", 10]
         },
         "equipment": {
@@ -18718,7 +18718,7 @@
         "gil": 0,
         "ronso_rage": null,
         "items": {
-            "steal_common": ["mega-phoenix", 2],
+            "steal_common": ["mega phoenix", 2],
             "steal_rare": ["elixir", 1],
             "drop_common": ["dark matter", 1],
             "drop_rare": ["master sphere", 1],

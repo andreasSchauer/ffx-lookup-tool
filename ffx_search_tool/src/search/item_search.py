@@ -2,7 +2,7 @@ from rich.table import Table
 from rich import box
 from functools import cmp_to_key
 from ffx_search_tool.src.data import rewards, buyable_items, items, armour_abilities, weapon_abilities, aeon_abilities
-from ffx_search_tool.src.utilities.constants import TABLE_WIDTH
+from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, ITEM_CATEGORIES
 from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_item_data
 from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table
 from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num
@@ -10,14 +10,22 @@ from ffx_search_tool.src.utilities.misc import initialize_table, console, make_s
 
 def item_search(item_name):
     if item_name not in items:
-        options = list(items.keys())
-        item_name = make_selection(options, "Item not found.")
+        category = select_item_category()
+        options = list(items.keys())[category[0]:category[1]]
+        item_name = make_selection(options, None, "Now choose an item by number: ")
     
     get_item_desc_table(item_name)
     get_item_table(item_name)
 
 
-#
+
+def select_item_category():
+    options = list(ITEM_CATEGORIES.keys())
+    category = make_selection(options, "Item not found.", input_msg="Choose a category by number: ")
+
+    return ITEM_CATEGORIES[category]
+
+
 def get_item_desc_table(item_name):
     item_desc_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
     item_desc_table.add_column(item_name.title())

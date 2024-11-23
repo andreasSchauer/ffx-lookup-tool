@@ -1,7 +1,7 @@
 from rich.table import Table
 from rich import box
-from ffx_search_tool.src.data import primers, celestials, monsters, monster_arena, rewards
-from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, RONSO_RAGES
+from ffx_search_tool.src.data import primers, celestials, monsters, monster_arena, rewards, items
+from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, RONSO_RAGES, ITEM_CATEGORIES
 from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_item
 from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
 
@@ -105,5 +105,33 @@ def get_rewards(key):
 
     for reward in reward_list:
         table.add_row(reward["condition"], format_item(reward["reward"]))
+
+    return table
+
+
+def get_items_table(**conditions):
+    if not any(conditions.values()):
+        conditions = {key: True for key in conditions}
+
+    items_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
+    items_table.add_column("Items")
+
+    for key in conditions.keys():
+        if conditions[key]:
+            items_table.add_row(get_items(key))
+
+    console.print(items_table)
+
+
+def get_items(key):
+    category = ITEM_CATEGORIES[key]
+    items_list = list(items.keys())[category[0]:category[1]]
+
+    table = initialize_table(key.title(), 2, column_names=["Item", "Effect"])
+
+    for i in range(len(items_list)):
+        item = items_list[i]
+        effect = items[item]
+        table.add_row(item.title(), effect)
 
     return table

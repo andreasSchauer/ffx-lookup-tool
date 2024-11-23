@@ -124,6 +124,15 @@ REPLACEMENTS = {
 }
 
 
+ITEM_CATEGORIES = {
+    "healing": [0, 20],
+    "support": [20, 32],
+    "attacking": [32, 65],
+    "spheres": [65, 95],
+    "other": [95, 111]
+}
+
+
 CHARACTER_SPECIFIC_ABILITIES = {
     "piercing": "Kimahri and Auron only",
     "strength +3%": "everybody except Yuna and Lulu",
