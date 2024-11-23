@@ -6,24 +6,29 @@ from rich.console import Console
 console = Console()
 
 
-def make_selection(options, error_msg, input_msg="Choose by number: "):
-    for i, option in enumerate(options):
-        if isinstance(option, list):
-            print(f"{i + 1}: {option[0].title()}")
-        else:
-            print(f"{i + 1}: {option.title()}")
+def make_selection(options, error_msg, input_msg="Choose by number: ", retry=False):
+    if not retry:
+        for i, option in enumerate(options):
+            if isinstance(option, list):
+                print(f"{i + 1}: {option[0].title()}")
+            else:
+                print(f"{i + 1}: {option.title()}")
 
     print("")
 
     if error_msg:
         print(error_msg)
 
-    choice = int(input(input_msg)) - 1
+    try:
+        choice = int(input(input_msg)) - 1
 
-    if 0 <= choice < len(options):
-        return options[choice]
-    else:
-        raise Exception("Invalid input")
+        if 0 <= choice < len(options):
+            return options[choice]
+        else:
+            raise ValueError
+
+    except (ValueError):
+        return make_selection(options, "Invalid input.", "Try again: ", retry=True)
     
 
 

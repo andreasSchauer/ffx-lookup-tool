@@ -12,5 +12,5 @@ from ffx_search_tool.src.search.other_searches import get_primer_table, get_cele
 #ronso_rage_search("g")
 #item_search("lunar curtain")
 #aeon_ability_search("jfo")
-auto_ability_search("triple overdrive")
+auto_ability_search("piercing")
 

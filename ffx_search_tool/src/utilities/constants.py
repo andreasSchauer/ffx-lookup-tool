@@ -122,3 +122,14 @@ REPLACEMENTS = {
         }
     },
 }
+
+
+CHARACTER_SPECIFIC_ABILITIES = {
+    "piercing": "Kimahri and Auron",
+    "strength +3%": "Everybody except Yuna and Lulu",
+    "strength +5%": "Everybody except Yuna and Lulu",
+    "strength +10%": "Everybody except Yuna and Lulu",
+    "magic +3%": "Yuna and Lulu",
+    "magic +5%": "Yuna and Lulu",
+    "magic +10%": "Yuna and Lulu"
+}

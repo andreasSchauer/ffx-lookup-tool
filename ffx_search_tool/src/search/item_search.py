@@ -3,7 +3,7 @@ from rich import box
 from functools import cmp_to_key
 from ffx_search_tool.src.data import rewards, buyable_items, items, armour_abilities, weapon_abilities, aeon_abilities
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH
-from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_data
+from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_item_data
 from ffx_search_tool.src.utilities.key_search_table import get_key_search_table
 from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num
 
@@ -83,7 +83,7 @@ def juxtapose_ability_lists(ability_lists, i):
         if i >= len(list):
             value = "-"
         else:
-            value = format_ability_data(list[i], types[j], item_search=True)
+            value = format_ability_item_data(list[i], types[j], item_search=True)
         
         row_data.append(value)
         j += 1

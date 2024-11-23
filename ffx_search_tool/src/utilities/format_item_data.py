@@ -17,7 +17,7 @@ def format_item_data(item_name, mon_or_reward, key):
 
 
 
-def format_ability_data(ability_name, ability_type, item_search=False):
+def format_ability_item_data(ability_name, ability_type, item_search=False):
     match (ability_type):
         case "weapon":
             items = weapon_abilities[ability_name]["items"]

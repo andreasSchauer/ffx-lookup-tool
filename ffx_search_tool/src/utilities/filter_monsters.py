@@ -1,8 +1,8 @@
 from ffx_search_tool.src.data import monsters
 
 
-def filter_monsters(search_term, key):
-    filtered_mons = list(filter(create_filter(search_term, key), monsters))
+def filter_monsters(search_term, key, characters=False):
+    filtered_mons = list(filter(create_filter(search_term, key, characters), monsters))
     is_location_search = key == "location"
 
     reoccuring_monsters = get_reoccurring_monsters(filtered_mons)
@@ -27,38 +27,35 @@ def accessible_via_dark_yojimbo(search_term, key):
         case "drop":
             return search_term in ["dark matter", "master sphere"]
         case "equipment":
-            weapons = monsters["dark yojimbo"]["equipment"]["wpn_abilities"]
-            armour = monsters["dark yojimbo"]["equipment"]["armour_abilities"]
-            is_dark_yojimbo_weapon = any(item["ability"] == search_term for item in weapons)
-            is_dark_yojimbo_armour = any(item["ability"] == search_term for item in armour)
+            is_dark_yojimbo_weapon = has_ability("dark yojimbo", "wpn_abilities", search_term)
+            is_dark_yojimbo_armour = has_ability("dark yojimbo", "armour_abilities", search_term)
             return is_dark_yojimbo_weapon or is_dark_yojimbo_armour
 
 
-def create_filter(search_term, key):
+def create_filter(search_term, key, characters=False):
     def inner(mon):
-        monster = monsters[mon]
         match (key):
             case "steal":
-                item_1 = get_item(monster, "steal_common")
-                item_2 = get_item(monster, "steal_rare")
+                item_1 = get_item(mon, "steal_common")
+                item_2 = get_item(mon, "steal_rare")
                 return search_term == item_1 or search_term == item_2
             case "drop":
-                item_1 = get_item(monster, "drop_common")
-                item_2 = get_item(monster, "drop_rare")
+                item_1 = get_item(mon, "drop_common")
+                item_2 = get_item(mon, "drop_rare")
                 return search_term == item_1 or search_term == item_2
             case "bribe":
-                return search_term == get_item(monster, "bribe")
+                return search_term == get_item(mon, "bribe")
             case "equipment":
-                has_wpn_ability = has_ability(monster, "wpn_abilities", search_term)
-                has_armour_ability = has_ability(monster, "armour_abilities", search_term)
+                has_wpn_ability = has_ability(mon, "wpn_abilities", search_term, characters)
+                has_armour_ability = has_ability(mon, "armour_abilities", search_term, characters)
                 return has_wpn_ability or has_armour_ability
             case "location":
-                return search_term in monster["location"]
+                return search_term in monsters[mon]["location"]
     return inner
 
 
-def get_item(monster, key):
-    item_data = monster["items"][key]
+def get_item(monster_name, key):
+    item_data = monsters[monster_name]["items"][key]
     
     if item_data is not None:
         if isinstance(item_data[0], list):
@@ -67,13 +64,16 @@ def get_item(monster, key):
         return item_data[0]
 
 
-def has_ability(monster, key, search_term):
-    abilities = monster["equipment"][key]
+def has_ability(monster_name, key, search_term, characters=False):
+    abilities = monsters[monster_name]["equipment"][key]
     
     if abilities is None:
         return False
     
-    return any(item["ability"] == search_term for item in abilities)
+    if characters:
+        return any(item["ability"] == search_term  and "characters" in item for item in abilities)
+
+    return any(item["ability"] == search_term and "characters" not in item for item in abilities)
     
 
 

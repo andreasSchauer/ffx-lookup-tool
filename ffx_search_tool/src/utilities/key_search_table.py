@@ -9,18 +9,25 @@ from ffx_search_tool.src.utilities.format_item_data import format_item_data
 
 # possible keys: steal, drop, bribe, equipment
 
-def get_key_search_table(search_term, key, col_names):
+def get_key_search_table(search_term, key, col_names, title=None, characters=False):
     if key == "drop" and search_term in COMMON_SPHERES:
         return f"Most monsters drop {search_term.title()}s. If you run out while stat maxing, use a distiller on Kottos to get 20 or 40 (Overkill) per battle."
 
-    monster_lists = key_search_mons(search_term, key)
-    table = monsters_to_table(monster_lists, search_term, key, col_names)
+    monster_lists = key_search_mons(search_term, key, characters)
+    monsters_amount = sum(len(list) for list in monster_lists)
+
+    if characters:
+        pass
+        # determine title based of monsters amount and ability
+        # and determine if to print the character specific table at all or whether to return text based of monsters amount
+
+    table = monsters_to_table(monster_lists, search_term, key, col_names, title)
 
     return table
 
 
-def key_search_mons(item_name, key):
-    monster_lists = filter_monsters(item_name, key)
+def key_search_mons(item_name, key, characters=False):
+    monster_lists = filter_monsters(item_name, key, characters)
     monster_lists_sorted = []
 
     for list in monster_lists:
@@ -91,8 +98,10 @@ def ability_in_replacements(monster_name, ability_name):
 
 
 
-def monsters_to_table(monster_lists, search_term, key, col_names):
-    title = key_search_table_title(search_term, key)
+def monsters_to_table(monster_lists, search_term, key, col_names, title=None):
+    if title is None:
+        title = key_search_table_title(search_term, key)
+
     table = initialize_table(title, len(col_names), column_names=col_names)
 
     max_length = max(map(len, monster_lists))

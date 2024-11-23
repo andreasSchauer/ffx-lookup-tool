@@ -237,7 +237,7 @@
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -382,8 +382,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "stonetouch"}
             ],
             "armour_abilities": [
@@ -665,7 +665,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "counter-attack"}
             ],
@@ -737,7 +737,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "stonetouch"}
             ],
@@ -808,10 +808,10 @@
             "slots_amount": "1-3",
             "attached_abilities": "1-2",
             "wpn_abilities": [
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +3%", "characters":"Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +3%", "characters": "Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -885,8 +885,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "zombietouch"},
                 {"ability": "sos overdrive"}
             ],
@@ -1101,7 +1101,7 @@
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
-                {"ability": "magic +3%", "characters":"Yuna and Lulu"},
+                {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -1597,7 +1597,7 @@
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
-                {"ability": "magic +3%", "characters":"Yuna and Lulu"},
+                {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -2107,10 +2107,10 @@
             "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +10%", "characters":"except Yuna and Lulu"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +10%", "characters":"Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "strength +10%", "characters": "except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +10%", "characters": "Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "sensor"}
             ],
             "armour_abilities": [
@@ -3136,7 +3136,7 @@
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "sos overdrive"}
             ],
             "armour_abilities": [
@@ -3206,8 +3206,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +3%", "characters":"Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -3282,8 +3282,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -3429,8 +3429,8 @@
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
-                {"ability": "magic +3%", "characters":"Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
+                {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -3510,7 +3510,7 @@
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
                 {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "sleeptouch"}
             ],
             "armour_abilities": [
@@ -3798,8 +3798,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -3875,8 +3875,8 @@
             "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +5%", "characters":"Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "firestrike"},
                 {"ability": "lightningstrike"},
                 {"ability": "waterstrike"},
@@ -3951,8 +3951,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
-                {"ability": "magic +3%", "characters":"Yuna and Lulu"}
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
+                {"ability": "magic +3%", "characters": "Yuna and Lulu"}
             ],
             "armour_abilities": [
                 {"ability": "sleep ward"},
@@ -4382,7 +4382,7 @@
             "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +10%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +10%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +10%", "characters": "Yuna and Lulu"}
             ],
             "armour_abilities": [
@@ -4453,7 +4453,7 @@
             "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +10%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +10%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +10%", "characters": "Yuna and Lulu"}
             ],
             "armour_abilities": [
@@ -5030,8 +5030,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "sensor"}
@@ -5106,8 +5106,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "sensor"}
@@ -5181,8 +5181,8 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "sensor"}
@@ -5620,7 +5620,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +10%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +10%", "characters": "except Yuna and Lulu"},
                 {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +10%", "characters": "Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"}
@@ -8296,7 +8296,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "poisontouch"}
             ],
@@ -8373,7 +8373,7 @@
             "attached_abilities": "0-1",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "waterstrike"}
             ],
@@ -8445,7 +8445,7 @@
             "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "counter-attack"}
             ],
@@ -8919,7 +8919,7 @@
             "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "initiative"}
             ],
@@ -8992,7 +8992,7 @@
             "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "poisontouch"}
             ],
@@ -9418,7 +9418,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "waterstrike"}
             ],
@@ -9490,7 +9490,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "waterstrike"}
             ],
@@ -9770,7 +9770,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "slowtouch"}
             ],
@@ -9842,7 +9842,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "poisontouch"}
             ],
@@ -12377,7 +12377,7 @@
             "attached_abilities": "0-1",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "waterstrike"}
             ],
@@ -12449,7 +12449,7 @@
             "attached_abilities": "0-1",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "waterstrike"}
             ],
@@ -12521,7 +12521,7 @@
             "attached_abilities": "0-1",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "waterstrike"}
             ],
@@ -12667,8 +12667,8 @@
             "attached_abilities": "1-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "sleeptouch"}
@@ -13805,7 +13805,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "sos overdrive"}
             ],
@@ -13876,7 +13876,7 @@
             "attached_abilities": "0-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"}
             ],
             "armour_abilities": [
@@ -13949,8 +13949,8 @@
             "attached_abilities": "0-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"}
             ],
@@ -14163,7 +14163,7 @@
             "attached_abilities": "0-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"}
             ],
             "armour_abilities": [
@@ -14236,8 +14236,8 @@
             "attached_abilities": "0-2",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"}
             ],
@@ -14660,7 +14660,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +3%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +3%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +3%", "characters": "Yuna and Lulu"},
                 {"ability": "darktouch"}
             ],
@@ -14731,7 +14731,7 @@
             "attached_abilities": "1-3",
             "wpn_abilities": [
                 {"ability": "piercing", "characters": "Kimahri and Auron"},
-                {"ability": "strength +5%", "characters":"except Yuna and Lulu"},
+                {"ability": "strength +5%", "characters": "except Yuna and Lulu"},
                 {"ability": "magic +5%", "characters": "Yuna and Lulu"},
                 {"ability": "darktouch"}
             ],
