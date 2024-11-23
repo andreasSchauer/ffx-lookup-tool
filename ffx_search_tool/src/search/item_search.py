@@ -4,7 +4,7 @@ from functools import cmp_to_key
 from ffx_search_tool.src.data import rewards, buyable_items, items, armour_abilities, weapon_abilities, aeon_abilities
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH
 from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_item_data
-from ffx_search_tool.src.utilities.key_search_table import get_key_search_table
+from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table
 from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num
 
 
@@ -68,13 +68,13 @@ def abilities_to_table(ability_lists):
         return
 
     for i in range(max_length):
-        row_data = juxtapose_ability_lists(ability_lists, i)
+        row_data = ability_lists_into_rows(ability_lists, i)
         table.add_row(*row_data)
     
     return table
 
 
-def juxtapose_ability_lists(ability_lists, i):
+def ability_lists_into_rows(ability_lists, i):
     types = ["weapon", "armour", "aeon"]
     row_data = []
     j = 0

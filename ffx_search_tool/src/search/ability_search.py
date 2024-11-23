@@ -4,7 +4,7 @@ from ffx_search_tool.src.data import aeon_abilities, armour_abilities, weapon_ab
 from ffx_search_tool.src.search.item_search import get_item_table
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, CHARACTER_SPECIFIC_ABILITIES
 from ffx_search_tool.src.utilities.format_item_data import format_ability_item_data
-from ffx_search_tool.src.utilities.key_search_table import get_key_search_table
+from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table, key_search_table_title
 from ffx_search_tool.src.utilities.misc import console, make_selection, initialize_table
 
 
@@ -80,12 +80,14 @@ def get_auto_ability_table(ability_name, ability_type):
 
     if item_data is not None:
         if ability_name in CHARACTER_SPECIFIC_ABILITIES:
-            table.add_row(get_key_search_table(ability_name, "equipment", col_names, title="test1", characters=True))
-            table.add_row(get_key_search_table(ability_name, "equipment", col_names, title="test2"))
+            title1 = key_search_table_title(ability_name, "equipment", format_characters=True, include_names=True)
+            title2 = key_search_table_title(ability_name, "equipment", format_characters=True)
+
+            table.add_row(get_key_search_table(ability_name, "equipment", col_names, title=title1, characters=True))
+            table.add_row(get_key_search_table(ability_name, "equipment", col_names, title=title2))
         else:
             table.add_row(get_key_search_table(ability_name, "equipment", col_names))
         
-
     console.print(table)
 
 

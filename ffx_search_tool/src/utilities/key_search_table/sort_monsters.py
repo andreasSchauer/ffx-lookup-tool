@@ -108,5 +108,3 @@ def compare_equipment(mon1, mon2):
         return 0
     else:
         return -1
-    
-

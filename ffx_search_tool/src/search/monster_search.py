@@ -1,16 +1,16 @@
 from rich.table import Table
 from rich import box
 from itertools import chain
-from ffx_search_tool.src.utilities.filter_monsters import filter_monsters
+from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
-from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, LOCATIONS, CELL_NAMES, TABLE_WIDTH
+from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, LOCATIONS, MONSTER_TABLE_CELL_NAMES, TABLE_WIDTH
 from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
 from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num
 from ffx_search_tool.src.utilities.ronso_calc import *
 
 
 
-def monster_search(monster_name, single=False):
+def monster_search(monster_name, include_allies=False):
     if monster_name in SYNONYMS:
         monster_name = SYNONYMS[monster_name][0]
     
@@ -26,7 +26,7 @@ def monster_search(monster_name, single=False):
     
     monster = monsters[monster_name]
     
-    if monster["has_allies"] and not single:
+    if monster["has_allies"] and include_allies:
         get_ally_tables(monster_name)
     else:
         get_monster_table(monster_name)
@@ -96,7 +96,7 @@ def get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_a
     monster = monsters[monster_name]
     stats = monster.copy()["stats"]
     stat_keys = list(stats.keys())
-    stat_cell_names = CELL_NAMES["stats"]
+    stat_cell_names = MONSTER_TABLE_CELL_NAMES["stats"]
 
     stat_table = initialize_table("Stats", 4, tab_header=False)
 
@@ -122,7 +122,7 @@ def get_element_table(monster_name):
     monster = monsters[monster_name]
     elements = monster["elem_resists"]
     element_keys = list(elements.keys())
-    element_cell_names = CELL_NAMES["elements"]
+    element_cell_names = MONSTER_TABLE_CELL_NAMES["elements"]
 
     col_names = ["Element", "Resistance"]
     element_table = initialize_table("Elemental Resistances", 4, column_names=col_names)
@@ -143,7 +143,7 @@ def get_status_resist_table(monster_name):
     monster = monsters[monster_name]
     statusses = monster["stat_resists"]
     status_keys = list(statusses.keys())
-    status_cell_names = CELL_NAMES["statusses"]
+    status_cell_names = MONSTER_TABLE_CELL_NAMES["statusses"]
 
     col_names = ["Status", "Resistance"]
     status_table = initialize_table("Status Resistances", 4, column_names=col_names)
@@ -169,7 +169,7 @@ def get_item_table(monster_name):
     monster = monsters[monster_name]
     items = monster["items"]
     item_keys = list(items.keys())
-    item_cell_names = CELL_NAMES["items"]
+    item_cell_names = MONSTER_TABLE_CELL_NAMES["items"]
 
     for i in range(len(items)):
         action = item_cell_names[i]
@@ -209,7 +209,7 @@ def get_equipment_table(monster_name):
     monster = monsters[monster_name]    
     equipment = monster["equipment"]
     equipment_keys = list(equipment.keys())
-    equipment_cell_names = CELL_NAMES["equipment"]
+    equipment_cell_names = MONSTER_TABLE_CELL_NAMES["equipment"]
 
     equipment_table = initialize_table("Equipment", 2, tab_header=False)
 

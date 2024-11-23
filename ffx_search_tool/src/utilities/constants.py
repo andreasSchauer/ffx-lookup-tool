@@ -1,6 +1,6 @@
-TABLE_WIDTH = 96
+TABLE_WIDTH = 100
 
-CELL_NAMES = {
+MONSTER_TABLE_CELL_NAMES = {
     "stats":        [
                         "HP (Overkill)", "MP", "Strength",
                         "Defence", "Magic", "Magic Defence",
@@ -125,11 +125,11 @@ REPLACEMENTS = {
 
 
 CHARACTER_SPECIFIC_ABILITIES = {
-    "piercing": "Kimahri and Auron",
-    "strength +3%": "Everybody except Yuna and Lulu",
-    "strength +5%": "Everybody except Yuna and Lulu",
-    "strength +10%": "Everybody except Yuna and Lulu",
-    "magic +3%": "Yuna and Lulu",
-    "magic +5%": "Yuna and Lulu",
-    "magic +10%": "Yuna and Lulu"
+    "piercing": "Kimahri and Auron only",
+    "strength +3%": "everybody except Yuna and Lulu",
+    "strength +5%": "everybody except Yuna and Lulu",
+    "strength +10%": "everybody except Yuna and Lulu",
+    "magic +3%": "Yuna and Lulu only",
+    "magic +5%": "Yuna and Lulu only",
+    "magic +10%": "Yuna and Lulu only"
 }

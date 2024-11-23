@@ -107,5 +107,3 @@ def get_rewards(key):
         table.add_row(reward["condition"], format_item(reward["reward"]))
 
     return table
-
-

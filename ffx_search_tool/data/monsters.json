@@ -9906,8 +9906,8 @@
         "items": {
             "steal_common": ["turbo ether", 1],
             "steal_rare": ["elixir", 1],
-            "drop_common": ["blk magic sphere", 1],
-            "drop_rare": ["special sphere", 1],
+            "drop_common": null,
+            "drop_rare": null,
             "bribe": null
         },
         "equipment": {
@@ -11351,8 +11351,8 @@
         "items": {
             "steal_common": ["potion", 1],
             "steal_rare": ["potion", 1],
-            "drop_common": ["power sphere", 2],
-            "drop_rare": ["power sphere", 3],
+            "drop_common": null,
+            "drop_rare": null,
             "bribe": null
         },
         "equipment": {

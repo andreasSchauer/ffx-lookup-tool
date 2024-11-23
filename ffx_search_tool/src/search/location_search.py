@@ -2,7 +2,7 @@ from rich.table import Table
 from rich import box
 from ffx_search_tool.src.utilities.constants import LOCATIONS, TABLE_WIDTH
 from ffx_search_tool.src.utilities.misc import console, make_selection
-from ffx_search_tool.src.utilities.filter_monsters import filter_monsters
+from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
 from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
 
 

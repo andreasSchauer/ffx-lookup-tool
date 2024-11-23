@@ -59,6 +59,7 @@ def format_item(item_data):
 
 def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):
     table = Table(title=tab_title, show_lines=True, expand=True, box=box.SQUARE, title_style="bold", show_header=tab_header)
+
     col_width = int(TABLE_WIDTH / num_columns)
 
     if len(column_names) == 0:
@@ -70,6 +71,3 @@ def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):
                 table.add_column(name, width=col_width)
 
     return table
-
-
-
