@@ -404,22 +404,22 @@
         "first_col_title": "Amount of Guardian Spheres",
         "data": [
             {
-                "condition": "1 or more Guardian Spheres",
+                "condition": "1-2",
                 "description": "Bikanel - Valley of the Cactuars: 1 or more Guardian Spheres",
                 "reward": ["potion", 1]
             },
             {
-                "condition": "3 or more Guardian Spheres",
+                "condition": "3-5",
                 "description": "Bikanel - Valley of the Cactuars: 3 or more Guardian Spheres",
                 "reward": ["elixir", 1]
             },
             {
-                "condition": "6 or more Guardian Spheres",
+                "condition": "6-7",
                 "description": "Bikanel - Valley of the Cactuars: 6 or more Guardian Spheres",
                 "reward": ["megalixir", 1]
             },
             {
-                "condition": "8 or more Guardian Spheres",
+                "condition": "8-9",
                 "description": "Bikanel - Valley of the Cactuars: 8 or more Guardian Spheres",
                 "reward": ["friend sphere", 1]
             }
