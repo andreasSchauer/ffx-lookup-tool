@@ -5,7 +5,7 @@ from ffx_search_tool.src.data import rewards, buyable_items, items, armour_abili
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, ITEM_CATEGORIES
 from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_item_data
 from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table
-from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num
+from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num, format_string
 
 
 def item_search(item_name):
@@ -28,7 +28,7 @@ def select_item_category():
 
 def get_item_desc_table(item_name):
     item_desc_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    item_desc_table.add_column(item_name.title())
+    item_desc_table.add_column(format_string(item_name))
     tables = [items[item_name], get_ability_table(item_name)]
     
     for table in tables:
@@ -101,7 +101,7 @@ def ability_lists_into_rows(ability_lists, i):
 
 
 def get_item_table(item_name):    
-    title = f"Where to get {item_name.title()}"
+    title = format_string(f"Where to get {item_name}")
 
     if item_name in buyable_items:
         title += f" (Buyable for {format_num(buyable_items[item_name])} Gil)"

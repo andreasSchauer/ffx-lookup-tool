@@ -1,6 +1,6 @@
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
 from ffx_search_tool.src.utilities.constants import REPLACEMENTS
-from ffx_search_tool.src.utilities.misc import format_num, format_item
+from ffx_search_tool.src.utilities.misc import format_num, format_item, format_string
 
 
 def format_monster_data(key, monster_name):
@@ -48,7 +48,7 @@ def format_monster_data(key, monster_name):
     if monster_name in remiem_temple and key in remiem_temple[monster_name]:
         return format_remiem_items(key, monster_name)
     
-    return str(monster[key])
+    return format_string(str(monster[key]))
 
 
 
@@ -177,14 +177,14 @@ def get_ability_list(key, equipment):
     ability_list = []
 
     for ability in abilities:
-        to_add = ability["ability"].title()
+        to_add = ability["ability"]
 
         if "characters" in ability:
             to_add += f" ({ability["characters"]})"
 
         ability_list.append(to_add)
 
-    return ", ".join(ability_list)
+    return format_string(", ".join(ability_list))
 
 
 
@@ -206,7 +206,7 @@ def format_rage(monster_name):
     if isinstance(rage, list):
         rage = ", ".join(rage)
 
-    return rage.title()
+    return format_string(rage)
 
 
 def format_steals(monster_name):
@@ -248,12 +248,12 @@ def format_bribe_max(monster_name):
     
     gil_amount = f"{format_num(monster["stats"]["hp"][0] * 25)} Gil"
 
-    return f"{item} ({gil_amount})"
+    return format_string(f"{item} ({gil_amount})")
 
 
 def format_location(monster_name):
     locations = monsters[monster_name]["location"]
-    return ", ".join(locations).title()
+    return format_string(", ".join(locations))
 
 
 def format_arena_data(key, monster_name):
@@ -264,7 +264,7 @@ def format_arena_data(key, monster_name):
         case "reward":
             return format_item(monster["reward"])
         case "monsters":
-            return ", ".join(monster["monsters"]).title()
+            return format_string(", ".join(monster["monsters"]))
     
 
 def format_remiem_items(key, monster_name):
@@ -280,4 +280,4 @@ def format_drop_rate(monster_name):
         drop_rate = monsters[monster_name]["equipment"]["drop_rate"]
 
     drop_percentage = int(drop_rate * 100)
-    return f"{monster_name.title()} ({drop_percentage}%)"
+    return format_string(f"{monster_name} ({drop_percentage}%)")

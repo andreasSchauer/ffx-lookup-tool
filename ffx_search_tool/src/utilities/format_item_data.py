@@ -1,6 +1,7 @@
 from ffx_search_tool.src.data import monsters, aeon_abilities, armour_abilities, weapon_abilities
 from ffx_search_tool.src.utilities.format_monster_data import format_num
 from ffx_search_tool.src.utilities.constants import REPLACEMENTS
+from ffx_search_tool.src.utilities.misc import format_string
 
 
 
@@ -35,9 +36,9 @@ def format_ability_item_data(ability_name, ability_type, item_search=False):
             amount = aeon_abilities[ability_name][1]
 
     if item_search:
-        return f"{ability_name.title()} ({amount})"
+        return format_string(f"{ability_name} ({amount})")
 
-    return f"{item.title()} x{amount}"
+    return format_string(f"{item} x{amount}")
 
 
 
@@ -62,12 +63,12 @@ def format_steal_drop_data(item_name, monster_name, common, rare):
         rare_amount = items[rare][1]
 
     if common_amount >= rare_amount:
-        return f"{monster_name.title()}: {common_amount}x"
+        return format_string(f"{monster_name}: {common_amount}x")
 
     if not common_amount:
-        return f"{monster_name.title()}: {rare_amount}x (Rare)"
+        return format_string(f"{monster_name}: {rare_amount}x (Rare)")
     
-    return f"{monster_name.title()}: {common_amount}x / {rare_amount}x (Rare)"
+    return format_string(f"{monster_name}: {common_amount}x / {rare_amount}x (Rare)")
 
 
 
@@ -85,12 +86,12 @@ def format_drop_list(item_name, monster_name, common, rare):
         rare_amount = items[rare][1][1]
 
     if common_amount >= rare_amount:
-        return f"{monster_name.title()}: {common_amount}x"
+        return format_string(f"{monster_name}: {common_amount}x")
 
     if not common_amount:
-        return f"{monster_name.title()}: {rare_amount}x (Rare)"
+        return format_string(f"{monster_name}: {rare_amount}x (Rare)")
     
-    return f"{monster_name.title()}: {common_amount}x / {rare_amount}x (Rare)"
+    return format_string(f"{monster_name}: {common_amount}x / {rare_amount}x (Rare)")
 
 
 
@@ -98,9 +99,9 @@ def format_bribe_data(monster_name):
     bribe_amount = monsters[monster_name]["items"]["bribe"][1]
     hp = monsters[monster_name]["stats"]["hp"][0]
     bribe_max = format_num(hp * 25)
-    return f"{monster_name.title()}: {bribe_amount}x ({bribe_max} Gil)"
+    return format_string(f"{monster_name}: {bribe_amount}x ({bribe_max} Gil)")
 
 
 
 def format_reward_data(reward_dict):
-    return f"{reward_dict["reward"][1]}x"
+    return format_string(f"{reward_dict["reward"][1]}x")

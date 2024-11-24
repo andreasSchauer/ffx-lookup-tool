@@ -1,7 +1,7 @@
 from rich.table import Table
 from rich import box
 from ffx_search_tool.src.utilities.constants import LOCATIONS, TABLE_WIDTH
-from ffx_search_tool.src.utilities.misc import console, make_selection
+from ffx_search_tool.src.utilities.misc import console, make_selection, format_string
 from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
 from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
 
@@ -24,7 +24,7 @@ def location_search(location_name):
 
 
 def get_location_table(location_name, monster_list, type):
-    title = f"{location_name.title()} - {type}"
+    title = format_string(f"{location_name} - {type}")
     table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
     table.add_column(title)
 

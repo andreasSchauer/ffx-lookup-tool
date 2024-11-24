@@ -1,17 +1,39 @@
 def get_kimahri_stats():
-    kimahri_hp = int(input("Enter Kimahri's max HP: "))
+        kimahri_hp = kimahri_stats_input("HP")
+        kimahri_str = kimahri_stats_input("Strength")
+        kimahri_mag = kimahri_stats_input("Magic")
+        kimahri_agl = kimahri_stats_input("Agility")
 
-    if kimahri_hp < 644:
-        raise Exception("Kimahri's max HP can't be lower than 644.")
+        return kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl
 
-    kimahri_str = int(input("Enter Kimahri's Strength stat: "))
-    kimahri_mag = int(input("Enter Kimahri's Magic stat: "))
-    kimahri_agl = int(input("Enter Kimahri's Agility stat: "))
 
-    if not (0 <= kimahri_str <= 255 and 0 <= kimahri_mag <= 255 and 0 <= kimahri_agl <= 255):
-        raise Exception("Stats must have a value from 0 to 255.")
+def kimahri_stats_input(key):
+    try:
+        if key == "HP":
+            kimahri_stat = validate_stat_input("Enter Kimahri's max HP: ")
 
-    return kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl
+            if kimahri_stat < 644:
+                raise ValueError("Kimahri's max HP can't be lower than 644.")
+            
+        else:
+            kimahri_stat = validate_stat_input(f"Enter Kimahri's {key} stat: ")
+
+            if not (0 <= kimahri_stat <= 255):
+                raise ValueError("Stats must have a value from 0 to 255.")
+        
+        return kimahri_stat
+    except ValueError as e:
+            print(str(e))
+            print("")
+            print("Try again.")
+            return kimahri_stats_input(key)
+
+
+def validate_stat_input(input_msg):
+    try:
+        return int(input(input_msg))
+    except ValueError:
+        raise ValueError("Invalid Input.")
 
 
 

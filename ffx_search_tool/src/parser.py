@@ -5,14 +5,14 @@ from ffx_search_tool.src.search.item_search import item_search
 from ffx_search_tool.src.search.other_searches import get_primer_table, get_celestial_table, ronso_rage_search, get_monster_arena_table, get_reward_table, get_items_table
 
 
-#monster_search("garfuda", include_allies=True)
+#monster_search("iffrit", include_allies=True)
 #location_search("remiem templek")
-get_reward_table(monster_arena=False, remiem_temple=False, chocobo_races=False, chocobo_training=False, lightning_dodging=False, cactuar_valley=False, butterfly_hunt=False, other=False, sack=True, sarck=True)
+#get_reward_table(monster_arena=False, remiem_temple=False, chocobo_races=False, chocobo_training=False, lightning_dodging=False, cactuar_valley=False, butterfly_hunt=False, other=False)
 #get_monster_arena_table("jio")
 #get_primer_table()
 #get_celestial_table()
 #ronso_rage_search("g")
 #item_search("luknar curtain")
 #aeon_ability_search("jfo")
-#auto_ability_search("magic +1k0%")
-#get_items_table(healing=False, support=False, attacking=False, spheres=False, other=False, sack=True)
+#auto_ability_search("f")
+#get_items_table(healing=False, support=False, attacking=False, spheres=False, other=False)

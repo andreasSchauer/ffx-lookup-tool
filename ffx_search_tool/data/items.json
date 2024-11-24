@@ -57,7 +57,7 @@
     "lightning marble": "Deals around 1.000 HP of Lightning-elemental damage to target opponent.",
     "mana spring": "Absorbs target opponent's MP (maximum of 1.058 MP).",
     "petrify grenade": "Inflicts Petrification on all opponents.",
-    "purifying salt": "Casts Dispel and deals around 1.100 HP of non-elemental damage to all opponents.",
+    "purifying salt": "Removes positive status effects of an opponent and deals around 1.100 HP of non-elemental damage.",
     "shadow gem": "Reduces HP of all opponents by half (maximum of 9.999 HP, gravity-damage).",
     "shining gem": "Deals around 6.000 HP of non-elemental damage to target opponent.",
     "silence grenade": "Inflicts Silence and deals around 750 HP of non-elemental damage to all opponents.",

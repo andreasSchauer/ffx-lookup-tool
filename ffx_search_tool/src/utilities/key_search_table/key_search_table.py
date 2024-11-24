@@ -1,6 +1,6 @@
 from ffx_search_tool.src.utilities.constants import COMMON_SPHERES, CHARACTER_SPECIFIC_ABILITIES
 from ffx_search_tool.src.utilities.format_monster_data import format_drop_rate
-from ffx_search_tool.src.utilities.misc import initialize_table
+from ffx_search_tool.src.utilities.misc import initialize_table, format_string
 from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
 from ffx_search_tool.src.utilities.key_search_table.replace_list_items import replace_list_items
 from ffx_search_tool.src.utilities.key_search_table.sort_monsters import sort_monsters
@@ -94,9 +94,9 @@ def key_search_table_title(search_term, key, format_characters=False, include_na
     if key == "equipment":
         if format_characters:
             names = get_character_names(search_term, include_names)
-            title = f"Monsters that drop {search_term.title()} for {names} (Drop Rate)"
+            title = f"Monsters that drop {format_string(search_term)} for {names} (Drop Rate)"
         else:
-            title = f"Monsters that drop {search_term.title()} (Drop Rate)"
+            title = f"Monsters that drop {format_string(search_term)} (Drop Rate)"
 
     return title
 

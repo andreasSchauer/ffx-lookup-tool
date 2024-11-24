@@ -1,6 +1,6 @@
 from ffx_search_tool.src.data import monsters, monster_arena
 from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
-from ffx_search_tool.src.utilities.misc import initialize_table
+from ffx_search_tool.src.utilities.misc import initialize_table, format_string
 
 
 def get_short_mon_table(monster_name): 
@@ -58,7 +58,7 @@ def get_catch_info(monster_name):
     elif is_not_catchable:
         monster_name += " - Can not be captured"
 
-    return monster_name.title()
+    return format_string(monster_name)
 
 
 def get_magus_table():

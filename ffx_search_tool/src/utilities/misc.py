@@ -2,6 +2,7 @@ from rich.table import Table
 from rich import box
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH
 from rich.console import Console
+import re
 
 console = Console()
 
@@ -10,9 +11,9 @@ def make_selection(options, error_msg, input_msg="Choose by number: ", retry=Fal
     if not retry:
         for i, option in enumerate(options):
             if isinstance(option, list):
-                print(f"{i + 1}: {option[0].title()}")
+                print(format_string(f"{i + 1}: {option[0]}"))
             else:
-                print(f"{i + 1}: {option.title()}")
+                print(format_string(f"{i + 1}: {option}"))
 
     print("")
 
@@ -27,7 +28,7 @@ def make_selection(options, error_msg, input_msg="Choose by number: ", retry=Fal
         else:
             raise ValueError
 
-    except (ValueError):
+    except ValueError:
         return make_selection(options, "Invalid input.", "Try again: ", retry=True)
     
 
@@ -51,10 +52,40 @@ def format_num(num):
 
 
 def format_item(item_data):
-    item = item_data[0].title()
+    item = item_data[0]
     amount = item_data[1]
-    return f"{item} x{amount}"
+    return format_string(f"{item} x{amount}")
 
+
+
+def format_string(string):
+    terms = ['Hp', 'Mp', 'Ap', 'Sos', r'Yat-\d\d', r'Ykt-\d\d']
+    pattern = fr'\b({"|".join(terms)})\b'
+    amount_pattern = r'\d+X|X\d+'
+
+    string = string.title()
+
+    if re.search(pattern, string):
+        string = re.sub(pattern, uppercase, string)
+
+    if re.search(amount_pattern, string):
+        string = re.sub(amount_pattern, lowercase, string)
+    
+    if "Mi'Ihen" in string:
+        string = string.replace("Mi'Ihen", "Mi'ihen")
+    
+    if "Th'Uban" in string:
+        string = string.replace("Th'Uban", "Th'uban")
+    
+    return string
+
+
+def uppercase(match):
+    return match.group().upper()
+
+
+def lowercase(match):
+    return match.group().lower()
 
 
 def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):

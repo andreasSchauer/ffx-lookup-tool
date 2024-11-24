@@ -2,7 +2,7 @@ from rich.table import Table
 from rich import box
 from ffx_search_tool.src.data import primers, celestials, monsters, monster_arena, rewards, items
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, RONSO_RAGES, ITEM_CATEGORIES
-from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_item
+from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_item, format_string
 from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
 
 
@@ -32,7 +32,7 @@ def get_celestial_table():
     wrapper_table.add_row(celestial_table)
 
     for celestial in celestials:
-        item = celestial["item"].title()
+        item = format_string(celestial["item"])
         location = celestial["location"]
         celestial_table.add_row(item, location)
 
@@ -45,7 +45,7 @@ def ronso_rage_search(ronso_rage):
         ronso_rage = make_selection(RONSO_RAGES, "Rage not found.")
     
     ronso_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    ronso_table.add_column(ronso_rage.title())
+    ronso_table.add_column(format_string(ronso_rage))
 
     monster_list = []
 
@@ -71,7 +71,7 @@ def get_monster_arena_table(creation_name):
     creation = monster_arena[creation_name]
     
     monster_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    monster_table.add_column(creation_name.title())
+    monster_table.add_column(format_string(creation_name))
     monster_table.add_row(get_short_mon_table(creation_name))
 
     if "monsters" in creation:
@@ -128,7 +128,7 @@ def get_items_table(**conditions):
                 items_table.add_row(get_items(key))
             except(KeyError):
                 options = list(ITEM_CATEGORIES.keys())
-                new_key = make_selection(options, "Key does not exist", "Choose a category by number: ")
+                new_key = make_selection(options, f"Key '{key}' does not exist", "Choose a category by number: ")
                 items_table.add_row(get_items(new_key))
                 break
 
@@ -139,12 +139,13 @@ def get_items_table(**conditions):
 def get_items(key):
     category = ITEM_CATEGORIES[key]
     items_list = list(items.keys())[category[0]:category[1]]
+    title = format_string(key)
 
-    table = initialize_table(key.title(), 2, column_names=["Item", "Effect"])
+    table = initialize_table(title, 2, column_names=["Item", "Effect"])
 
     for i in range(len(items_list)):
         item = items_list[i]
         effect = items[item]
-        table.add_row(item.title(), effect)
+        table.add_row(format_string(item), effect)
 
     return table

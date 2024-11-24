@@ -1,9 +1,9 @@
 [
     {"num": "I", "translation": "A -> E", "location": ["Baaj Temple - Salvage Ship, Deck", "Bikanel - Oasis"]},
     {"num": "II", "translation": "B -> P", "location": "Besaid - Village, Crusaders Lodge"},
-    {"num": "III", "translation": "C -> S", "location": ["SS Liki - Power Room", "Bikanel - Oasis"]},
+    {"num": "III", "translation": "C -> S", "location": ["S.S. Liki - Power Room", "Bikanel - Oasis"]},
     {"num": "IV", "translation": "D -> T", "location": "Kilika - Tavern"},
-    {"num": "V", "translation": "E -> I", "location": ["SS Winno - Bridge", "Bikanel - East"]},
+    {"num": "V", "translation": "E -> I", "location": ["S.S. Winno - Bridge", "Bikanel - East"]},
     {"num": "VI", "translation": "F -> W", "location": "Luca - Basement B"},
     {"num": "VII", "translation": "G -> K", "location": "Luca - Theatre, Main Hall"},
     {"num": "VIII", "translation": "H -> N", "location": "Mi'ihen Highroad - Agency"},

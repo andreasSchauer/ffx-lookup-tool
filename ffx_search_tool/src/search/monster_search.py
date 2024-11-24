@@ -5,7 +5,7 @@ from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filte
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
 from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, LOCATIONS, MONSTER_TABLE_CELL_NAMES, TABLE_WIDTH
 from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
-from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num
+from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num, format_string
 from ffx_search_tool.src.utilities.ronso_calc import *
 
 
@@ -61,8 +61,8 @@ def get_monster_table(monster_name, kimahri_hp=0, kimahri_str=0, kimahri_mag=0, 
 
 def get_monster_table_title(monster_name):
     monster = monsters[monster_name]
-    locations = ", ".join(monster["location"]).title()
-    title = f"{monster_name.title()} - {locations}"
+    locations = ", ".join(monster["location"])
+    title = format_string(f"{monster_name} - {locations}")
 
     if monster["is_catchable"]:
         title += " - Can be captured"
@@ -82,7 +82,7 @@ def get_ally_tables(monster_name):
         return
         
     if monster_name == "biran ronso" or monster_name == "yenke ronso":
-        kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl = get_kimahri_stats()
+            kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl = get_kimahri_stats()
 
     for ally in allies:
         if monster_name == "biran ronso" or monster_name == "yenke ronso":

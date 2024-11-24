@@ -5,7 +5,7 @@ from ffx_search_tool.src.search.item_search import get_item_table
 from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, CHARACTER_SPECIFIC_ABILITIES
 from ffx_search_tool.src.utilities.format_item_data import format_ability_item_data
 from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table, key_search_table_title
-from ffx_search_tool.src.utilities.misc import console, make_selection, initialize_table
+from ffx_search_tool.src.utilities.misc import console, make_selection, initialize_table, format_string
 
 
 
@@ -23,7 +23,7 @@ def aeon_ability_search(ability_name):
 
 def get_aeon_ability_table(ability_name):
     table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    table.add_column(ability_name.title())
+    table.add_column(format_string(ability_name))
 
     data = format_ability_item_data(ability_name, "aeon")
     table.add_row(f"Needed to learn: {data}")
@@ -104,7 +104,7 @@ def get_ability_info_table(ability_name, ability_type, item_data):
 
 
 def ability_title(ability_name, ability_type):
-    return f"{ability_name} ({ability_type}-Ability)".title()
+    return format_string(f"{ability_name} ({ability_type}-Ability)")
 
 
 def ability_effect(ability_name, ability_type):
