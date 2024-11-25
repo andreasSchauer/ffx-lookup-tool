@@ -1,10 +1,11 @@
 def get_kimahri_stats():
-        kimahri_hp = kimahri_stats_input("HP")
-        kimahri_str = kimahri_stats_input("Strength")
-        kimahri_mag = kimahri_stats_input("Magic")
-        kimahri_agl = kimahri_stats_input("Agility")
+        kimahri_stats = {}
+        kimahri_stats["hp"] = kimahri_stats_input("HP")
+        kimahri_stats["str"] = kimahri_stats_input("Strength")
+        kimahri_stats["mag"] = kimahri_stats_input("Magic")
+        kimahri_stats["agl"] = kimahri_stats_input("Agility")
 
-        return kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl
+        return kimahri_stats
 
 
 def kimahri_stats_input(key):
@@ -22,6 +23,7 @@ def kimahri_stats_input(key):
                 raise ValueError("Stats must have a value from 0 to 255.")
         
         return kimahri_stat
+    
     except ValueError as e:
             print(str(e))
             print("")
@@ -32,6 +34,7 @@ def kimahri_stats_input(key):
 def validate_stat_input(input_msg):
     try:
         return int(input(input_msg))
+    
     except ValueError:
         raise ValueError("Invalid Input.")
 

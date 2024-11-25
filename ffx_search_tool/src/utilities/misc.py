@@ -60,13 +60,13 @@ def format_item(item_data):
 
 def format_string(string):
     terms = ['Hp', 'Mp', 'Ap', 'Sos', r'Yat-\d\d', r'Ykt-\d\d']
-    pattern = fr'\b({"|".join(terms)})\b'
+    caps_pattern = fr'\b({"|".join(terms)})\b'
     amount_pattern = r'\d+X|X\d+'
 
     string = string.title()
 
-    if re.search(pattern, string):
-        string = re.sub(pattern, uppercase, string)
+    if re.search(caps_pattern, string):
+        string = re.sub(caps_pattern, uppercase, string)
 
     if re.search(amount_pattern, string):
         string = re.sub(amount_pattern, lowercase, string)
@@ -86,6 +86,16 @@ def uppercase(match):
 
 def lowercase(match):
     return match.group().lower()
+
+
+
+def initialize_wrapper_table(title=None):
+    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
+
+    if title is not None:
+        table.add_column(title)
+
+    return table
 
 
 def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):

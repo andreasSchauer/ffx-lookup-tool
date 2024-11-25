@@ -1,11 +1,9 @@
-from rich import box
-from rich.table import Table
 from ffx_search_tool.src.data import aeon_abilities, armour_abilities, weapon_abilities
 from ffx_search_tool.src.search.item_search import get_item_table
-from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, CHARACTER_SPECIFIC_ABILITIES
+from ffx_search_tool.src.utilities.constants import CHARACTER_SPECIFIC_ABILITIES
 from ffx_search_tool.src.utilities.format_item_data import format_ability_item_data
 from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table, key_search_table_title
-from ffx_search_tool.src.utilities.misc import console, make_selection, initialize_table, format_string
+from ffx_search_tool.src.utilities.misc import initialize_wrapper_table, console, make_selection, initialize_table, format_string
 
 
 
@@ -22,8 +20,8 @@ def aeon_ability_search(ability_name):
 
 
 def get_aeon_ability_table(ability_name):
-    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    table.add_column(format_string(ability_name))
+    title = format_string(ability_name)
+    table = initialize_wrapper_table(title)
 
     data = format_ability_item_data(ability_name, "aeon")
     table.add_row(f"Needed to learn: {data}")
@@ -70,15 +68,15 @@ def select_ability():
 
 
 def get_auto_ability_table(ability_name, ability_type):
-    col_names = ["Reoccurring", "Not Reoccurring", "Bosses"]
     title = ability_title(ability_name, ability_type)
-    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    table.add_column(title)
+    table = initialize_wrapper_table(title)
 
     item_data = format_ability_item_data(ability_name, ability_type)
     table.add_row(get_ability_info_table(ability_name, ability_type, item_data))
 
     if item_data is not None:
+        col_names = ["Reoccurring", "Not Reoccurring", "Bosses"]
+
         if ability_name in CHARACTER_SPECIFIC_ABILITIES:
             title1 = key_search_table_title(ability_name, "equipment", format_characters=True, include_names=True)
             title2 = key_search_table_title(ability_name, "equipment", format_characters=True)

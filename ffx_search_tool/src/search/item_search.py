@@ -1,11 +1,9 @@
-from rich.table import Table
-from rich import box
 from functools import cmp_to_key
 from ffx_search_tool.src.data import rewards, buyable_items, items, armour_abilities, weapon_abilities, aeon_abilities
-from ffx_search_tool.src.utilities.constants import TABLE_WIDTH, ITEM_CATEGORIES
+from ffx_search_tool.src.utilities.constants import ITEM_CATEGORIES
 from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_item_data
 from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table
-from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num, format_string
+from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, make_selection, format_num, format_string
 
 
 def item_search(item_name):
@@ -27,8 +25,8 @@ def select_item_category():
 
 
 def get_item_desc_table(item_name):
-    item_desc_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    item_desc_table.add_column(format_string(item_name))
+    title = format_string(item_name)
+    item_desc_table = initialize_wrapper_table(title)
     tables = [items[item_name], get_ability_table(item_name)]
     
     for table in tables:
@@ -106,8 +104,7 @@ def get_item_table(item_name):
     if item_name in buyable_items:
         title += f" (Buyable for {format_num(buyable_items[item_name])} Gil)"
     
-    item_table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    item_table.add_column(title)
+    item_table = initialize_wrapper_table(title)
 
     if item_name == "clear sphere":
         item_table.add_row(f"Clear Spheres are buyable in the Monster Arena item shop after unlocking Ultima Buster.")
@@ -117,7 +114,7 @@ def get_item_table(item_name):
         get_key_search_table(item_name, "drop", ["Reoccurring", "Not Reoccurring", "Bosses"]),
         get_key_search_table(item_name, "bribe", ["Reoccurring", "Not Reoccurring"]),
         get_item_rewards_table(item_name)
-        ]
+    ]
 
     for table in tables:
         if table is not None:

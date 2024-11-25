@@ -1,11 +1,9 @@
-from rich.table import Table
-from rich import box
 from itertools import chain
 from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
-from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, LOCATIONS, MONSTER_TABLE_CELL_NAMES, TABLE_WIDTH
+from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, LOCATIONS, MONSTER_TABLE_CELL_NAMES
 from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
-from ffx_search_tool.src.utilities.misc import initialize_table, console, make_selection, format_num, format_string
+from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, make_selection, format_num, format_string
 from ffx_search_tool.src.utilities.ronso_calc import *
 
 
@@ -17,7 +15,6 @@ def monster_search(monster_name, include_allies=False):
     if monster_name in DUPLICATES:
         options = DUPLICATES[monster_name]
         monster_name = make_selection(options, "Multiple options found.", "Choose a monster by number: ")
-
 
     if monster_name not in monsters:
         location = make_selection(LOCATIONS, "Monster not found.", "Choose a location by number to display options: ")
@@ -33,13 +30,12 @@ def monster_search(monster_name, include_allies=False):
 
 
 
-def get_monster_table(monster_name, kimahri_hp=0, kimahri_str=0, kimahri_mag=0, kimahri_agl=0):
+def get_monster_table(monster_name, kimahri_stats=None):
     monster = monsters[monster_name]
     title = get_monster_table_title(monster_name)
+    table = initialize_wrapper_table(title)
 
-    table = Table(pad_edge=False, box=box.MINIMAL_HEAVY_HEAD, width=TABLE_WIDTH, padding=1)
-    table.add_column(title)
-    table.add_row(get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl))
+    table.add_row(get_stat_table(monster_name, kimahri_stats))
     table.add_row(get_element_table(monster_name))
     table.add_row(get_status_resist_table(monster_name))
     table.add_row(get_item_table(monster_name))
@@ -82,17 +78,17 @@ def get_ally_tables(monster_name):
         return
         
     if monster_name == "biran ronso" or monster_name == "yenke ronso":
-            kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl = get_kimahri_stats()
+        kimahri_stats = get_kimahri_stats()
 
     for ally in allies:
-        if monster_name == "biran ronso" or monster_name == "yenke ronso":
-            get_monster_table(ally, kimahri_hp=kimahri_hp, kimahri_str=kimahri_str, kimahri_mag=kimahri_mag, kimahri_agl=kimahri_agl)
+        if kimahri_stats is not None:
+            get_monster_table(ally, kimahri_stats=kimahri_stats)
         else:
             get_monster_table(ally)
 
 
 
-def get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_agl):
+def get_stat_table(monster_name, kimahri_stats=None):
     monster = monsters[monster_name]
     stats = monster.copy()["stats"]
     stat_keys = list(stats.keys())
@@ -100,11 +96,11 @@ def get_stat_table(monster_name, kimahri_hp, kimahri_str, kimahri_mag, kimahri_a
 
     stat_table = initialize_table("Stats", 4, tab_header=False)
 
-    if monster_name == "biran ronso" or monster_name == "yenke ronso":
-        stats["hp"] = get_ronso_hp(monster_name, kimahri_str, kimahri_mag)
-        stats["strength"] = get_ronso_strength(monster_name, kimahri_hp)
-        stats["magic"] = get_ronso_magic(monster_name, kimahri_hp)
-        stats["agility"] = get_ronso_agility(monster_name, kimahri_agl)
+    if kimahri_stats is not None:
+        stats["hp"] = get_ronso_hp(monster_name, kimahri_stats["str"], kimahri_stats["mag"])
+        stats["strength"] = get_ronso_strength(monster_name, kimahri_stats["hp"])
+        stats["magic"] = get_ronso_magic(monster_name, kimahri_stats["hp"])
+        stats["agility"] = get_ronso_agility(monster_name, kimahri_stats["agl"])
 
     for i in range(0, len(stats), 2):
         left_stat = stat_cell_names[i]
