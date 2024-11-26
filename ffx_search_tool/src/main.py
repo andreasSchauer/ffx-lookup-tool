@@ -19,10 +19,6 @@ def monster(
     include_allies: bool = Option(False, "--allies", "-a", help=HELP["monster"]["allies"]),
     options: bool = Option(False, "--options", help=HELP["monster"]["options"])
 ):
-    f"""{HELP["monster"]["help"]}
-
-    {HELP["monster"]["verbose"]}
-    """
     monster_name = validate_input(monster_name, "monster", options)
     monster_search(monster_name, include_allies)
 
