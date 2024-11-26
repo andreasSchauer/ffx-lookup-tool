@@ -86,14 +86,7 @@ def get_reward_table(**conditions):
 
     for key in conditions.keys():
         if conditions[key]:
-            try:
-                reward_table.add_row(get_rewards(key))
-            except(KeyError):
-                options = list(rewards.keys())
-                new_key = make_selection(options, f"Category {key} does not exist", "Choose a category by number: ")
-                reward_table = initialize_wrapper_table("Rewards")
-                reward_table.add_row(get_rewards(new_key))
-                break
+            reward_table.add_row(get_rewards(key))
 
     console.print(reward_table)
 
@@ -120,14 +113,7 @@ def get_items_table(**conditions):
 
     for key in conditions.keys():
         if conditions[key]:
-            try:
-                items_table.add_row(get_items(key))
-            except(KeyError):
-                options = list(ITEM_CATEGORIES.keys())
-                new_key = make_selection(options, f"Category '{key}' does not exist", "Choose a category by number: ")
-                items_table = initialize_wrapper_table("Items")
-                items_table.add_row(get_items(new_key))
-                break
+            items_table.add_row(get_items(key))
 
     console.print(items_table)
 

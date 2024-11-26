@@ -1575,7 +1575,7 @@
         }
     },
     "buer": {
-        "location": [""],
+        "location": ["thunder plains"],
         "is_reoccurring": true,
         "is_catchable": true,
         "is_boss": false,
@@ -6028,7 +6028,7 @@
         }
     },
     "land worm": {
-        "location": [""],
+        "location": ["sin"],
         "is_reoccurring": false,
         "is_catchable": false,
         "is_boss": false,

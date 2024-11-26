@@ -6,7 +6,7 @@ from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
 
 def location_search(location_name):
     if location_name not in LOCATIONS:
-        location_name = make_selection(LOCATIONS, "Invalid location")
+        location_name = make_selection(LOCATIONS, "Location not found.")
 
     reoccurring_monsters, one_time_monsters, boss_monsters = filter_monsters(location_name, "location")
 

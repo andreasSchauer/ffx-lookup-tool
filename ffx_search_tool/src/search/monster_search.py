@@ -10,13 +10,22 @@ from ffx_search_tool.src.utilities.ronso_calc import *
 
 def monster_search(monster_name, include_allies=False):
     if monster_name in SYNONYMS:
-        monster_name = SYNONYMS[monster_name][0]
+        monster_synonyms = SYNONYMS[monster_name]
+
+        if include_allies:
+            monster_name = monster_synonyms[0]
+        else:
+            for synonym in monster_synonyms:
+                get_monster_table(synonym)
+            return
+    else:
+        monster_synonyms = None
     
     if monster_name in DUPLICATES:
         options = DUPLICATES[monster_name]
         monster_name = make_selection(options, "Multiple options found.", "Choose a monster by number: ")
 
-    if monster_name not in monsters:
+    if monster_name not in monsters and monster_synonyms is None:
         location = make_selection(LOCATIONS, "Monster not found.", "Choose a location by number to display options: ")
         options = list(chain(*filter_monsters(location, "location")))
         monster_name = make_selection(options, None, "Now choose a monster by number: ")
@@ -76,9 +85,11 @@ def get_ally_tables(monster_name):
         ally = choice[0]
         monster_search(ally)
         return
-        
+
     if monster_name == "biran ronso" or monster_name == "yenke ronso":
         kimahri_stats = get_kimahri_stats()
+    else:
+        kimahri_stats = None
 
     for ally in allies:
         if kimahri_stats is not None:
