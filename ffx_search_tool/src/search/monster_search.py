@@ -1,9 +1,8 @@
-from itertools import chain
-from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
 from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
-from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, LOCATIONS, MONSTER_TABLE_CELL_NAMES
+from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, MONSTER_TABLE_CELL_NAMES
 from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
-from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, make_selection, format_num, format_string
+from ffx_search_tool.src.utilities.select import select
+from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, format_num, format_string
 from ffx_search_tool.src.utilities.ronso_calc import *
 
 
@@ -22,13 +21,10 @@ def monster_search(monster_name, include_allies=False):
         monster_synonyms = None
     
     if monster_name in DUPLICATES:
-        options = DUPLICATES[monster_name]
-        monster_name = make_selection(options, "Multiple options found.", "Choose a monster by number: ")
+        monster_name = select("duplicate", "Multiple options found.", monster_name)
 
     if monster_name not in monsters and monster_synonyms is None:
-        location = make_selection(LOCATIONS, "Monster not found.", "Choose a location by number to display options: ")
-        options = list(chain(*filter_monsters(location, "location")))
-        monster_name = make_selection(options, None, "Now choose a monster by number: ")
+        monster_name = select("monster", "Monster not found.")
     
     monster = monsters[monster_name]
     
@@ -81,8 +77,7 @@ def get_ally_tables(monster_name):
     monster_in_multiple_fights = isinstance(allies[0], list)
 
     if monster_in_multiple_fights:
-        choice = make_selection(allies, "Monster appears in multiple boss fights.", "Specify the fight by number: ")
-        ally = choice[0]
+        ally = select("boss_fight", "Monster appears in multiple boss fights.", monster_name)
         monster_search(ally)
         return
 

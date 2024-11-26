@@ -1,27 +1,18 @@
 from functools import cmp_to_key
 from ffx_search_tool.src.data import rewards, buyable_items, items, armour_abilities, weapon_abilities, aeon_abilities
-from ffx_search_tool.src.utilities.constants import ITEM_CATEGORIES
 from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_item_data
 from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table
-from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, make_selection, format_num, format_string
+from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, format_num, format_string
+from ffx_search_tool.src.utilities.select import select
 
 
 def item_search(item_name):
     if item_name not in items:
-        category = select_item_category()
-        options = list(items.keys())[category[0]:category[1]]
-        item_name = make_selection(options, None, "Now choose an item by number: ")
+        item_name = select("item", "Item not found.")
     
     get_item_desc_table(item_name)
     get_item_table(item_name)
 
-
-
-def select_item_category():
-    options = list(ITEM_CATEGORIES.keys())
-    category = make_selection(options, "Item not found.", input_msg="Choose a category by number: ")
-
-    return ITEM_CATEGORIES[category]
 
 
 def get_item_desc_table(item_name):

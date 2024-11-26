@@ -1,6 +1,7 @@
 from ffx_search_tool.src.data import primers, celestials, monsters, monster_arena, rewards, items
 from ffx_search_tool.src.utilities.constants import RONSO_RAGES, ITEM_CATEGORIES
-from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, make_selection, format_item, format_string
+from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, format_item, format_string
+from ffx_search_tool.src.utilities.select import select
 from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
 
 
@@ -38,11 +39,20 @@ def get_celestial_table():
 
 def ronso_rage_search(ronso_rage):
     if ronso_rage not in RONSO_RAGES:
-        ronso_rage = make_selection(RONSO_RAGES, "Rage not found.")
+        ronso_rage = select("rage", "Rage not found.")
     
     title = format_string(ronso_rage)
     ronso_table = initialize_wrapper_table(title)
 
+    monster_list = get_rage_monsters(ronso_rage)
+
+    for monster in monster_list:
+        ronso_table.add_row(get_short_mon_table(monster))
+
+    console.print(ronso_table)
+
+
+def get_rage_monsters(ronso_rage):
     monster_list = []
 
     for monster_name in monsters.keys():
@@ -52,17 +62,13 @@ def ronso_rage_search(ronso_rage):
         if rage is not None and (rage == ronso_rage or ronso_rage in rage):
             monster_list.append(monster_name)
 
-    for monster in monster_list:
-        ronso_table.add_row(get_short_mon_table(monster))
-
-    console.print(ronso_table)
+    return monster_list
 
 
 
-def get_monster_arena_table(creation_name):
+def arena_creation_search(creation_name):
     if creation_name not in monster_arena:
-        options = list(monster_arena.keys())
-        creation_name = make_selection(options, "Creation not found.")
+        creation_name = select("creation", "Creation not found.")
 
     creation = monster_arena[creation_name]
     

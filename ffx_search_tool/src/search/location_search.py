@@ -1,12 +1,13 @@
 from ffx_search_tool.src.utilities.constants import LOCATIONS
-from ffx_search_tool.src.utilities.misc import initialize_wrapper_table, console, make_selection, format_string
+from ffx_search_tool.src.utilities.misc import initialize_wrapper_table, console, format_string
 from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
+from ffx_search_tool.src.utilities.select import select
 from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
 
 
 def location_search(location_name):
     if location_name not in LOCATIONS:
-        location_name = make_selection(LOCATIONS, "Location not found.")
+        location_name = select("location", "Location not found.")
 
     reoccurring_monsters, one_time_monsters, boss_monsters = filter_monsters(location_name, "location")
 

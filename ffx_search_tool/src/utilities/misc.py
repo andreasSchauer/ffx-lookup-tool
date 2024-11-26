@@ -7,32 +7,6 @@ import re
 console = Console()
 
 
-def make_selection(options, error_msg, input_msg="Choose by number: ", retry=False):
-    if not retry:
-        for i, option in enumerate(options):
-            if isinstance(option, list):
-                print(format_string(f"{i + 1}: {option[0]}"))
-            else:
-                print(format_string(f"{i + 1}: {option}"))
-
-    print("")
-
-    if error_msg:
-        print(error_msg)
-
-    try:
-        choice = int(input(input_msg)) - 1
-
-        if 0 <= choice < len(options):
-            return options[choice]
-        else:
-            raise ValueError
-
-    except ValueError:
-        return make_selection(options, "Invalid input.", "Try again: ", retry=True)
-    
-
-
 def format_num(num):
     if not isinstance(num, int):
         return num

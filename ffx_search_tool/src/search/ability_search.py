@@ -3,14 +3,14 @@ from ffx_search_tool.src.search.item_search import get_item_table
 from ffx_search_tool.src.utilities.constants import CHARACTER_SPECIFIC_ABILITIES
 from ffx_search_tool.src.utilities.format_item_data import format_ability_item_data
 from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table, key_search_table_title
-from ffx_search_tool.src.utilities.misc import initialize_wrapper_table, console, make_selection, initialize_table, format_string
+from ffx_search_tool.src.utilities.misc import initialize_wrapper_table, console, initialize_table, format_string
+from ffx_search_tool.src.utilities.select import select
 
 
 
 def aeon_ability_search(ability_name):
     if ability_name not in aeon_abilities:
-        options = list(aeon_abilities.keys())
-        ability_name = make_selection(options, "Ability not found.")
+        ability_name = select("aeon_ability", "Ability not found.")
 
     item_name = aeon_abilities[ability_name][0]
 
@@ -32,7 +32,7 @@ def get_aeon_ability_table(ability_name):
 
 def auto_ability_search(ability_name):
     if ability_name not in weapon_abilities and ability_name not in armour_abilities:
-        ability_name = select_ability()
+        ability_name = select("auto_ability", "Ability not found.")
 
     if ability_name in weapon_abilities:
         ability_type = "weapon"
@@ -49,21 +49,6 @@ def auto_ability_search(ability_name):
     if items is not None:
         item_name = ability_data[ability_name]["items"][0]
         get_item_table(item_name)
-
-
-
-def select_ability():
-    choice = make_selection(["weapon abilities", "armour abilities"], "Ability not found.", input_msg="Display abilities for weapons or armours?\nChoose by number: ")
-
-    if choice == "weapon abilities":
-        options = list(weapon_abilities.keys())
-
-    if choice == "armour abilities":
-        options = list(armour_abilities.keys())
-
-    ability_name = make_selection(options, "Now, choose the ability by number: ")
-
-    return ability_name
 
 
 
