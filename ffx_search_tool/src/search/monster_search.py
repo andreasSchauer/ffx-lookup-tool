@@ -4,35 +4,52 @@ from ffx_search_tool.src.utilities.format_monster_data import format_monster_dat
 from ffx_search_tool.src.utilities.select import select
 from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, format_num, format_string
 from ffx_search_tool.src.utilities.ronso_calc import *
+import sys
 
 
 
 def monster_search(monster_name, include_allies=False):
+    monster_name = validate_monster_name(monster_name, include_allies)
+    kimahri_stats = validate_ronso_cases(monster_name)
+    monster = monsters[monster_name]
+    
+    if monster["has_allies"] and include_allies:
+        get_ally_tables(monster_name, kimahri_stats)
+    else:
+        get_monster_table(monster_name, kimahri_stats)
+
+
+def validate_monster_name(monster_name, include_allies=False):
+    monster_synonyms = None
+    
     if monster_name in SYNONYMS:
         monster_synonyms = SYNONYMS[monster_name]
 
         if include_allies:
             monster_name = monster_synonyms[0]
         else:
-            for synonym in monster_synonyms:
-                get_monster_table(synonym)
-            return
-    else:
-        monster_synonyms = None
-    
+            print_synonyms(monster_synonyms)
+            sys.exit()
+
     if monster_name in DUPLICATES:
         monster_name = select("duplicate", "Multiple options found.", monster_name)
 
     if monster_name not in monsters and monster_synonyms is None:
         monster_name = select("monster", "Monster not found.")
-    
-    monster = monsters[monster_name]
-    
-    if monster["has_allies"] and include_allies:
-        get_ally_tables(monster_name)
-    else:
-        get_monster_table(monster_name)
 
+    return monster_name
+
+
+def print_synonyms(monster_synonyms):
+    for synonym in monster_synonyms:
+        get_monster_table(synonym)
+
+
+def validate_ronso_cases(monster_name):
+    if monster_name == "biran ronso" or monster_name == "yenke ronso":
+        return get_kimahri_stats()
+
+    return None
 
 
 def get_monster_table(monster_name, kimahri_stats=None):
@@ -71,7 +88,7 @@ def get_monster_table_title(monster_name):
     return title
 
 
-def get_ally_tables(monster_name):
+def get_ally_tables(monster_name, kimahri_stats=None):
     monster = monsters[monster_name]
     allies = monster["allies"]
     monster_in_multiple_fights = isinstance(allies[0], list)
@@ -79,16 +96,11 @@ def get_ally_tables(monster_name):
     if monster_in_multiple_fights:
         ally = select("boss_fight", "Monster appears in multiple boss fights.", monster_name)
         monster_search(ally)
-        return
-
-    if monster_name == "biran ronso" or monster_name == "yenke ronso":
-        kimahri_stats = get_kimahri_stats()
-    else:
-        kimahri_stats = None
+        sys.exit()
 
     for ally in allies:
         if kimahri_stats is not None:
-            get_monster_table(ally, kimahri_stats=kimahri_stats)
+            get_monster_table(ally, kimahri_stats)
         else:
             get_monster_table(ally)
 

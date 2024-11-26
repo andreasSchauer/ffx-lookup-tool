@@ -1,3 +1,5 @@
+import sys
+
 def get_kimahri_stats():
         kimahri_stats = {}
         kimahri_stats["hp"] = kimahri_stats_input("HP")
@@ -37,6 +39,9 @@ def validate_stat_input(input_msg):
     
     except ValueError:
         raise ValueError("Invalid Input.")
+    except KeyboardInterrupt:
+        print("\nInput cancelled.")
+        sys.exit()
 
 
 
