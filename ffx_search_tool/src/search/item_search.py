@@ -90,7 +90,7 @@ def ability_lists_into_rows(ability_lists, i):
 
 
 def get_item_table(item_name):    
-    title = f"Where to get {format_string(item_name)}"
+    title = f"How to obtain {format_string(item_name)}"
 
     if item_name in buyable_items:
         title += f" (Buyable for {format_num(buyable_items[item_name])} Gil)"
