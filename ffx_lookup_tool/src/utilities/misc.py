@@ -2,7 +2,8 @@ import re
 from rich import box
 from rich.table import Table
 from rich.console import Console
-from ffx_search_tool.src.utilities.constants import TABLE_WIDTH
+from ffx_lookup_tool.src.constants import TABLE_WIDTH
+
 
 console = Console()
 
@@ -86,6 +87,8 @@ def initialize_table(tab_title, num_columns, tab_header=True, column_names=[]):
                 table.add_column(name, width=col_width)
 
     return table
+
+
 
 
 

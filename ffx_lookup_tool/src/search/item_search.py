@@ -1,9 +1,9 @@
 from functools import cmp_to_key
-from ffx_search_tool.src.data import rewards, buyable_items, items, armour_abilities, weapon_abilities, aeon_abilities
-from ffx_search_tool.src.utilities.format_item_data import format_item_data, format_ability_item_data
-from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table
-from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, format_num, format_string
-from ffx_search_tool.src.utilities.select import select
+from ffx_lookup_tool.src.data import rewards, buyable_items, items, armour_abilities, weapon_abilities, aeon_abilities
+from ffx_lookup_tool.src.utilities.format_item_data import format_item_data, format_ability_item_data
+from ffx_lookup_tool.src.utilities.key_search_table.key_search_table import get_key_search_table
+from ffx_lookup_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, format_num, format_string
+from ffx_lookup_tool.src.utilities.select import select
 
 
 def item_search(item_name):
@@ -98,7 +98,7 @@ def get_item_table(item_name):
     item_table = initialize_wrapper_table(title)
 
     if item_name == "clear sphere":
-        item_table.add_row(f"Clear Spheres are buyable in the Monster Arena item shop after unlocking Ultima Buster.")
+        item_table.add_row(f"Clear Spheres can be bought in the Monster Arena shop after unlocking Ultima Buster.")
 
     tables = [
         get_key_search_table(item_name, "steal", ["Reoccurring", "Not Reoccurring", "Bosses"]),

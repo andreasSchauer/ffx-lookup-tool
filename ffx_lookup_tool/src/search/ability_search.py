@@ -1,10 +1,10 @@
-from ffx_search_tool.src.data import aeon_abilities, armour_abilities, weapon_abilities
-from ffx_search_tool.src.search.item_search import get_item_table
-from ffx_search_tool.src.utilities.constants import CHARACTER_SPECIFIC_ABILITIES
-from ffx_search_tool.src.utilities.format_item_data import format_ability_item_data
-from ffx_search_tool.src.utilities.key_search_table.key_search_table import get_key_search_table, key_search_table_title
-from ffx_search_tool.src.utilities.misc import initialize_wrapper_table, console, initialize_table, format_string
-from ffx_search_tool.src.utilities.select import select
+from ffx_lookup_tool.src.data import aeon_abilities, armour_abilities, weapon_abilities
+from ffx_lookup_tool.src.search.item_search import get_item_table
+from ffx_lookup_tool.src.constants import CHARACTER_SPECIFIC_ABILITIES
+from ffx_lookup_tool.src.utilities.format_item_data import format_ability_item_data
+from ffx_lookup_tool.src.utilities.key_search_table.key_search_table import get_key_search_table, key_search_table_title
+from ffx_lookup_tool.src.utilities.misc import initialize_wrapper_table, console, initialize_table, format_string
+from ffx_lookup_tool.src.utilities.select import select
 
 
 

@@ -1,6 +1,6 @@
 from functools import cmp_to_key
-from ffx_search_tool.src.data import monsters
-from ffx_search_tool.src.utilities.constants import REPLACEMENTS
+from ffx_lookup_tool.src.data import monsters
+from ffx_lookup_tool.src.constants import REPLACEMENTS
 
 
 def sort_monsters(filtered_list, item_name, key):

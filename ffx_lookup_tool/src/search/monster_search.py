@@ -1,9 +1,9 @@
-from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
-from ffx_search_tool.src.utilities.constants import DUPLICATES, SYNONYMS, MONSTER_TABLE_CELL_NAMES
-from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
-from ffx_search_tool.src.utilities.select import select
-from ffx_search_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, format_num, format_string
-from ffx_search_tool.src.utilities.ronso_calc import *
+from ffx_lookup_tool.src.data import monsters, monster_arena, remiem_temple
+from ffx_lookup_tool.src.constants import DUPLICATES, SYNONYMS, MONSTER_TABLE_CELL_NAMES
+from ffx_lookup_tool.src.utilities.format_monster_data import format_monster_data
+from ffx_lookup_tool.src.utilities.select import select
+from ffx_lookup_tool.src.utilities.misc import initialize_table, initialize_wrapper_table, console, format_num, format_string
+from ffx_lookup_tool.src.utilities.ronso_calc import *
 import sys
 
 

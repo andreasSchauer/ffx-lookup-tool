@@ -1,4 +1,4 @@
-from ffx_search_tool.src.data import monsters
+from ffx_lookup_tool.src.data import monsters
 
 
 def filter_monsters(search_term, key, characters=False):

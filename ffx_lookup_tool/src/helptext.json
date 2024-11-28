@@ -1,21 +1,4 @@
-from ffx_search_tool.src.utilities.select import select
-
-
-def validate_input(search_term, category, options=False):
-    if options:
-        search_term = select(category)
-
-    if search_term is None:
-        search_term = select(category, "No input was given.")
-
-    return format_input(search_term)
-
-
-def format_input(search_term):
-    return search_term.lower().replace("_", " ").replace("auto ", "auto-").strip(" ")
-
-
-HELPTEXT = {
+{
     "monster": {
         "description": "Search for a monster by name and get its stats, resistances, items (stealing, dropped, bribing) and equipment drops. Also includes AP and Gil rewards, abilities for Kimahri to learn and whether the monster can be captured.",
         "monster_name": "The name of the target monster.",
@@ -23,7 +6,7 @@ HELPTEXT = {
         "options": "Manually select a monster from a list of options. Select the monster's location first to filter the list of options."
     },
     "location": {
-        "description": "Search for a location and get an overview of every monster that appears in that location, including their HP, AP and Gil rewards, items, Ronso Rage and whether they can be captured. Monsters are sorted by availability (farmable, one-time, bosses).",
+        "description": "Search for a location and get an overview of every monster that appears in that location, including their HP, AP and Gil rewards, items, Ronso Rage and whether they can be captured. Monsters are sorted by availability (reoccurring, not reoccurring, bosses).",
         "location_name": "The name of the target location.",
         "options": "Manually select a location from a list of options."
     },

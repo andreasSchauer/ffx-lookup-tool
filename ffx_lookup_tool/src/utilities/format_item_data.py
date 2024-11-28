@@ -1,7 +1,7 @@
-from ffx_search_tool.src.data import monsters, aeon_abilities, armour_abilities, weapon_abilities
-from ffx_search_tool.src.utilities.format_monster_data import format_num
-from ffx_search_tool.src.utilities.constants import REPLACEMENTS
-from ffx_search_tool.src.utilities.misc import format_string
+from ffx_lookup_tool.src.data import monsters, aeon_abilities, armour_abilities, weapon_abilities
+from ffx_lookup_tool.src.utilities.format_monster_data import format_num
+from ffx_lookup_tool.src.constants import REPLACEMENTS
+from ffx_lookup_tool.src.utilities.misc import format_string
 
 
 

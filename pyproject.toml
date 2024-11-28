@@ -1,24 +1,22 @@
 [tool.poetry]
-name = "ffx_search_tool"
-version = "0.1.0"
-description = "will add later"
+name = "FFX Lookup Tool"
+version = "1.0.0"
+description = "A command-line tool for Final Fantasy X that can lookup monsters, items, abilities and more."
 authors = ["Andreas Schauer"]
-license = "will add later"
+license = "Apache-2.0"
 readme = "README.md"
-include = ["ffx_search_tool/data/**"]
+include = ["ffx_lookup_tool/data/**"]
 
 [tool.poetry.scripts]
-ffx = "ffx_search_tool.src.main:app"
+ffx = "ffx_lookup_tool.src.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.13"
-typer = {extras = ["all"], version = "^0.12.5"}
+typer = "^0.12.5"
 
 [tool.poetry.urls]
-"Repository" = "https://github.com/andreasSchauer/ffx-search-tool"
+"Repository" = "https://github.com/andreasSchauer/ffx-lookup-tool"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-

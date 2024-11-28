@@ -1,10 +1,10 @@
 import sys
-from ffx_search_tool.src.data import armour_abilities, items, weapon_abilities
-from ffx_search_tool.src.utilities.constants import ITEM_CATEGORIES, LOCATIONS, DUPLICATES, RONSO_RAGES
-from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
-from ffx_search_tool.src.data import aeon_abilities, monsters, monster_arena
+from ffx_lookup_tool.src.data import armour_abilities, items, weapon_abilities
+from ffx_lookup_tool.src.constants import ITEM_CATEGORIES, LOCATIONS, DUPLICATES, RONSO_RAGES
+from ffx_lookup_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
+from ffx_lookup_tool.src.data import aeon_abilities, monsters, monster_arena
 from itertools import chain
-from ffx_search_tool.src.utilities.misc import format_string
+from ffx_lookup_tool.src.utilities.misc import format_string
 
 
 def select(key, message=None, monster_name=None):

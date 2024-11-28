@@ -1,4 +1,4 @@
-from ffx_search_tool.src.utilities.constants import REPLACEMENTS
+from ffx_lookup_tool.src.constants import REPLACEMENTS
 
 
 

@@ -1,8 +1,8 @@
-from ffx_search_tool.src.utilities.constants import LOCATIONS
-from ffx_search_tool.src.utilities.misc import initialize_wrapper_table, console, format_string
-from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
-from ffx_search_tool.src.utilities.select import select
-from ffx_search_tool.src.utilities.short_mon_table import get_short_mon_table
+from ffx_lookup_tool.src.constants import LOCATIONS
+from ffx_lookup_tool.src.utilities.misc import initialize_wrapper_table, console, format_string
+from ffx_lookup_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
+from ffx_lookup_tool.src.utilities.select import select
+from ffx_lookup_tool.src.utilities.short_mon_table import get_short_mon_table
 
 
 def location_search(location_name):

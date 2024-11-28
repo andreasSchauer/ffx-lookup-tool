@@ -1,10 +1,10 @@
-from ffx_search_tool.src.utilities.constants import COMMON_SPHERES, CHARACTER_SPECIFIC_ABILITIES
-from ffx_search_tool.src.utilities.format_monster_data import format_drop_rate
-from ffx_search_tool.src.utilities.misc import initialize_table, format_string
-from ffx_search_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
-from ffx_search_tool.src.utilities.key_search_table.replace_list_items import replace_list_items
-from ffx_search_tool.src.utilities.key_search_table.sort_monsters import sort_monsters
-from ffx_search_tool.src.utilities.format_item_data import format_item_data
+from ffx_lookup_tool.src.constants import COMMON_SPHERES, CHARACTER_SPECIFIC_ABILITIES
+from ffx_lookup_tool.src.utilities.format_monster_data import format_drop_rate
+from ffx_lookup_tool.src.utilities.misc import initialize_table, format_string
+from ffx_lookup_tool.src.utilities.key_search_table.filter_monsters import filter_monsters
+from ffx_lookup_tool.src.utilities.key_search_table.replace_list_items import replace_list_items
+from ffx_lookup_tool.src.utilities.key_search_table.sort_monsters import sort_monsters
+from ffx_lookup_tool.src.utilities.format_item_data import format_item_data
 
 
 

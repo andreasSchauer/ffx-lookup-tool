@@ -1,6 +1,6 @@
-from ffx_search_tool.src.data import monsters, monster_arena, remiem_temple
-from ffx_search_tool.src.utilities.constants import REPLACEMENTS
-from ffx_search_tool.src.utilities.misc import format_num, format_item, format_string
+from ffx_lookup_tool.src.data import monsters, monster_arena, remiem_temple
+from ffx_lookup_tool.src.constants import REPLACEMENTS
+from ffx_lookup_tool.src.utilities.misc import format_num, format_item, format_string
 
 
 def format_monster_data(key, monster_name):

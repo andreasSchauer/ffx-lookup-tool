@@ -1,6 +1,6 @@
-from ffx_search_tool.src.data import monsters, monster_arena
-from ffx_search_tool.src.utilities.format_monster_data import format_monster_data
-from ffx_search_tool.src.utilities.misc import initialize_table, format_string
+from ffx_lookup_tool.src.data import monsters, monster_arena
+from ffx_lookup_tool.src.utilities.format_monster_data import format_monster_data
+from ffx_lookup_tool.src.utilities.misc import initialize_table, format_string
 
 
 def get_short_mon_table(monster_name): 
