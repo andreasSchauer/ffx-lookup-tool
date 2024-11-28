@@ -40,23 +40,23 @@
         "primers": "Displays the locations of all Al Bhed Primers.",
         "celestials": "Displays the locations of and conditions to obtain every celestial weapon and their related items (crests and sigils).",
         "rewards": {
-            "description": "Displays lists of rewards for various minigames and sidequests. If no flag is used, all eight lists are printed in the order seen below.",
-            "arena": "Monster Arena creations.",
-            "remiem": "Fights against Belgemine at Remiem Temple.",
-            "chocobo": "Chocobo races at Remiem Temple.",
-            "training": "Chocobo Training in the Calm Lands.",
-            "lightning": "Lightning Dodging in the Thunder Plains.",
-            "cactuar": "'Valley of the Cactuars' sidequest in Bikanel.",
-            "butterfly": "Butterfly hunts in the Macalania Woods.",
-            "other": "Other rewards (basically only for collecting all primers for now)."
+            "description": "Displays lists of rewards for various minigames and sidequests. If no flag is used, all eight lists are printed in the order of their options.",
+            "arena": "Monster Arena creations",
+            "remiem": "Fights against Belgemine at Remiem Temple",
+            "chocobo": "Chocobo races at Remiem Temple",
+            "training": "Chocobo Training in the Calm Lands",
+            "lightning": "Lightning Dodging in the Thunder Plains",
+            "cactuar": "'Valley of the Cactuars' sidequest in Bikanel",
+            "butterfly": "Butterfly hunts in the Macalania Woods",
+            "other": "Other rewards (basically only for collecting all primers for now)"
         },
         "items": {
-            "description": "Displays lists of items of various categories. If no flag is used, all five lists are printed in the order seen below.",
-            "healing": "Healing items.",
-            "support": "Protective items.",
-            "attacking": "Damage-dealing items.",
-            "spheres": "Sphere Grid related items.",
-            "other": "Other items that don't fit the other categories."
+            "description": "Displays lists of items of various categories. If no flag is used, all five lists are printed in the order of their options.",
+            "healing": "Healing items",
+            "support": "Protective items",
+            "attacking": "Damage-dealing items",
+            "spheres": "Items related to the Sphere Grid",
+            "other": "Other items that don't fit the other categories"
         }
     }
 }
