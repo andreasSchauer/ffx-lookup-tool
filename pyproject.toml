@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "FFX Lookup Tool"
+name = "ffx_lookup_tool"
 version = "1.0.0"
 description = "A command-line tool for Final Fantasy X that can lookup monsters, items, abilities and more."
 authors = ["Andreas Schauer"]

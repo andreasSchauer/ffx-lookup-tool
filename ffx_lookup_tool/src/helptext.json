@@ -1,6 +1,6 @@
 {
     "monster": {
-        "description": "Search for a monster by name and get its stats, resistances, items (stealing, dropped, bribing) and equipment drops. Also includes AP and Gil rewards, abilities for Kimahri to learn and whether the monster can be captured.",
+        "description": "Search for a monster by name and get its stats, resistances, items (stealing, defeating, bribing) and equipment drops. Also includes AP and Gil rewards, abilities for Kimahri to learn and whether the monster can be captured.",
         "monster_name": "The name of the target monster.",
         "allies": "If the monster appears in a boss fight with multiple opponents, all of them will be displayed.",
         "options": "Manually select a monster from a list of options. Select the monster's location first to filter the list of options."
@@ -11,17 +11,17 @@
         "options": "Manually select a location from a list of options."
     },
     "item": {
-        "description": "Search for an item and get information on its effect, what abilities you can craft/learn from it, and how to obtain it from monsters (stealing, drops, bribing) or via rewards.",
+        "description": "Search for an item and get information on its effect, what abilities you can craft/learn from it, and how to obtain it from monsters (stealing, defeating, bribing) or via rewards.",
         "item_name": "The name of the target item.",
         "options": "Manually select an item from a list of options. Select the item's category first to filter the list of options."
     },
     "customize": {
-        "description": "Search for an auto-ability and get information on its effect, monsters that can drop it, the item and amount you need to customize it, and how to obtain the required item from monsters (stealing, drops, bribing) or via rewards.",
+        "description": "Search for an auto-ability and get information on its effect, monsters that can drop it, the item and amount you need to customize it, and how to obtain the required item from monsters (stealing, defeating, bribing) or via rewards.",
         "ability_name": "The name of the target auto-ability.",
         "options": "Manually select an auto-ability from a list of options. Select the ability's category first to filter the list of options."
     },
     "learn": {
-        "description": "Search for an ability an aeon can learn and get the item and amount you need to learn it, and how to obtain the required item from monsters (stealing, drops, bribing) or via rewards.",
+        "description": "Search for an ability an aeon can learn and get the item and amount you need to learn it, and how to obtain the required item from monsters (stealing, defeating, bribing) or via rewards.",
         "ability_name": "The name of the target ability.",
         "options": "Manually select an ability from a list of options."
     },
