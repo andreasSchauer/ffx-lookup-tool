@@ -32,8 +32,8 @@ This will give you the following information about the monster:
 * Status resistances
 * AP and Gil rewards
 * Available items (stealing, defeating, bribing)
-* Equipment drops (including drop rate, amount of ability slots, and amount of abilities on the weapon/armour)
-* If it has an ability for Kimahri to learn
+* Equipment drops (including drop rate, and amount of ability slots/abilities on dropped equipment)
+* Abilities for Kimahri to learn
 
 The aeons you fight in Remiem Temple don't drop any items or equipment and have this section replaced with the reward you get for the initial and recurring victories.
 
@@ -47,7 +47,7 @@ If there are several versions of a monster (for example Garuda appears in Besaid
 
 ##### Biran and Yenke
 
-If you search for Biran or Yenke Ronso, you will be asked to enter Kimahri's HP, Strength, Magic and Agility, since their own stats are determined by them. The tool will then calculate the stats for them.
+Some of Biran and Yenke's stats are dependent on Kimahri's stats. If you search for Biran or Yenke Ronso, you will be asked to enter Kimahri's HP, Strength, Magic, and Agility. The tool will then calculate their stats.
 
 ##### Groups
 
@@ -55,12 +55,12 @@ Some monsters are part of a group, which means they get an extra identifier. Sea
 
 * "braskas final aeon" => braskas final aeon (first phase), braskas final aeon (second phase)
 * "dark magus sisters" => dark cindy, dark sandy, dark mindy
-* "issaru" => grothia, pterya, spathi
+* "isaaru" => grothia, pterya, spathi
 * "magus sisters" => cindy, sandy, mindy
-* seymour => seymour (first phase), seymour (second phase)
-* sinspawn geneaux => sinspawn geneaux (first phase), sinspawn geneaux (second phase)
+* "seymour" => seymour (first phase), seymour (second phase)
+* "sinspawn geneaux" => sinspawn geneaux (first phase), sinspawn geneaux (second phase)
 
-#### --allies
+#### Allies Option
 
 With the --allies option activated, if the monster appears in a boss fight with multiple opponents (for example Seymour + Guado Guardians and Anima, or Sinspawn Gui and its body parts), this information is printed for every opponent that takes part in this fight.
 
@@ -241,3 +241,28 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICE
 
 * [Official Final Fantasy X Strategy Guide](https://www.piggyback.com/online-guide/final-fantasy-x/en/)
 * [Final Fantasy Fandom](http://finalfantasy.fandom.com/)
+
+
+okay, I now have the following folder structure (more dashes before the file/folder name below means it's inside the folder above):
+
+ffx_lookup (working directory)
+- .gitignore
+- LICENSE
+- poetry.lock
+- pyproject.toml
+- readme.md
+- ffx_lookup_tool (all my code is in here)
+-- data
+--- __init__.py
+--- some_json_files.json
+-- src
+--- __init__.py
+--- some_python_files.py
+--- search
+---- some_python_files.py
+--- utilities
+---- some_python_files.py
+---- key_search_table
+----- some_python_files.py
+
+Is this the right structure for a package? do I need __init__.py in every folder? I only have it in data and src. I assume the package will include everything inside ffx_lookup_tool, or will does it also need to include the files from the working directory? I will upload it to pypi and build the package with poetry.

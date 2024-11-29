@@ -5,7 +5,9 @@ description = "A command-line tool for Final Fantasy X that can lookup monsters,
 authors = ["Andreas Schauer"]
 license = "Apache-2.0"
 readme = "README.md"
-include = ["ffx_lookup_tool/data/**"]
+packages = [
+    { include = "ffx_lookup_tool" }
+]
 
 [tool.poetry.scripts]
 ffx = "ffx_lookup_tool.src.main:app"
