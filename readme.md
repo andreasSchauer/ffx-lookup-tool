@@ -5,7 +5,7 @@ A command-line tool for Final Fantasy X that can lookup monsters, items, abiliti
 
 ## Installation Instructions
 
-need help
+:-)
 
 
 ## Features and Usage
@@ -241,28 +241,3 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICE
 
 * [Official Final Fantasy X Strategy Guide](https://www.piggyback.com/online-guide/final-fantasy-x/en/)
 * [Final Fantasy Fandom](http://finalfantasy.fandom.com/)
-
-
-okay, I now have the following folder structure (more dashes before the file/folder name below means it's inside the folder above):
-
-ffx_lookup (working directory)
-- .gitignore
-- LICENSE
-- poetry.lock
-- pyproject.toml
-- readme.md
-- ffx_lookup_tool (all my code is in here)
--- data
---- __init__.py
---- some_json_files.json
--- src
---- __init__.py
---- some_python_files.py
---- search
----- some_python_files.py
---- utilities
----- some_python_files.py
----- key_search_table
------ some_python_files.py
-
-Is this the right structure for a package? do I need __init__.py in every folder? I only have it in data and src. I assume the package will include everything inside ffx_lookup_tool, or will does it also need to include the files from the working directory? I will upload it to pypi and build the package with poetry.
