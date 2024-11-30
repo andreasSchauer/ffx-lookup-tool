@@ -109,6 +109,10 @@ This will give you the following information about the item:
 * How to obtain the item from monsters (stealing, defeating, bribing)
 * If the item can also be obtained as a reward for dealing with sidequests and minigames (primarily Monster Arena)
 
+Monsters that have the item are categorized into 'Reoccurring', 'Not Reoccurring', and 'Bosses' (see Location Search). Since many of them drop the same things, Dark Aeons and Monster Arena Creations are grouped together respectively, if applicable (for example all Monster Arena Creations have Dark Matter as a rare drop).
+
+Only Dark Yojimbo shows up in 'Reoccurring', because you can effectively farm him. Therefore, he is separated from the other Dark Aeons in this regard.
+
 ### Auto-Ability Search
 
 Search for any auto-ability by running:

@@ -95,7 +95,7 @@ def get_ally_tables(monster_name, kimahri_stats=None):
 
     if monster_in_multiple_fights:
         ally = select("boss_fight", "Monster appears in multiple boss fights.", monster_name)
-        monster_search(ally)
+        monster_search(ally, include_allies=True)
         sys.exit()
 
     for ally in allies:

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ffx_lookup_tool"
-version = "1.0.0"
+version = "1.0.1"
 description = "A command-line tool for Final Fantasy X that can lookup monsters, items, abilities and more."
 authors = ["Andreas Schauer"]
 license = "Apache-2.0"
@@ -13,7 +13,7 @@ packages = [
 ffx = "ffx_lookup_tool.src.main:app"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.8"
 typer = "^0.12.5"
 
 [tool.poetry.urls]
